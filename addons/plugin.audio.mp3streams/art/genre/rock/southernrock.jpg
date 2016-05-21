@@ -1,0 +1,779 @@
+# -*- coding: utf-8 -*-
+
+'''
+    Genesis Add-on
+    Copyright (C) 2015 lambda
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
+
+
+import os,sys,urlparse
+
+from resources.lib.libraries import control
+
+
+artPath = control.artPath()
+
+addonFanart = control.addonFanart()
+
+try: action = dict(urlparse.parse_qsl(sys.argv[2].replace('?','')))['action']
+except: action = None
+
+traktMode = False if control.setting('trakt_user') == '' else True
+
+imdbMode = False if control.setting('imdb_user') == '' else True
+
+sysaddon = sys.argv[0]
+
+
+class navigator:
+
+    def root(self):
+        self.addDirectoryItem(30001, 'movieNavigator', 'movies.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30002, 'tvNavigator', 'tvshows.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30003, 'channels', 'channels.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30004, 'myNavigator', 'mygenesis.jpg', 'DefaultVideoPlaylists.png')
+
+        if not control.setting('movie_widget') == '0':
+            self.addDirectoryItem(30005, 'movieWidget', 'moviesAdded.jpg', 'DefaultRecentlyAddedMovies.png')
+
+        if (traktMode == True and not control.setting('tv_alt_widget') == '0') or (traktMode == False and not control.setting('tv_widget') == '0'):
+            self.addDirectoryItem(30006, 'tvWidget', 'calendarsAdded.jpg', 'DefaultRecentlyAddedEpisodes.png')
+
+        if not control.setting('calendar_widget') == '0':
+            self.addDirectoryItem(30007, 'calendars', 'calendar.jpg', 'DefaultRecentlyAddedEpisodes.png')
+
+        self.addDirectoryItem(30008, 'toolNavigator', 'tools.jpg', 'DefaultAddonProgram.png')
+
+        self.addDirectoryItem(30009, 'searchNavigator', 'search.jpg', 'DefaultFolder.png')
+
+        self.endDirectory()
+
+        from resources.lib.libraries import cache
+        from resources.lib.libraries import changelog
+        cache.get(changelog.get, 600000000, control.addonInfo('version'), table='changelog')
+
+
+    def movies(self):
+        self.addDirectoryItem(30021, 'movieGenres', 'movieGenres.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30022, 'movieYears', 'movieYears.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30023, 'moviePersons', 'movies.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30024, 'movieCertificates', 'movieCertificates.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30025, 'movies&url=featured', 'movies.jpg', 'DefaultRecentlyAddedMovies.png')
+        self.addDirectoryItem(30026, 'movies&url=trending', 'moviesTrending.jpg', 'DefaultRecentlyAddedMovies.png')
+        self.addDirectoryItem(30027, 'movies&url=popular', 'moviesPopular.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30028, 'movies&url=views', 'moviesViews.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30029, 'movies&url=boxoffice', 'moviesBoxoffice.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30030, 'movies&url=oscars', 'moviesOscars.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30031, 'movies&url=theaters', 'moviesTheaters.jpg', 'DefaultRecentlyAddedMovies.png')
+        self.addDirectoryItem(30032, 'movies&url=added', 'moviesAdded.jpg', 'DefaultRecentlyAddedMovies.png')
+        self.addDirectoryItem(30033, 'movieFavourites', 'movieFavourites.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30034, 'moviePerson', 'moviePerson.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30035, 'movieSearch', 'movieSearch.jpg', 'DefaultMovies.png')
+
+        self.endDirectory()
+
+
+    def tvshows(self):
+        self.addDirectoryItem(30051, 'tvGenres', 'tvGenres.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30052, 'tvYears', 'tvshows.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30053, 'tvNetworks', 'tvshows.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30054, 'tvshows&url=trending', 'tvshowsTrending.jpg', 'DefaultRecentlyAddedEpisodes.png')
+        self.addDirectoryItem(30055, 'tvshows&url=popular', 'tvshowsPopular.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30056, 'tvshows&url=airing', 'tvshows.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30057, 'tvshows&url=active', 'tvshowsActive.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30058, 'tvshows&url=premiere', 'tvshows.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30059, 'tvshows&url=rating', 'tvshowsRating.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30060, 'tvshows&url=views', 'tvshowsViews.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30061, 'calendars', 'calendar.jpg', 'DefaultRecentlyAddedEpisodes.png')
+        self.addDirectoryItem(30062, 'calendar&url=added', 'calendarsAdded.jpg', 'DefaultRecentlyAddedEpisodes.png')
+        self.addDirectoryItem(30063, 'episodeFavourites', 'tvFavourites.jpg', 'DefaultRecentlyAddedEpisodes.png')
+        self.addDirectoryItem(30064, 'tvFavourites', 'tvFavourites.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30065, 'tvPerson', 'tvPerson.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30066, 'tvSearch', 'tvSearch.jpg', 'DefaultTVShows.png')
+
+        self.endDirectory()
+
+
+    def genesis(self):
+        if traktMode == True:
+            self.addDirectoryItem(30081, 'movies&url=traktcollection', 'moviesTraktcollection.jpg', 'DefaultMovies.png', context=(30191, 'moviesToLibrary&url=traktcollection'))
+            self.addDirectoryItem(30082, 'movies&url=traktwatchlist', 'moviesTraktwatchlist.jpg', 'DefaultMovies.png', context=(30191, 'moviesToLibrary&url=traktwatchlist'))
+            self.addDirectoryItem(30083, 'movies&url=traktfeatured', 'movies.jpg', 'DefaultMovies.png')
+            self.addDirectoryItem(30084, 'movies&url=traktratings', 'movies.jpg', 'DefaultMovies.png')
+            self.addDirectoryItem(30085, 'tvshows&url=traktcollection', 'tvshowsTraktcollection.jpg', 'DefaultTVShows.png', context=(30191, 'tvshowsToLibrary&url=traktcollection'))
+            self.addDirectoryItem(30086, 'tvshows&url=traktwatchlist', 'tvshowsTraktwatchlist.jpg', 'DefaultTVShows.png', context=(30191, 'tvshowsToLibrary&url=traktwatchlist'))
+            self.addDirectoryItem(30087, 'tvshows&url=traktfeatured', 'tvshows.jpg', 'DefaultTVShows.png')
+            self.addDirectoryItem(30088, 'tvshows&url=traktratings', 'tvshows.jpg', 'DefaultTVShows.png')
+            self.addDirectoryItem(30089, 'calendar&url=progress', 'calendarsProgress.jpg', 'DefaultRecentlyAddedEpisodes.png')
+            self.addDirectoryItem(30090, 'calendar&url=mycalendar', 'calendarsMycalendar.jpg', 'DefaultRecentlyAddedEpisodes.png')
+
+        if imdbMode == True:
+            self.addDirectoryItem(30091, 'movies&url=imdbwatchlist', 'moviesImdbwatchlist.jpg', 'DefaultMovies.png', context=(30191, 'moviesToLibrary&url=imdbwatchlist'))
+            self.addDirectoryItem(30092, 'tvshows&url=imdbwatchlist', 'tvshowsImdbwatchlist.jpg', 'DefaultTVShows.png', context=(30191, 'tvshowsToLibrary&url=imdbwatchlist'))
+
+        if traktMode == True or imdbMode == True:
+            self.addDirectoryItem(30093, 'movieUserlists', 'movieUserlists.jpg', 'DefaultMovies.png')
+            self.addDirectoryItem(30094, 'tvUserlists', 'tvUserlists.jpg', 'DefaultTVShows.png')
+
+        self.addDirectoryItem(30095, 'movieFavourites', 'movieFavourites.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30096, 'episodeFavourites', 'tvFavourites.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30097, 'tvFavourites', 'tvFavourites.jpg', 'DefaultTVShows.png')
+
+        movie_downloads = control.setting('movie_downloads')
+        tv_downloads = control.setting('tv_downloads')
+        if len(control.listDir(movie_downloads)[0]) > 0 or len(control.listDir(tv_downloads)[0]) > 0:
+            self.addDirectoryItem(30098, 'downloadNavigator', 'downloads.jpg', 'DefaultFolder.png')
+
+        self.endDirectory()
+
+
+    def downloads(self):
+        movie_downloads = control.setting('movie_downloads')
+        tv_downloads = control.setting('tv_downloads')
+
+        if len(control.listDir(movie_downloads)[0]) > 0:
+            self.addDirectoryItem(30099, movie_downloads, 'movies.jpg', 'DefaultMovies.png', isAction=False)
+        if len(control.listDir(tv_downloads)[0]) > 0:
+            self.addDirectoryItem(30100, tv_downloads, 'tvshows.jpg', 'DefaultTVShows.png', isAction=False)
+
+        self.endDirectory()
+
+
+    def tools(self):
+        self.addDirectoryItem(30111, 'openSettings&query=0.0', 'settings.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30112, 'openSettings&query=6.1', 'settings.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30113, 'openSettings&query=1.0', 'settings.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30114, 'openSettings&query=9.0', 'settings.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30115, 'openSettings&query=2.0', 'settings.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30116, 'openSettings&query=3.0', 'settings.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30117, 'openSettings&query=4.0', 'settings.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30118, 'openSettings&query=5.0', 'settings.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30119, 'clearSources', 'cache.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30120, 'clearCache', 'cache.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30122, 'openSettings&query=8.0', 'settings.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30121, 'libtoolNavigator', 'tools.jpg', 'DefaultAddonProgram.png')
+
+        self.endDirectory()
+
+
+    def library(self):
+        self.addDirectoryItem(30131, 'openSettings&query=7.0', 'settings.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30132, 'updateLibrary&query=tool', 'update.jpg', 'DefaultAddonProgram.png')
+        self.addDirectoryItem(30133, control.setting('movie_library'), 'movies.jpg', 'DefaultMovies.png', isAction=False)
+        self.addDirectoryItem(30134, control.setting('tv_library'), 'tvshows.jpg', 'DefaultTVShows.png', isAction=False)
+
+        if traktMode == True:
+            self.addDirectoryItem(30135, 'moviesToLibrary&url=traktcollection&query=tool', 'moviesTraktcollection.jpg', 'DefaultMovies.png')
+            self.addDirectoryItem(30136, 'moviesToLibrary&url=traktwatchlist&query=tool', 'moviesTraktwatchlist.jpg', 'DefaultMovies.png')
+            self.addDirectoryItem(30137, 'tvshowsToLibrary&url=traktcollection&query=tool', 'tvshowsTraktcollection.jpg', 'DefaultTVShows.png')
+            self.addDirectoryItem(30138, 'tvshowsToLibrary&url=traktwatchlist&query=tool', 'tvshowsTraktwatchlist.jpg', 'DefaultTVShows.png')
+
+        if imdbMode == True:
+            self.addDirectoryItem(30139, 'moviesToLibrary&url=imdbwatchlist&query=tool', 'moviesImdbwatchlist.jpg', 'DefaultMovies.png')
+            self.addDirectoryItem(30140, 'tvshowsToLibrary&url=imdbwatchlist&query=tool', 'tvshowsImdbwatchlist.jpg', 'DefaultTVShows.png')
+
+        self.endDirectory()
+
+
+    def search(self):
+        self.addDirectoryItem(30151, 'movieSearch', 'movieSearch.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30152, 'tvSearch', 'tvSearch.jpg', 'DefaultTVShows.png')
+        self.addDirectoryItem(30153, 'moviePerson', 'moviePerson.jpg', 'DefaultMovies.png')
+        self.addDirectoryItem(30154, 'tvPerson', 'tvPerson.jpg', 'DefaultTVShows.png')
+
+        self.endDirectory()
+
+
+    def addDirectoryItem(self, name, query, thumb, icon, context=None, isAction=True, isFolder=True):
+        try: name = control.lang(name).encode('utf-8')
+        except: pass
+        url = '%s?action=%s' % (sysaddon, query) if isAction == True else query
+        thumb = os.path.join(artPath, thumb) if not artPath == None else icon
+        cm = []
+        if not context == None: cm.append((control.lang(context[0]).encode('utf-8'), 'RunPlugin(%s?action=%s)' % (sysaddon, context[1])))
+        item = control.item(label=name, iconImage=thumb, thumbnailImage=thumb)
+        item.addContextMenuItems(cm, replaceItems=False)
+        if not addonFanart == None: item.setProperty('Fanart_Image', addonFanart)
+        control.addItem(handle=int(sys.argv[1]), url=url, listitem=item, isFolder=isFolder)
+
+
+    def endDirectory(self, cacheToDisc=True):
+        control.directory(int(sys.argv[1]), cacheToDisc=cacheToDisc)
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               # -*- coding: utf-8 -*-
+
+'''
+    Phoenix Add-on
+    Copyright (C) 2015 Blazetamer
+    Copyright (C) 2015 lambda
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
+
+
+import re,sys,urllib,urlparse
+from resources.lib.libraries import control
+from resources.lib.libraries import client
+
+mediaPath = control.addonInfo('path') + '/resources/media/phradios/'
+base_url = sys.argv[0]
+args = urlparse.parse_qs(sys.argv[2][1:])
+
+
+def radioDirectory():
+    addCategoryItem('1FM', 'radio1fm', '1fm-icon.png', '1fm-fanart.jpg')
+    addCategoryItem('181FM', 'radio181fm', '181fm-icon.png', '181fm-fanart.jpg')
+    addCategoryItem('RadioTunes', 'radiotunes', 'radiotunes-icon.png', 'radiotunes-fanart.jpg')
+    addCategoryItem('KickinRadio','Kickinradio', 'Kickin-icon.png', 'Kickin-fanart.jpg')
+    endCategory()
+
+
+def radio1fm(image, fanart):
+    try:
+        url = 'http://1.fm/home/showstations?stations=showall'
+
+        result = client.request(url)
+        a = client.parseDOM(result, 'div', attrs={'class': 'staionitemcont'})
+        b = client.parseDOM(result, 'div', attrs={'class': 'contbtnrgt'})
+        items = zip(a, b)
+    except:
+        return
+
+    for item in items:
+        try:
+            name = client.parseDOM(item[1], 'a', ret='rel')[0]
+            name = client.replaceHTMLCodes(name)
+            name = name.encode('utf-8')
+
+            url = client.parseDOM(item[1], 'a', ret='data-scsrv')[0]
+            if not url.startswith('http'): url = 'http://%s' % url
+            url += ':%s' % client.parseDOM(item[1], 'a', ret='data-hiaac')[0]
+            url = client.replaceHTMLCodes(url)
+            url = url.encode('utf-8')
+
+            thumb = client.parseDOM(item[0], 'img', ret='src')[0]
+            thumb = thumb.rsplit('?', 1)[0]
+            thumb = client.replaceHTMLCodes(thumb)
+            thumb = thumb.encode('utf-8')
+
+            addDirectoryItem(name, url, thumb, image, fanart)
+        except:
+            pass
+
+    endDirectory()
+
+
+def radio181fm(image, fanart):
+    try:
+        url = 'http://www.181.fm/index.php?p=mp3links'
+
+        result = client.request(url)
+
+        index = []
+        items = client.parseDOM(result, 'td', attrs={'id': 'rightlinks'})
+    except:
+        pass
+
+    for item in items:
+        try:
+            if not item.startswith('http://'): raise Exception()
+
+            name = items[:items.index(item)]
+            name = [i for i in name if not 'http://' in i][-1]
+            name = client.replaceHTMLCodes(name)
+            name = name.encode('utf-8')
+
+            url = item
+            url = client.replaceHTMLCodes(url)
+            url = url.encode('utf-8')
+
+            index.append({'name': name, 'url': url, 'thumb': '0', 'image': image, 'fanart': fanart})
+        except:
+            pass
+
+    index = [i for x, i in enumerate(index) if i not in index[x+1:]]
+    index = sorted(index, key=lambda k: k['name'])
+    for i in index: addDirectoryItem(i['name'], i['url'], i['thumb'], i['image'], i['fanart'])
+
+    endDirectory()
+
+
+def radiotunes(image, fanart):
+    try:
+        url = 'http://radiotunes.com/channels'
+
+        result = client.request(url)
+        result = client.parseDOM(result, 'ul', attrs={'id': 'channel-nav'})[0]
+        items = client.parseDOM(result, 'li')
+    except:
+        pass
+
+    for item in items:
+        try:
+            name = client.parseDOM(item, 'span')[0]
+            name = client.replaceHTMLCodes(name)
+            name = name.encode('utf-8')
+
+            url = client.parseDOM(item, 'a', ret='href')[0]
+            url = url.replace('/', '')
+            url = 'http://pub7.radiotunes.com:80/radiotunes_%s_aac' % url
+            url = client.replaceHTMLCodes(url)
+            url = url.encode('utf-8')
+
+            thumb = client.parseDOM(item, 'img', ret='src')[0]
+            thumb = thumb.rsplit('?', 1)[0]
+            if thumb.startswith('//'): thumb = 'http:%s' % thumb
+            thumb = client.replaceHTMLCodes(thumb)
+            thumb = thumb.encode('utf-8')
+
+            addDirectoryItem(name, url, thumb, image, fanart)
+        except:
+            pass
+
+    endDirectory()
+
+
+def Kickinradio(image, fanart):
+    try:
+        url = 'https://www.internet-radio.com/stations/'
+        result = client.request(url)
+        name = client.parseDOM(result, 'dt', attrs={'style': 'font-size: 22px;'})    
+    except:
+        pass
+    
+    for item in name:
+        try:
+            url = client.parseDOM(item,'a',ret="href")[0]
+            url = client.replaceHTMLCodes(url)
+            url = url.encode('utf-8')
+
+            addCategoryItem('[UPPERCASE][B]'+url[10:-1]+'[/UPPERCASE][/B]', 'Kickinradiocats', 'Kickin-icon.png', 'Kickin-fanart.jpg', url=url)   
+        except:
+            pass
+
+    endDirectory()
+
+
+def Kickinradiocats(url, image, fanart):
+    url_page = url
+    url_page = url_page.replace('%2F','/')
+    url_page2 = "https://www.internet-radio.com"+url_page.encode('utf-8')
+    genres_site = client.request(str(url_page2))
+    stations = client.parseDOM(genres_site, 'div', attrs={'class': 'col-md-7'})
+    station = client.parseDOM(stations, 'h4', attrs={'class': 'text-danger'})
+    cat = client.parseDOM(stations, 'p', attrs={'class': 'lead'})[0]
+    cat = client.replaceHTMLCodes(cat)
+    cat = cat.replace('<b>','').replace('</b>','')
+    cat = cat.encode('utf-8')
+    stream = client.parseDOM(stations, 'samp')
+    streams = zip(station,stream)
+
+    #addCategoryItem('[B][I]'+cat+'[/B][/I]','',image,fanart)
+    
+     
+    for CHAN,STREAM in streams:
+       CHAN = client.replaceHTMLCodes(CHAN)
+       CHAN = CHAN.encode('utf-8')
+       url = client.replaceHTMLCodes(STREAM)
+       url = url.encode('utf-8')
+       if re.search('\.m3u',url):
+           sort = url.replace('.m3u',' ')
+           sort = sort.split()
+           url = sort[1]
+           url = url.encode('utf-8')
+       else:
+           sort = url.replace('/', ' ')
+           sort = sort.split()
+           url = sort[1]+'//'+sort[2]+'/'
+           url = url.encode('utf-8')
+           pass
+       if CHAN[0:2] == '<a':
+           test = re.findall('<a href="/station/.+?">(.+?)</a>', CHAN)
+           CHAN = str(test)[2:-2]
+           CHAN = CHAN.encode('utf-8')
+       elif CHAN == '':
+           CHAN = "CHANNEL NAME UNKNOWN BUT WILL PLAY"
+
+       else:
+           pass
+         
+       addDirectoryItem(CHAN, url, '0', image, fanart)
+    tester1 = client.parseDOM(stations ,'ul', attrs={'class': 'pagination'})
+    if tester1:
+        if not client.parseDOM(stations, 'li', attrs={'class': 'disabled'}) or client.parseDOM(stations, 'li', attrs={'class': 'next'}):
+        
+            pages_next = client.parseDOM(tester1, 'li', attrs={'class': 'next'})
+            pages_next = client.parseDOM(pages_next, 'a', ret='href')[0]
+            if pages_next: 
+                pages_next = client.replaceHTMLCodes(pages_next).encode('utf-8')
+                pages_next = pages_next.encode('utf-8')
+                addCategoryItem('[B][I]NEXT[/I][/B]', 'Kickinradiocats', image, fanart, url=pages_next)
+            else:
+                pass
+        else:
+            pass       
+    else:
+        pass      
+    
+    endDirectory()
+
+
+
+def addCategoryItem(name, action, image, fanart, url='0'):
+    u = '%s?action=%s&url=%s&image=%s&fanart=%s' % (sys.argv[0], str(action), urllib.quote_plus(url), urllib.quote_plus(image), urllib.quote_plus(fanart))
+    item = control.item(name, iconImage=mediaPath+image, thumbnailImage=mediaPath+image)
+    item.addContextMenuItems([], replaceItems=False)
+    item.setProperty('Fanart_Image', mediaPath+fanart)
+    control.addItem(handle=int(sys.argv[1]),url=u,listitem=item,isFolder=True)
+
+
+def endCategory():
+    if control.skin == 'skin.confluence': control.execute('Container.SetViewMode(500)')
+    control.directory(int(sys.argv[1]), cacheToDisc=True)
+
+
+def addDirectoryItem(name, url, thumb, image, fanart):
+    if not thumb == '0': image = thumb
+
+    u = '%s?action=radioResolve&name=%s&url=%s&image=%s&fanart=%s' % (sys.argv[0], urllib.quote_plus(name), urllib.quote_plus(url), urllib.quote_plus(image), urllib.quote_plus(fanart))
+
+    if not image.startswith('http://'): image = mediaPath+image
+    meta = {'title': name, 'album': name, 'artist': name, 'comment': name}
+
+    item = control.item(name, iconImage=image, thumbnailImage=image)
+    item.setInfo(type='Music', infoLabels = meta)
+    item.addContextMenuItems([], replaceItems=False)
+    item.setProperty('Fanart_Image', mediaPath+fanart)
+    #item.setProperty('IsPlayable', 'true')
+    control.addItem(handle=int(sys.argv[1]),url=u,listitem=item,isFolder=False)
+
+
+def endDirectory():
+    control.directory(int(sys.argv[1]), cacheToDisc=True)
+
+
+def radioResolve(name, url, image):
+    if not image.startswith('http://'): image = mediaPath+image
+    meta = {'title': name, 'album': name, 'artist': name, 'comment': name}
+    item = control.item(path=url, iconImage=image, thumbnailImage=image)
+    item.setInfo(type='Music', infoLabels = meta)
+    control.player.play(url, item)
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      # -*- coding: utf-8 -*-
+
+'''
+    Phoenix Add-on
+    Copyright (C) 2015 Blazetamer
+    Copyright (C) 2015 lambda
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
+
+
+import os,re,sys,urllib,urlparse
+
+from resources.lib.libraries import cache
+from resources.lib.libraries import cachemeta
+from resources.lib.libraries import control
+from resources.lib.libraries import client
+from resources.lib.libraries import workers
+from resources.lib.libraries import views
+
+
+phLink = 'http://mecca.watchkodi.com/phstreams.xml'
+phNews = 'http://mecca.watchkodi.com/news.xml'
+phSearch = 'http://%s/search/search.xml'
+phTest = 'testings.xml'
+
+
+def getCategory():
+    getDirectory('0', phLink, '0', '0', '0', '0', '0', close=False)
+    addCategoryItem('VinMan FM', 'radioDirectory', 'radios.png')
+    addCategoryItem('Cartoon Crazy','CartoonDirectory','cartoon.png')
+    addCategoryItem('NHL', 'nhlDirectory', 'hockey.jpg')
+    addCategoryItem('News Updates', 'dmode&url=%s' % phNews, 'news.gif')
+    addCategoryItem(control.lang(30701).encode('utf-8'), 'openSettings', 'settings.png')
+    addCategoryItem(control.lang(30721).encode('utf-8'), 'downloader', 'downloader.png')
+    addCategoryItem(control.lang(30702).encode('utf-8'), 'search', 'search.png')
+
+    if phTest in control.listDir(control.dataPath)[1]: addCategoryItem('Testings', 'localDirectory', 'home.png')
+
+    endCategory()
+
+
+def localDirectory():
+    getDirectory('0', os.path.join(control.dataPath, phTest), '0', '0', '0', '0', '0', local=True)
+
+
+def getDirectory(name, url, audio, image, fanart, playable, content, close=True, local=False):
+    if local == True:
+        f = control.openFile(url) ; result = f.read() ; f.close()
+    else:
+        result = cache.get(client.request, 0, url)
+
+    result = str(result).replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')
+
+    try: fanart = re.findall('<fanart>(.+?)</fanart>', result)[0]
+    except: fanart = '0'
+
+
+    try:
+        notify = re.compile('<notify>(.+?)</notify>').findall(result)[0]
+
+        vip = re.findall('<poster>(.+?)</poster>', result)[0]
+        if not re.search('[a-zA-Z]', vip): raise Exception()
+
+        def message(vip): return (vip+version)
+
+        check = cache.get(message, 600000000, vip, table='rel_vip')
+
+        version = re.findall('<new>(.+?)</new>', notify)[0]
+        if not version.isdigit(): raise Exception()
+
+        if check == (vip+version): raise Exception()
+
+        title = '[B]Announcement From %s![/B]' % vip
+        msg1 = re.findall('<message1>(.+?)</message1>', notify)[0]
+        msg2 = re.findall('<message2>(.+?)</message2>', notify)[0]
+        msg3 = re.findall('<message3>(.+?)</message3>', notify)[0]
+
+        check = cache.get(message, 0, vip, table='rel_vip')
+
+        control.dialog.ok(str(title), str(msg1), str(msg2), str(msg3))
+    except:
+        pass
+
+
+    infos = re.compile('<info>(.+?)</info>').findall(result)
+
+    for info in infos:
+        try:
+            name = re.findall('<message>(.+?)</message>', info)[0]
+
+            try: image = re.findall('<thumbnail>(.+?)</thumbnail>', info)[0]
+            except: image = '0'
+
+            addDirectoryItem(name, '0', '0', image, image, fanart, '0', '0', {})
+        except:
+            pass
+
+
+    popups = re.compile('<popup>(.+?)</popup>').findall(result)
+
+    for popup in popups:
+        try:
+            name = re.findall('<name>(.+?)</name>', popup)[0]
+
+            url = re.findall('<popImage>(.+?)</popImage>', popup)[0]
+
+            try: image = re.findall('<thumbnail>(.+?)</thumbnail>', popup)[0]
+            except: image = '0'
+
+            try: audio = re.findall('<sound>(.+?)</sound>', popup)[0]
+            except: audio = '0'
+
+            addDirectoryItem(name, url, 'openDialog', image, image, fanart, audio, '0', {})
+        except:
+            pass
+
+
+    special = re.compile('<name>([^<]+)</name><link>([^<]+)</link><thumbnail>([^<]+)</thumbnail><date>([^<]+)</date>').findall(result)
+    for name, url, image, date in special:
+        if re.search(r'\d+', date): name += ' [COLOR red] Updated %s[/COLOR]' % date
+        addDirectoryItem(name, url, 'ndmode', image, image, fanart, '0', '0', {})
+
+    special = re.compile('<name>([^<]+)</name><link>([^<]+)</link><thumbnail>([^<]+)</thumbnail><mode>([^<]+)</mode>').findall(result)
+    for name, url, image, action in special:
+        if not url == phNews: addDirectoryItem(name, url, action, image, image, fanart, '0', '0', {})
+
+
+
+    meta = False
+
+    try: content = re.findall('<meta>(.+?)</meta>', result)[0]
+    except: content = '0'
+
+    try: tvshow = re.findall('<tvshow>(.+?)</tvshow>', result)[0]
+    except: tvshow = '0'
+
+    if content in ['seasons', 'episodes'] and tvshow == '0':
+        content = '0'
+
+    if content in ['movies', 'tvshows'] and control.setting('meta') == 'true':
+        try:
+            from metahandler import metahandlers
+            metaget = metahandlers.MetaData(preparezip=False)
+            meta = True
+        except:
+            meta = False
+
+    elif content in ['seasons', 'episodes']:
+        try:
+            from metahandler import metahandlers
+            metaget = metahandlers.MetaData(preparezip=False)
+            #tvd = metaget.get_meta('tvshow', tvshow)
+            tvd = cachemeta.get(metaget.get_meta, 24, 'tvshow', tvshow, '', '', '')
+        except:
+            tvd = {}
+
+
+    dirs = re.compile('<dir>(.+?)</dir>').findall(result)
+
+    totalItems = len(dirs)
+
+    for dir in dirs:
+        try:
+            data = {}
+
+            name = re.findall('<name>(.+?)</name>', dir)[0]
+
+            url = re.findall('<link>(.+?)</link>', dir)[0]
+
+            try: image = re.findall('<thumbnail>(.+?)</thumbnail>', dir)[0]
+            except: image = '0'
+
+            try: fanart2 = re.findall('<fanart>(.+?)</fanart>', dir)[0]
+            except: fanart2 = fanart
+
+            if meta == True and content =='tvshows':
+                try:
+                    title = cleantitle(name).encode('utf-8')
+                    data = {'title': title, 'tvshowtitle': title}
+
+                    #data = metaget.get_meta('tvshow', title)
+                    data = cachemeta.get(metaget.get_meta, 24, 'tvshow', title, '', '', '')
+
+                    metafanart = data['backdrop_url']
+                    if not metafanart == '': fanart2 = metafanart
+                except:
+                    pass
+
+            elif content =='tvshows':
+                try:
+                    title = cleantitle(name).encode('utf-8')
+                    data = {'title': title, 'tvshowtitle': title}
+                except:
+                    pass
+
+            elif content =='seasons':
+                try:
+                    title = cleantitle(tvshow).encode('utf-8')
+                    data = {'title': title, 'tvshowtitle': title}
+
+                    data.update(tvd)
+
+                    metafanart = tvd['backdrop_url']
+                    if not metafanart == '': fanart2 = metafanart
+                except:
+                    pass
+
+            addDirectoryItem(name, url, 'ndmode', image, image, fanart2, '0', content, data, totalItems=totalItems)
+        except:
+            pass
+
+    items = re.compile('<item>(.+?)</item>').findall(result)
+
+    try: sort = re.findall('<sort>(.+?)</sort>', result)[0]
+    except: sort = ''
+    if sort == 'yes': items = sorted(items)
+    totalItems = len(items)
+
+    for item in items:
+        try:
+
+            data = {}
+
+            name = re.findall('<title>(.+?)</title>', item)[0]
+
+            url = re.findall('<link>(.+?)</link>', item)[0]
+
+            try: image = image2 = re.findall('<thumbnail>(.+?)</thumbnail>', item)[0]
+            except: image = image2 = '0'
+
+            try: fanart2 = re.findall('<fanart>(.+?)</fanart>', item)[0]
+            except: fanart2 = fanart
+
+            if meta == True and content == 'movies':
+                try:
+                    title = cleantitle(name).encode('utf-8')
+                    data = {'title': title}
+
+                    title, year = re.compile('(.+?)[(](\d{4})[)]').findall(name)[0]
+                    title = cleantitle(title).encode('utf-8')
+                    data = {'title': title, 'year': year}
+
+                    #data = metaget.get_meta('movie', title, year=year)
+                    data = cachemeta.get(metaget.get_meta, 24, 'movie', title, '', '', year)
+
+                    metaimage = data['cover_url']
+                    if not metaimage == '': image = metaimage
+                    metafanart = data['backdrop_url']
+                    if not metafanart == '': fanart2 = metafanart
+                except:
+                    pass
+
+            elif content =='movies':
+                try:
+                    title = cleantitle(name).encode('utf-8')
+                    data = {'title': title}
+
+                    title, year = re.compile('(.+?)[(](\d{4})[)]').findall(name)[0]
+                    title = cleantitle(title).encode('utf-8')
+                    data = {'title': title, 'year': year}
+                except:
+                    pass
+
+            elif content == 'episodes':
+                try:
+                    title = cleantitle(name).encode('utf-8')
+                    data = {'title': title, 'tvshowtitle': tvshow}
+                except:
+                    pass
+                try:
+                    i = cleaneptitle(tvshow, title)
+                    title, season, episode = i[0].encode('utf-8'), i[1], i[2]
+                    data = {'title': title, 'tvshowtitle': tvshow, 'season': season, 'episode': episode}
+                except:
+                    pass
+                try:
+                    data.update({'year': tvd['year'], 'imdb_id' : tvd['imdb_id'], 'tvdb_id' : tvd['tvdb_id'], 'tvshowtitle': tvd['TVShowTitle'], 'genre' : tvd['genre'], 'studio': tvd['studio'], 'status': tvd['status'], 'duration' : tvd['duration'], 'rating': tvd['rating'], 'mpaa' : tvd['mpaa'], 'plot': tvd['plot'], 'cast': tvd['cast']})
+
+                    metafanart = tvd['backdrop_url']
+                    if not metafanart == '': image = fanart2 = meta

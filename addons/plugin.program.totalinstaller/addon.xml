@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.totalinstaller" name=" [COLOR=blue]T[/COLOR]otal [COLOR=dodgerblue]I[/COLOR]nstaller V2"  provider-name="whufclee, Quihico" check="1" version="2.0.7">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.service"       library="service.py" start="startup"></extension>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Total Installer v.2.0</summary>
+	<description>Absolutely everything you could ever need with addons, community builds, backups, tutorials, reviews, maintenance... you name it, if it's Kodi related you'll find it here! A massive thanks to all of you that contribute to the [COLOR=blue]T[/COLOR]otal[COLOR=dodgerblue]R[/COLOR]evolution project.</description>
+    <platform>all</platform>
+  </extension>
+</addon>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.repository.mrz" version="1.0.0" name="MRZ Repo" provider-name="Terminator">
+	<extension point="xbmc.addon.repository" name="USTV Repository">
+		<info compressed="false">http://208.43.235.66/repo/addons/addons.xml</info>
+				<checksum>http://208.43.235.66/repo/addons/addons.xml.md5</checksum>
+		<datadir zip="true">http://208.43.235.66/repo/addons</datadir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Plays live streams and recordings from US</summary>
+        <description>Live streaming US TV.</description>
+        <platform>all</platform>
+    </extension>
+</addon>

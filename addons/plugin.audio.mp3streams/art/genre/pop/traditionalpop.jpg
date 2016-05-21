@@ -1,0 +1,359 @@
+e for exercise of
+rights granted under this License, and you may not initiate litigation
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+any patent claim is infringed by making, using, selling, offering for
+sale, or importing the Program or any portion of it.
+
+  11. Patents.
+
+  A "contributor" is a copyright holder who authorizes use under this
+License of the Program or a work on which the Program is based.  The
+work thus licensed is called the contributor's "contributor version".
+
+  A contributor's "essential patent claims" are all patent claims
+owned or controlled by the contributor, whether already acquired or
+hereafter acquired, that would be infringed by some manner, permitted
+by this License, of making, using, or selling its contributor version,
+but do not include claims that would be infringed only as a
+consequence of further modification of the contributor version.  For
+purposes of this definition, "control" includes the right to grant
+patent sublicenses in a manner consistent with the requirements of
+this License.
+
+  Each contributor grants you a non-exclusive, worldwide, royalty-free
+patent license under the contributor's essential patent claims, to
+make, use, sell, offer for sale, import and otherwise run, modify and
+propagate the contents of its contributor version.
+
+  In the following three paragraphs, a "patent license" is any express
+agreement or commitment, however denominated, not to enforce a patent
+(such as an express permission to practice a patent or covenant not to
+sue for patent infringement).  To "grant" such a patent license to a
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+
+  If you convey a covered work, knowingly relying on a patent license,
+and the Corresponding Source of the work is not available for anyone
+to copy, free of charge and under the terms of this License, through a
+publicly available network server or other readily accessible means,
+then you must either (1) cause the Corresponding Source to be so
+available, or (2) arrange to deprive yourself of the benefit of the
+patent license for this particular work, or (3) arrange, in a manner
+consistent with the requirements of this License, to extend the patent
+license to downstream recipients.  "Knowingly relying" means you have
+actual knowledge that, but for the patent license, your conveying the
+covered work in a country, or your recipient's use of the covered work
+in a country, would infringe one or more identifiable patents in that
+country that you have reason to believe are valid.
+
+  If, pursuant to or in connection with a single transaction or
+arrangement, you convey, or propagate by procuring conveyance of, a
+covered work, and grant a patent license to some of the parties
+receiving the covered work authorizing them to use, propagate, modify
+or convey a specific copy of the covered work, then the patent license
+you grant is automatically extended to all recipients of the covered
+work and works based on it.
+
+  A patent license is "discriminatory" if it does not include within
+the scope of its coverage, prohibits the exercise of, or is
+conditioned on the non-exercise of one or more of the rights that are
+specifically granted under this License.  You may not convey a covered
+work if you are a party to an arrangement with a third party that is
+in the business of distributing software, under which you make payment
+to the third party based on the extent of your activity of conveying
+the work, and under which the third party grants, to any of the
+parties who would receive the covered work from you, a discriminatory
+patent license (a) in connection with copies of the covered work
+conveyed by you (or copies made from those copies), or (b) primarily
+for and in connection with specific products or compilations that
+contain the covered work, unless you entered into that arrangement,
+or that patent license was granted, prior to 28 March 2007.
+
+  Nothing in this License shall be construed as excluding or limiting
+any implied license or other defenses to infringement that may
+otherwise be available to you under applicable patent law.
+
+  12. No Surrender of Others' Freedom.
+
+  If conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot convey a
+covered work so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you may
+not convey it at all.  For example, if you agree to terms that obligate you
+to collect a royalty for further conveying from those to whom you convey
+the Program, the only way you could satisfy both those terms and this
+License would be to refrain entirely from conveying the Program.
+
+  13. Use with the GNU Affero General Public License.
+
+  Notwithstanding any other provision of this License, you have
+permission to link or combine any covered work with a work licensed
+under version 3 of the GNU Affero General Public License into a single
+combined work, and to convey the resulting work.  The terms of this
+License will continue to apply to the part which is the covered work,
+but the special requirements of the GNU Affero General Public License,
+section 13, concerning interaction through a network will apply to the
+combination as such.
+
+  14. Revised Versions of this License.
+
+  The Free Software Foundation may publish revised and/or new versions of
+the GNU General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+  Each version is given a distinguishing version number.  If the
+Program specifies that a certain numbered version of the GNU General
+Public License "or any later version" applies to it, you have the
+option of following the terms and conditions either of that numbered
+version or of any later version published by the Free Software
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License, you may choose any version ever published
+by the Free Software Foundation.
+
+  If the Program specifies that a proxy can decide which future
+versions of the GNU General Public License can be used, that proxy's
+public statement of acceptance of a version permanently authorizes you
+to choose that version for the Program.
+
+  Later license versions may give you additional or different
+permissions.  However, no additional obligations are imposed on any
+author or copyright holder as a result of your choosing to follow a
+later version.
+
+  15. Disclaimer of Warranty.
+
+  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+  16. Limitation of Liability.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+  17. Interpretation of Sections 15 and 16.
+
+  If the disclaimer of warranty and limitation of liability provided
+above cannot be given local legal effect according to their terms,
+reviewing courts shall apply local law that most closely approximates
+an absolute waiver of all civil liability in connection with the
+Program, unless a warranty or assumption of liability accompanies a
+copy of the Program in return for a fee.
+
+                     END OF TERMS AND CONDITIONS
+
+            How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+state the exclusion of warranty; and each file should have at least
+the "copyright" line and a pointer to where the full notice is found.
+
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Also add information on how to contact you by electronic and paper mail.
+
+  If the program does terminal interaction, make it output a short
+notice like this when it starts in an interactive mode:
+
+    <program>  Copyright (C) <year>  <name of author>
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+The hypothetical commands `show w' and `show c' should show the appropriate
+parts of the General Public License.  Of course, your program's commands
+might be different; for a GUI interface, you would use an "about box".
+
+  You should also get your employer (if you work as a programmer) or school,
+if any, to sign a "copyright disclaimer" for the program, if necessary.
+For more information on this, and how to apply and follow the GNU GPL, see
+<http://www.gnu.org/licenses/>.
+
+  The GNU General Public License does not permit incorporating your program
+into proprietary programs.  If your program is a subroutine library, you
+may consider it more useful to permit linking proprietary applications with
+the library.  If this is what you want to do, use the GNU Lesser General
+Public License instead of this License.  But first, please read
+<http://www.gnu.org/philosophy/why-not-lgpl.html>.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ÿØÿà JFIF  H H  ÿá‚Exif  MM *    	    o   z              ê       ò(       1        ú2      ;      .‡i      >  j3d illustration of an NFL logo behind a transparent silver American football over a silver and gray background   
+üÚ  ' 
+üÚ  'Adobe Photoshop CS6 (Macintosh) 2014:01:29 10:28:38 www.norebbo.com                                              ¸      À(             È      ²       H      H   ÿØÿÛ C 		
+ $.' ",#(7),01444'9=82<.342ÿÛ C			2!!22222222222222222222222222222222222222222222222222ÿÀ  x x! ÿÄ           	
+ÿÄ µ   } !1AQa"q2‘¡#B±ÁRÑğ$3br‚	
+%&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùúÿÄ        	
+ÿÄ µ  w !1AQaq"2B‘¡±Á	#3RğbrÑ
+$4á%ñ&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÚ   ? ¬*dë@`ê+jÈô ’Äô­ûn‚€4£éRĞ‚QÅ f]s×Ã­ s—ƒ“Xóõ4MúÑ@Š•(í¹äVÕ™äPGbzWAjx¥â¥ †N”™t85Ï_´ÎŞMbÏÔĞGêh …J”r¢¶lÏ"€:;Òº^‚€4£50  Ô2(^¶¿¹Ño—L•ã¾“nÈŠÄÈ9U!$`“ÀÏjãt-Uõ]3Êò]ÂÛ&g@„’´tá€úƒõ ^u5‹8äĞ7¢€""u ElÙE tV'¥t6§@qô©Å `ø€k-"ñ`•c.±º+$ÌùNFAú„8e¹guyq§™¯télî†…'Ê²’1Ûœtæ€<{Æÿ üÏY.‘"Ëe¦È$f\~ú\ÛXä`)*ryùMoÛÚnİ/ˆü/<w_h]—º|“ì`Û%AÈà¹lÀ$wm:mA38ÊòfŒšÊª\jalmK(‘æš1³qÀîÆr@êy<f¸Í`=§‹/,0¢(âB>åİ±Ï8Ëdúşš­®!no™‹‰öƒ‚|Ãş5p„¦íç÷	»
+nõuOµN±ŒJyÏãR}»TIDmºW=Gõ­>¯S·[tßúë°s"TÔõ±#FšèeêËëN]k^ò÷^ÿ `8ÏÚÛüj¾§[·~«¦ız
+u¿ÙÕõ ?k|sø×?‰¼Oo)MT <_;‘Èlt"¢¦¥5y«}ŞäÆ¤ÇQáÍKXÖ4„Io¯on~Ü$ìí¸¨ .O5ĞImâ}FßY‚{ËùáÓuìrÜ<ˆ6¸<•È ·8áö­)8¨«™M;èt^ğ¤HµÛÖµbM«Ë•-"Ãmv‰ÆÒ_lŒ7ğU	RXlÿ xZó@Öõ«ı Ke¥éÒA˜“”+¾5l''æ*:ç.½sBæï°8ûªÆ»g¯ÛÚè·Ú½åÔÑŞFf¶3Î\¯ÍƒŒ’zl0ËT~$_]Ã¨É,7SG!hTºHA#ÊdTVi¥b©ß[œöÆ¨æ%yÿ Ûüh¬jÆÄUôòƒ¨`¼šïËÜyçu‹DOdFñùs¾ÆlF˜ÜÜã<vúÔ·q—]ß6@éßüı+·Ù5N¥8¶õMwŞİ­Ğ‹ê™<r	'È\a}F{«
+‘§¾ä'ç/¯"º«KÚ54´´ÿ BVšzŒ´(Ë$eĞ¾8à`*âõØmàÕ¤ÙË"ªŒd¤mÉëŒ~;WŸŒ_¸Qš´¢í~ë_Éÿ Z—‹C«ğ9½j6œ²5êê
+Ğ“so
+ÀÁÉÈ®ì »> ¸xæ7’½¿$—äŒ/É»ª8©òòëıj½ô=¿Âv¶66wº¿öŠÍ§Â>Ïk,Ì6ÛAi£qPd…˜ó·€x$çÃµ+­oV‡Äõ¸¼MåàKë‘†rñ«‘òmEÈ?.àÃœÍ+6Ûïk"–­o¬Ãc¢É©ï6×y¶{¢Û¶<ìÚÑÙ°2>}İ\“Ÿñ,æíÿ ë¤?ú*Š¶²°BúÜóê+CİÅyõ PE ÄĞwàƒ|º`}3ö;õ’fU
+Ê î%¾P3ÏWz</â3ıü÷:Ñ_Èës<—±li—ÆF !ˆpuS+Ok$¤8Ğ«UŞ	¿ErIô¯Oáû_lèpi°|âÖ-B!æ±f}ÎKe¹lãîğ2¥µğN¿m£İéğ^iBßP
+e?hŒ™60+ƒ»¤7Oï¶sÆ¯Koò°˜…«‹û™OÆ^ñ6•¢iGZ†Ím-ZÛ´'çÁPv“Ü|ŒßVnØŒøsw'ıt‹ÿ EQ6œUŒ¢šnçEdYîÂ¼ş€
+( ­]A¸Õ™ŸzÛÚ¨mÓÉ÷r±¦HUf>€h©“Â6v™Š42Î!ó¾K”(éó«/Nª}aËáXZF…4ûV%s…‰AÇ>:}¨ß„ìtİ#VHo ’!0yĞ¹áJì'$çóÎyãĞlGyqqà¿Új14Ù½µÌP *9m‡#¸!ÁPsÒ¹ñ
+ö~Lõò¹>YFıbÿ 2x|)ºæƒáÿ µƒ.¥§%ä×Á½I>cm
+*öÏ5KXøo©¡6½¥äRÜDÂV*†4)ó¡ÆJæG9î£€:İ=ßõĞêX×gv¿ş”¿Èï~8È#ğvœüÚ¤kÿ ä¯ø…"Ë1‘NUÚCw¿…8·g	EAG»
+óú ( Ú=’j:¬ò³,$î”¡ù¶–Ûï€ıUéš¬6ğX[Ag¥¬‹ gÂ²ïŞB†br<†Œå…Ï$9 é´5¹¸kyf]Ñ²DŒîÅ$XDJFW'2<¤“ÛÄVìzm²À³E¢³0ó(¢”5‘JÆARc"–a¼€Œ’h‘¦h:®®^âÆîÎş%`¶—Ğ˜¤ÏBÈAÛ  õRÀdgWãÉ':¥şŸon…Œ	¹ÆªeÛ€>öäÀÛ¦MEHóE££	WÙVŒº\©â»İSOñG…îta1¿MÜF!‡Ín|Àp¸9àÜu®†ß[º—Ã~¼kß9îbº†F”ù†\Ê‹ÙÎ@Ï¯LQÏªr}?áS–œ¡J?jÏî´¿_ø=TŸi„BêÑĞyrW‚xØæ¿İ·ÿ ÑUÚşxKs‹¢¤g»
+óú ( ­âkh¯º‘á(sò÷Á>Ù?€®‹D¸ ë7ÜTçî: ôï_y*­´;¯#ô®²ŞîÄI%ÚÀ±Ë0Q$Â< ·|dãÓ&€-K¦¥dRx¢Ùù+"†SƒœàúŸÂ¼÷Å–;V‘îe¿µY­Îğn,ó‚	
+3"ÎOŞPGiÈ&“s,ÿ ü/ÉŒÜA¤˜Y¢ÁG Mµ”*Tñë0@Ùø‘“?†Ö(bµ´ŠiX¬QíTË!'
+>§ó®y|2õÿ #×¤œ«QKù_şÜr> Õ¿¶ôOK-Ü·6§R‰­UÙóÊíîà'‹ùyw9‚/÷`ÿ ÑU¼é§êyø¸rW”{[òGE3İ…yı PöìEÒ0ùİCœ U?˜ÍkhSJ°ùˆ¥¶¾2½sÎ€:ëÏü÷Rğ~îâ*ñ>bû›ÔòhºÒüsd>c7`˜¾¹lW·Ä{Ûy¶ÀÆGcò( îüè¾Ôîn>!èÚı²É\%µÔÇÈŞYÈÇÈ˜6ŒsƒÊ½ŸÄËmPñ_x‘-<¹­íá2ÊÅX¶ÀG
+HfëÓŒÎ4œÛ‹;¥‹T”'Mê•¿¯¼òk]Ñ–Ò<;kw±•%¹ò}óÜìÎÒà|¨;¹\ó\v¿|ó¬13î$#¸Â~Ÿ¡¼’ŠQ]iM¹KvaÑP»
+È³?òÚãşú_ğ 	SÂ¶,yçşú_ş&­Ãà­:Lfæïğtÿ âhJ/†ú\è@¼¾V#‚YÜmæ¹æĞ¯t9n­ğ[Ê”äg$®z‚?Ï SSuã$J¢îEUoP0hkS¤%Ì³ı¢1Ÿ.7Q•Ç_›èOZ“Ã~mU{	!-ƒ-Ò8\FyÈ;NCc¹8ì Íßê_®ä“BÔo¦k˜LM4;DHù±ÁÚ	İü8ê0Á/€¼5lğÙŞjz­íü ¯²\$0!9Ê)1–r¸Áè3‡ W3JÈ‹jR—ÀQÜê¡ààÇƒõùI5—sà?†gû~¦ìNI.¤“ÿ |T”V_x}ú^_)ôwAÿ ²âŠ ëÅ=hhËqW i”Œ* ÕŠ{°€Å
+–¡§çY&»Ô^8g:M¼‰Ã\aÄ‰–( 	×=Æ:€rV“iºŒâÎãWŠÒìgö…™$ú`¡Œìky<3á¸£[ÏÙ'TGã »0#¯Ş9ã§ptºğÍ¢Éec«Ü\3q$Œ›S¸?uFâxËg98«¯{²%®µB™aåÉµÜàH#< O ĞPy5bÖÂõ­`ÛOFfòÉçÚ\œsOÒô½VòÔ“m5AµËŒü cœ‘Œc’1Ï­ >]ğ©.ğ!‹ı*ªi3E¹ZxyärÂ€tØ³ûÉƒî©¢€,
+zĞñö­+SÒ€7ìOJ·.¯l$–ÉL‘®eù7c0HÈÏgë€
+öE{”[Íîqæ=£øœp+¤¶Ò<3©©œøv‹1’Ê9#œ{Pßè¶	%Í¦•¦å&¶L}AÇ>Õ.™mhö©.—i#ƒÄ1„ÚGUl`õ jRÚÜ$·óIŒ	l÷©Ê¸Yû­›Ië“ÆeZ\Üè–ñùÒ4št¡M­Úİ²c p C¼wê@,[¥n!e{§ĞĞûÉ»´ˆç ¡ ©­xr¸Í ÊrĞˆûV·Q@ï¯MµªC•š|…#9
+:‘ïÛñÏjM
+÷7GÚGë@Î¨*9ï-%FuGYzín¶h—„÷:sZÇ5Ä¶…‰}Ì]”€g–_bIà•”.o!yM´ò[[¯ñ;+JÃ§ NÃŸ\Ğ½64‡WK{›a{qxÈ$iAıÒÈCşùRrqÏ<,_ø[ğíÌí¤Ì×²’ÍlHI î‹¿P2;zQ)]:r‚Mõ9¿µZêÆmà67ànX †ãb±’	[ååNzxî"—R:‘ƒøZmY’Š2õ4RÿÙÿí°Photoshop 3.0 8BIM    ¢Z %G    x n3d illustration of an NFL logo behind a transparent silver American football over a silver and gray backgroundi 3Silver Football and NFL Logo Over Silver BackgroundP www.norebbo.com 3Silver Football and NFL Logo Over Silver Background nfl logo brand football sport game silver metal transparent national football league 
+background norebbo.com8BIM%     £ä@‰¤ÒbVj%³åİ¡ò8BIM:               printOutput       PstSbool    Inteenum    Inte    Clrm   printSixteenBitbool    printerNameTEXT    E P S O N 9 C 2 B 2 1   ( A r t i s a n   8 3 0 )     printProofSetupObjc    P r o o f   S e t u p     
+proofSetup       Bltnenum   builtinProof   	proofCMYK 8BIM;    -           printOutputOptions       Cptnbool     Clbrbool     RgsMbool     CrnCbool     CntCbool     Lblsbool     Ngtvbool     EmlDbool     Intrbool     BckgObjc         RGBC       Rd  doub@oà         Grn doub@oà         Bl  doub@oà         BrdTUntF#Rlt            Bld UntF#Rlt            RsltUntF#Pxl@R “€      
+vectorDatabool    PgPsenum    PgPs    PgPC    LeftUntF#Rlt            Top UntF#Rlt            Scl UntF#Prc@Y         cropWhenPrintingbool    cropRectBottomlong       cropRectLeftlong       cropRectRightlong       cropRectToplong     8BIMí      HN   HN  8BIM&               ?€  8BIM        8BIM        8BIMó     	         8BIM
+       8BIM'     
+        8BIMõ     H /ff  lff       /ff  ¡™š       2    Z         5    -        8BIMø     p  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿè    ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿè    ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿè    ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿè  8BIM          @  @    8BIM         8BIM    {                    # g r a y _ a n d _ s i l v e r _ b a c k g r o u n d _ n f l _ l o g o                                                                                null      boundsObjc         Rct1       Top long        Leftlong        Btomlong       Rghtlong      slicesVlLs   Objc        slice      sliceIDlong       groupIDlong       originenum   ESliceOrigin   autoGenerated    Typeenum   
+ESliceType    Img    boundsObjc         Rct1       Top long        Leftlong        Btomlong       Rghtlong      urlTEXT         nullTEXT         MsgeTEXT        altTagTEXT        cellTextIsHTMLbool   cellTextTEXT        	horzAlignenum   ESliceHorzAlign   default   	vertAlignenum   ESliceVertAlign   default   bgColorTypeenum   ESliceBGColorType    None   	topOutsetlong       
+leftOutsetlong       bottomOutsetlong       rightOutsetlong     8BIM(        ?ğ      8BIM        8BIM    ¹          x  à  á     ÿØÿí Adobe_CM ÿî Adobe d€   ÿÛ „ 			
+ÿÀ  x  " ÿİ  
+ÿÄ?          	
+         	
+ 3 !1AQa"q2‘¡±B#$RÁb34r‚ÑC%’Sğáñcs5¢²ƒ&D“TdEÂ£t6ÒUâeò³„ÃÓuãóF'”¤…´•ÄÔäô¥µÅÕåõVfv†–¦¶ÆÖæö7GWgw‡—§·Ç×ç÷ 5 !1AQaq"2‘¡±B#ÁRÑğ3$bár‚’CScs4ñ%¢²ƒ&5ÂÒD“T£dEU6teâò³„ÃÓuãóF”¤…´•ÄÔäô¥µÅÕåõVfv†–¦¶ÆÖæö'7GWgw‡—§·ÇÿÚ   ? R
+*A%%j±R¬Õb´”Ş¡hãmhãöIN
+ıK>‚¯Ô’›-SmD	)tŠIŠJbå^ÕaÊ½‰)£u›9Zwƒ³²Js/TmWï
+©)ªşPÊ+ùB))ÿĞ
+QC³3‡ìºæVøk°{¤¦ÓQëYÍê}7şåW÷ÿ ±[¥rê3ıÉ)Ø¡hãöXu¾Œ9Î¤hÿ r½OÖ‚ß¥ÔqÇÅÇÿ "’…~®9OÖ«Mú]Wlÿ äU¶}oúªŞz¶/ùçÿ "’…ˆ`7ë¯Õ!ÿ zØ¿çÿ ±HızúÓ«cOõÒS¼™aÏÏ©ßùoşwû7ZêŸTz…Ì¹fÜ,‹ØVn+ì[ËZË½/Ğîeÿ 	²ÿ øKôh€NÚ©í`'A©X=;ëGN¢²Î¡×z~e`O!®Ú|uAöÔ÷.¿Kş)a}dÿ l}NÅèN%ïÑùÅ…cî³.ı%–ÿ ÃÙ]t×şÖDBDìƒ :º?Z+Ì°îšèÅ?gê¦èm{-º¦»fê.k±³î­ß¤şeêXyíê8,Êôí£Ê§½W´~š—çÊÒQé®+êçTë]Œìl[néù.÷5ÌvË]sßc‡éìôë³×Ùêïª¿Rı¯Vş>Õ«¾İÓz§ì« ãd3uoÒún5Öê›şÓÉıı¦ôS¥Œµ}×ªóÕëz‡Õšêõ2úî+ˆå¸­6ıJ™fE¿õj‡Xê=¨t,7ôÛa¹€Û]Ãe„{Ù¿h6;{½Më8M].°×xÕ	Ê•c¥W‹MwfTËXÆ¶ÆAk€‡4€ßÍNz×Fÿ ¹Ôıçÿ "‚ŸÿÑ
+ÃëŸÓ‡üS+ÖâÃëŸÓ‡üS+ÒSA$’IJI$’R¥)I$”©Y_úPş£VºÈêßÒ‡õ’šK´ècdãtl|»¾Ícmß †4]us÷¾¦×^Æ»}Ûÿ Cüçé»>…VØ¬ëz÷¾Æ6ël{êº¶µ›Yô÷zŒÿ Ëlı~?›èVËgJ—ÑßõšÎŸ~i«¥Ô÷;íØê€´;#×ôêªÊ^ÚêÍÜÿ VÏûM_¬‰ÑzOO¯3?3©ä`ô‹~ÎÆİ²¦_“¹Ío­ê]öVÑ_¤û}³k§!öb3×÷úhøıb³'(ÕÒ)±ïn5íumı;fÖ[µ•ÜÇz4ß[¬É}ŞŸêõÙm†ÏÔóÓ«È=+"æ}—§fßu·†1–
+©§¦bÎ×Ù±×¿'&½¶Ùı›’‘Bv?ç-]º½GNÀf66gÖ>®Ñö—ã\^÷4±ìÇ?¬]UŒ±­µŒı{12,ÎûóÙöâ¯5wIéÔıUÄêUæ:Î¡cÚÛp¶49p5Wë·×{«¥¶bäÙVW¥¿+ÖÇ¯Ğ§é®§ë××L,ì3Ñ:3ÅØö@ÌË¬Åe?Ñ1œßç½]¿¬ZÏĞz ı/­ú_#¥ô¦}^£©Õ™êu-‹pö09³ôLu±sß];ñ2^G¥êezøµÙEM`Š$×TÈŞ›Ğ_/¥tÊ¾¯bu*3nm¶mÉÅÚÀêÅ£v?®ÖäXú+Û’únô¿\õ©şŸşF¯ÿ 3ÿ =¹G+¤ôª¾¯bõ:2Í¹öXFF.ÆV-şg×Û‘c©¯õL‹*¿ÒıwÖÇõ+ÇRÆÿ ’+ÿ oş{)LÜw¿R#ómZ<WPş‘ÿ ïÊ€Ÿı;#ş1ÿ ” (YÿÒ
+ÃëŸÓ‡üS+ÖâÃëŸÓ‡üS+ÒSA$’IJI$’R“ ’`+}7¦eu+^Ê6²ºƒNFE†+¬<úuowçİ}Ÿ¢ÆÇgéo³ş¹c:ü^…ƒÓ2jÆÅ`¿1å”¿3!³²ûÚì–zl‘UUàôÚ2:e[Ùe¦/­úkmIOWOÎµ»ÙCöá°à›U,şƒuû÷TÀ¹şÙ^‘S”ß´¸K¨vkjsNïJ÷}›£c>ßvËowëyWlÿ 	èWW§úT[~¨äYº°ê¬µ¢º‚ÀûÈß”áı<jëß·ü'©ZJ|•ßWº¨vÚê8ğ*s\Oößÿ Etİ§ºötŒ,ª­úOmÔjy>­¶3Ïúuzşßì.¿şbºìg»l†ØæÕcíì?üıè}/ê¿^fLWcƒ0ÜÛj½Ú––Ÿæk¦ÏeÙïfçzuÿ ×Q¾Â¤}?ê¶k3Cº[FN3²ÛF>MÏß²wÔéÚæY»gĞıõ›K¾¨eWbë‹K2Ã—f¬uµâoÕ–zLg­¿zÙÁé6ô/¬¸İR›}lK­u9Mèía¿éã»İè²÷oşÂ§õ'OªYˆäb¸O}(»ó”y27êÿ ĞdéK+(Ë&<q0'k?G¸rãù¿«ÿ =Î¶Ï«¡îe}Õµ£sª¯¨»Ô7ÉªÊï¡îQê—ıRé¹f‡ô‹ÜßF«ÙoÚˆ‘uUä~u.ú;ı-ÿ ğkCêçTú¾>¯_Óú©±ùyÙ@N;@½Œ-ªªr=ocXÖ=›ôWéAõ¡W‘‡uu¿+¸Ã‰sªnKqßXİú;¿E¿Ö©!“!û•<8!˜Äòæ‡k>ÄpğOæâşûS­}Búµ‰õ3ªâ²Ñu8¶dRM…ÃvÏQ½½Ü.?şIgü{óÙ^¯õÇÿ }cÿ 	_ÿ Ü¼‡Çœ°™h5>?”Yc\ïú*Í“zêåÖ¿G‘Îş›‘ÿ ÿ ú¢‚ı7#ş5ÿ õE1sÿÓ
+ÃëŸÓ›ÿ ßÊõ¸°úßôáÿ ßÊô”ĞI$’R’ “Rt$Ä$r8IOJÛq°:n&D¹ö—dİh%¤=ÑUn§oóO­»ı;ÿ ¤Â+˜`İk®²æ5¯}Û³tj¯õï¹×Zíø´²‹=ÿ ğ•ş‘`fŞê,Å$×sK\×´åÃf¿¸´:~m{\Ö»ı~	)ìº^5=Ã£s˜ßOØÒÍ®n?¢×ü×úOQoUÒö0;à,cFç&Ç‘ö¬¬MìnE¶íöû61q¸}b¶'úÀÀüZ¯»ëªÀÖ£h0LêªRSÑe}Zéù­ e>û'ôG¶×RúNßIÏªìO³İ½ìÿ JûQ1p:OÇe8ùÎkı®3i»öºÏ£ÿ ‘gü"çOÖñ[	/àN„ÿ y]^fexø—^	¦·>$O´nIO×è¯¨f:üêìé½V[^-k*°ÿ ƒnP©ÿ fÈÿ ÂŞ­úˆ]Õãô­7VqºÃ¶Û±‹v*¹¶¡§±ÛëÜÏßşBÓÉúçÓòf6eLº—{l¢Ö5ìpı×±ßIsıOªôÆ`d~Í°¾Š¨}¬¸ã2Ö=,ç»Õôïõ?ä»İ‘úÖ¨û?ÙPÓÉ“ˆiØïRÑÔß©´õÎ˜zË·.Œ¦± >µ
+n÷Pv?Ô~ç{ıu½õÎÒ>²ôºAÑÖá¼êä–·ş­?ø¨È ô<œa`9ä,¯]ÍkÙ[+s§÷ı'¬¯­Uıdê_Y®fNÈ±ø…µcÛSvVr*·í¶¹”zÛíİìè¿®¡¯ÕÇ„YÓoê·øÿ ¥æ÷gÃ‰ˆñŸ—Üùx"ô®×š:ïÕçÓé²œŞì­Ó¦Ê7ş„3svı³÷ßüÚó\f:ªSˆ.­Õ°–ê	h¹’Óû¾Õ®lÎè_´.êù4~ĞËÃ·¬*rù‚Û_C¾Ñ“fË)¢º«©ö>ë­üÅFkM†Á¼‡5ºèÖúºû½ß¬C‹ƒÕ¡2üı¯pGŠ"1Zú§úrõşóÌçMÈÿ ıQADÉ°Y“mú/{œ>ÊoÿÔ
+Íê=3#/$[S˜Öû‰Awƒ]ûËI8IN è9Çóéÿ 9ßúMH}^Ï<>Ÿóÿ ¤ÖØDi	)ÃoÕ¤î,£ü÷é$V}OêÏâÜo›ßÿ ¤Vív‘Ë®S”Ñ÷$§“ê_UzÆÚnu6QTï5=Î-»÷TÏnïÎJ§Šjª»êvÆÆá }¤»vuZ«–¾·AikKH:8{µìrçz¶WH¢ÿ ³cÕuUé4[X} ?ªYê·#cÑµÏ®¿ğèÒSA·QÛs~?ÇrÆ±Ûİe ÀØÓû
+uôóšèÁª§»÷”Úßÿ lfSOı£³ê—ÖG˜¡ƒÆËëÿ Ñ^ªJi:œ2sîp:¼ú–-2:•ø»M#æïwÑ#ÓÚÿ Ñı4Cõ¯†ow¤ÁİÎyÖ´±ÿ ùá®v®¼Œ|Œ§Zhqp`à¶¼‹~‹İüûe%<øÅË)ÎµÕYX-k¶ÃÁkr-Ø÷Qùûı/[ùª¿áûş§ısÂglª–×î¢–9Ãnÿ ¦Ö2ÊÜßVÆÿ <Ì¯Óäÿ 3eW0¶pğ2c:S,Ëa«KØÈâÆ×»uÙ÷jëâk¡YÍúá××Uqk„:º©1ü¯çŞ’œì³›…ú«ãõ¤ËÅdº§šÍõº~ßF'ó¿¬Ù’úğ±v5şG©t®ouYıcØ	kñmÌºÍ§ó·ÓVÊ¿µ±?¯b¶Æ›S±2rÚ?id1¶Óa°3ìu¿kmwªïÓúŒÿ èÑWë¤FÃ· â³ìtä"™K›Y#GmnÆµ¾ïÌüÄá"6Ñ^ú¹cêWƒ»#	íçÓeÅ•“àæÕS¬³ÿ P»êwÖË/Âi´m{Ãß»`ÿ _èvÕOòkşÚØ{z‹¿ÀÛıª¿ó]Õu£¼øLà$î—wÔNªŞr1?íÇé%õª}lxş³ÿ ô’é‡N”»æØÿ ªNÜ‘ËÅCÉÄŸúÔÿ ÿÕQNS0ŠÎP‚#yIMš•ê`ò%Q©^Ç’@’’zëv›AñÑçô|¼wÖ*¦úƒ¶ºÇ•nKnÒ×]ô¿â–NVk²Üqé?ªÎÂGøGNÒéàXï¡ş“ùÅc¥ã±”æ‡?{Æâ0ZÑ?ÙIHGÕ©—>r>ÆÓû­-`ÿ ÀÏıılàıUú»°3á·³iÈ°~±&Ú ‰ÓÁ3!ÖÊ«'Ä´şwÒIKæÿ ‹o«¹Àı¡·=Ş.È¹Ñı—ØæªøÜ}^ÂÑİ4ß_úJ¯¸;ûtºí¿öÛ•á—UFhÊ³_¹¿öÍŞ£¡Ôó2±…7Z@î±Á¤´û}v1Ï{v=¿˜Ë(IL1¾ª}W4ñ±wĞx°_ynŸõÿ k¿’_GéUÖnÆÃ/ë¸¾ĞÑîõr­ô¶·ó¬Yôåæbäÿ “Za­^×MVôlÚıôú­ÿ HÇÖşšW]Ôº•V¿+(»ÍãìÙSjmÖ;üıé*ºZ9£¨åTÜF1İF²E&Ö5¸ùŸwOi·ôŒ{¿Â¾ÿ OÔ·ıõw©ãº¡CØ*} 1õZÃ]Œ }†7fßøïæíF£¤áõšoÅÄ¥ØîÇk³%ÛÍÛËÿ Ÿc?˜{}?cêÿ ¶2éë¸UuFu+5Ù5›\ÆÏø<üÓWÿ _ı"#]Fª15 AñgcÛ¸RâÓÃØéô½¿ô•;ñÙÄ|`ªÍ»¦=ÁØÖ?¤^ó¼ÛŠé€ûB¯Ö1ÿ ô1–P¬2ëK­ÇË–V9ê pŸ¢ıÌıÕ?ó.­4­Æ èÿ ÂUÃ‡~%_·•]É)ÿÖ v• á|ôşååÉ$§ÔÃüØÿ _‚›y^R’J}z¤l‡XÜÍdµş™ÃµîÕarñ´’Sëxu>­¡ƒMÛš O·lJÚÀÄ}¸Õ¸\_.Új´òç;é±­ËÂ’IOĞmè÷8<ÇyK›ÿ TÆ'=ÓÃZïƒ_=¤’Ÿ Ğr 1Y>ª×oI¦ŒvLÕ_İ£ÿ $¾hI%>ógM´èÖ  5ÒCàîı&Óôÿ áYïQªƒEYt»Ğ¶—=ØöuV³ßÇÿ †£Ôı­Wçú_h©xBHŠìwÇŞÅ?G}Qİû:İÑ¸^á§õk>_¼±>°cfaõ»/ÄÉºœŒ­¯k©q÷æªªÊ¾«6ú{Xİ‹ÃL×‚5¿ƒgÓïåã®~où¼/²ú–çÆõ*èeØØïÉ³-ŒuOp­ÌmÕgb6÷º»œg§gèĞİSnè¸9rwVÛ1Zãô¬äcÖÿ ü.ï ¼y%(¾Å½µ²pqŸoå}m®/¢·\Æ“óN^R’_ÿÙ 8BIM!     U       A d o b e   P h o t o s h o p    A d o b e   P h o t o s h o p   C S 6    8BIM          ÿáwhttp://ns.adobe.com/xap/1.0/ <?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        ">
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmp:ModifyDate="2014-01-29T10:28:38-08:00" xmp:CreatorTool="Adobe Photoshop CS3 Macintosh" xmp:CreateDate="2013-09-05T09:56:49-07:00" xmp:MetadataDate="2014-01-29T10:28:38-08:00" dc:description="3d illustration of an NFL logo behind a transparent silver American football over a silver and gray background" dc:format="image/jpeg" photoshop:Headline="Silver Football and NFL Logo Over Silver Background" photoshop:ColorMode="3" photoshop:ICCProfile="sRGB IEC61966-2.1" xmpRights:Marked="False" xmpMM:InstanceID="xmp.iid:A1F94FC5A6206811822A8F67B0279FC5" xmpMM:DocumentID="xmp.did:A1F94FC5A6206811822A8F67B0279FC5" xmpMM:OriginalDocumentID="xmp.did:A1F94FC5A6206811822A8F67B0279FC5">
+			<dc:creator>
+				<rdf:Seq>
+					<rdf:li>www.norebbo.com</rdf:li>
+				</rdf:Seq>
+			</dc:creator>
+			<dc:title>
+				<rdf:Alt>
+					<rdf:li xml:lang="x-default">Silver Football and NFL Logo Over Silver Background</rdf:li>
+				</rdf:Alt>
+			</dc:title>
+			<dc:subject>
+				<rdf:Bag>
+					<rdf:li>nfl</rdf:li>
+					<rdf:li>logo</rdf:li>
+					<rdf:li>brand</rdf:li>
+					<rdf:li>football</rdf:li>
+					<rdf:li>sport</rdf:li>
+					<rdf:li>game</rdf:li>
+					<rdf:li>silver</rdf:li>
+					<rdf:li>metal</rdf:li>
+					<rdf:li>transparent</rdf:li>
+					<rdf:li>national football league</rdf:li>
+					<rdf:li>background</rdf:li>
+					<rdf:li>norebbo.com</rdf:li>
+				</rdf:Bag>
+			</dc:subject>
+			<xmpMM:History>
+				<rdf:Seq>
+					<rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:A1F94FC5A6206811822A8F67B0279FC5" stEvt:when="2014-01-29T10:28:38-08:00" stEvt:softwareAgent="Adobe Photoshop CS6 (Macintosh)" stEvt:changed="/"/>
+				</rdf:Seq>
+			</xmpMM:History>
+		</rdf:Description>
+	</rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                       <?xpacket end='w'?>ÿâXICC_PROFILE   HLino  mntrRGB XYZ Î  	  1  acspMSFT    IEC sRGB             öÖ     Ó-HP                                                 cprt  P   3desc  „   lwtpt  ğ   bkpt     rXYZ     gXYZ  ,   bXYZ  @   dmnd  T   pdmdd  Ä   ˆvued  L   †view  Ô   $lumi  ø   meas     $tech  0   rTRC  <  gTRC  <  bTRC  <  text    Copyright (c) 1998 Hewlett-Packard Company  desc       sRGB IEC61966-2.1           sRGB IEC61966-2.1                                                  XYZ       óQ    ÌXYZ                 XYZ       o¢  8õ  XYZ       b™  ·…  ÚXYZ       $   „  ¶Ïdesc       IEC http://www.iec.ch           IEC http://www.iec.ch                                              desc       .IEC 61966-2.1 Default RGB colour space - sRGB           .IEC 61966-2.1 Default RGB colour space - sRGB                      desc       ,Reference Viewing Condition in IEC61966-2.1           ,Reference Viewing Condition in IEC61966-2.1                          view     ¤ş _. Ï íÌ  \   XYZ      L	V P   Wçmeas                            sig     CRT curv           
+     # ( - 2 7 ; @ E J O T Y ^ c h m r w |  † ‹  • š Ÿ ¤ © ® ² · ¼ Á Æ Ë Ğ Õ Û à å ë ğ ö û%+28>ELRY`gnu|ƒ‹’š¡©±¹ÁÉÑÙáéòú&/8AKT]gqz„˜¢¬¶ÁËÕàëõ !-8COZfr~Š–¢®ºÇÓàìù -;HUcq~Œš¨¶ÄÓáğş+:IXgw†–¦µÅÕåö'7HYj{Œ¯ÀÑãõ+=Oat†™¬¿Òåø2FZn‚–ª¾Òçû		%	:	O	d	y		¤	º	Ï	å	û
+
+'
+=
+T
+j
+
+˜
+®
+Å
+Ü
+ó"9Qi€˜°Èáù*C\u§ÀÙó&@Zt©ÃŞø.Id›¶Òî	%A^z–³Ïì	&Ca~›¹×õ1OmŒªÉè&Ed„£Ãã#Ccƒ¤Åå'Ij‹­Îğ4Vx›½à&Il²ÖúAe‰®Ò÷@eŠ¯Õú Ek‘·İ*QwÅì;cŠ²Ú*R{£ÌõGp™Ãì@j”¾é>i”¿ê  A l ˜ Ä ğ!!H!u!¡!Î!û"'"U"‚"¯"İ#
+#8#f#”#Â#ğ$$M$|$«$Ú%	%8%h%—%Ç%÷&'&W&‡&·&è''I'z'«'Ü((?(q(¢(Ô))8)k))Ğ**5*h*›*Ï++6+i++Ñ,,9,n,¢,×--A-v-«-á..L.‚.·.î/$/Z/‘/Ç/ş050l0¤0Û11J1‚1º1ò2*2c2›2Ô33F33¸3ñ4+4e44Ø55M5‡5Â5ı676r6®6é7$7`7œ7×88P8Œ8È99B99¼9ù:6:t:²:ï;-;k;ª;è<'<e<¤<ã="=a=¡=à> >`> >à?!?a?¢?â@#@d@¦@çA)AjA¬AîB0BrBµB÷C:C}CÀDDGDŠDÎEEUEšEŞF"FgF«FğG5G{GÀHHKH‘H×IIcI©IğJ7J}JÄKKSKšKâL*LrLºMMJM“MÜN%NnN·O OIO“OİP'PqP»QQPQ›QæR1R|RÇSS_SªSöTBTTÛU(UuUÂVV\V©V÷WDW’WàX/X}XËYYiY¸ZZVZ¦Zõ[E[•[å\5\†\Ö]']x]É^^l^½__a_³``W`ª`üaOa¢aõbIbœbğcCc—cëd@d”dée=e’eçf=f’fèg=g“géh?h–hìiCišiñjHjŸj÷kOk§kÿlWl¯mm`m¹nnknÄooxoÑp+p†pàq:q•qğrKr¦ss]s¸ttptÌu(u…uáv>v›vøwVw³xxnxÌy*y‰yçzFz¥{{c{Â|!||á}A}¡~~b~Â#„å€G€¨
+kÍ‚0‚’‚ôƒWƒº„„€„ã…G…«††r†×‡;‡ŸˆˆiˆÎ‰3‰™‰şŠdŠÊ‹0‹–‹üŒcŒÊ1˜ÿfÎ6nÖ‘?‘¨’’z’ã“M“¶” ”Š”ô•_•É–4–Ÿ—
+—u—à˜L˜¸™$™™üšhšÕ›B›¯œœ‰œ÷dÒ@®ŸŸ‹Ÿú i Ø¡G¡¶¢&¢–££v£æ¤V¤Ç¥8¥©¦¦‹¦ı§n§à¨R¨Ä©7©©ªª««u«é¬\¬Ğ­D­¸®-®¡¯¯‹° °u°ê±`±Ö²K²Â³8³®´%´œµµŠ¶¶y¶ğ·h·à¸Y¸Ñ¹J¹Âº;ºµ».»§¼!¼›½½¾
+¾„¾ÿ¿z¿õÀpÀìÁgÁãÂ_ÂÛÃXÃÔÄQÄÎÅKÅÈÆFÆÃÇAÇ¿È=È¼É:É¹Ê8Ê·Ë6Ë¶Ì5ÌµÍ5ÍµÎ6Î¶Ï7Ï¸Ğ9ĞºÑ<Ñ¾Ò?ÒÁÓDÓÆÔIÔËÕNÕÑÖUÖØ×\×àØdØèÙlÙñÚvÚûÛ€ÜÜŠİİ–ŞŞ¢ß)ß¯à6à½áDáÌâSâÛãcãëäsäüå„ææ–çç©è2è¼éFéĞê[êåëpëûì†ííœî(î´ï@ïÌğXğåñrñÿòŒóó§ô4ôÂõPõŞömöû÷Šøø¨ù8ùÇúWúçûwüü˜ı)ıºşKşÜÿmÿÿÿÛ C 		
+
+
+
+	ÿÛ CÿÀ ĞĞ" ÿÄ           	
+ÿÄ µ   } !1AQa"q2‘¡#B±ÁRÑğ$3br‚	
+%&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùúÿÄ        	
+ÿÄ µ  w !1AQaq"2B‘¡±Á	#3RğbrÑ
+$4á%ñ&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÚ   ? æÇAÖŠAÔüÀÒĞ  f ô5%F3Ò „ òE :#€:x8 ’E63Á<S*G­ H7dc©ŞÎj9
+HÀ©OE 	ù°sÇ¥XFÃ;Õu#xÏ<d’244_tñŞ§ƒ¯_óš‚#•ÛœT±õ†hÌ=…[‡†>ÜÕHyÚ=E[‡©'¦hÜG,sÔÿ …_µÎ3Ï_Ã¥P·=‡ÿ ­Z6à £¯4rÛ€ñZ6§™lØ#'¨­;PN0p(JÍ°AÆhÙgƒÉÅfZà°$u­;Npã@ö|íJÕ°'wÍdY qZöŸ)çîš Ù³Á …5­fAÔŒV=™<ŒñZö#…·bs´¢µì‰8ëŸşµbØòç$
+Ú±'
+9 ›í>ŸşªÙ±$I'5‹§’„VÅ‰ÆŞ8³cÁyæµí[ É5fI ıâÕ¯eœŒõ {l3Z–ÿ ÏjÊµãhêEjÙ¶A+œ@V¾•~ØdTmz¿kĞı?¥ ^‹ (8«¶Ü£ ÍR¶ê~¿áWmğIx q”ú‘š²œ¹>Ÿ•U„ñÏ§n.ÿ Q@bû‡ëR+nP}j(ÏÊAûÂ¦†Q‚€%\—¸æ¤_¾qQ§úÏÂ¤O¾xÏô Ğyc$ÑJŸxP×åP1ŒQE QE QE 0È#5Ï~µ%1øb(*3÷›ëRS|äúĞG†=ù¨[ıPúÔï÷‡şµƒïg± 
+óeIá°j	øêÄçä«É†,OAÅ U¸^£¹ªWÇ9 u«ÒáG#$Õ;•
+Üœš ¥p7däVuÚñ¹­	ÉÆG¦*•È$r(.ã ş{Vuáë“†Åiİ(9²ï2 ŸQ@wªyŒVUèëëÿ ×­kÁ€Ü€OøVMï\ÿ 4x§<d_!ç•³xx'x¬kÁ†aé@Ú‘ØV5òà¹?á[WùÉ=«üu c~@ÜOjÆ¼\—'ŒÖÍøàõÏó¬{µùˆëš Æ½PÀ’x¬‹ŞKqÔV½é''Ê¿,Ã®(*ô|Ç¾y¬‹¬–=Ík^c'Àçô¬»¡ò"€2®¹ÎFgİ	'µ¡qÉ9Ö}Úü§<H ùÔ‘Ïz¡rOÓƒWî3ş½Q¸Ï$O4B¾9Ï?ÒªKÕ³ÀÇõ«Ó®	ªSŒäâ€*JpXÕvûÙç&¬\g ~ª?»@È2ÅxäUiŒõÜ*Ìí…ªÍİNJ †VùqëQÈr;T¯¬xÁ¨äB3Œs@Ïâ˜IÉ=Í<äãf™ß=è²ªã´‡· ÒĞ ¿yAÍ?;xÁ¦pHFG"€6Ø§S±‘ƒÅ>€;îjSÂôÎ*~åLFA,xóìF*x‡éU£#åÛÓ5b.	Ç<Yç9ÍJ„àJŠ!Ôµ*gszPˆ¸Ûƒ:UÈy'œf©CÃØ«¶Ù ¶€-[ Çÿ ª´-I*3ê?•Q‡ïp8şUnØü¸­ ^ƒïóŞ´m2W¡¬è:»³ıkFÌºP•«|Ê[¡­Kc»ÏøÖU±ùF8µ-	<ÿ ] jÙœ=+^À •‘gü5«bI
+:dPÅ‘ÎlYŸ•{æ±¬ù ƒ‘[G
+=9Í mYu¸­›€¬kÇ!@ô­›=I »òkØğÄŠÆÓÎv–ä[y9éÖ€6lİ­kYœ0‘bN@ì+bĞJ Ö³9*GJÔ²şÜVUİJÓ³ (õ©j@ã½hÀO#üŠÍ¶ç;V•¯ Oş½ ^¶ÀøÕØ3´J£|Õë~Ş™ u5j/âª‘â­!;°8Ÿ­ Xˆ’¤ö"§ï/9â«Ãş¨úÕˆÆJÿ ³Í KùÉì8©#á½2>ôîFqM IN½5N@=sN½ :Š( ƒÆAÍ.Ã‘œi:3œûf¤9Çh1Ü¢ŠwwÇj( ¦I÷ÇÒŸL“ï— :ñQ‚HÉ5%F:
+ lª7ÎóŠ–N©P°!¹9&€+O÷GĞÕi‹ê*Ô½ñª²÷ÿ v€ ˜ä6:U.†IÇOÿ U[›¾QU.0TŸC@.  ®2Q¸à0Sš¿qÔã¹ªW?q¨2ëîH¬ÛÁĞtÊ´®~ïBk:ó‚@@7§
+r¹ÍdŞ˜N+bìü¼ô"²o7e­ c^ä3+üÄô¿¥m^ŒnÛĞV> 9#Û4‹~:’p3X×ù9ÿ ëVİğıì
+Å¿á¿ÿ ª€1¯Æ2:ÿ úëğrAç<VÕò“»<â±oÆ]†3š Å¼æI¬«îŒğ¿¥kŞsŒzÖUç$ŸÖ€1¯Á98ÿ ëV]ÚğÀÙ­[°y¿•yĞûĞeÉïĞñ¬ûTŒV•Á'üık6ïî¶3@×=şµBà‚¯Üu=¹ª8q@'ï×<Õ9Æ@àÕ¹FF{sU&ÁR¹Á 
+R‘–ã*»H‚¬KÏ'îúUwûãĞĞsÖ«È@ì3V$êµ å€é@ß¡8ÀÍ1±ƒ¸dTŒ¹ÜsQä”$ph0zdg4Ês‚S®03M 
+À( RÒàg­- Ôñš’£RA g&¤ @	 äN=0d:Â¤öf€«€yÏò©TäŒs³bœœ©$‚ KùAœÔÉ€Ç=B¹Ú7c54{I'qSŠ ³	È$t5,}ê	`•qÎG"€,@yÉlä
+¹Ş ’j¤];…[„ğ¦(İ·lƒœÕÛLôı*•·Ş õ®Ûtà¿• ^ƒnáœõşµ¡f>USÚ³àûÃü÷«ö‡ õ +O˜ŒäZ¶˜íĞVM¿,1Òµ,ÏCÖ€5¬¾èçÓğ­[7€F1Y6  85«eÔsÍ lYã°­‹&èÆ±àÄÖÅ›n9õ «UxÁ5³cÑvÖ-ƒg±ÇøÖ¾œØ?Sı(nÃ;G\àVÅr¹àæ±ì	?ç­f~éœĞÕ—Ş5¯fØÎ7Ç³,væµìğHïé@öd½ëRË=?Â²låSıãZö}Ï¥ hÚtëJØåF9›jxSêkFßî­ _¶êßçµ^ƒî÷ªŒœ3W­Xc "€-Û’	ÏSV!çëU£ä  Õ¨:Æ€,Dsã¨«QôJ«ú³ôe:¯Ò€%½8ô4ÈÏÌG­>€$:>ôÈşà§'Ş ú(¢€Ç=¥ŞJÜ)(  {æŠ( ™&w¸§Ó_ï‘é@¨ÇARTc  HK0¨¨äûãéOõïL“ïq@åÿ V~µ]ú~işéª¯œøÍ U—î¥U¹ã tjUãœ*­Î9Ï\Ğ+ŒØUŒœŠ½9ãn*”ÿ tıh6äLŠÍ¼Hç5§sÄö³oAÁô•xVÏJÊ¼pÉã$Ö½ïBÏJÊ¼½Æ€1µ§ŒV> $Iæ¶/‡^õ‘~ğqÁ kñò°æ¬kÿ ¸HÁ­«şC 2Ec^÷#·øP=ÿ FÆìw¬[ĞIÛ·¶o@ô"±îÁÁ'#4‹x1ëÅdßxÍl]½€VE÷¸4|r§Åe]qéZ×»¶;V]Úœë@w<69È?ãY×G ƒÒ´®FrsùVmĞ$ô ë‘Ô â¨\ Tg<ÖÈ%HÇ5ŸtFÓŒhŒş§?ãTääcÂ®ÏĞŸSı*”ƒ9^€Ğ;Ô¿ıj®ã…oÂ­KÉ'<Õivàã8Í E'P½PIüu<½ô5ØËc“Š €ıãßšˆt+rÇ‚¨‹gqôúĞr|Á…2ÊpAã4ÎqÏj ¬1”´ƒ8ëK@}şœRTjá*J CĞÔ¾‡‘Q†¤0hDmã8ÆiÈÜ0¦®p	"•q¸“ÀPÿ ÁøT‘ãq©ëQ'İÏz’.HãıhÒ|¤½ªd?1÷ªê*T*À˜Ğñ@#“Ç°«hrÃŒqıj¤G* É5jÜõöâ€-Ä~rNGÿ ª®Ú·<ÈÆj°ÁÀ9Å^³#z Ğ·å¾µ~ÛÛ¿ó¬ûRO¹­^' æ€4-:ŠÓ³#j‘È¬»rHÉëÿ ê­;@ï@ÖM’  Öµ–$dX“œä`Vµ‰åF~j Ö³= èkbÃ¶ÚÇµ8#ĞVÆœr£´³b‚¶,:wÚkÈúØ°$g&€6,=ùµe–#ßa€@Ï VÅŒPÅHQ[g‘Œàÿ cÙÜçÿ ­[6‡=hVÌåAÖ­£N‘`OµjYr3Ò€5mBO´­ç9şµ™j	 t'šÑ¶=GZ Ñ¶êßçµ\±‘ê*³ŒğMZ·9Àâ€/EĞwæ¬Å0	9ªıÏÊ®AÔ~4=¿İ w«1•#Ò ·$Â¦î
+ ”ş¢¤*­FyR=ièIPhñ}Ó×­;,#µ6,üÀzÓ¨@r‘â–€
+(¢€
+(¢€
+`9$õÄ€}ê1ÀÇa@ •è)ìxÆpM0tb€#$b{qQ“¸“Ú¤Åõ¨—;Fh)>SUäçŒòeğ€çZA‘C@¥ééÁªw?êÛè*ä™8ã=jÂä 
+Wƒ0öşµJ|óŒçÿ ×W®s·ıê¥8Èÿ wüh6èG¬ÛÌãÙ­+ä‘k:ë„ óş½ eİƒïÍe]ğN{Vµ×%ùéYÇ–‘x1œŒÖEö@8êkfÿ ¦1Ö±¯Ææ œĞ=è8<{Ö5è!NrNmŞò¯9æ±¯@ÚGQé@—œ±8Ç5z0X`€Oå[W€òOaX×À€ØúP5ö2qÆ+#PÉ•¯

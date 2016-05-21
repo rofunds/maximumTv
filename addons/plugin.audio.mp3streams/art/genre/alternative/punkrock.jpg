@@ -1,0 +1,411 @@
+)
+
+    def list_domains(self):
+        """Utility method to list all the domains in the jar."""
+        domains = []
+        for cookie in iter(self):
+            if cookie.domain not in domains:
+                domains.append(cookie.domain)
+        return domains
+
+    def list_paths(self):
+        """Utility method to list all the paths in the jar."""
+        paths = []
+        for cookie in iter(self):
+            if cookie.path not in paths:
+                paths.append(cookie.path)
+        return paths
+
+    def multiple_domains(self):
+        """Returns True if there are multiple domains in the jar.
+        Returns False otherwise."""
+        domains = []
+        for cookie in iter(self):
+            if cookie.domain is not None and cookie.domain in domains:
+                return True
+            domains.append(cookie.domain)
+        return False  # there is only one domain in jar
+
+    def get_dict(self, domain=None, path=None):
+        """Takes as an argument an optional domain and path and returns a plain
+        old Python dict of name-value pairs of cookies that meet the
+        requirements."""
+        dictionary = {}
+        for cookie in iter(self):
+            if (domain is None or cookie.domain == domain) and (path is None
+                                                or cookie.path == path):
+                dictionary[cookie.name] = cookie.value
+        return dictionary
+
+    def __getitem__(self, name):
+        """Dict-like __getitem__() for compatibility with client code. Throws
+        exception if there are more than one cookie with name. In that case,
+        use the more explicit get() method instead.
+
+        .. warning:: operation is O(n), not O(1)."""
+
+        return self._find_no_duplicates(name)
+
+    def __setitem__(self, name, value):
+        """Dict-like __setitem__ for compatibility with client code. Throws
+        exception if there is already a cookie of that name in the jar. In that
+        case, use the more explicit set() method instead."""
+
+        self.set(name, value)
+
+    def __delitem__(self, name):
+        """Deletes a cookie given a name. Wraps ``cookielib.CookieJar``'s
+        ``remove_cookie_by_name()``."""
+        remove_cookie_by_name(self, name)
+
+    def set_cookie(self, cookie, *args, **kwargs):
+        if hasattr(cookie.value, 'startswith') and cookie.value.startswith('"') and cookie.value.endswith('"'):
+            cookie.value = cookie.value.replace('\\"', '')
+        return super(RequestsCookieJar, self).set_cookie(cookie, *args, **kwargs)
+
+    def update(self, other):
+        """Updates this jar with cookies from another CookieJar or dict-like"""
+        if isinstance(other, cookielib.CookieJar):
+            for cookie in other:
+                self.set_cookie(copy.copy(cookie))
+        else:
+            super(RequestsCookieJar, self).update(other)
+
+    def _find(self, name, domain=None, path=None):
+        """Requests uses this method internally to get cookie values. Takes as
+        args name and optional domain and path. Returns a cookie.value. If
+        there are conflicting cookies, _find arbitrarily chooses one. See
+        _find_no_duplicates if you want an exception thrown if there are
+        conflicting cookies."""
+        for cookie in iter(self):
+            if cookie.name == name:
+                if domain is None or cookie.domain == domain:
+                    if path is None or cookie.path == path:
+                        return cookie.value
+
+        raise KeyError('name=%r, domain=%r, path=%r' % (name, domain, path))
+
+    def _find_no_duplicates(self, name, domain=None, path=None):
+        """Both ``__get_item__`` and ``get`` call this function: it's never
+        used elsewhere in Requests. Takes as args name and optional domain and
+        path. Returns a cookie.value. Throws KeyError if cookie is not found
+        and CookieConflictError if there are multiple cookies that match name
+        and optionally domain and path."""
+        toReturn = None
+        for cookie in iter(self):
+            if cookie.name == name:
+                if domain is None or cookie.domain == domain:
+                    if path is None or cookie.path == path:
+                        if toReturn is not None:  # if there are multiple cookies that meet passed in criteria
+                            raise CookieConflictError('There are multiple cookies with name, %r' % (name))
+                        toReturn = cookie.value  # we will eventually return this as long as no cookie conflict
+
+        if toReturn:
+            return toReturn
+        raise KeyError('name=%r, domain=%r, path=%r' % (name, domain, path))
+
+    def __getstate__(self):
+        """Unlike a normal CookieJar, this class is pickleable."""
+        state = self.__dict__.copy()
+        # remove the unpickleable RLock object
+        state.pop('_cookies_lock')
+        return state
+
+    def __setstate__(self, state):
+        """Unlike a normal CookieJar, this class is pickleable."""
+        self.__dict__.update(state)
+        if '_cookies_lock' not in self.__dict__:
+            self._cookies_lock = threading.RLock()
+
+    def copy(self):
+        """Return a copy of this RequestsCookieJar."""
+        new_cj = RequestsCookieJar()
+        new_cj.update(self)
+        return new_cj
+
+
+def _copy_cookie_jar(jar):
+    if jar is None:
+        return None
+
+    if hasattr(jar, 'copy'):
+        # We're dealing with an instane of RequestsCookieJar
+        return jar.copy()
+    # We're dealing with a generic CookieJar instance
+    new_jar = copy.copy(jar)
+    new_jar.clear()
+    for cookie in jar:
+        new_jar.set_cookie(copy.copy(cookie))
+    return new_jar
+
+
+def create_cookie(name, value, **kwargs):
+    """Make a cookie from underspecified parameters.
+
+    By default, the pair of `name` and `value` will be set for the domain ''
+    and sent on every request (this is sometimes called a "supercookie").
+    """
+    result = dict(
+        version=0,
+        name=name,
+        value=value,
+        port=None,
+        domain='',
+        path='/',
+        secure=False,
+        expires=None,
+        discard=True,
+        comment=None,
+        comment_url=None,
+        rest={'HttpOnly': None},
+        rfc2109=False,)
+
+    badargs = set(kwargs) - set(result)
+    if badargs:
+        err = 'create_cookie() got unexpected keyword arguments: %s'
+        raise TypeError(err % list(badargs))
+
+    result.update(kwargs)
+    result['port_specified'] = bool(result['port'])
+    result['domain_specified'] = bool(result['domain'])
+    result['domain_initial_dot'] = result['domain'].startswith('.')
+    result['path_specified'] = bool(result['path'])
+
+    return cookielib.Cookie(**result)
+
+
+def morsel_to_cookie(morsel):
+    """Convert a Morsel object into a Cookie containing the one k/v pair."""
+
+    expires = None
+    if morsel['max-age']:
+        try:
+            expires = int(time.time() + int(morsel['max-age']))
+        except ValueError:
+            raise TypeError('max-age: %s must be integer' % morsel['max-age'])
+    elif morsel['expires']:
+        time_template = '%a, %d-%b-%Y %H:%M:%S GMT'
+        expires = int(time.mktime(
+            time.strptime(morsel['expires'], time_template)) - time.timezone)
+    return create_cookie(
+        comment=morsel['comment'],
+        comment_url=bool(morsel['comment']),
+        discard=False,
+        domain=morsel['domain'],
+        expires=expires,
+        name=morsel.key,
+        path=morsel['path'],
+        port=None,
+        rest={'HttpOnly': morsel['httponly']},
+        rfc2109=False,
+        secure=bool(morsel['secure']),
+        value=morsel.value,
+        version=morsel['version'] or 0,
+    )
+
+
+def cookiejar_from_dict(cookie_dict, cookiejar=None, overwrite=True):
+    """Returns a CookieJar from a key/value dictionary.
+
+    :param cookie_dict: Dict of key/values to insert into CookieJar.
+    :param cookiejar: (optional) A cookiejar to add the cookies to.
+    :param overwrite: (optional) If False, will not replace cookies
+        already in the jar with new ones.
+    """
+    if cookiejar is None:
+        cookiejar = RequestsCookieJar()
+
+    if cookie_dict is not None:
+        names_from_jar = [cookie.name for cookie in cookiejar]
+        for name in cookie_dict:
+            if overwrite or (name not in names_from_jar):
+                cookiejar.set_cookie(create_cookie(name, cookie_dict[name]))
+
+    return cookiejar
+
+
+def merge_cookies(cookiejar, cookies):
+    """Add cookies to cookiejar and returns a merged CookieJar.
+
+    :param cookiejar: CookieJar object to add the cookies to.
+    :param cookies: Dictionary or CookieJar object to be added.
+    """
+    if not isinstance(cookiejar, cookielib.CookieJar):
+        raise ValueError('You can only merge into CookieJar')
+
+    if isinstance(cookies, dict):
+        cookiejar = cookiejar_from_dict(
+            cookies, cookiejar=cookiejar, overwrite=False)
+    elif isinstance(cookies, cookielib.CookieJar):
+        try:
+            cookiejar.update(cookies)
+        except AttributeError:
+            for cookie_in_jar in cookies:
+                cookiejar.set_cookie(cookie_in_jar)
+
+    return cookiejar
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               —Ú
+@˙Uc           @   s;  d  Z  d d k Z d d k Z d d k Z d d k l Z l Z l Z l Z y d d k	 Z	 e	 Wn e
+ j
+ o d d k Z	 n Xd e f d Ñ  É  YZ d e f d Ñ  É  YZ d	 Ñ  Z d
+ Ñ  Z d d d Ñ Z d e f d Ñ  É  YZ d e i e i f d Ñ  É  YZ d Ñ  Z d Ñ  Z d Ñ  Z d e d Ñ Z d Ñ  Z d S(   sä   
+Compatibility code to be able to use `cookielib.CookieJar` with requests.
+
+requests.utils imports from here, so be careful with imports.
+iˇˇˇˇNi   (   t	   cookielibt   urlparset
+   urlunparset   Morselt   MockRequestc           B   s°   e  Z d  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z	 d d Ñ Z d	 Ñ  Z d
+ Ñ  Z d Ñ  Z e d Ñ  É Z e d Ñ  É Z e d Ñ  É Z RS(   sÚ  Wraps a `requests.Request` to mimic a `urllib2.Request`.
+
+    The code in `cookielib.CookieJar` expects this interface in order to correctly
+    manage cookie policies, i.e., determine whether a cookie can be set, given the
+    domains of the request and the cookie.
+
+    The original request object is read-only. The client is responsible for collecting
+    the new headers via `get_new_headers()` and interpreting them appropriately. You
+    probably want `get_cookie_header`, defined below.
+    c         C   s.   | |  _  h  |  _ t |  i  i É i |  _ d  S(   N(   t   _rt   _new_headersR   t   urlt   schemet   type(   t   selft   request(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   __init__"   s    		c         C   s   |  i  S(   N(   R	   (   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   get_type'   s    c         C   s   t  |  i i É i S(   N(   R   R   R   t   netloc(   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   get_host*   s    c         C   s
+   |  i  É  S(   N(   R   (   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   get_origin_req_host-   s    c         C   sn   |  i  i i d É p |  i  i S|  i  i d } t |  i  i É } t | i | | i | i | i	 | i
+ g É S(   Nt   Host(   R   t   headerst   getR   R   R   R   t   patht   paramst   queryt   fragment(   R
+   t   hostt   parsed(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   get_full_url0   s    c         C   s   t  S(   N(   t   True(   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   is_unverifiable>   s    c         C   s    | |  i  i j p | |  i j S(   N(   R   R   R   (   R
+   t   name(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt
+   has_headerA   s    c         C   s%   |  i  i i | |  i i | | É É S(   N(   R   R   R   R   (   R
+   R   t   default(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt
+   get_headerD   s    c         C   s   t  d É Ç d S(   sM   cookielib has no legitimate use for this method; add it back if you find one.s=   Cookie headers should be added with add_unredirected_header()N(   t   NotImplementedError(   R
+   t   keyt   val(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt
+   add_headerG   s    c         C   s   | |  i  | <d  S(   N(   R   (   R
+   R   t   value(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   add_unredirected_headerK   s    c         C   s   |  i  S(   N(   R   (   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   get_new_headersN   s    c         C   s
+   |  i  É  S(   N(   R   (   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   unverifiableQ   s    c         C   s
+   |  i  É  S(   N(   R   (   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   origin_req_hostU   s    c         C   s
+   |  i  É  S(   N(   R   (   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyR   Y   s    N(   t   __name__t
+   __module__t   __doc__R   R   R   R   R   R   R   t   NoneR    R$   R&   R'   t   propertyR(   R)   R   (    (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyR      s   
+										t   MockResponsec           B   s)   e  Z d  Z d Ñ  Z d Ñ  Z d Ñ  Z RS(   s¿   Wraps a `httplib.HTTPMessage` to mimic a `urllib.addinfourl`.
+
+    ...what? Basically, expose the parsed HTTP headers from the server response
+    the way `cookielib` expects to see them.
+    c         C   s   | |  _  d S(   sÜ   Make a MockResponse for `cookielib` to read.
+
+        :param headers: a httplib.HTTPMessage or analogous carrying the headers
+        N(   t   _headers(   R
+   R   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyR   e   s    c         C   s   |  i  S(   N(   R0   (   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   infol   s    c         C   s   |  i  i | É d  S(   N(   R0   t
+   getheaders(   R
+   R   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyR2   o   s    (   R*   R+   R,   R   R1   R2   (    (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyR/   ^   s   		c         C   sQ   t  | d É o | i p d St | É } t | i i É } |  i | | É d S(   sÏ   Extract the cookies from the response into a CookieJar.
+
+    :param jar: cookielib.CookieJar (not necessarily a RequestsCookieJar)
+    :param request: our own requests.Request object
+    :param response: urllib3.HTTPResponse object
+    t   _original_responseN(   t   hasattrR3   R   R/   t   msgt   extract_cookies(   t   jarR   t   responset   reqt   res(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   extract_cookies_to_jars   s    
+c         C   s,   t  | É } |  i | É | i É  i d É S(   sO   Produce an appropriate Cookie header string to be sent with `request`, or None.t   Cookie(   R   t   add_cookie_headerR'   R   (   R7   R   t   r(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   get_cookie_headerÑ   s    c         C   sΩ   g  } xÉ |  D]{ } | i  | j oe | d j p | | i j oD | d j p | | i j o# | i | i | i | i  f É qÑ qà q q Wx* | D]" \ } } } |  i | | | É qì Wd S(   sk   Unsets a cookie by name, by default over all domains and paths.
+
+    Wraps CookieJar.clear(), is O(n).
+    N(   R   R-   t   domainR   t   appendt   clear(   t	   cookiejarR   R@   R   t
+   clearablest   cookie(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   remove_cookie_by_nameã   s     / t   CookieConflictErrorc           B   s   e  Z d  Z RS(   sû   There are two cookies that meet the criteria specified in the cookie jar.
+    Use .get and .set and include domain and path args in order to be more specific.(   R*   R+   R,   (    (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyRG   õ   s   t   RequestsCookieJarc           B   sÔ   e  Z d  Z d d d d Ñ Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z	 d Ñ  Z
+ d Ñ  Z d	 Ñ  Z d
+ Ñ  Z d Ñ  Z d d d Ñ Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d d d Ñ Z d d d Ñ Z d Ñ  Z d Ñ  Z d Ñ  Z RS(   s±  Compatibility class; is a cookielib.CookieJar, but exposes a dict
+    interface.
+
+    This is the CookieJar we create by default for requests and sessions that
+    don't specify one, since some clients may expect response.cookies and
+    session.cookies to support dict operations.
+
+    Requests does not use the dict interface internally; it's just for
+    compatibility with external client code. All requests code should work
+    out of the box with externally provided instances of ``CookieJar``, e.g.
+    ``LWPCookieJar`` and ``FileCookieJar``.
+
+    Unlike a regular CookieJar, this class is pickleable.
+
+    .. warning:: dictionary operations that are normally O(1) may be O(n).
+    c         C   s2   y |  i  | | | É SWn t j
+ o | SXd S(   s⁄   Dict-like get() that also supports optional domain and path args in
+        order to resolve naming collisions from using one cookie jar over
+        multiple domains.
+
+        .. warning:: operation is O(n), not O(1).N(   t   _find_no_duplicatest   KeyError(   R
+   R   R   R@   R   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyR   ±   s    c         K   sÄ   | d j o0 t |  | d | i d É d | i d É Éd St | t É o t | É } n t | | | ç } |  i | É | S(   sß   Dict-like set() that also supports optional domain and path args in
+        order to resolve naming collisions from using one cookie jar over
+        multiple domains.R@   R   N(   R-   RF   R   t
+   isinstanceR   t   morsel_to_cookiet   create_cookiet
+   set_cookie(   R
+   R   R%   t   kwargst   c(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   setº   s    +c         c   s#   x t  |  É D] } | i Vq Wd S(   sy   Dict-like iterkeys() that returns an iterator of names of cookies
+        from the jar. See itervalues() and iteritems().N(   t   iterR   (   R
+   RE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   iterkeysÃ   s     c         C   s   t  |  i É  É S(   sh   Dict-like keys() that returns a list of names of cookies from the
+        jar. See values() and items().(   t   listRS   (   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   keys“   s    c         c   s#   x t  |  É D] } | i Vq Wd S(   sz   Dict-like itervalues() that returns an iterator of values of cookies
+        from the jar. See iterkeys() and iteritems().N(   RR   R%   (   R
+   RE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt
+   itervalues◊   s     c         C   s   t  |  i É  É S(   si   Dict-like values() that returns a list of values of cookies from the
+        jar. See keys() and items().(   RT   RV   (   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   values›   s    c         c   s,   x% t  |  É D] } | i | i f Vq Wd S(   sz   Dict-like iteritems() that returns an iterator of name-value tuples
+        from the jar. See iterkeys() and itervalues().N(   RR   R   R%   (   R
+   RE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt	   iteritems‚   s     c         C   s   t  |  i É  É S(   s‚   Dict-like items() that returns a list of name-value tuples from the
+        jar. See keys() and values(). Allows client-code to call
+        ``dict(RequestsCookieJar)`` and get a vanilla python dict of key value
+        pairs.(   RT   RX   (   R
+   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   itemsË   s    c         C   sE   g  } x8 t  |  É D]* } | i | j o | i | i É q q W| S(   s2   Utility method to list all the domains in the jar.(   RR   R@   RA   (   R
+   t   domainsRE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   list_domainsÔ   s     c         C   sE   g  } x8 t  |  É D]* } | i | j o | i | i É q q W| S(   s0   Utility method to list all the paths in the jar.(   RR   R   RA   (   R
+   t   pathsRE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt
+   list_paths˜   s     c         C   sV   g  } xI t  |  É D]; } | i d j	 o | i | j o t S| i | i É q Wt S(   sW   Returns True if there are multiple domains in the jar.
+        Returns False otherwise.N(   RR   R@   R-   R   RA   t   False(   R
+   RZ   RE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   multiple_domainsˇ   s      c         C   so   h  } xb t  |  É D]T } | d j p | i | j o1 | d j p | i | j o | i | | i <q q W| S(   sü   Takes as an argument an optional domain and path and returns a plain
+        old Python dict of name-value pairs of cookies that meet the
+        requirements.N(   RR   R-   R@   R   R%   R   (   R
+   R@   R   t
+   dictionaryRE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   get_dict	  s     *c         C   s   |  i  | É S(   sˆ   Dict-like __getitem__() for compatibility with client code. Throws
+        exception if there are more than one cookie with name. In that case,
+        use the more explicit get() method instead.
+
+        .. warning:: operation is O(n), not O(1).(   RI   (   R
+   R   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   __getitem__  s    c         C   s   |  i  | | É d S(   s    Dict-like __setitem__ for compatibility with client code. Throws
+        exception if there is already a cookie of that name in the jar. In that
+        case, use the more explicit set() method instead.N(   RQ   (   R
+   R   R%   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   __setitem__  s    c         C   s   t  |  | É d S(   sc   Deletes a cookie given a name. Wraps ``cookielib.CookieJar``'s
+        ``remove_cookie_by_name()``.N(   RF   (   R
+   R   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   __delitem__$  s    c         O   sq   t  | i d É oB | i i d É o/ | i i d É o | i i d d É | _ n t t |  É i | | | é S(   Nt
+   startswitht   "s   \"t    (   R4   R%   Re   t   endswitht   replacet   superRH   RN   (   R
+   RE   t   argsRO   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyRN   )  s    9c         C   sX   t  | t i É o+ x> | D] } |  i t i | É É q Wn t t |  É i | É d S(   sA   Updates this jar with cookies from another CookieJar or dict-likeN(   RK   R    t	   CookieJarRN   t   copyRj   RH   t   update(   R
+   t   otherRE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyRn   .  s
+     c         C   sé   xn t  |  É D]` } | i | j oJ | d j p | i | j o) | d j p | i | j o | i Sqm q q Wt d | | | f É Ç d S(   s>  Requests uses this method internally to get cookie values. Takes as
+        args name and optional domain and path. Returns a cookie.value. If
+        there are conflicting cookies, _find arbitrarily chooses one. See
+        _find_no_duplicates if you want an exception thrown if there are
+        conflicting cookies.s   name=%r, domain=%r, path=%rN(   RR   R   R-   R@   R   R%   RJ   (   R
+   R   R@   R   RE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   _find6  s     c         C   s∆   d } xî t |  É D]Ü } | i | j op | d j p | i | j oO | d j p | i | j o. | d j	 o t d | É Ç n | i } qï qô q q W| o | St d | | | f É Ç d S(   sR  Both ``__get_item__`` and ``get`` call this function: it's never
+        used elsewhere in Requests. Takes as args name and optional domain and
+        path. Returns a cookie.value. Throws KeyError if cookie is not found
+        and CookieConflictError if there are multiple cookies that match name
+        and optionally domain and path.s(   There are multiple cookies with name, %rs   name=%r, domain=%r, path=%rN(   R-   RR   R   R@   R   RG   R%   RJ   (   R
+   R   R@   R   t   toReturnRE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyRI   D  s     c         C   s    |  i  i É  } | i d É | S(   s4   Unlike a normal CookieJar, this class is pickleable.t   _cookies_lock(   t   __dict__Rm   t   pop(   R
+   t   state(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   __getstate__W  s    c         C   s7   |  i  i | É d |  i  j o t i É  |  _ n d S(   s4   Unlike a normal CookieJar, this class is pickleable.Rr   N(   Rs   Rn   t	   threadingt   RLockRr   (   R
+   Ru   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   __setstate__^  s    c         C   s   t  É  } | i |  É | S(   s(   Return a copy of this RequestsCookieJar.(   RH   Rn   (   R
+   t   new_cj(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyRm   d  s    	N(   R*   R+   R,   R-   R   RQ   RS   RU   RV   RW   RX   RY   R[   R]   R_   Ra   Rb   Rc   Rd   RN   Rn   Rp   RI   Rv   Ry   Rm   (    (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyRH   †   s.   										
+								c         C   sq   |  d  j o d  St |  d É o |  i É  St i |  É } | i É  x$ |  D] } | i t i | É É qM W| S(   NRm   (   R-   R4   Rm   RB   RN   (   R7   t   new_jarRE   (    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyt   _copy_cookie_jark  s    
+ c         K   s  t  d d d |  d | d d d d d d	 d
+ t d d d t d d d d d h d d 6d t É } t | É t | É } | o  d } t | t | É É Ç n | i | É t | d É | d <t | d É | d <| d i	 d É | d <t | d É | d <t
+ i | ç  S(   s    Make a cookie from underspecified parameters.
+
+    By default, the pair of `name` and `value` will be set for the domain ''
+    and sent on every request (this is sometimes called a "supercookie").
+    t   versioni    R   R%   t   portR@   Rg   R   t   /t   securet   expirest   discardt   commentt   comment_urlt   restt   HttpOnlyt   rfc2109s4   create_cookie() got unexpected keyword arguments: %st   port_specifiedt   domain_specifiedt   .t   domain_initial_dott   path_specifiedN(   t   dictR-   R^   R   RQ   t	   TypeErrorRT   Rn   t   boolRe   R    R<   (   R   R%   RO   t   resultt   badargst   err(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyRM   z  s0    	c         C   s5  d } |  d oR y$ t t i É  t |  d É É } Wq§ t j
+ o t d |  d É Ç q§ XnB |  d o6 d } t t i t i |  d | É É t i É } n t d |  d d t	 |  d É d t
+ d |  d d | d	 |  i d
+ |  d
+ d d d h |  d d 6d t
+ d t	 |  d É d |  i d |  d p d É S(   sB   Convert a Morsel object into a Cookie containing the one k/v pair.s   max-ages   max-age: %s must be integerRÅ   s   %a, %d-%b-%Y %H:%M:%S GMTRÉ   RÑ   RÇ   R@   R   R   R~   RÖ   t   httponlyRÜ   Rá   RÄ   R%   R}   i    N(   R-   t   intt   timet
+   ValueErrorRé   t   mktimet   strptimet   timezoneRM   Rè   R^   R"   R%   (   t   morselRÅ   t   time_template(    (    so   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.streamengine/requests/cookies.pyRL   ù  s0    $	'
+
+	
+	c         C   sñ   | d j o t É  } n |  d j	 ok g  } | D] } | | i q2 ~ } xD |  D]8 } | p | | j o | i t | |  | É É qR qR Wn | S(   s-  Returns a CookieJar from a key/value dictionary.
+
+    :param cookie_dict: Dict of key/values to insert into CookieJar.
+    :param cookiejar: (optional) A cookiejar to add the cookies to.
+    :param overwrite: (optional) If Fal

@@ -1,0 +1,521 @@
+         title = cleantitle(name).encode('utf-8')
+            data = {'title': title, 'tvshowtitle': tvshow}
+        except:
+            pass
+        try:
+            i = cleaneptitle(tvshow, title)
+            title, season, episode = i[0].encode('utf-8'), i[1], i[2]
+            data = {'title': title, 'tvshowtitle': tvshow, 'season': season, 'episode': episode}
+        except:
+            pass
+
+        from metahandler import metahandlers
+        metaget = metahandlers.MetaData(preparezip=False)
+        tvd = metaget.get_meta('tvshow', tvshow)
+        tvd = cachemeta.get(metaget.get_meta, 24, 'tvshow', tvshow, '', '', '')
+
+        data.update({'year': tvd['year'], 'imdb_id' : tvd['imdb_id'], 'tvdb_id' : tvd['tvdb_id'], 'tvshowtitle': tvd['TVShowTitle'], 'genre' : tvd['genre'], 'studio': tvd['studio'], 'status': tvd['status'], 'duration' : tvd['duration'], 'rating': tvd['rating'], 'mpaa' : tvd['mpaa'], 'plot': tvd['plot'], 'cast': tvd['cast']})
+
+        metafanart = tvd['backdrop_url']
+        if not metafanart == '': image = fanart = metafanart
+    except:
+        pass
+
+    for i in range(0, len(match)):
+        url = match[i]
+        label = '%s %s %s' % (name, control.lang(30704).encode('utf-8'), str(i+1))
+        addDirectoryItem(label, url, 'resolveUrl', image, image, fanart, '0', content, data, isFolder=False)
+
+    control.directory(int(sys.argv[1]), cacheToDisc=True)
+
+
+def getSearch():
+    addDirectoryItem('%s...' % control.lang(30702).encode('utf-8'), '0', 'searchDirectory', '0', '0', '0', '0', '0', {})
+    addDirectoryItem(control.lang(30703).encode('utf-8'), '0', 'clearSearch', '0', '0', '0', '0', '0', {})
+
+    try:
+        def search(): return
+        result = cache.get(search, 600000000, table='rel_srch')
+        for q in result:
+                try: addDirectoryItem('%s...' % q, q, 'searchDirectory2', '0', '0', '0', '0', '0', {})
+                except: pass
+    except:
+        pass
+
+    control.directory(int(sys.argv[1]), cacheToDisc=True)
+
+
+def searchDirectory(query=None):
+    if (query == None or query == ''):
+        keyboard = control.keyboard('', control.lang(30702).encode('utf-8'))
+        keyboard.doModal()
+        if not (keyboard.isConfirmed()): return
+        query = keyboard.getText()
+
+    if (query == None or query == ''): return
+
+    def search(): return [query]
+    result = cache.get(search, 600000000, table='rel_srch')
+    def search(): return [x for y,x in enumerate((result + [query])) if x not in (result + [query])[:y]]
+    result = cache.get(search, 0, table='rel_srch')
+
+
+    global global_search ; global_search = []
+
+    def worker(url): global_search.append(str(client.request(url)))
+
+    servers = client.request(phLink)
+    servers = str(servers).replace('\n','')
+    servers = re.findall('</name><link>(.+?)</link>', servers)
+    servers = [urlparse.urlparse(i).netloc for i in servers]
+    servers = [phSearch % i for i in servers if not 'mecca' in i]
+
+    threads = []
+    for server in servers: threads.append(workers.Thread(worker, server))
+    [i.start() for i in threads]
+    [i.join() for i in threads]
+
+    urls = global_search ; global_search = []
+    urls = [str(i).replace('\n','') for i in urls]
+    urls = [re.findall('<link>(.+?)</link>', i)[:30] for i in urls]
+    urls = sum(urls, [])
+
+    threads = []
+    for url in urls: threads.append(workers.Thread(worker, url))
+    [i.start() for i in threads]
+    [i.join() for i in threads]
+
+    links = global_search ; global_search = []
+
+    for link in links:
+        try:
+            link = str(link).replace('\r','').replace('\n','').replace('\t','').replace('&nbsp;','')
+
+            try: fanart = re.findall('<fanart>(.+?)</fanart>', link)[0]
+            except: fanart = '0'
+
+            try: vip = re.findall('<poster>(.+?)</poster>', link)[0]
+            except: vip = ''
+
+            if vip == 'Team Phoenix': vip = ''
+
+            try: content = re.findall('<meta>(.+?)</meta>', link)[0]
+            except: content = '0'
+
+            try: tvshow = re.findall('<tvshow>(.+?)</tvshow>', link)[0]
+            except: tvshow = '0'
+
+            if content in ['seasons', 'episodes'] and tvshow == '0':
+                content = '0'
+
+
+            dirs = re.compile('<dir>(.+?)</dir>').findall(link)
+
+            for dir in dirs:
+                try:
+                    data = {}
+
+                    name = re.findall('<name>(.+?)</name>', dir)[0]
+                    name = cleantitle(name)
+
+                    if not query.lower() in name.lower() : raise Exception()
+
+                    url = re.findall('<link>(.+?)</link>', dir)[0]
+
+                    try: image = re.findall('<thumbnail>(.+?)</thumbnail>', dir)[0]
+                    except: image = '0'
+
+                    try: fanart2 = re.findall('<fanart>(.+?)</fanart>', dir)[0]
+                    except: fanart2 = fanart
+
+                    if content =='tvshows':
+                        try:
+                            title = cleantitle(name).encode('utf-8')
+                            data = {'title': title, 'tvshowtitle': title}
+                        except:
+                            pass
+
+                    if re.search('[a-zA-Z]', vip): name += ' [COLOR orange]%s[/COLOR]' % vip
+
+                    addDirectoryItem(name, url, 'ndmode', image, image, fanart2, '0', content, data)
+                except:
+                    pass
+
+
+            items = re.compile('<item>(.+?)</item>').findall(link)
+
+            for item in items:
+                try:
+
+                    data = {}
+
+                    name = re.findall('<title>(.+?)</title>', item)[0]
+                    name = cleantitle(name)
+
+                    if not query.lower() in name.lower() : raise Exception()
+
+                    url = re.findall('<link>(.+?)</link>', item)[0]
+
+                    try: image = re.findall('<thumbnail>(.+?)</thumbnail>', item)[0]
+                    except: image = '0'
+
+                    try: fanart2 = re.findall('<fanart>(.+?)</fanart>', item)[0]
+                    except: fanart2 = fanart
+
+                    if content =='movies':
+                        try:
+                            title = cleantitle(name).encode('utf-8')
+                            data = {'title': title}
+
+                            title, year = re.compile('(.+?)[(](\d{4})[)]').findall(name)[0]
+                            title = cleantitle(title).encode('utf-8')
+                            data = {'title': title, 'year': year}
+                        except:
+                            pass
+
+                    if re.search('[a-zA-Z]', vip): name += ' [COLOR orange]%s[/COLOR]' % vip
+
+                    if 'sublink' in url:
+                        addDirectoryItem(name, url, 'subDirectory', image, image, fanart2, '0', content, data, isFolder=True)
+                    else:
+                        addDirectoryItem(name, url, 'resolveUrl', image, image, fanart2, '0', content, data, isFolder=False)
+                except:
+                    pass
+        except:
+            pass
+
+    control.directory(int(sys.argv[1]), cacheToDisc=True)
+
+
+def clearSearch():
+    cache.clear('rel_srch')
+    control.refresh()
+
+
+def resolveUrl(name, url, audio, image, fanart, playable, content):
+    try:
+        if '.f4m'in url:
+            label = cleantitle(name)
+            ext = url.split('?')[0].split('&')[0].split('|')[0].rsplit('.')[-1].replace('/', '').lower()
+            if not ext == 'f4m': raise Exception()
+            from resources.lib.libraries.f4mproxy.F4mProxy import f4mProxyHelper
+            return f4mProxyHelper().playF4mLink(url, label, None, None,'',image)
+
+
+        #legacy issue, will be removed later
+        if 'afdah.org' in url and not '</source>' in url: url += '<source>afdah</source>'
+
+        if '</source>' in url:
+            source = re.compile('<source>(.+?)</source>').findall(url)[0]
+            url = re.compile('(.+?)<source>').findall(url)[0]
+
+            for i in ['_mv', '_tv', '_mv_tv']:
+                try: call = __import__('resources.lib.sources.%s%s' % (source, i), globals(), locals(), ['object'], -1).source()
+                except: pass
+
+            from resources.lib import sources ; d = sources.sources()
+
+            url = call.get_sources(url, d.hosthdfullDict, d.hostsdfullDict, d.hostlocDict)
+
+            if type(url) == list and len(url) == 1:
+                url = url[0]['url']
+
+            elif type(url) == list:
+                url = sorted(url, key=lambda k: k['quality'])
+                for i in url: i.update((k, '720p') for k, v in i.iteritems() if v == 'HD')
+                for i in url: i.update((k, '480p') for k, v in i.iteritems() if v == 'SD')
+                q = ['[B]%s[/B] | %s' % (i['source'].upper(), i['quality'].upper()) for i in url]
+                u = [i['url'] for i in url]
+                select = control.selectDialog(q)
+                if select == -1: return
+                url = u[select]
+
+            url = call.resolve(url)
+
+
+        from resources.lib import resolvers
+        host = (urlparse.urlparse(url).netloc).rsplit('.', 1)[0].rsplit('.')[-1]
+        url = resolvers.request(url)
+
+        if type(url) == list and len(url) == 1:
+            url = url[0]['url']
+
+        elif type(url) == list:
+            url = sorted(url, key=lambda k: k['quality'])
+            for i in url: i.update((k, '720p') for k, v in i.iteritems() if v == 'HD')
+            for i in url: i.update((k, '480p') for k, v in i.iteritems() if v == 'SD')
+            q = ['[B]%s[/B] | %s' % (host.upper(), i['quality'].upper()) for i in url]
+            u = [i['url'] for i in url]
+            select = control.selectDialog(q)
+            if select == -1: return
+            url = u[select]
+
+        if url == None: raise Exception()
+    except:
+        return control.infoDialog(control.lang(30705).encode('utf-8'))
+        pass
+
+
+    if playable == 'true':
+        item = control.item(path=url)
+        return control.resolve(int(sys.argv[1]), True, item)
+    else:
+        label = cleantitle(name)
+        item = control.item(path=url, iconImage=image, thumbnailImage=image)
+        item.setInfo( type='Video', infoLabels = {'title': label} )
+        control.playlist.clear()
+        control.player.play(url, item)
+
+
+def addCategoryItem(name, action, image, isFolder=True):
+    u = '%s?action=%s' % (sys.argv[0], str(action))
+    image = control.addonInfo('path') + '/resources/media/phstreams/' + image
+    item = control.item(name, iconImage=image, thumbnailImage=image)
+    item.addContextMenuItems([], replaceItems=False)
+    item.setProperty('Fanart_Image', control.addonInfo('fanart'))
+    control.addItem(handle=int(sys.argv[1]),url=u,listitem=item,isFolder=isFolder)
+
+
+def addDirectoryItem(name, url, action, image, image2, fanart, audio, content, data, tvshow='0', totalItems=0, isFolder=True):
+    if not str(image).lower().startswith('http'): image = control.addonInfo('icon')
+
+    if not str(image2).lower().startswith('http'): image2 = control.addonInfo('icon')
+
+    if not str(fanart).lower().startswith('http'): fanart = control.addonInfo('fanart')
+
+    if content in ['movies', 'episodes']: playable = 'true'
+    else: playable = 'false'
+
+    sysaddon = sys.argv[0]
+
+    u = '%s?name=%s&url=%s&audio=%s&image=%s&fanart=%s&playable=%s&tvshow=%s&content=%s&action=%s' % (sysaddon, urllib.quote_plus(name), urllib.quote_plus(url), urllib.quote_plus(audio), urllib.quote_plus(image), urllib.quote_plus(fanart), urllib.quote_plus(playable), str(tvshow), str(content), str(action))
+
+    cm = []
+
+    if content in ['movies', 'tvshows']:
+        data.update({'trailer': '%s?action=trailer&name=%s' % (sysaddon, urllib.quote_plus(name))})
+        cm.append((control.lang(30707).encode('utf-8'), 'RunPlugin(%s?action=trailer&name=%s)' % (sysaddon, urllib.quote_plus(name))))
+
+    if not 'plot' in data:
+        data.update({'plot': control.lang(30706).encode('utf-8')})
+
+
+    if content == 'movies':
+        cm.append((control.lang(30708).encode('utf-8'), 'XBMC.Action(Info)'))
+    elif content in ['tvshows', 'seasons']:
+        cm.append((control.lang(30709).encode('utf-8'), 'XBMC.Action(Info)'))
+    elif content == 'episodes':
+        cm.append((control.lang(30710).encode('utf-8'), 'XBMC.Action(Info)'))
+
+
+    if content == 'movies' and not isFolder == True:
+        downloadFile = name
+        try: downloadFile = '%s (%s)' % (data['title'], data['year'])
+        except: pass
+        cm.append((control.lang(30722).encode('utf-8'), 'RunPlugin(%s?action=addDownload&name=%s&url=%s&image=%s)' % (sysaddon, urllib.quote_plus(downloadFile), urllib.quote_plus(url), urllib.quote_plus(image))))
+
+    elif content == 'episodes' and not isFolder == True:
+        downloadFile = name
+        try: downloadFile = '%s S%02dE%02d' % (data['tvshowtitle'], int(data['season']), int(data['episode']))
+        except: pass
+        cm.append((control.lang(30722).encode('utf-8'), 'RunPlugin(%s?action=addDownload&name=%s&url=%s&image=%s)' % (sysaddon, urllib.quote_plus(downloadFile), urllib.quote_plus(url), urllib.quote_plus(image))))
+
+
+    if content == 'movies':
+        cm.append((control.lang(30711).encode('utf-8'), 'RunPlugin(%s?action=addView&content=movies)' % sysaddon))
+    elif content == 'tvshows':
+        cm.append((control.lang(30712).encode('utf-8'), 'RunPlugin(%s?action=addView&content=tvshows)' % sysaddon))
+    elif content == 'seasons':
+        cm.append((control.lang(30713).encode('utf-8'), 'RunPlugin(%s?action=addView&content=seasons)' % sysaddon))
+    elif content == 'episodes':
+        cm.append((control.lang(30714).encode('utf-8'), 'RunPlugin(%s?action=addView&content=episodes)' % sysaddon))
+
+
+    item = control.item(name, iconImage='DefaultFolder.png', thumbnailImage=image)
+    try: item.setArt({'poster': image2, 'tvshow.poster': image2, 'season.poster': image2, 'banner': image, 'tvshow.banner': image, 'season.banner': image})
+    except: pass
+    item.addContextMenuItems(cm, replaceItems=False)
+    item.setProperty('Fanart_Image', fanart)
+    if playable == 'true': item.setProperty('IsPlayable', 'true')
+    item.setInfo(type='Video', infoLabels=data)
+
+    control.addItem(handle=int(sys.argv[1]),url=u,listitem=item,totalItems=totalItems,isFolder=isFolder)
+
+
+def endCategory():
+    if control.skin == 'skin.confluence': control.execute('Container.SetViewMode(500)')
+    control.directory(int(sys.argv[1]), cacheToDisc=True)
+
+
+def endDirectory(content, close):
+    if content in ['movies', 'tvshows', 'seasons', 'episodes']:
+        control.content(int(sys.argv[1]), content)
+
+    if close == True: control.directory(int(sys.argv[1]), cacheToDisc=True)
+
+    if close == True and content in ['movies', 'tvshows', 'seasons', 'episodes']:
+        views.setView(content)
+
+
+def cleantitle(name):
+    name = re.sub('(\.|\_|\(|\[|\s)(Link \d*|link \d*)(\.|\_|\)|\]|$)', '', name)
+    name = re.sub('\(\d{4}.+?\d{4}\)$', '', name)
+    name = re.sub('\s\[COLOR.+?\].+?\[/COLOR\]|\[/COLOR\]\[COLOR.+?\]\s.+?\[/COLOR\]|\[COLOR.+?\]|\[/COLOR\]', '', name)
+    name = re.sub('\s\s+', ' ', name)
+    name = name.strip()
+    return name
+
+
+def cleaneptitle(tvshow, name):
+    try:
+        p = re.compile('(S\d*E\d*)').findall(name)
+        p += re.compile('(s\d*e\d*)').findall(name)
+        p += re.compile('(Season \d* Episode \d*)').findall(name)
+        p += re.compile('(\d*x Episode \d*)').findall(name)
+        p += re.compile('(\d*x\d*)').findall(name)
+        p = p[0]
+
+        name = name.replace(tvshow, '').replace(p, '')
+        name = re.sub('-|:', '', name)
+        name = re.sub('\s\s+', ' ', name)
+        name = name.strip()
+
+        season = re.compile('(\d*)').findall(p)
+        season = [i for i in season if i.isdigit()][0]
+        season = '%01d' % int(season)
+
+        episode = re.compile('(\d*)').findall(p)
+        episode = [i for i in episode if i.isdigit()][-1]
+        episode = '%01d' % int(episode)
+
+        if re.match('[A-Z0-9]', name) == None:
+            name = '%s S%02dE%02d' % (tvshow, int(season), int(episode))
+
+        return (name, season, episode)
+    except:
+        return
+
+
+                                                                                                                                                                                                                                                                                                                                       Û
+G∫ìVc           @   sQ  d  Z  d d l Z d d l Z d d l Z d d l Z d d l Z d d l m Z d d l m Z d d l m	 Z	 d d l m
+ Z
+ d d l m Z d d l m Z d	 Z d
+ Z d Z d Z d Ñ  Z d Ñ  Z e e d Ñ Z d Ñ  Z d Ñ  Z d d Ñ Z d Ñ  Z d Ñ  Z e d Ñ Z d d e d Ñ Z d Ñ  Z d Ñ  Z d Ñ  Z  d Ñ  Z! d S(   s·  
+    Phoenix Add-on
+    Copyright (C) 2015 Blazetamer
+    Copyright (C) 2015 lambda
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+iˇˇˇˇN(   t   cache(   t	   cachemeta(   t   control(   t   client(   t   workers(   t   viewss(   http://mecca.watchkodi.com/phstreams.xmls#   http://mecca.watchkodi.com/news.xmls   http://%s/search/search.xmls   testings.xmlc        
+   C   s  t  d t d d d d d d t Ét d d d É t d d d É t d	 d
+ d É t d d t d É t t j d É j d É d d É t t j d É j d É d d É t t j d É j d É d d É t t j	 t j
+ É d k r˚ t d d d É n  t É  d  S(   Nt   0t   closes	   VinMan FMt   radioDirectorys
+   radios.pngs   Cartoon Crazyt   CartoonDirectorys   cartoon.pngt   NHLt   nhlDirectorys
+   hockey.jpgs   News Updatess   dmode&url=%ss   news.gifiÌw  s   utf-8t   openSettingss   settings.pngix  t
+   downloaders   downloader.pngiÓw  t   searchs
+   search.pngi   t   Testingst   localDirectorys   home.png(   t   getDirectoryt   phLinkt   Falset   addCategoryItemt   phNewsR   t   langt   encodet   phTestt   listDirt   dataPatht   endCategory(    (    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyt   getCategory'   s    """" c        
+   C   s8   t  d t j j t j t É d d d d d d t Éd  S(   NR   t   local(   R   t   ost   patht   joinR   R   R   t   True(    (    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyR   6   s    c	   .         sz  | t  k r4 t j | É }	 |	 j É  }
+ |	 j É  n t j t j d | É }
+ t	 |
+ É j
+ d d É j
+ d d É j
+ d d É j
+ d d É }
+ y t j d |
+ É d } Wn d } n Xy`t j d	 É j |
+ É d } t j d
+ |
+ É d } t j d | É st É  Ç n  á  f d Ü  } t j | d | d d É} t j d | É d â  à  j É  s]t É  Ç n  | | à  k ryt É  Ç n  d | } t j d | É d } t j d | É d } t j d | É d } t j | d | d d É} t j j t	 | É t	 | É t	 | É t	 | É É Wn n Xt j d É j |
+ É } x~ | D]v } yf t j d | É d }  y t j d | É d } Wn d } n Xt |  d d | | | d d i  É	 Wq;q;Xq;Wt j d É j |
+ É } xæ | D]∂ } y¶ t j d | É d }  t j d | É d } y t j d | É d } Wn d } n Xy t j d | É d } Wn d } n Xt |  | d | | | | d i  É	 Wq‘q‘Xq‘Wt j d É j |
+ É } x_ | D]W \ }  } } } t j d | É r‚|  d | 7}  n  t |  | d  | | | d d i  É	 q≠Wt j d! É j |
+ É } xK | D]C \ }  } } } | t k s't |  | | | | | d d i  É	 q'q'Wt } y t j d" |
+ É d } Wn d } n Xy t j d# |
+ É d } Wn d } n X| dQ k rÈ| d k rÈd } n  | dR k rIt j d( É d) k rIy, d* d+ l m } | j d, t É } t  } Wq≤t } q≤Xni | dS k r≤yJ d* d+ l m } | j d, t É } t j | j d- d. | d d d É } Wq≤i  } q≤Xn  t j d/ É j |
+ É } t | É }  x| D]}! yˇi  }" t j d |! É d }  t j d0 |! É d } y t j d |! É d } Wn d } n Xy t j d |! É d }# Wn | }# n X| t  k r| d' k ryp t |  É j d1 É } i | d2 6| d3 6}" t j | j d- d. | d d d É }" |" d4 }$ |$ d k sÛ|$ }# n  WqπqπXn∏ | d' k rGy- t |  É j d1 É } i | d2 6| d3 6}" WqπqπXnr | d$ k rπyY t | É j d1 É } i | d2 6| d3 6}" |" j | É | d4 }$ |$ d k s´|$ }# n  WqπqπXn  t |  | d  | | |# d | |" d5 |  É	Wq›q›Xq›Wt j d6 É j |
+ É }% y t j d7 |
+ É d }& Wn d }& n X|& d8 k rMt  |% É }% n  t |% É }  x|% D]}' yıi  }" t j d9 |' É d }  t j d0 |' É d } y t j d |' É d } }( Wn d } }( n Xy t j d |' É d }# Wn | }# n X| t  k rÔ	| d& k rÔ	y” t |  É j d1 É } i | d2 6}" t j d: É j |  É d \ } }) t | É j d1 É } i | d2 6|) d; 6}" t j | j d- d< | d d |) É }" |" d= }* |* d k s¬	|* } n  |" d4 }$ |$ d k s·	|$ }# n  WqÈqÈXn˙| d& k ry
+yq t |  É j d1 É } i | d2 6}" t j d: É j |  É d \ } }) t | É j d1 É } i | d2 6|) d; 6}" WqÈqÈXnp| d% k rÈy- t |  É j d1 É } i | d2 6| d3 6}" Wn n Xy^ t! | | É }+ |+ d j d1 É |+ d> |+ d? } }, }- i | d2 6| d3 6|, d@ 6|- dA 6}" Wn n Xy∏ |" j i | d; d; 6| dB dB 6| dC dC 6| dD d3 6| dE dE 6| dF dF 6| dG dG 6| dH dH 6| dI dI 6| dJ dJ 6| dK dK 6| dL dL 6É | d4 }$ |$ d k s€|$ } }# n  WqÈqÈXn  dM | k r,t |  | dN | |( |# d | |" d. | d5 |  dO t  É	n. t |  | dP | |( |# d | |" d5 |  dO t É	Wq`q`Xq`Wt" | | É d  S(T   Ni    s   t    s   
+s   	s   &nbsp;s   <fanart>(.+?)</fanart>R   s   <notify>(.+?)</notify>s   <poster>(.+?)</poster>s   [a-zA-Z]c            s   |  à  S(   N(    (   t   vip(   t   version(    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyt   messageL   s    i F√#t   tablet   rel_vips   <new>(.+?)</new>s   [B]Announcement From %s![/B]s   <message1>(.+?)</message1>s   <message2>(.+?)</message2>s   <message3>(.+?)</message3>s   <info>(.+?)</info>s   <message>(.+?)</message>s   <thumbnail>(.+?)</thumbnail>s   <popup>(.+?)</popup>s   <name>(.+?)</name>s   <popImage>(.+?)</popImage>s   <sound>(.+?)</sound>t
+   openDialogsZ   <name>([^<]+)</name><link>([^<]+)</link><thumbnail>([^<]+)</thumbnail><date>([^<]+)</date>s   \d+s    [COLOR red] Updated %s[/COLOR]t   ndmodesZ   <name>([^<]+)</name><link>([^<]+)</link><thumbnail>([^<]+)</thumbnail><mode>([^<]+)</mode>s   <meta>(.+?)</meta>s   <tvshow>(.+?)</tvshow>t   seasonst   episodest   moviest   tvshowst   metat   trueiˇˇˇˇ(   t   metahandlerst
+   preparezipi   t   tvshows   <dir>(.+?)</dir>s   <link>(.+?)</link>s   utf-8t   titlet   tvshowtitlet   backdrop_urlt
+   totalItemss   <item>(.+?)</item>s   <sort>(.+?)</sort>t   yess   <title>(.+?)</title>s   (.+?)[(](\d{4})[)]t   yeart   moviet	   cover_urli   i   t   seasont   episodet   imdb_idt   tvdb_idt   TVShowTitlet   genret   studiot   statust   durationt   ratingt   mpaat   plott   castt   sublinkt   subDirectoryt   isFoldert
+   resolveUrl(   s   seasonss   episodes(   s   moviess   tvshows(   s   seasonss   episodes(#   R!   R   t   openFilet   readR   R    t   getR   t   requestt   strt   replacet   ret   findallt   compileR   t	   Exceptiont   isdigitt   dialogt   okt   addDirectoryItemR   R   t   settingt   metahandlerR0   t   MetaDataR   t   get_metat   lent
+   cleantitleR   t   updatet   sortedt   cleaneptitlet   endDirectory(.   t   namet   urlt   audiot   imaget   fanartt   playablet   contentR   R   t   ft   resultt   notifyR#   R%   t   checkR3   t   msg1t   msg2t   msg3t   infost   infot   popupst   popupt   specialt   datet   actionR.   R2   R0   t   metagett   tvdt   dirsR6   t   dirt   datat   fanart2t
+   metafanartt   itemst   sortt   itemt   image2R8   t	   metaimaget   iR;   R<   (    (   R$   se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyR   :   sú     <  
+   
+5  
+&  
+  
+& & )  
+  
+	!
+(  
+  
+$
+ 
+ ,  
+     
+"$
+ 	
+ ")&ë
+ 72c         C   s¯  t  j d É j | É } t | É d k r. d  Sy& t |  É j d É }	 i |	 d 6}
+ Wn n Xy| d k sy t É  Ç n  t |  É j d É }	 i |	 d 6}
+ t  j d É j |  É d \ }	 } t |	 É j d É }	 i |	 d 6| d 6}
+ d d	 l m } | j	 d
+ t
+ É } t j | j d d |	 d d | É }
+ |
+ d } | d k sK| } n  |
+ d } | d k sj| } n  Wn n Xy‘| d k rù| d k rùt É  Ç n  y- t |  É j d É }	 i |	 d 6| d 6}
+ Wn n Xy^ t | |	 É } | d j d É | d | d }	 } } i |	 d 6| d 6| d 6| d 6}
+ Wn n Xd d	 l m } | j	 d
+ t
+ É } | j d | É } t j | j d d | d d d É } |
+ j i | d d 6| d d 6| d d 6| d d 6| d d 6| d d 6| d d 6| d d 6| d d 6| d  d  6| d! d! 6| d" d" 6É | d } | d k sH| } } n  Wn n Xx~ t d t | É É D]g } | | } d# |  t j d$ É j d É t | d É f } t | | d% | | | d | |
+ d& t
+ É	qiWt j t t j d É d' t Éd  S((   Ns   <sublink>(.+?)</sublink>i    s   utf-8R3   R,   s   (.+?)[(](\d{4})[)]R8   iˇˇˇˇ(   R0   R1   i   R9   R"   R:   R5   R   R+   R4   i   i   R;   R<   R2   R=   R>   R?   R@   RA   RB   RC   RD   RE   RF   RG   s   %s %s %siw  RK   RJ   t   cacheToDisc(   RR   RT   RS   R^   R_   R   RU   R[   R0   R\   R   R   RN   R]   Rb   R`   t   rangeR   R   RP   RY   t	   directoryt   intt   syst   argvR!   (   Rd   Re   Rf   Rg   Rh   Ri   R2   Rj   t   matchR3   R}   R8   R0   Ry   RÑ   R   RÖ   R;   R<   Rz   t   label(    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyRI   3  sp      "$
+ 	
+  )&$ë
+ 
+/,c          C   s  t  d t j d É j d É d d d d d d d i  É	 t  t j d É j d É d d d d d d d i  É	 yj d Ñ  }  t j |  d	 d
+ d É} xB | D]: } y* t  d | | d d d d d d i  É	 Wqó qó Xqó WWn n Xt j t t j	 d É d t
+ Éd  S(   Ns   %s...iÓw  s   utf-8R   t   searchDirectoryiÔw  t   clearSearchc           S   s   d  S(   N(    (    (    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyR   |  s    i F√#R&   t   rel_srcht   searchDirectory2i   RÜ   (   RY   R   R   R   R    RN   Rà   Râ   Rä   Rã   R!   (   R   Rl   t   q(    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyt	   getSearchw  s    84	 * c            sÖ  à  d  k s à  d k re t j d t j d É j d É É } | j É  | j É  sV d  S| j É  â  n  à  d  k s} à  d k rÅ d  Sá  f d Ü  } t j	 | d d d Éâ á  á f d Ü  } t j	 | d	 d d Éâ g  a
+ d
+ Ñ  } t j t É } t | É j d d É } t j d | É } g  | D] } t j | É j ^ q!} g  | D] } d | k rFt | ^ qF} g  } x' | D] } | j t j | | É É quWg  | D] } | j É  ^ qüg  | D] } | j É  ^ qºt
+ } g  a
+ g  | D] } t | É j d d É ^ qÂ} g  | D] } t j d | É d  ^ q} t | g  É } g  } x' | D] }	 | j t j | |	 É É qNWg  | D] } | j É  ^ qxg  | D] } | j É  ^ qït
+ }
+ g  a
+ xß|
+ D]ü} yèt | É j d d É j d d É j d d É j d d É } y t j d | É d	 } Wn d } n Xy t j d | É d	 } Wn d } n X| d k rld } n  y t j d | É d	 } Wn d } n Xy t j d | É d	 } Wn d } n X| d/ k r·| d k r·d } n  t j d É j | É } x]| D]U} yEi  } t j d | É d	 } t | É } à  j É  | j É  k rUt É  Ç n  t j d | É d	 }	 y t j d | É d	 } Wn d } n Xy t j d | É d	 } Wn | } n X| d k ry- t | É j d É } i | d 6| d  6} WqqXn  t j d! | É r(| d" | 7} n  t  | |	 d# | | | d | | É	 Wq q Xq Wt j d$ É j | É } xﬁ| D]÷} y∆i  } t j d% | É d	 } t | É } à  j É  | j É  k rÕt É  Ç n  t j d | É d	 }	 y t j d | É d	 } Wn d } n Xy t j d | É d	 } Wn | } n X| d& k r¡yq t | É j d É } i | d 6} t j d' É j | É d	 \ } } t | É j d É } i | d 6| d( 6} Wq¡q¡Xn  t j d! | É r‰| d" | 7} n  d) |	 k rt  | |	 d* | | | d | | d+ t! É	n( t  | |	 d, | | | d | | d+ t" É	WqxqxXqxWWqæqæXqæWt j# t$ t% j& d- É d. t! Éd  S(0   NR"   iÓw  s   utf-8c              s   à  g S(   N(    (    (   t   query(    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyR   ê  s    i F√#R&   Rê   c             sA   g  t  à à  g É D]) \ }  } | à à  g |   k r | ^ q S(   N(   t	   enumerate(   t   yt   x(   Rî   Rl   (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyR   í  s    i    c         S   s    t  j t t j |  É É É d  S(   N(   t   global_searcht   appendRP   R   RO   (   Re   (    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyt   workerò  s    s   
+s   </name><link>(.+?)</link>t   meccas   <link>(.+?)</link>i   s   s   	s   &nbsp;s   <fanart>(.+?)</fanart>R   s   <poster>(.+?)</poster>s   Team Phoenixs   <meta>(.+?)</meta>s   <tvshow>(.+?)</tvshow>R*   R+   s   <dir>(.+?)</dir>s   <name>(.+?)</name>s   <thumbnail>(.+?)</thumbnail>R-   R3   R4   s   [a-zA-Z]s    [COLOR orange]%s[/COLOR]R)   s   <item>(.+?)</item>s   <title>(.+?)</title>R,   s   (.+?)[(](\d{4})[)]R8   RH   RI   RJ   RK   i   RÜ   (   s   seasonss   episodes('   t   NoneR   t   keyboardR   R   t   doModalt   isConfirmedt   getTextR    RN   Rò   R   RO   R   RP   RQ   RR   RS   t   urlparset   netloct   phSearchRô   R   t   Threadt   startR    t   sumRT   R_   t   lowerRU   R   RY   R!   R   Rà   Râ   Rä   Rã   (   Rî   Rù   R   Rö   t   serversRÖ   t   threadst   servert   urlsRe   t   linkst   linkRh   R#   Rj   R2   R{   R|   R}   Rd   Rg   R~   R3   RÄ   RÇ   R8   (    (   Rî   Rl   se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyRé   á  sˆ    $
+  	%)  +)  <  
+  
+ 	  
+  
+	   
+  
+ &   
+  
+" +,c           C   s   t  j d É t j É  d  S(   NRê   (   R    t   clearR   t   refresh(    (    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyRè     s    c         C   sa  yíd | k rÆ t  |  É } | j d É d j d É d j d É d j d É d j d d	 É j É  } | d
+ k s t É  Ç n  d d l m }	 |	 É  j | | d  d  d	 | É Sd | k r” d | k r” | d 7} n  d | k r˜t
+ j d É j | É d }
+ t
+ j d É j | É d } xV d d d g D]E } y5 t d |
+ | f t É  t É  d g d É j É  } Wq'q'Xq'Wd d l m } | j É  } | j | | j | j | j É } t | É t k r‚t | É d k r‚| d d } nt | É t k rÂt | d d Ñ  É} x+ | D]# } | j d Ñ  | j É  DÉ É qWx+ | D]# } | j d Ñ  | j É  DÉ É q>Wg  | D]* } d | d j É  | d j É  f ^ ql} g  | D] } | d ^ q£} t j | É } | d k rÿd  S| | } n  | j  | É } n  d d  l m! } t" j" | É j# j d d É d j d É d } | j$ | É } t | É t k rzt | É d k rz| d d } nˇ t | É t k ryt | d d! Ñ  É} x+ | D]# } | j d" Ñ  | j É  DÉ É q®Wx+ | D]# } | j d# Ñ  | j É  DÉ É q÷Wg  | D]& } d | j É  | d j É  f ^ q} g  | D] } | d ^ q7} t j | É } | d k rld  S| | } n  | d  k rët É  Ç n  Wn# t j% t j& d$ É j' d% É É SX| d& k rˆt j( d' | É } t j  t) t* j+ d É t, | É St  |  É } t j( d' | d( | d) | É } | j- d* d+ d, i | d- 6É t j. j/ É  t j0 j1 | | É d  S(.   Ns   .f4mt   ?i    t   &t   |t   .iˇˇˇˇt   /R"   t   f4m(   t   f4mProxyHelpers	   afdah.orgs	   </source>s   <source>afdah</source>s   <source>(.+?)</source>s   (.+?)<source>t   _mvt   _tvt   _mv_tvs   resources.lib.sources.%s%st   object(   t   sourcesi   Re   t   keyc         S   s   |  d S(   Nt   quality(    (   t   k(    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyt   <lambda>7  s    c         s   s-   |  ]# \ } } | d  k r | d f Vq d S(   t   HDt   720pN(    (   t   .0Ræ   t   v(    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pys	   <genexpr>8  s    c         s   s-   |  ]# \ } } | d  k r | d f Vq d S(   t   SDt   480pN(    (   R¬   Ræ   R√   (    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pys	   <genexpr>9  s    s   [B]%s[/B] | %st   sourceRΩ   (   t	   resolversc         S   s   |  d S(   NRΩ   (    (   Ræ   (    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pyRø   K  s    c         s   s-   |  ]# \ } } | d  k r | d f Vq d S(   R¿   R¡   N(    (   R¬   Ræ   R√   (    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pys	   <genexpr>L  s    c         s   s-   |  ]# \ } } | d  k r | d f Vq d S(   Rƒ   R≈   N(    (   R¬   Ræ   R√   (    (    se   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.phstreams\resources\lib\indexers\phstreams.pys	   <genexpr>M  s    iÒw  s   utf-8R/   R   t	   iconImaget   thumbnailImaget   typet   Videot
+   infoLabelsR3   (2   R_   t   splitt   rsplitRQ   Rß   RU   t)   resources.lib.libraries.f4mproxy.F4mProxyR∂   t   playF4mLinkRú   RR   RT   RS   t
+   __import__t   globalst   localsR∆   t   resources.libRª   t   get_sourcest   hosthdfullDictt   hostsdfullDictt   hostlocDictR    t   listR^   Ra   R`   t	   iteritemst   upperR   t   selectDialogt   resolveR«   R°   R¢   RO   t
+   infoDialogR   R   RÇ   Râ   Rä   Rã   R!   t   setInfot   playlistRÆ   t   playert   play

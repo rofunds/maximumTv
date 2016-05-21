@@ -1,0 +1,267 @@
+gram in object code or executable form with such
+    an offer, in accord with Subsection b above.)
+
+The source code for a work means the preferred form of the work for
+making modifications to it.  For an executable work, complete source
+code means all the source code for all modules it contains, plus any
+associated interface definition files, plus the scripts used to
+control compilation and installation of the executable.  However, as a
+special exception, the source code distributed need not include
+anything that is normally distributed (in either source or binary
+form) with the major components (compiler, kernel, and so on) of the
+operating system on which the executable runs, unless that component
+itself accompanies the executable.
+
+If distribution of executable or object code is made by offering
+access to copy from a designated place, then offering equivalent
+access to copy the source code from the same place counts as
+distribution of the source code, even though third parties are not
+compelled to copy the source along with the object code.
+
+  4. You may not copy, modify, sublicense, or distribute the Program
+except as expressly provided under this License.  Any attempt
+otherwise to copy, modify, sublicense or distribute the Program is
+void, and will automatically terminate your rights under this License.
+However, parties who have received copies, or rights, from you under
+this License will not have their licenses terminated so long as such
+parties remain in full compliance.
+
+  5. You are not required to accept this License, since you have not
+signed it.  However, nothing else grants you permission to modify or
+distribute the Program or its derivative works.  These actions are
+prohibited by law if you do not accept this License.  Therefore, by
+modifying or distributing the Program (or any work based on the
+Program), you indicate your acceptance of this License to do so, and
+all its terms and conditions for copying, distributing or modifying
+the Program or works based on it.
+
+  6. Each time you redistribute the Program (or any work based on the
+Program), the recipient automatically receives a license from the
+original licensor to copy, distribute or modify the Program subject to
+these terms and conditions.  You may not impose any further
+restrictions on the recipients' exercise of the rights granted herein.
+You are not responsible for enforcing compliance by third parties to
+this License.
+
+  7. If, as a consequence of a court judgment or allegation of patent
+infringement or for any other reason (not limited to patent issues),
+conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot
+distribute so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you
+may not distribute the Program at all.  For example, if a patent
+license would not permit royalty-free redistribution of the Program by
+all those who receive copies directly or indirectly through you, then
+the only way you could satisfy both it and this License would be to
+refrain entirely from distribution of the Program.
+
+If any portion of this section is held invalid or unenforceable under
+any particular circumstance, the balance of the section is intended to
+apply and the section as a whole is intended to apply in other
+circumstances.
+
+It is not the purpose of this section to induce you to infringe any
+patents or other property right claims or to contest validity of any
+such claims; this section has the sole purpose of protecting the
+integrity of the free software distribution system, which is
+implemented by public license practices.  Many people have made
+generous contributions to the wide range of software distributed
+through that system in reliance on consistent application of that
+system; it is up to the author/donor to decide if he or she is willing
+to distribute software through any other system and a licensee cannot
+impose that choice.
+
+This section is intended to make thoroughly clear what is believed to
+be a consequence of the rest of this License.
+
+  8. If the distribution and/or use of the Program is restricted in
+certain countries either by patents or by copyrighted interfaces, the
+original copyright holder who places the Program under this License
+may add an explicit geographical distribution limitation excluding
+those countries, so that distribution is permitted only in or among
+countries not thus excluded.  In such case, this License incorporates
+the limitation as if written in the body of this License.
+
+  9. The Free Software Foundation may publish revised and/or new versions
+of the General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+Each version is given a distinguishing version number.  If the Program
+specifies a version number of this License which applies to it and "any
+later version", you have the option of following the terms and conditions
+either of that version or of any later version published by the Free
+Software Foundation.  If the Program does not specify a version number of
+this License, you may choose any version ever published by the Free Software
+Foundation.
+
+  10. If you wish to incorporate parts of the Program into other free
+programs whose distribution conditions are different, write to the author
+to ask for permission.  For software which is copyrighted by the Free
+Software Foundation, write to the Free Software Foundation; we sometimes
+make exceptions for this.  Our decision will be guided by the two goals
+of preserving the free status of all derivatives of our free software and
+of promoting the sharing and reuse of software generally.
+
+                            NO WARRANTY
+
+  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION.
+
+  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
+TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
+PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+                     END OF TERMS AND CONDITIONS
+
+            How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+convey the exclusion of warranty; and each file should have at least
+the "copyright" line and a pointer to where the full notice is found.
+
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+Also add information on how to contact you by electronic and paper mail.
+
+If the program is interactive, make it output a short notice like this
+when it starts in an interactive mode:
+
+    Gnomovision version 69, Copyright (C) year name of author
+    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+The hypothetical commands `show w' and `show c' should show the appropriate
+parts of the General Public License.  Of course, the commands you use may
+be called something other than `show w' and `show c'; they could even be
+mouse-clicks or menu items--whatever suits your program.
+
+You should also get your employer (if you work as a programmer) or your
+school, if any, to sign a "copyright disclaimer" for the program, if
+necessary.  Here is a sample; alter the names:
+
+  Yoyodyne, Inc., hereby disclaims all copyright interest in the program
+  `Gnomovision' (which makes passes at compilers) written by James Hacker.
+
+  <signature of Ty Coon>, 1 April 1989
+  Ty Coon, President of Vice
+
+This General Public License does not permit incorporating your program into
+proprietary programs.  If your program is a subroutine library, you may
+consider it more useful to permit linking proprietary applications with the
+library.  If this is what you want to do, use the GNU Lesser General
+Public License instead of this License.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ÿØÿà JFIF  H H  ÿá "Exif  MM *               ÿÛ C 		
+
+
+
+	ÿÛ CÿÀ  n6" ÿÄ           	
+ÿÄ µ   } !1AQa"q2‘¡#B±ÁRÑğ$3br‚	
+%&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùúÿÄ        	
+ÿÄ µ  w !1AQaq"2B‘¡±Á	#3RğbrÑ
+$4á%ñ&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÚ   ? ıü¢Š( ¢Š( ¢Š( ¢Š( ¢Š( ¢Š( ¢Š( ¢Š( ¢Š( ¢Š( ¢Š( ¢Š( ¢Š( ¢Š( ¢Šçş üLğïÂ_
+Ük~*×4èö¼Ï}©^GkoûÒ9FîÈ‚Šüéı¥¿àæ/ÙÇà‹ÜYxjó^øªCòcD·òlCµs6ÕÇûQ«×É>'ÿ ƒ’hßÚ2æH>üµµµ“ıT¶Ú]ï‰.ÇıúUOü‡^µ—U_—•wnß™ÉSF.ÉßĞıÌ¢¿uŒ?ğSß¼¸°øÑ¥ÄßÃcáµÑ?öœMX—Ÿ³oí“¬]}£ÅZ'ÇÍFOâgó®ÿ ô	»#Âöx/Gò9ç˜I+Æ›gô+E~x?\øğâ?øH5Ï‰~oïkv÷úJßË…Tÿ Ç«ì?€µÏÅ»8.Æğ‘XIüW~]ÚÉÿ m?û*+pìÒ½*Š_‡ù™G7ÓƒGé•ãßi¯ˆvé¹¥gİÏh~xdş«^Ã^j¥.Y£Ó£ZcÍQEbjQE QE QE QE QE QE QE QE QE QE QE QE QYÚÎ»gáûº¾¸†Öİz³ V8ŒE*İZÒQŠWm´’^mèŠŒe'ËvÉu=JßKƒÌ¸š8cşót¬›Ïˆš-”“¶¥o"Â›ÊÄ|Æ?î¨äşàş2ˆ×kgdÛt‹œ†vş÷ûµç¾Z×ò/})éeù­LK†"Œ4çsqæ}yROİ¾‰õµÖ–oôL¯€e[ªâ¦á'Ñ+Û×ÏÈó¿Ú¿ş
++ûQüDñ)ğ¯À¿‚gÀZló-±ñçÄ[Ë+[hÙäXÓÉ·óˆViU<Íìÿ óÊ¸Á¹¾#ı¤|SŠ¿jŸ>.ø“­}ïìİO&Æßı•–e?/û1Cu_´‘ÿ âÁ ®Oü&¬n®öÏ¦˜­¨Èß÷òzı&Ô/àÒ¬ÚâáÖc™›µ@xSâ†3‰¸ûj½aW4’åmİF×“”µZİ[m/×Oâ¥‚Æ}YMÔv[«júY:üÿ ‚DşÍÿ ³TQ7…şøDŞCÂ_j–ÿ Ú·cßÍº22Ÿ÷q_CbËBÓÑÑìí¡*ü¨©^ñö·i®ÏÃ±ùqÿ Ïäßyÿ İ_ş*¼ËQñ×‰æó/¯®/¤ÿ ¦¯º¿/ã/¤ÎM¯,>W	bæ´ææå§);¹Û±³é#èòÎÅÔ‚İÅôµßİ¥¾nçÔÆ¯é­²]^×wûwò¬÷ı¥<&Ÿó—şüµ|Õó{Qó{Wãø¥JW£‡£Ù©¿Ç~GÓSà
+VœäşåúGÉûLø2Q¶MA¶ÿ µnÂ¼—Åß ş|EÕÛRÑä±ğO‰$ëªørEÒ®%oúl›|›ûxë‚’İe¬­C@Í^éMÄô%Í<=/%8ş<ïò5—‡9]eÊç%ëgúçğûÄ_§·³ñ§ö^¡£\:ÛYx·KÉ³’GùcöÇì²ùVEo!Ûşx»¢W ê?´}ÄĞi·Ry+;ù;Ïğ5|v—Ú43Ãÿ è—Q¼76ÏóÃq|­ˆß++-y7íñ"ãá~¥,—_eŸıÚy¤i9Qw*ùó}ÕùwÏ:ş„ğ§Ç¬›Œ³åúrÃbª]A7Í	µ«Q–JÛE­vM½Ãñ_ã2l+Æa©J;éf¼Ú×O;éè~­Ñ^cû#|Wÿ …×û:xWÄ™İ%õ’y§ı¡ÅûMdéÍÁô>Nœ¹â¤ºE‹ãMq<-áSPo»gm$ß’×>+=×ªí¦ß¢Õş”éÊsPíÛï9¿Ú—Á67RC&­ûÈ[k~í»TğÖ>ÿ  ³à<Ÿá_;´¹¾óüíK_Á>”ÜSÎİ:-ÓİŸÿ &İW…ùeµœşõşGè>‘«[ëºd7–r,Ö×H²Ç"Mfxëâ—ğóG[ÍZo"İßfìnù«Çÿ bo‰?Úç†nDº~nm=áfùÇüCÿ ‘Pı¸5ãyq¡héşİÓè"¿¦ó¿iRà?õ¿ “”£Eê”å%k|2ºó±ù®…å,óû&½ì›»Z{©7uê­÷ŒŸµWƒ$ÿ ˜“ß†ªšíuàè_Ú6:ÒİZ›Û›É|“[LĞÌ§ı×R+ä¿jğøÂ:¶½{òYèv2ßÜ·ı3†?1¿ñÕ¬oÙ÷À—ı›¼§ê^Wö›iªênŸòÒöùšîfÿ ¾¦¯Âòß¤GUÉqy¥zT“§*P‚Q•œ§Í'{ÍéAŞÖ³húüGå°ÅÒÃBr³RoU²²]:¶¶?áª|ÿ AOü‚Õ/ü4÷ÿ è9ıø“ÿ ‰¯‹>/ü@Ò¾|6Õ¼U¬%ôÚ~ŒŠï„^uİÃ<‹qÅ™ä‘kË?á¸Ì_óC?iü!¿ûum‘xİâNoJUòÌ¶hÅÙ¸Ó¨Ò{ÙÚ¦öhÏÂ\=…’†#(½ìÜùô§şsÀÿ ô‹şüÉÿ ÄÓ$ı§|üÆ£ÿ ¿oşù§'íÙ'ı¿Ú3ÿ şİ]¿ÁS|g·Ô¥oüFğjéşWüZögÚ7îÿ Só6í¾_Í]™§Œ~'åØYcqÙD)Ò†ò•:©+é«ö½ìˆÁğ¯âj*4q-Éì¹£ÿ ÈŸx7íQà¯ú
+ä®¿À>9Òş%x'Jñ‹t·ºNµkå¤ã¤‘:îV¯„¤—ÊFÿ uî²¯cøeÿ Õøc©6<Õğœ!ÿ ¦’4	·úWÚx?ã6?ˆğÙ7=:tğ‘„¯%£çnüÒ•şk[^÷ÓÌâ¾£—ÔÃÒÁ9JU[Z´öåµ¬—sÓõÿ ÚGÂ>Õ§²ºÔ
+Íjû$ÄlØ4ÿ ~Ñ¾ñÿ "ğş¨yš´öÒŞGÆP¼Q–FO5?:øÎîêKéŞI?y#üÌÕµû+ÿ Éóx7şÅ½wÿ FéÕò>ı sÎ"âºEj4ãB¬§²—2J2’ÕÉ«è¯¡ìqà°dñP”œâ–í[V“ÒŞgÚ=ø‡¥|7Ò£¼Õ'ò!‘ö/ËW;oûLø>ê=Ë©ä3^ûdüDÿ „‹Ç‰¤£b×Fûÿ õĞ×ŸøjLG¶¹|DúFæ¹_b2Ìš9R¤ùo5&Ü—Å´–‰éòŸÃü=l¶+))É^É«$öİ>šüÏ¬¼ûIx;â‡/µ]7W‹û:ÇPŸMyå¡I&…¶ËåîÆõòî\Õ_Pı©<-h¿¹–úëş¹[ÿ ñDWÍ[šM›¿ƒä_ö¼ãâß‰~.\xûGğŸÁÿ †6¾4Õ¯-ZşûVÖuOìÍG[fÖeVy$fş¯ôˆãN#ÇRÊxs	J5fº¶Ûi^Nò”c£viö¾‡=nË04#RN+¶Ÿ’gÙOû_hk÷tİPÿ ß?üU^Ò¿jŞ·—1º´ÿ }3ÿ  ×Å6Ö?´Á«IõŸŒŞøs£ø"Ò›Pñ‡üI#®Š»¼Éá1û¿ï2·Ë\Ÿü<¯ö{ÿ ¢ÙğÃÿ 
+oş*uâg‹Ü?ŒT34fÚºå¤§¯oŠ“ın<.GÃ˜Ê\ôf×¬¬şæ~ h^$±ñ&ö«˜î­ÏFC\¿Ç¿7…şßOùSI¶(Ù{1jøGá7ü÷áM‡Äÿ 
+éşøàjŞ"×¬tq¤iz¼w‹qp°ÈË6ï‘[Ìÿ ¶uôü¯ö©ğoìÕàıøÓV¸ÑtíJIfûHÒî®áJüÛšİcÆïâ¯×ãÇù¾}áî72
+¥,ZŒ©¨F3»“I)AYJÖü¬õv>gû'„Î)Quc*wNí­ÖÏî9ÿ øYş$“şcZ§ı÷Y··×“y—SIrßŞ–MßÎ¾u‡ş
+—ğ&ïFşÒ‡Æ²É§ló¾ÒÕ|Ÿ/ûÛ¾Í·mzÀÏÚƒÀÿ ´œwÍà½jMf5"yåşÌ»µM²îòö´Ğ¦íÛ_î×ğq’ñrÃJ¶mGìã«u#S•t»rVGëx|F\æ–PæËkş/õ¦|Õ%ñ	ØögökÒáfÿ ÁTt³÷í~ø{öşè»Õ®ü•ÿ y6ÿ +İÿ i_Š/¯x…´[Wa±ÿ ]şÜŸıjóoø%F€ş-ñí	ãå”íÏÿ Â3§ÏıÈ4›T´oü™ûCV£ÿ ÷ı¦îµ	¥ãÇÃõGgMş¹ş÷ï«ûÿ ÀMŠğÛ-áŞp‡´‚g)8İKßåZ;óJ^öÚ+j›?¥œ`igu±˜´İ¢’¾Ú_åm=KWö~`ùk7ûBHmIÿ íı§¿è½|:ÿ Âÿ ·Ön½ÿ Ïı¥5½2æŞŞµ[¨ZÛÀâ)bÜ»w#yß+/ğ×ãqú1ñı÷E/úøÿ ùìéø‰–%iFOäyÎƒûGüHı¤|}¬øcöøskãxü7tÖÏŒuİCû?Ã–+÷à…•L—R!ûŞ^Õÿ j½'Oı‹¿lME<Û¯ˆ³Î–ßóÂê—øó]Šúö|ğgÃ¿Ø“ö~ğ·Ãİÿ O°Ñü-cšÓ°_šFÿ iÛ-øÕÍOöÆğ]Šşêâòñ¿é”üQıC|-áÌ$pù¥J3©¹¥RiÊO«å¾‹Ê*É[}Ï‰–aÄY…GW	¤öQNËæÏ›ô?ƒ?¾\…ø‡¦ø\Òñ‘¬øVK‹³·ı6¶¸ÜvŸï,ŸğÖ®çâ_íCÿ J}:Æ×ìvoş±¥“÷şÏË\$w-(x¥[…ªg?ñ‰+PQ\Öæås»»Š–©Z×é{Øı‡èæTğ¶Ì¾+éİ/;ÉgµòüPƒÀ±F¥«I'—=¦½£ı—şº5äKÿ ¢÷××]~jÿ ÁT¾ _~ÜŸµÂÙ§Á?éö§Äèş!¼‹ıH½UÛöMßôïÏ$¿İo-~ò=z>pî+7ã|ºdíF¬jÎ]#
+mI¶ú^Ö^müa˜Ã”Wç\RîÚ²?[¿à’š×‡ÿ à¿şØvÍ{¥%Ù‚O˜~”W»xÁö|£è:zm±Ñlâ±€z$j~‹E¥xÊµyÕ]]ÏÁèG’šƒènW”~×~&ÁkØWïê–Š>¹fı×«×Í?·G‰¾Ñ«hz:Ë{¹?•kò¯³Ïì¾ÇWNÎqökÖ£åƒgÕpvâsŠèŸ3ÿ ·uı ?6¹‚ÿ Åï
+O«®›u¦ÛÇ¨ŞZ[yßòù7ÃÜôÎ_/un|Yñbü0ø9âŸ7üËúEÕúùèÑFÌ«ÿ jömöV	aß…¶ñÇşà_ZÛjMüR@ñ«\3¹'ï?¯á¿ü3«Ä™i˜PMÔÃ¨:i}§ï9ÆİùRåşóKkŸ´gÜQ¿‡ÃËáù¼¶QyÇ|6ñ×¼a¦ëVßòæûÙ?ç¢ÿ ËEÿ -w¿5Øügñ:êò#û”$Œÿ ³·wşÍ\­¾°Õ¿›Ú¾Rc#K‡[½UU^MEÅ¯Gtüšó4ÄaiÔÇ,zø¹\~WM}ÚúÜòÏÚâÊMá~µòşÙñWÓ¼+?ü´êá>Óÿ ’Ës^©â9c»Õî’ û#_úf¿*ÿ ãµç>#ğ“şÖÿ tï.9í|¥ê¾3ºÿ ¦sùkadß÷ÕÍÏıû¯@’:ösöNÀ`úÖ•ZÒôº¥ı7RŞLóp¼ÇÖ­üª1_úSüÑ‹¬h–:ïÙ´,mo£±½ƒRŠ)¾dóíäY¡“ş"£-zü4÷ŒçúßşüW‚ø¿öqñçí'ñÊK+ŠÚ÷Á¿è$Oöí6ŞÊf×5¦—té
+í¶cOûùWáÖ^&ÿ £Øøÿ ‚½ÿ ‘ëô®à>*QO”ç4°´êŞ\ÚPiíy(Æ×v_+Fiœåë*xœ$ªJ:_•5ò¹í2~Ô¾2Çü[ß…®ÃŸ|IûE|0ñF±®=£Xèş<»Ğôv†=¹†ÚÚŞ9wÛÈ¸ü«ÿ ‡Yø“şgâ?ş
+ô_ş1^½ağ?@øûøOÃ>ññ…†Ÿ}4²ër<lú¥Ì³I$óÈSåÜÓ3îÅ}¶3„ø‹Ã9½lï62>ÁòÂ5eQ&¥s5$­ğÙ[{³Î£š`jæ8Xá0®‹çÕ¸¥}²·©æzÛùZEóÏ8%oüv´45×ì·ğ‹Ã1şîÁºOœ¿ôØÚEUn"YcÚß¼Y>ò×ûF|^àÂ=cÅköë‹(Ö>Á>ş¡{+,6–‹şü¬‹_ÌÜ;Ÿciå˜®ÀE¹ãgEiÕAÎĞÿ ·¥8ë{in§éìŠ§˜W~í'ó|ºü’y7…>!ØøßÄ^&Ól|ÙÂW±i·³ÿ Ë#rĞ$íÿ {bÌ›«¨øKâè|ûUø_V“îÚøo_Ûş÷úÚw†fÿ dïÙ¯áï†µI>Õâ«ègÖüO}üz†­w'Ÿu#ÛFÛUOîşâÙ³wû?{ÿ e¯§Ì¡/¸ÑÃûÉá¢¬ï§<è¤ß]æİ»+yœ¸V³ì:º*ÿ %=¾iX›R½—V¿šêošk‡Üßïó‚üCâÉş üX˜Ëÿ 
+_Â÷«á+9aÍó&·fûn­òüßfY›ìû¿»ÿ »¾©~Ò~#×¯4ÍÀ>“ËøñSPÿ „oB•?æ»®ïÿ İ·ƒ{½å×Ù¿üsàÙá¦‘ğŸCÑî¿±ühšBv¸EÚÌß^ÿ Zúß
+ø; ¯–b³ş2¬©Q¯ÍF”¥»›÷§8èıèì×æMhx¼Yšc~±O”ÃšP´ä—E²OÖç—éµ§‰´ˆu=.î×QÓî“|7vr,ÑH¿ìÈ¹V­M#Z¼Òfó,î®mdşôO¶¸_‰¿°ÇìçñÄwZæ‰¤xÿ á¦±}'=Ç¼As¡ı¢CüMoûæÿ Á+/¼c£ı»Â?µÇw²ùZ­í–¬ñá¿‹ÎºÖoƒ8LÃ0tx_<¡V¤o$Ÿ=9¤ºéÍ¯§İcÉÄq5Z¹±øIE?F¿OÈôËŸŠ~"Ô,äµºÕ®®­æM’E6ÙREÿ iZ±´ßì;'ğ?€õ(şYË [E¬Íörñ÷ìõçYøÓâ^™ñ*Ö}§N¸:4zv§mÿ =<ß'÷R/ÜÛò-^¯ŠâßŒ¸C8©–ÕÌª:”í¬kNqwW_óÕ5sÖÀárÌË«ªå}â“üiøá¿…~#Ö ›Mğ'„ô_Yæâ/#K‚7ë$l«ş×Ö¼#ö˜ñÿ ÁGlvıtW?ğªş˜5Š·Ñ¦©>wÚhA¿ºØó'ö?¿^#ûR~Ü0şÇ?¤ñ5´}÷|«j­mü]ß<Zdr/÷^e¸“ıÛi+Éş1|QÕ¿àœ_ğGÏxNÎêk?´ÔóëZíÿ ™şœŞyw}íÅdÏüõzÿ Aü!âŒÇ0àŠ<Iÿ ó$ínkI¥+-/dŠ×³ò?/­Ã1âXpşV¿ˆÕú¨­Û~I]ú&}aá_‰°ÿ ÁOÿ iëïøNÒŞ×öyøCrj×ê«Œ5(¿ÕÛ.Ş>Ç>ïñıïîW¿~Ö7–ú}ş¤ÚÃ1Cı¨›qü+Kÿ Ëı”¬ÿ c_ØëÂ>¢¶«yª?üõº—æş|W-û@êC\ø±©÷aÛoÿ |×æHÌÒ¦‚]ÿ R~ŠókÑr¤¾ıÏ¬Ë¥…¯Ÿû¿ıß¥zÚ9¿9»É¾ÖŠÑ$¸Ï7ëT|Qâ{_ø_RÖï>K=Ö[ùÛş™Ä¾cã«W¼¯­xçíæ÷ÿ ³.±áÛ\ı³Ç×V>ƒgŞÿ ‰ÜV’ß0É+WğOäóÌ³L>]ëT„?ğ)%úŸwÄ*8yÖe7øWÁ#>]|;ÿ ‚yü5]J?/YñœŞ#ÔÇı=ê=Ü¿øôÕï+ñ¦›à0İjÁ©ïX~!ñ›ğ3áµ”|y:}¬vv°ÿ b…Uı+æø»PñŞ°÷šƒùü+ü1ÿ »_èo‹4`¸.ŒrìLSŠ´ohÂ:$çúGvµm-OÆ¸w†*æsuª¾Ziêû¾ÈôşÖ—šƒ´:-¯Ùbÿ Ó›şù¯5×<}­x‰÷_jWS³¿åÿ Çk/Êö¯Ö?kKïüCÔ¼ğá×‹~0x£GŸìÚ›é›tıK”Ë9ïçù7/%e¯âú¼AÇ\}xjU*×“ÕÂ–Wİ¥h¥ç/¾çéë”äô¹ä£İêşıÏb¼Óã¿®gTğûZÉ¹+7Hı™ÿ lïˆÃæ²øğ®ŞOùù¸½ñ%Ü÷Ç‘ş;]N™ÿ ˆø›ãa¿Çßµ$şı„´{-ÂDŒÍÿ Wİäÿ F>0Ä¤ñ•ıéó?º
+Kñ8ŸˆØ
+÷JSôVüÌ¶I¦'™7îcOùhÿ "×œxãş
+ğ§áÿ öuÇŒtıs\şÃÛµÍNFşï‘k½—ş¶¾Šğÿ üSövŠE¸ñ^‹â‰—]åñ‡‰oulÿ À^Mµô‡ÁŸÙKáŸìïj–şğ/…<,‰ÿ @í>(XÀ€İ_¨äDü4$§šf’íN
+?ù4œ¿ô„üÏ0ñBu#Ë†Ã¤ûÉßğVüÏÏÏ|)ı£?o¥û=†ª~Î?n?ãó^ÕvÂaªAüKm ÊXåå£3·û•Òÿ Á$ÿ c?êŸuÏŒÑcÓ~øNÑüğ¹_,Ú…´LÂÿ Zg?ëîãÍÛ/ñ%}!ûUŞjß´Ç‹åøá[›«>şŸâ½nv¶‘¦Iÿ .¿üş]¯Ëÿ L 2?W‹>ûàïéŸ|%§èz-”:~“£Û%¥¬#jA.ÕUÿ €×õğ~OÂØa2z*Ÿ>ïy5ŞRz¶ú]Ù+Ù+Ÿ™æy–'1­í12½¾ï’éc^Š(¯|å
+üÃı±?à¤_tÚKÄšNµã¦j:ÏöuÅ¼šeù1´+gl[~÷½~ƒ~Ñ!øğÆ3¸Ç“á=
+óX}Ş@òìµøÓÿ Îı«¿mÏø*Œ:¼ğÿ Å¯‡^_ıgÕüßošãÍÙ²/Ë·Éÿ È•ò<qár¿©c«Ê*sRn-]»4“¼e¢¿ßcÒÉø–®MŠöÔ ¥)&µéª}Ñè×Ÿµ_Ã¿ÛUğ·Â¿ø“ş[Æ(Òí¯ ‹O»O*Â+…¹ºfg‰Wo—ß½ÿ -+õş[Hæ·òZ=ñ2l+ü8¯ÀÏ?ğPOÛcâ?Ã¯ÚÅ§ÄoøşÒÕßÄ0_ø>Ùî..÷\/Ø“b²nƒnïúi^ÿ şÖßô?h¿øOÛñ5ëxsàÎ„ğ2Üº·´RŸ<¥'ww¤´ŠV²VÓ¹ÉqeLÊºÄb!Êík-´?[¿jŸŞı‡¼nº¼AıÖù´if°»¸[ËOáùâ†äÿ Vß÷Õy—ü=Wöÿ ¢‹kÿ ‚}Gÿ ‘ëÇ´_Û7ö•‡öXøgñKâíqğsá^›ñJ	îô;ÄûUÃ¬Mµ¾h”ÿ Æÿ ¶•âŸÿ à´¾xî×Kğ¯Ç¯†¿´Ùì–æ]_Dğ\v–öò3:ı›÷Ë¹™UwÛJü¯2ú$ä9–a[ORŸ<›å…¹bÛÕ&àô½í«¶Û#Ü¥âF3J4åì–¯wøŸWø#öÚøW£x¯ÇŸµ¯ı‡Ã¾'šÇÂ^Õ_K¿Ù¨[XÃö›»aÜ¿é7{~o½åÖçü=Oö}ÿ ¢kÿ ‚}Gÿ ŒWÍÿ ²·ü›ã‡Çß\i>*øåà?‡6v±£ZK¬xMn"¼™Ûo—q/Ş¯¦¿hÿ ?dËSKñ'íğ¾ûÅÚu’Ş/‡m¼²îóúµVÚQwµ[ç_E<ŸZ:øÊ±ötáN)ZÜ°V¿ğŞ­·)5¥äôKC,/ˆØš1”¡M{ÍÉú¿Ÿ‘Ÿ?ü/ö}—şj5¯ş	õşGªrÁQ> ù¨v¿ø'ÔøÅqÿ ‚ |bÕ$e×4oŞö·ÿ _UZj$ı¦¤øf-ğÅÅ¾–ºÅÎ®<?ZÁıß—ï|Íò×•ˆúä4ÿ ‹¨´oW•¯ÿ .üÑÕKÅŒd¾
+Iê–İşgÏ~#ÿ ‚¥|°Ğo®4ïÅ¨êPÚÊövè÷ûï'òF¿èÿ y›å¯¦õ='ö*ÿ ‚Oü?Æú—öl:.›bú­çÙæ¸ÅİÇÏ#2Ä¬ßë$zãÓã7Æ‹KO‰šÿ ‹¼'¥é.šÂ{Æğüñ0»VÚ°Ä¿Şo“şşW’êğT/ŒÂŞkú_—üJú\;kï8Kè¿—åyfa–`±kÂr“\Ñ+² –Ò¾©mâ•J•èbq³¦ÛJÚ7{k¯‘—ÿ =øÿ Eü_ÿ ñŠëÿ d)t_ø(ÏíŸáCAmgá_Á´ÿ „†úñì§··Õ5ùwÅi
+ùª»¾Ï#|¿~Hÿ ¹]ÀøÇñcÁŞ	ÑõÏ‰_¾ü/‹Ä)çi¶W>]CP’?ùèÑF¿»Zà¿kÚÛöı‘A—ş¯	ëñe³Şèú¶™¢Â‘^/É»åşÛ"7¥y¼ôMÉ²<êe…Åºµ!ÍÈ¦ıŞk4ÚjœSqÖÖz;3LçÅìN/*5¨¸ÅÚí%t×\Í¤ıôü[ö”ğOìó}àöñ–¹ıˆš¢OövûÅÂ¾Í›¹Š6ş÷ñWÈ¿ğóô?Ãÿ ‚»ÿ şG®7Á_ğU/ÚCã7Å?ø7OñV‚/¼MªA¦Û5Î‡nÉM'—¹¾_áİº½Ò/|l×¿hişiµ¯À×ø‘ÒÛ`ÿ Âş$?:Eû»~Xşj8ÿ è£–gyÍ\Û2ÆN*$ÚƒºJ1Q¿ğäÖİYÕÃ¾.b0Ø8á°”SŒ]®÷»w·Äwÿ ğI…ÍûA|Zñ7í«ÚMı’Ñ¿…~GqDñi¨ßé7ûV»›ÿ !E^ı¹¯õoÙ»â¦£â-cÃºæ£àa…ÊëÚ6Ÿ&¡ı#}øîà‰Lª»¾e‘UÇ÷¶×æ§Çø-ïímğ+âŸ‰¼¨xëÃÚ>Õ.t{–´Ğ­ßÌ·“Ëo-¶—å®Óöyÿ ‚˜şÚÿ ´‡ìÃñgâ¦—ñKÃ–Z_Â£göxğtWwZıİÏZÛ*ËFf…í­}f{à&Qáº;Šiaé(ò8É©&´R½¬Ü®ù®¬ÛláÀqö*a<}+¹Î÷Mh×kyioCë¯~Ü|l›tßŠŸä¸z	µØ-î#ÿ z)Y]ïší­ş5x<şòxHÿ ´šå·ÿ ¯Í¿Ûsã?Ço‚Ÿ´İsãÏ>ÚüLñi³øtş²Õ5ä¾ì·²'î­à_úÜø–óöÌñü›ŸÁß
+¤—ıÙñ5ø]o¡F¼Li(ÇÎšŠqûÒ±õÅj‘v«‡Wõÿ €ÏİşÚşÅæøƒâÇÃı7ş»x‚Óıò²jó»Û·Vı£õøGÿ g‡>#ø¯­Ïòn^ZM¤ø[Oÿ ¦“\Ìªó*ÿ vù¿½_>è?<Uûø›Áø¥ñ»öuø!ñ+ÆÖĞ]éšß	ÿ ´!´ój-Î£µ-ámËµ·5y_íÿ »ı®¿e¯ŒÚçÃæø­ğçÄ1øuÖµ/iVWeäoÉ‘:²ß2ÿ |•ìpÏĞ÷!¡]UÇâ¥‰¶¶ø"ılœšôšó8ñŞ&c%ZTÔ>w‹=Kş
+û,ê³·ü*_‡>(ñ ñÄ_Š!_xÿ \ìK†VŠÒÒÒÿ å¬1µÊ¢Ö—í¥­ÛşÑğp€|	7ï<;à[ı#Ãöÿ H![™?ò+?å_:ø'öµø“ÿ ñ>#êëŞ ğ¬ñØÛ4Kf‘Âö…]±ÿ ´ÏY^6øÇâ€ğUñÅn¼Ó|Y¶×>_ü|YJŞdlª¿ôë"×ï<o–ÓÊòlœTiÓ’VZ$º%m•–ÇÚıá,Çˆqó‹ıïÕªr7¿3qÿ Äşo®–ÂÁä?vİùWÆºµûjz­ÍÓËggüëŞ>0ürÓâı•ui0jZö›q¦-ä	£Û5íÅÄrmÿ Ws'ŞşÕğoü7×†ÿ èAøİÿ †ÿ Qÿ âkùCé%”çyÎ#ƒÊp•+S„e98BRäÒJñOT¢şMOÖÃ`}³ÆMBwQ³Ñé{ş.ß#İ«Îuı#şíÏû=ø;şYZëo“ş™éÖL{¿íâı?ïİqÿ ğß>ÿ ¡ã‡şıGÿ ‰­ïÙ{âE×ˆş1üYøäŞøoáßøÏÃz,ßT½k©n/d·¶¶âÙ~Zü»Â?óÜĞÌs<XS §SŞ§%yF–+MdäÕ—[çg˜:ØP¡U76–dÚ»~HúãÇäñ×&Úÿ èv?º…ô&®#Êú×‰Ã~xwş„?Ÿøoõş&øoÏÿ Ğ‰ñ»ÿ Ö£ÿ Ä×Âq'ñ¶u™ÖÍqyuwR¬œŸîäí}’Óh«%äW›åXZÃÓ­E[sÛªÄZö¥mn‘Ç}~‘§İT¶×„ÿ Ã|øoş„_øoõş&£ÿ †ûğßı¿ÿ ğİj?üMx´ü2ãJZÑË±¿js_’:ªgÙ\ş*±~¶g¿ÂKªĞCPÿ ¿íGü$º—ı5ûşÕó?à¥^øuá¹5x_âö‡¤A÷®ï¼{oıôê+À¿ğVŸ…Ÿ´­[ÃúOÅ=[HÓƒ=Õô>¿6–øûÛ¦Û±vÖßñøêü¿QÄßü5jeœ×š<·µôµû_kŸTÂIªĞKPÿ ¿íTuSR¹ÿ ˜–¡»ş»µ|÷àÿ ø)~ ø}5MÂµ].õWvßõ†÷[oÍÿ ­Oøoÿ Ğ‹ñÃÿ ş£ÿ ÄÕG€xöıÇÿ €Uÿ "ae1wX~äl~ÕŞ3ñ-×ÃOéº®©£ã{Jğİ«$í»ı&ö%™—ıØf¯Óh£òã÷½ëó'àŠÿ á°mO„°é>ø…¤øÀw·ş*Õ/5ïÜéVşzZ5µ¤jÒ¨ÜÅ®foûg_§UıÃô}áÌÃ)á™<Ò…jµ%'İI%h«§ª½›Z-ÏË¸Ó2¡‹Ç§†·,b–õ¸QEû™òÃÿ ğpïÆ/øT_ğJOˆK›/<Tö€ÿ ×iÕ¥ÿ Éxæ¯ÅßƒŸ¶¿†¿fŸø#f«à¿øº]7ã‹~%Ùø‚æ+h&I´Ë+ŠH$óvù_ë,Óåİÿ -k÷§ş
+?ÿ áÑà¤^ Ğ|3â/x‹ÃºN‡z×í”0»—nÕßæ«}ÅŞûõòüBƒğ—şŠGÄü°ÿ ã5èasÉaiûAÍss_™+ù5fzø<+ÅSUñXÿ c;5Ëì¥;yİIoè|£ûzÁRş
+|zÿ ‚gøÃşy?±~7ü|Ô4;ˆšÚN«–j‹4‚O/ÊÚßfOºÿ 7™şı~SÜnû;ìûßÃ_Ğ'üBğ›şŠO¿ğÇÿ ŒÑÿ  |&ÿ ¢“ãïü±ÿ ã5Ùƒâº˜h¸SÂ½]õ¨¿ù›/#zÜ'Õw–mÿ –óÿ äÏ5øÿ øVŸ>øWá?í™àÿ …şğ…lô9ôûÿ „—>!kË˜‘¦Ygƒ÷*ıÕ¯ËŸÚ_âÇÅ¯ÚÆõ×‹­|~×Ú†Äñ¶º<ZÄh«sGhª<•Ú¿v¿d?â„ßôR|}ÿ €¶?üf¤şIøYİø™ñ Û½—ÿ ¬p|K<;æ¿YÇóPMüî:ü+‘TVy¯ş[Ïÿ “?-b‹Ïé´ÇÃÛÏ_E¦øWM×¬ï5[—ŸË‚<æùQK|ÛvıÚúöÕøùeûMşÙŞ>ñ–™uöİQ½Ht¹Äl¾e¤1¬1¶ÖÃ.ï/u}¿£Á±ßô/õ?<mÿ ³²ÿ ãuÜxoşàß—Ç~$Ÿıı:Ïÿ ‰®åÆ=¯¶xWt­ñ®®ï¡ÃS„rUgÒúßø_ûyù¯á¿øóù~öÊıøÙûpø.æİxGRûF·­Üh²x¶óË‘~ÏmbË"ÛüÊ7fFrv×­øwş	á—Ä×“¿¥Zÿ ñ5Ùhÿ ğN¿èÃåÔb“ıíÛÿ ‰§ˆâ¥^q\4½ÛıµÖÛéÒÉ¯3†<+£9‚wïJkîÕŸşß?´¿…>"ˆ</ğşèOáy5üCªÜĞı¿Q™›ûøm¨¿çä¯˜ÿ ´!µ¸‚Vò§Xİ_Êÿ ›†¿`¬¿c­Ïş€²½ Zñ55Çì¥ÜÇ·o‡ğœ´ÿ âkÓËøÒŠ£<´êå¿Sç³.*§?×#ÿ €Oü„?lwà×í«ñIñ´Ÿ¡ğ\?Ù‘Øßi7ºEÅÅİ FfıÖÏ—?¼ÿ =ÏßğPoÚ—Aøíuàÿ x6«_ü8Ó?²ô‘wÿ qZb¿ÃòÆ•ú•­ÿ Á=¼;¯?ï.¬cÿ ®:¢ÿ ìµÌêŸğJ_	j¿{TTÿ sH´ÿ âkSÃ8%‡œÕ;ò§8Z7ÑíwmoC²§aq
+n¦c9Û™ªUí¯W·’?'ÿ à?üğƒö×ğ—‹~ k1èşğÏÚ¯ü÷I¿Ò|–%Û±ûÒn¯iı”ÿ à±ÚN¡ûBüHÖ>+‡şÑ/4BMPÓ|2ÖúÅÍÜ“~ê?µÛï—q‡–fïŠû'\ÿ ‚$x#Z7ˆµÿ ÜÒíøšãußø7—áæ»÷üiâ8ÿ ÜÓì¿øİsæœaK9T«ƒ•ä’ş$t³¾šu¾¿#ÔËø'.ÂÂ0Y´tmÿ zß¿¼>¾$¸’ë÷·y—|ò³É½äfûÛ›ø«íïÙgş
+³¦ÿ Á:¿à“Ñè?u­ëã§‰¼xú®«g}¦I*i–åV,Ê"f1ÛB¿+>ß´×è­ÿ Áü3Õ¾÷Ä/Gşå•—ÿ ¬	ÿ àÔ_…’·ü”Ïà%—ÿ ¬1Üa<LT'„v½íí¿ù)é`ø7# ÛY·K»Ïÿ “?7?àµ¿şşÙ8ğŸÆï…~ ¾6ñ†Ÿ><ğœ¶w0Íat§—sæ´b)6¯îdÚßòÎ7şı|mğÏş¹~$hã)5Dğ‡ö„Û¥mûtv^gïÚß/™åıÚıèÿ ˆOşÿ ÑMñçşYñº?âÿ …ôS|yÿ €–_ün²Ãñuj4•(á—ı<_wÂtTáœ¹Şk¿ıCÏÿ “<çÁğRß‡Ÿ~"éòê?¶¶™ñ;àªù¾ñ€dÕ|Wx|¿gk•µwï1ó0ÿ âëòö­ø—áŒ_´×¼Uà¿Åàÿ kúÔ÷šFk
+X[·İ_->Eİ÷™WäJıÃÿ ˆOşÿ ÑMñçşYñº?âÿ …ôS|yÿ €–_ün¹p|G<<Üã…m¿ïÅ~
+(Ö¿ä5Ukÿ –óÿ äÏÊoø$¿Äø7T’(×ÅÈ¿Ùìÿ óûİşúıı®¿àšwÿ µÃ?SğÍ¯üW>ƒÈ‚úY}ï³îÿ èÌìŸŞÎÏîWªÙÁªl.ãßâ—Ä{ˆ^9b·²I#uåYXGò°¯°ül¿²r[éf’ûG·EKù
+–—Â´•>[I·Ë_ø÷öäªÍ3*YÆx\eö÷“wî´VhÏ+­.Î0ùÇc½¬á{Ş›‚¶‰ÆI·Ì¤›ô·{5ò_ü¿ö•ñ'ìéàÄøsãHï¦ğı‹ì²–hØK¥ÿ zVçj×éî­Zëú|wV“ÇqßvDèkÇ>4ø{áî«<zåÅ¬—²G½u=¿¿_áù¾ì•Éi_µ‚üe$6—ötŸİ¹bÿ U¯šË2¼v#Np[5¿Ü{|aÄ™6Œúıì+Ôwœ[\÷¾–o»³î¯¿ÓôWÄ_à©× ¤·Òì|Cÿ Ÿi2ÿ øãı¾xø¡ÿ !ø“ÂåíôŸ‚——Sÿ zæætOıQˆÍ(Ñ|µT“ÿ ¿ÈÓ-ğã9Ì6ÙÍwUi¥øÉ~Gë%ø-ñWşEı¢¼Cm$z?‡|à…ÿ Ÿgi¦OÆâMŸøí|uûBÿ ÁJ~3ü~ŠdñÏÆ~úÎoõºuµç“iÿ ~­ñgÃ[L¤ÿ íÖ—ŞÑïSğ®eÏæ¸\4VéÕŒçò‚jÿ &D_´ŸüGà?ìÑø¿â&ı©KÓ$şĞ¾İıÓYÚßÛ_üKÿ ƒ†~'~Ô>0›Á¿³/Â]BæúLíMN/µÜ['üöhS÷ê?½4ŒµùÛû#~À??jk¨n¼ğoÄ~)±›%u}vFÑô÷¼ÂÊÓÛ9+õköoÿ ‚ëZ§„ ±øíñ*K¯g{|>ğØ~úNè©-×ûÌ¨ÿ íWGö^cSıú¤hGùbù§éÙuón
+ÊQBy…eÿ /+^ûªi©ÍyHùOÂ¿
+Ûö†øÏŸ<[âÏÚëâäÌáïƒ5şĞÛş¢:¢âÎŞ=ÊU–ßõ¯Ñÿ ƒ¿ğO={âV›¥ËñÎûA“ÃšN×Ò~øR/±øCGş¯í‡¿‘é¯î·})ğOà/‚ÿ gÃá¯øgGğ®‰oÊZi¶Ënşówfÿ i«µ®ì=<><¸Hò÷mŞMúÿ ^§Äg™öaœTU3
+—QÒ0IFœhÁh—¦ıJ–vpé6‘ÛÛÇ0B›#ÕGİjİPyEPEPEPEPEPEPEPEPEPEPEPEPEPM’5‘6·İ§Q@ñş	Ûà‡mµï‡³Íó¿ü#ßd´ÿ µdë%¦Úòw{×€|]ÿ ‚Cü@Õ´Ùÿ áø¯£ŞÍÿ ,¢×¼>aÿ ¾¥¶”üƒ_Q]´3M%hMş™ÏSF£¼¢Åßÿ Á¿j/^>ß|Ÿùiı±ª£ÿ ß?b?úWğ‡üéñÅ³gÇ?¼/¥ÇüI¢i—ßøô­şƒ_µTWoúÁµ¹ÿ sÿ eáÿ ”ü½øcÿ «üğİÊ\x«Æ|Y'ñB—ú}¼Ÿ÷î3/şD¯­ÿ gÿ ø%'ìïû0ÏÇ„~øJßP·?»Ôoí¿´¯£÷YîŒ’/ü…}EpÖÌ1U•ªToætÓÃR†±Š
+(¢¸ÍÂŠ( Š( Š( Š( ÿÙ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.nflreplays" name="NFL Replays" version="0.2.0" provider-name="natko1412">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.2.1"/>
+    	<import addon="script.module.urlresolver" version="2.5.0" />
+    	<import addon="script.module.parsedom" version="1.3.0"/>
+    	<import addon="script.module.addon.common" version="2.0.0" />
+    	<import addon="script.module.youtube.dl" version="14.1026.0"/>
+
+
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Watch full NFL game replays.</summary>
+		<description lang="en">Watch full NFL game replays.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		
+		<platform>all</platform>
+	</extension>
+</addon>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     NFL Replays by natko1412
+==================================
+v0.2.0 [11-Oct-2015]
+-additional fixes
+
+v0.1 [29-Sep-2015]
+- initial release
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.mektv" name="MEKNYC Repository" version="1.0.0" provider-name="MEKNYC">
+	<extension point="xbmc.addon.repository" name="MEKNYC Repository">
+		<info compressed="false">http://www.mekhosting.com/addons/addons.xml</info>
+		<checksum>http://www.mekhosting.com/addons/addons.xml.md5</checksum>
+		<datadir zip="true">http://www.mekhosting.com/addons/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	<summary>MEKNYC Repository</summary> 
+	<description>Here you can find all the plugins and addons developed by us!</description> 
+	<disclaimer>We arent responsible for any issues with KODI, or you device by using our scripts!</disclaimer> 
+		<platform>all</platform>
+	</extension>
+</addon>
+

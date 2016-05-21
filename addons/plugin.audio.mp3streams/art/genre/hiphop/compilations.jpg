@@ -1,0 +1,424 @@
+			cachefoldersetting = os.path.join('/',cachefoldersetting[0].replace("'",""),'.acestream_cache')
+						settings.setSetting('acestream_cachefolder',cachefoldersetting)
+				else:
+					cachefoldersetting = cachefoldersetting[0]
+			if cachefoldersetting: addDir(translate(70013)+"[COLOR orange][ " + cachefoldersetting + " ][/COLOR]",str(cachefoldersetting),309,'p2p',2,False)
+			else: addDir(translate(70013)+"[COLOR orange][" + cachefoldersetting + "][/COLOR]",cachefoldersetting,309,'p2p',2,False)
+			buffer_type = re.compile("S'live_cache_type'\np(\d+)\nS(.*)").findall(settings_content)
+			if xbmc.getCondVisibility('system.platform.Android'):
+				if buffer_type: 
+					if 'memory' in buffer_type[0][1]: addDir(translate(70041)+"[COLOR orange] [ Memory ][/COLOR]",'p2p',312,'p2p',2,False)
+					elif 'disk' in buffer_type[0][1]: addDir(translate(70041)+"[COLOR orange] [ Disk ][/COLOR]",'p2p',312,'p2p',2,False)
+				else: pass
+			livebuffervalue = re.compile("S'live_buffer_time'\np(\d+)\nI(\d+)").findall(settings_content)
+			if livebuffervalue:	addDir(translate(600017)+"[COLOR orange][ " + livebuffervalue[0][1] + " ][/COLOR]",'live_buffer_time|' + str(livebuffervalue)+'|'+str(len(number_of_settings)),308,'p2p',2,False)
+			else: addDir(translate(600017)+"[COLOR orange][3][/COLOR]",'live_buffer_time|'+str(len(number_of_settings)),308,'p2p',2,False)
+			vodbuffervalue = re.compile("S'player_buffer_time'\np(\d+)\nI(\d+)").findall(settings_content)
+			if vodbuffervalue: addDir(translate(600016)+"[COLOR orange][ " + vodbuffervalue[0][1] + " ][/COLOR]",'player_buffer_time|'+str(vodbuffervalue)+'|'+str(len(number_of_settings)),308,'p2p',2,False)
+			else: addDir(translate(600016)+"[COLOR orange][10][/COLOR]",'player_buffer_time|'+str(len(number_of_settings)),308,'p2p',2,False)
+			downloadlimit = re.compile("S'total_max_download_rate'\np(\d+)\nI(\d+)").findall(settings_content)
+			if downloadlimit: addDir(translate(600018)+"[COLOR orange][ " + downloadlimit[0][1] + " ][/COLOR]",'total_max_download_rate|'+str(downloadlimit)+'|'+str(len(number_of_settings)),308,'p2p',2,False)
+			else: addDir(translate(600018)+"[COLOR orange][0][/COLOR]",'total_max_download_rate|'+str(len(number_of_settings)),308,'p2p',2,False)
+			uploadlimit = re.compile("S'total_max_upload_rate'\np(\d+)\nI(\d+)").findall(settings_content)
+			if uploadlimit: addDir(translate(600019)+"[COLOR orange][ " + uploadlimit[0][1] + " ][/COLOR]",'total_max_upload_rate|'+str(uploadlimit)+'|'+str(len(number_of_settings)),308,'p2p',2,False)
+			else: addDir(translate(600019)+"[COLOR orange][0][/COLOR]",'total_max_upload_rate|'+str(len(number_of_settings)),308,'p2p',2,False)
+			maxconnection_per_stream = re.compile("S'max_peers'\np(\d+)\nI(\d+)").findall(settings_content)
+			if maxconnection_per_stream: addDir(translate(600021)+"[COLOR orange][ " + maxconnection_per_stream[0][1] + " ][/COLOR]",'max_peers|'+str(maxconnection_per_stream)+'|'+str(len(number_of_settings)),308,'p2p',2,False)
+			else: addDir(translate(600021)+"[COLOR orange][50][/COLOR]",'max_peers|'+str(len(number_of_settings)),308,'p2p',2,False)
+
+		
+
+"""
+
+AdvancedSettings.xml Related functions
+
+"""
+
+def import_advancedxml():
+	userdatapath = xbmc.translatePath(os.path.join('special://home/userdata'.decode('utf-8'),''.decode('utf-8')))
+	advancedsettings_var = os.path.join(userdatapath,'advancedsettings.xml')
+	advancedsettingsbackup_var = os.path.join(userdatapath,'advancedsettingsbackup.xml')
+	if xbmcvfs.exists(advancedsettings_var):
+		print("An advanced settings XML file already exists")
+		if xbmcvfs.exists(advancedsettingsbackup_var):
+			print("An advanced settings backup already exists")
+			xbmcvfs.delete(advancedsettingsbackup_var)
+			xbmcvfs.rename(advancedsettings_var,advancedsettingsbackup_var)
+			advancedname = ["Cachemembuffer=252420","freememorycachepercent=5"]
+			advancedurl = ["http://p2p-strm.googlecode.com/svn/trunk/Advancedsettings/advancedsettings.xml","http://p2p-strm.googlecode.com/svn/trunk/Advancedsettings/advancedsettingstonicillo.xml"]
+			index = xbmcgui.Dialog().select(translate(40185), advancedname)
+    			if index > -1:
+    				download_tools().Downloader(advancedurl[index],advancedsettings_var,translate(40059),translate(40000))
+				mensagemok(translate(40000),translate(40060))
+		else:	
+			xbmcvfs.rename(advancedsettings_var,advancedsettingsbackup_var)
+			advancedname = ["Cachemembuffer=252420","freememorycachepercent=5"]
+			advancedurl = ["http://p2p-strm.googlecode.com/svn/trunk/Advancedsettings/advancedsettings.xml","http://p2p-strm.googlecode.com/svn/trunk/Advancedsettings/advancedsettingstonicillo.xml"]
+			index = xbmcgui.Dialog().select(translate(40185), advancedname)
+    			if index > -1:
+    				download_tools().Downloader(advancedurl[index],advancedsettings_var,translate(40059),translate(40000))
+				mensagemok(translate(40000),translate(40060))
+	else:
+		print("No advancedsettings.xml in the system yet")
+		advancedname = ["Cachemembuffer=252420","freememorycachepercent=5"]
+		advancedurl = ["http://p2p-strm.googlecode.com/svn/trunk/Advancedsettings/advancedsettings.xml","http://p2p-strm.googlecode.com/svn/trunk/Advancedsettings/advancedsettingstonicillo.xml"]
+		index = xbmcgui.Dialog().select(translate(40185), advancedname)
+    		if index > -1:
+    			download_tools().Downloader(advancedurl[index],advancedsettings_var,translate(40059),translate(40000))
+			mensagemok(translate(40000),translate(40060))
+	xbmc.executebuiltin("Container.Refresh")
+	
+
+def backup_advancedxml():
+	userdatapath = xbmc.translatePath(os.path.join('special://home/userdata'.decode('utf-8'),''.decode('utf-8')))
+	advancedsettings_var = os.path.join(userdatapath,'advancedsettings.xml')
+	advancedsettingsbackup_var = os.path.join(userdatapath,'advancedsettingsbackup.xml')
+	if xbmcvfs.exists(advancedsettingsbackup_var):
+		xbmcvfs.delete(advancedsettingsbackup_var)
+	xbmcvfs.copy(advancedsettings_var,advancedsettingsbackup_var)
+	mensagemok(translate(40000),translate(40064))
+	xbmc.executebuiltin("Container.Refresh")
+
+	
+def recoverbackup_advancedxml():
+	userdatapath = xbmc.translatePath(os.path.join('special://home/userdata'.decode('utf-8'),''.decode('utf-8')))
+	advancedsettings_var = os.path.join(userdatapath,'advancedsettings.xml')
+	advancedsettingsbackup_var = os.path.join(userdatapath,'advancedsettingsbackup.xml')
+	xbmcvfs.delete(advancedsettings_var)
+	xbmcvfs.rename(advancedsettingsbackup_var,advancedsettings_var)
+	mensagemok(translate(40000),translate(40062))
+	xbmc.executebuiltin("Container.Refresh")
+	
+def delete_advancedxml():
+	userdatapath = xbmc.translatePath(os.path.join('special://home/userdata'.decode('utf-8'),''.decode('utf-8')))
+	advancedsettings_var = os.path.join(userdatapath,'advancedsettings.xml')
+	advancedsettingsbackup_var = os.path.join(userdatapath,'advancedsettingsbackup.xml')
+	xbmcvfs.delete(advancedsettings_var)
+	mensagemok(translate(40000),translate(40066))
+	xbmc.executebuiltin("Container.Refresh")
+
+		
+		
+"""
+
+Acestream/Sopcast Engine Related functions
+
+"""
+		
+def set_engine_setting(file):
+	if 'port.txt' in file:
+		ficheiro = file.split('|')[0]
+	else: ficheiro = file
+	acestream_settings_file = os.path.join(os.getenv("HOME"),'.ACEStream','sessconfig.pickle')
+	value = readfile(ficheiro)
+	keyb = xbmc.Keyboard(str(int(value)), translate(600024))
+	keyb.doModal()
+	if (keyb.isConfirmed()):
+		search = keyb.getText()
+		try:
+			int(search)
+			integer = True
+		except: integer = False
+		if integer == True:
+			save(ficheiro, search)
+			if 'port.txt' in file:
+				try:
+					text = readfile(acestream_settings_file)
+					minport = eval(file.split('|')[1])
+					maxport = eval(file.split('|')[2])
+					text = text.replace("S'minport'\np" + minport[0][0] +"\nI" + minport[0][1] +"\n","S'minport'\np" + minport[0][0] +"\nI" + search +"\n").replace("S'maxport'\np" + maxport[0][0] +"\nI" + maxport[0][1] +"\n","S'maxport'\np" + maxport[0][0] +"\nI" + search +"\n")
+					save(acestream_settings_file,text)
+				except: pass
+			xbmc.executebuiltin("Notification(%s,%s,%i,%s)" % (translate(40000), translate(600026), 1,os.path.join(addonpath,"icon.png")))
+			xbmc.executebuiltin("Container.Refresh")
+		else:
+			mensagemok(translate(40000),translate(600025))
+			sys.exit(0)
+
+def remove_lock():
+	lock_file = xbmc.translatePath('special://temp/'+ 'ts.lock')
+	xbmcvfs.delete(lock_file)
+	mensagemok(translate(40000),translate(40069))
+	xbmc.executebuiltin("Container.Refresh")
+	
+def clear_cache(url):
+	dirs, files = xbmcvfs.listdir(url)
+	for fich in files:
+		xbmcvfs.delete(os.path.join(url,fich))
+	if files: xbmc.executebuiltin("Notification(%s,%s,%i,%s)" % (translate(40000), translate(40161), 1,addonpath+"/icon.png"))
+	xbmc.executebuiltin("Container.Refresh")
+	
+def set_linux_engine_setting(url):
+	if xbmc.getCondVisibility('system.platform.linux') and not xbmc.getCondVisibility('system.platform.Android'):
+		acestream_settings_file = os.path.join(os.getenv("HOME"),'.ACEStream','playerconf.pickle')
+	elif xbmc.getCondVisibility('system.platform.Android'):
+		acestream_settings_file = os.path.join('/sdcard','.ACEStream','playerconf.pickle')
+	elif xbmc.getCondVisibility('system.platform.windows'):
+		acestream_settings_file = os.path.join(os.getenv("APPDATA"),".ACEStream","playerconf.pickle")
+	settings_content = readfile(acestream_settings_file)
+	keyb = xbmc.Keyboard('',translate(600024))
+	keyb.doModal()
+	if (keyb.isConfirmed()):
+		search = keyb.getText()
+		try:
+			int(search)
+			integer = True
+		except: integer = False
+		if integer == True:
+			if len(url.split('|')) == 3:
+				settings_content = settings_content.replace('p'+str(eval(url.split('|')[1])[0][0])+'\nI'+str(eval(url.split('|')[1])[0][1]),'p'+str(eval(url.split('|')[1])[0][0])+'\nI'+search)
+				save(acestream_settings_file, settings_content)
+				xbmc.executebuiltin("Notification(%s,%s,%i,%s)" % (translate(40000), translate(600026), 1,addonpath+"/icon.png"))
+				xbmc.executebuiltin("Container.Refresh")
+			else:
+				settings_content = settings_content.replace('s.',"sS'"+url.split('|')[0]+"'\np"+url.split('|')[1]+"\nI"+search+"\ns.")
+				save(acestream_settings_file, settings_content)
+				xbmc.executebuiltin("Notification(%s,%s,%i,%s)" % (translate(40000), translate(600026), 1,addonpath+"/icon.png"))
+				xbmc.executebuiltin("Container.Refresh")
+			if 'total_max_download_rate' in url: settings.setSetting('total_max_download_rate',value=search)
+			if 'total_max_upload_rate' in url:	settings.setSetting('total_max_upload_rate',value=search)	
+		else:
+			mensagemok(translate(40000),translate(600025))
+			sys.exit(0)
+			
+def set_android_port():
+	ports = ['8621','8622','8623']
+	ports_pickle = ['http://p2p-strm.googlecode.com/svn/trunk/Modules/Android/sessconf/8621/sessconfig.pickle','http://p2p-strm.googlecode.com/svn/trunk/Modules/Android/sessconf/8622/sessconfig.pickle','http://p2p-strm.googlecode.com/svn/trunk/Modules/Android/sessconf/8623/sessconfig.pickle']
+	choose=xbmcgui.Dialog().select(translate(600015),ports)
+	if choose > -1:
+		escolha = ports_pickle[choose]
+		session_pickle_android = os.path.join('/sdcard','.ACEStream','sessconfig.pickle')
+		download_tools().Downloader(escolha,session_pickle_android,'',translate(40000))
+		settings.setSetting('android_port',ports[choose])
+		xbmc.executebuiltin("Notification(%s,%s,%i,%s)" % (translate(40000), translate(600026), 1,addonpath+"/icon.png"))
+		xbmc.executebuiltin("Container.Refresh")
+		
+def set_android_cache_aloc():
+	acestream_settings_file = os.path.join('/sdcard','.ACEStream','playerconf.pickle')
+	settings_content = readfile(acestream_settings_file)
+	types = ['Memory','Disk']
+	choose=xbmcgui.Dialog().select(translate(70041),types)
+	if choose > -1:
+		escolha = types[choose]
+		if escolha == 'Memory':
+			settings_content = settings_content.replace("S'disk'","S'memory'")
+		elif escolha == 'Disk':
+			settings_content = settings_content.replace("S'memory'","S'disk'")
+		else:pass
+		save(acestream_settings_file, settings_content)		
+		xbmc.executebuiltin("Notification(%s,%s,%i,%s)" % (translate(40000), translate(600026), 1,addonpath+"/icon.png"))
+		xbmc.executebuiltin("Container.Refresh")
+	
+				
+def set_acestream_engine_cache_folder(url):
+	if not xbmc.getCondVisibility('system.platform.windows'):
+		opcao= xbmcgui.Dialog().yesno(translate(40000), translate(70011))
+	else: opcao = ''
+	if opcao:
+		if not xbmc.getCondVisibility('system.platform.Android'):
+			acestream_settings_file = os.path.join(os.getenv("HOME"),'.ACEStream','playerconf.pickle')
+		else:
+			acestream_settings_file = os.path.join('/sdcard','.ACEStream','playerconf.pickle')
+		settings_content = readfile(acestream_settings_file)
+		cachefolder = xbmcgui.Dialog().browse(3, translate(70012) , 'myprograms','')
+		if cachefolder:
+			settings_content = settings_content.replace(url,cachefolder)
+			save(acestream_settings_file, settings_content)
+			settings.setSetting('acestream_cachefolder',cachefolder)
+			xbmc.executebuiltin("Notification(%s,%s,%i,%s)" % (translate(40000), translate(600026), 1,addonpath+"/icon.png"))
+			xbmc.executebuiltin("Container.Refresh")
+		
+def shutdown_hooks():
+	opcao= xbmcgui.Dialog().yesno(translate(40000), translate(70027),translate(70028) + str(xbmc.getSkinDir()) )
+	if opcao:
+		mensagemok(translate(40000),translate(70029),translate(70030))
+		mensagemok(translate(40000),translate(70031))
+		opcao= xbmcgui.Dialog().yesno(translate(40000), translate(70032) )
+		if opcao:
+			import xml.etree.ElementTree as ET
+			skin_path = xbmc.translatePath("special://skin/")
+			tree = ET.parse(os.path.join(skin_path, "addon.xml"))
+			try: res = tree.findall("./res")[0]
+			except: res = tree.findall("./extension/res")[0]
+			xml_specific_folder = str(res.attrib["folder"])
+			xml_video_osd = os.path.join(xbmc.translatePath("special://skin/"),xml_specific_folder,"VideoOSD.xml")
+			xml_content = readfile(xml_video_osd).replace('PlayerControl(Stop)','RunPlugin(plugin://plugin.video.p2p-streams/?mode=7)')
+			try:
+				save(xml_video_osd,xml_content)
+				xbmc.executebuiltin("Notification(%s,%s,%i,%s)" % (translate(40000), translate(600026), 1,addonpath+"/icon.png"))
+			except: mensagemok(translate(40000),'No permissions.')
+			opcao= xbmcgui.Dialog().yesno(translate(40000), translate(70033) )
+			if opcao:
+				from peertopeerutils.keymapeditor import *
+				run()					
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      —Ú
+†ÉoUc           @   s  d  Z  d d k Z d d k Z d d k Z d d k Z d d k Z d d k Z d d k Z d d k Td d k	 l
+ Z
+ l Z d d k Td d k l Z d d k l Z d Ñ  Z d Ñ  Z d	 Ñ  Z d
+ Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d S(   sœ   p2p-streams  (c)  2014 enen92 fightnight
+
+    This file contains all the function the addon uses in the section "Advanced tools".
+    
+    Functions:
+    
+    Advancedsettings.xml related functions are below. Advancedsettings.xml are not automatically imported since they are advanced configurations the user should have control of.
+    
+   	advanced_menu() -> Main menu
+   	import_advancedxml() -> Import recommended advancedsettings.xml
+   	backup_advancedxml() -> When importing an advancedsettings.xml file, if a previous file exists on the same directory the addon will automatically make a backup of the file renaming it to advancedsettingsbackup.xml. This is what this function does
+   	recoverbackup_advancedxml() -> Recover an advancedsettings.xml file resulting from a previous backup
+   	delete_advancedxml() -> Delete the advancedsettings.xml file
+   	
+   Acestream related functions:
+   	set_engine_setting(file) -> Set an acestreamengine setting to a given value. This is used in macosx and linux arm since the acestreamengine is not officially provided by acestream.org and the user doesn't have any other way to change them.
+   	remove_lock() -> function to remove .lock files created during the acestream loop.
+   	set_acestream_engine_cache_folder(url) -> Change acestreamengine cache folder
+   	set_linux_engine_setting(url) -> change acestreamengine settings from gui for linux/android
+   	clear_cache(url) -> Clear the contents of the acestream cache folder
+   	shutdown_hooks() -> Function to set a costum shutdown hook to the used skin and costum stop shortcuts
+   	set_android_port() -> Import sessionconfig.pickle for android
+   	set_android_cache_aloc() -> Set android cache allocation for the internal engine
+   	
+
+iˇˇˇˇN(   t   *(   t   addLinkt   addDir(   t   download_tools(   t   getDirectorySizec    "   !   C   sf  t  d d t t d É t i d d É }  t i |  É o# t t d É t	 d d d t
+ É n t i t i i d	 i d
+ É d i d
+ É É É } t i i | d É } t i i | d É } t t d É t	 d d d t
+ É t i | É oB t t d É t	 d d d t
+ É t t d É t	 d d d t
+ É n t i | É o# t t d É t	 d d d t
+ É n t  d d d É t i | É oö t | É } t i d É i | É } | ok | d d j o d | d d } n d | d d } t  t d É | d d d É t  d d d É qn t  d t d É d d t t d É t t d  É t	 d! d d t
+ É t
+ } t i d" É oR t i d# É d$ j o< t i É  d% d& j p t i É  d% d' j o
+ t } q#na t i d( É o
+ t
+ } nG t i d) É d$ j o
+ t
+ } n' t i d# É d$ j o
+ t
+ } n t
+ } | ot i i t i i t d* d+ d, d- É É oÚt  d. d t t d É t i i t i d/ É d0 d1 É } t t t | É É dà É }	 t t d3 É d4 |	 d5 | d6 d d7 t
+ É y+ t t i i t d* d+ d, d- d8 É É }
+ Wn d9 }
+ n Xya t i i t i d/ É d0 d: É } t | É } t i d; É i | É } t i d< É i | É } Wn g  } g  } n Xt t d= É d> t t |
+ É É d? t i i t d* d+ d, d- d8 É d@ t | É d@ t | É dA d d t
+ É y+ t t i i t d* d+ d, d- dB É É } Wn d9 } n Xt t dC É d> t t | É É d? t i i t d* d+ d, d- dB É dA d d t
+ É y+ t t i i t d* d+ d, d- dD É É } Wn d9 } n Xt t dE É d> t t | É É d? t i i t d* d+ d, d- dD É dA d d t
+ É y+ t t i i t d* d+ d, d- dF É É } Wn d9 } n Xt t dG É d> t t | É É d? t i i t d* d+ d, d- dF É dA d d t
+ É y+ t t i i t d* d+ d, d- dH É É } Wn d9 } n Xt t dI É d> t t | É É d? t i i t d* d+ d, d- dH É dA d d t
+ É y+ t t i i t d* d+ d, d- dJ É É } Wn d9 } n Xt t dK É d> t t | É É d? t i i t d* d+ d, d- dJ É dA d d t
+ É y+ t t i i t d* d+ d, d- dL É É } Wn d9 } n Xt t dM É d> t t | É É d? t i i t d* d+ d, d- dL É dA d d t
+ É n^ | oV t i i t i i t d* d+ d, d- É É o* t  dN t dO É dP d t t dQ É n | o& t i d" É o t i dR É dS j pr | o t i dT É pZ | o& t i dU É o t i dV É dS j p, t i d# É d$ j o4
+t i dV É dS j o
+t i d" É oÀ t i dU É o∫ t i i t i d/ É d0 É } t i i t i d/ É d0 d1 dW É } dX } t i dY É d j o( t i i t i d/ É d0 d1 dW É } n t i dY É } t i i t i d/ É d0 dZ É } nQt i dU É o√ t i i d[ d0 É } t i i d[ d0 dW É } d\ } t i dY É d j o t i i d[ d0 dW É } nC t i i t i dY É dW É } t i i | É p t i | É n t i i d[ d0 dZ É } n~ t i dT É om t i i t i d] É d0 É } d^ } t i i t i d_ É d` É } | } t i i t i d] É d0 dZ É } n t i i | É p t i | É n t i i | É p t i | É n t i i | É pã t i i | | i da É db É } t É  i  | | d t dc É É t i! dd É t i | É o) t | É } t" | | i# de | É É qUn t i | É o˘t i i | É oÊt  d. d t t d É t i! dd É t i dU É o> t i df É } t t d= É dg | d? d dh d d t
+ É n t t t | É É dâ É }	 t t d3 É d4 |	 d5 | d6 d d7 t
+ É t | É } t i di É i | É } t i dj É i | É } | p
+t i d" É oå t i dU É o{ dk t i É  d% j o8 t i i t i d/ É d0 d1 dW É } t i$ dY | É q{t i i d[ d0 d1 É } t i$ dY | É qt i dT É o2 t i i t i d_ É dl É } t i$ dY | É qt i i d[ d0 d1 É } t i$ dY | É nÉ t i d" É oh t i dU É oW dk t i É  d% j o< t i i da | d i# dm d É dW É } t i$ dY | É qn | d } | o5 t t dn É d> | d? t | É do d d t
+ É n, t t dn É dp | dq | do d d t
+ É t i dr É i | É } t i dU É oá | o| ds | d d7 j o' t t dt É du d dv d d t
+ É qdw | d d7 j o' t t dt É dx d dv d d t
+ É qqn t i dy É i | É } | oU t t dE É d> | d d7 d? dz t | É d@ t t% | É É d{ d d t
+ É n4 t t dE É d| dz t t% | É É d{ d d t
+ É t i d} É i | É }  |  oU t t dC É d> |  d d7 d? d~ t |  É d@ t t% | É É d{ d d t
+ É n4 t t dC É d d~ t t% | É É d{ d d t
+ É t i dÄ É i | É } | oU t t dG É d> | d d7 d? dÅ t | É d@ t t% | É É d{ d d t
+ É n4 t t dG É dÇ dÅ t t% | É É d{ d d t
+ É t i dÉ É i | É } | oU t t dI É d> | d d7 d? dÑ t | É d@ t t% | É É d{ d d t
+ É n4 t t dI É dÇ dÑ t t% | É É d{ d d t
+ É t i dÖ É i | É }! |! oU t t dM É d> |! d d7 d? dÜ t |! É d@ t t% | É É d{ d d t
+ É q^t t dM É dá dÜ t t% | É É d{ d d t
+ É qbn d  S(ä   Ns0   [COLOR orange]XBMC Advancedsettings.xml:[/COLOR]t    s   settings_menu.pngs   special://temp/s   ts.lockiÑú  i2  i   s   special://home/userdatas   utf-8s   advancedsettings.xmls   advancedsettingsbackup.xmlizú  i-  t   p2piú  i/  iÅú  i0  i}ú  i.  s.   <cachemembuffersize>(.+?)</cachemembuffersize>i    t   252420s   [COLOR red]s   [/COLOR]s   [COLOR green]iÉú  t   ]s   [COLOR orange]iâ iä i6  s   system.platform.linuxt   force_androidt   truei   t   armv6lt   armv7ls   system.platform.OSXt   openeleci386t	   acestreamt   acet	   ACEStreamt   valuess0   [COLOR orange]Acestream engine settings:[/COLOR]t   HOMEs
+   .ACEStreamt   cachei   is s   [COLOR orange] [s    MB][/COLOR]i3  i   s   port.txts   N/As   sessconfig.pickles   S'minport'
+p(\d+)
+I(\d+)
+s   S'maxport'
+p(\d+)
+I(\d+)
+iœ'	 s   [COLOR orange][ s
+    ][/COLOR]t   |i1  s   vodbuffer.txti–'	 s   livebuffer.txti—'	 s   downloadlimit.txti“'	 s   uploadlimit.txti”'	 s   maxconnections.txti‘'	 s   maxconnectionsstream.txti’'	 s   [COLOR red][B]i€'	 s   [/COLOR][/B]s   processwarning.pngt   ace_cmdt   0s   system.platform.windowss   system.platform.Androidt
+   engine_apps   .acestream_cachesH   http://p2p-strm.googlecode.com/svn/trunk/Modules/Linux/playerconf.picklet   acestream_cachefolders   playerconf.pickles   /sdcardsJ   http://p2p-strm.googlecode.com/svn/trunk/Modules/Android/playerconf.picklet   APPDATAsJ   http://p2p-strm.googlecode.com/svn/trunk/Modules/Windows/playerconf.picklet   SystemDrives   \_acestream_cache_t   /iˇˇˇˇi@ú  i»   t   my_cache_foldert   android_ports   [COLOR orange] [ i7  s   p(\d+)
+s   'download_dir'
+p\d+
+.+?/(.+?)
+t   armt   _acestream_cache_t   'i} i5  s   [COLOR orange][s	   ][/COLOR]s   S'live_cache_type'
+p(\d+)
+S(.*)t   memoryiô s!   [COLOR orange] [ Memory ][/COLOR]i8  t   disks   [COLOR orange] [ Disk ][/COLOR]s!   S'live_buffer_time'
+p(\d+)
+I(\d+)s   live_buffer_time|i4  s   [COLOR orange][3][/COLOR]s#   S'player_buffer_time'
+p(\d+)
+I(\d+)s   player_buffer_time|s   [COLOR orange][10][/COLOR]s(   S'total_max_download_rate'
+p(\d+)
+I(\d+)s   total_max_download_rate|s   [COLOR orange][0][/COLOR]s&   S'total_max_upload_rate'
+p(\d+)
+I(\d+)s   total_max_upload_rate|s   S'max_peers'
+p(\d+)
+I(\d+)s
+   max_peers|s   [COLOR orange][50][/COLOR]i   i   (&   R   t	   addonpatht   artt   xbmct   translatePatht   xbmcvfst   existsR   t	   translatet   MainURLt   Falset   ost   patht   joint   decodet   readfilet   ret   compilet   findallt   getCondVisibilityt   settingst
+   getSettingt   unamet   Truet   pastaperfilt   getenvt   strt   intR   t   mkdirt   splitR   t
+   Downloadert   sleept   savet   replacet
+   setSettingt   len("   t	   lock_filet   userdatapatht   advancedsettings_vart   advancedsettingsbackup_vart   contentt   matcht	   valuebufft   eligibleR   t   acestream_cache_sizet   portat   acestream_settings_filet
+   sessconfigt
+   portvectort   maxportt	   vodbuffert
+   livebuffert   downloadlimitt   uploadlimitt   maxconnectionst   maxconnectionsstreamt   default_acefoldert   default_cachefoldert   pickle_repot
+   local_filet   settings_textR   t   settings_contentt   number_of_settingst   cachefoldersettingt   buffer_typet   livebuffervaluet   vodbuffervaluet   maxconnection_per_stream(    (    s~   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.p2p-streams/resources/core/advancedfunctions.pyt   advanced_menu&   sj   #0## &&. 
+ 
+ 
+2!++ 
+!  
+n+ 
+R+ 
+R+ 
+R+ 
+R+ 
+R+ 
+V3*†!$ (%  %  "!#/+!$!(
+ 5+ ' + U3 U3 U3 U3 Uc          C   sj  t  i t i i d i d É d i d É É É }  t i i |  d É } t i i |  d É } t i | É oad GHt i | É oØ d GHt i | É t i	 | | É d d	 g } d
+ d g } t
+ i É  i t d É | É } | d j oF t É  i | | | t d É t d É É t t d É t d É É q«qYt i	 | | É d d	 g } d
+ d g } t
+ i É  i t d É | É } | d j oF t É  i | | | t d É t d É É t t d É t d É É qYnè d GHd d	 g } d
+ d g } t
+ i É  i t d É | É } | d j oF t É  i | | | t d É t d É É t t d É t d É É n t  i d É d  S(   Ns   special://home/userdatas   utf-8R   s   advancedsettings.xmls   advancedsettingsbackup.xmls,   An advanced settings XML file already existss*   An advanced settings backup already existss   Cachemembuffer=252420s   freememorycachepercent=5sN   http://p2p-strm.googlecode.com/svn/trunk/Advancedsettings/advancedsettings.xmlsW   http://p2p-strm.googlecode.com/svn/trunk/Advancedsettings/advancedsettingstonicillo.xmli˘ú  iˇˇˇˇi{ú  i@ú  i|ú  s)   No advancedsettings.xml in the system yets   Container.Refresh(   R%   R&   R,   R-   R.   R/   R'   R(   t   deletet   renamet   xbmcguit   Dialogt   selectR)   R   R?   t
+   mensagemokt   executebuiltin(   RF   RG   RH   t   advancednamet   advancedurlt   index(    (    s~   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.p2p-streams/resources/core/advancedfunctions.pyt   import_advancedxml◊   s<    0)!)!)c          C   sµ   t  i t i i d i d É d i d É É É }  t i i |  d É } t i i |  d É } t i | É o t i | É n t i	 | | É t
+ t d É t d É É t  i d É d  S(	   Ns   special://home/userdatas   utf-8R   s   advancedsettings.xmls   advancedsettingsbackup.xmli@ú  iÄú  s   Container.Refresh(   R%   R&   R,   R-   R.   R/   R'   R(   Rf   t   copyRk   R)   Rl   (   RF   RG   RH   (    (    s~   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.p2p-streams/resources/core/advancedfunctions.pyt   backup_advancedxml˙   s    0c          C   s°   t  i t i i d i d É d i d É É É }  t i i |  d É } t i i |  d É } t i | É t i | | É t	 t
+ d É t
+ d É É t  i d É d  S(	   Ns   special://home/userdatas   utf-8R   s   advancedsettings.xmls   advancedsettingsbackup.xmli@ú  i~ú  s   Container.Refresh(   R%   R&   R,   R-   R.   R/   R'   Rf   Rg   Rk   R)   Rl   (   RF   RG   RH   (    (    s~   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.p2p-streams/resources/core/advancedfunctions.pyt   recoverbackup_advancedxml  s    0c          C   së   t  i t i i d i d É d i d É É É }  t i i |  d É } t i i |  d É } t i | É t t	 d É t	 d É É t  i
+ d É d  S(	   Ns   special://home/userdatas   utf-8R   s   advancedsettings.xmls   advancedsettingsbackup.xmli@ú  iÇú  s   Container.Refresh(   R%   R&   R,   R-   R.   R/   R'   Rf   Rk   R)   Rl   (   RF   RG   RH   (    (    s~   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.p2p-streams/resources/core/advancedfunctions.pyt   delete_advancedxml  s    0c   
+      C   sK  d |  j o |  i  d É d } n |  } t i i t i d É d d É } t | É } t i t t	 | É É t
+ d É É } | i É  | i É  oµ| i É  } y t	 | É t } Wn t } n X| t j oNt | | É d |  j oÎ y› t | É } t |  i  d É d É } t |  i  d É d	 É }	 | i d
+ | d d d | d d d d
+ | d d d | d É i d |	 d d d |	 d d d d |	 d d d | d É } t | | É Wq‘q‘Xn t i d t
+ d É t
+ d É d t i i t d É f É t i d É qGt t
+ d É t
+ d É É t i d É n d  S(   Ns   port.txtR   i    R   s
+   .ACEStreams   sessconfig.pickleiÿ'	 i   i   s   S'minport'
+ps   
+Is   
+s   S'maxport'
+ps   Notification(%s,%s,%i,%s)i@ú  i⁄'	 s   icon.pngs   Container.RefreshiŸ'	 (   R>   R,   R-   R.   R:   R0   R%   t   KeyboardR;   R<   R)   t   doModalt   isConfirmedt   getTextR8   R+   RA   t   evalRB   Rl   R#   Rk   t   syst   exit(
+   t   filet   ficheiroRO   t   valuet   keybt   searcht   integert   textt   minportRR   (    (    s~   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.p2p-streams/resources/core/advancedfunctions.pyt   set_engine_setting  s:    !$
+
+
+ 
+é 8c          C   sJ   t  i d d É }  t i |  É t t d É t d É É t  i d É d  S(   Ns   special://temp/s   ts.locki@ú  iÖú  s   Container.Refresh(   R%   R&   R'   Rf   Rk   R)   Rl   (   RE   (    (    s~   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.p2p-streams/resources/core/advancedfunctions.pyt   remove_lock<  s    c      	   C   sã   t  i |  É \ } } x* | D]" } t  i t i i |  | É É q W| o1 t i d t d É t d É d t	 d f É n t i d É d  S(   Ns   Notification(%s,%s,%i,%s)i@ú  i·ú  i   s	   /icon.pngs   Container.Refresh(
+   R'   t   listdirRf   R,   R-   R.   R%   Rl   R)   R#   (   t   urlt   dirst   filest   fich(    (    s~   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.p2p-streams/resources/core/advancedfunctions.pyt   clear_cacheB  s       1c      
+   C   s  t  i d É o6 t  i d É o% t i i t i d É d d É } nb t  i d É o t i i d d d É } n6 t  i d É o% t i i t i d É d d É } n t | É } t  i d	 t d
+ É É } | i	 É  | i
+ É  o2| i É  } y t | É t } Wn t } n X| t j oÀt |  i d É É d j oÿ | i d t t |  i d É d É d d É d t t |  i d É d É d d É d t t |  i d É d É d d É d | É } t | | É t  i d t d É t d É d t d f É t  i d É nå | i d d |  i d É d d |  i d É d d | d É } t | | É t  i d t d É t d É d t d f É t  i d É d |  j o t i d d | Én d |  j o t i d d | Éqqt t d É t d É É t i d É n d  S(   Ns   system.platform.linuxs   system.platform.AndroidR   s
+   .ACEStreams   playerconf.pickles   /sdcards   system.platform.windowsR   R   iÿ'	 R   i   t   pi   i    s   
+Is   Notification(%s,%s,%i,%s)i@ú  i⁄'	 s	   /icon.pngs   Container.Refreshs   s.s   sS's   '
+ps   
+s.t   total_max_download_rateR~   t   total_max_upload_rateiŸ'	 (   R%   R4   R,   R-   R.   R:   R0   Ru   R)   Rv   Rw   Rx   R<   R8   R+   RD   R>   RB   R;   Ry   RA   Rl   R#   R5   RC   Rk   Rz   R{   (   Rá   RO   R^   R   RÄ   RÅ   (    (    s~   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.p2p-streams/resources/core/advancedfunctions.pyt   set_linux_engine_settingI  s@    !%%
+
+
+ 
+ç-D-  c          C   s‡   d d d g }  d d d g } t  i É  i t d É |  É } | d j oì | | } t i i d	 d
+ d É } t É  i | | d t d É É t	 i
+ d |  | É t i d t d É t d É d t d f É t i d É n d  S(   Nt   8621t   8622t   8623sX   http://p2p-strm.googlecode.com/svn/trunk/Modules/Android/sessconf/8621/sessconfig.picklesX   http://p2p-strm.googlecode.com/svn/trunk/Modules/Android/sessconf/8622/sessconfig.picklesX   http://p2p-strm.googlecode.com/svn/trunk/Modules/Android/sessconf/8623/sessconfig.pickleiœ'	 iˇˇˇˇs   /sdcards
+   .ACEStreams   sessconfig.pickleR   i@ú  R   s   Notification(%s,%s,%i,%s)i⁄'	 i   s	   /icon.pngs   Container.Refresh(   Rh   Ri   Rj   R)   R,   R-   R.   R   R?   R5   RC   R%   Rl   R#   (   t   portst   ports_picklet   chooset   escolhat   session_pickle_android(    (    s~   /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/plugin.video.p2p-streams/resources/core/advancedfunctions.pyt   set_android_portj  s    
+-c          C   s˙   t  i i d d d É }  t |  É } d d g } t i É  i t d É | É } | d j oõ | | } | d j o | i d d	 É } n$ | d j o | i d	 d É } n t	 |  | É t
+ i d
+ t d É t d É d t d f É t
+ i d É n d  S(   Ns   /sdcards
+   .ACEStreams   playerconf.picklet   Memoryt   Diskiô iˇˇˇˇs   S'disk's	   S'memory's   Notification(%s,%s,%i,%s)i@ú  i⁄'	 i   s	   /icon.pngs   Container.Refresh(   R,   R-   R.   R0   Rh   Ri   Rj   R)   RB   RA   R

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="TotalXBMC Login">
+		<setting id="addonid" default="plugin.program.totalinstaller" visible="false"/>
+        <setting id="login" label="Use TotalXBMC login (unlock features)" type="bool" default="false" visible="true"/>
+		<setting id="username" label="Username" type="text" default="" visible="true"  enable="!eq(-1,false)"/>
+		<setting id="password" label="Password" type="text" default="" visible="true"   enable="!eq(-2,false)"  option="hidden"/>
+ 		<setting id="dummy" label="[COLOR=yellow]Click here to check login credentials[/COLOR]" type="action" action="XBMC.RunScript(special://home/addons/plugin.program.totalinstaller/checkLogin.py)" option="close"/>
+		<setting type="lsep" label="[CR]If you don't already have an account you can register for free."/>
+		<setting type="lsep" label="Adding login info will unlock all the latest features!"/>
+		<setting type="lsep" label="[CR]Visit [COLOR=lime]www.totalxbmc.tv[/COLOR] and click on the forum link."/>
+		<setting id="trcheck" default="true" visible="false"/>
+		<setting id="tbs" default="false" visible="false"/>
+   	</category>
+
+	<category label="Show/Hide Content">
+		<setting id="addonportal" type="bool" label="Add-On Portal Section[CR]" default="true"/>
+		<setting id="communitybuilds" type="bool" label="Community Builds Section" default="true"/>
+		<setting id="versionoverride" type="bool" label="- Show ALL Builds (some of these may not be compatible)[CR]" default="false" enable="!eq(-1,false)"/>
+        <setting id="private" type="bool" label="- Show private content" default="false" enable="!eq(-2,false)"/>
+		<setting id="hardwareportal" type="bool" label="Hardware Reviews Section[CR]" default="true"/>
+		<setting id="latestnews" type="bool" label="Latest News Section[CR]" default="true"/>
+		<setting id="maintenance" type="bool" label="Maintenance Section[CR]" default="true"/>
+		<setting id="tutorialportal" type="bool" label="Tutorials Section[CR]" default="true"/>
+		<setting id="adult" type="bool" label="Enable XXX Content[CR]" default="false"/>
+	</category>
+
+    <category label="Community Builds">
+		<setting type="lsep" label="Backup/Download Details"/>
+        <setting id="zip" type="folder"    label="Choose Backup Storage Location"      default=""/>
+ 		<setting id="dummy" label="[COLOR=yellow]Click here to check download path[/COLOR]" type="action" action="XBMC.RunScript(special://home/addons/plugin.program.totalinstaller/checkPath.py)" option="close"/>
+		<setting type="lsep" label="[CR]"/>
+		<setting id="localcopy" type="bool" label="Keep local copies of downloaded builds" default="false"/>
+		<setting id="mastercopy" type="bool" label="Create full duplicate backup AS WELL as a universal build" default="false"/>
+		<setting id="favourites" type="bool" label="Keep my favourites when installing a build" default="false"/>
+		<setting id="sources" type="bool" label="Keep my sources when installing a build" default="false"/>
+	</category>
+
+	<category label="Announcements">
+		<setting id="startupvideo" type="bool" label="Check for important announcement video on startup" default="true"/>
+		<setting id="cbnotifycheck" type="bool" label="Show important announcement from Community Build author" default="true"/>
+        <setting id="internetcheck" type="bool" label="Warn if not connected to internet" default="true" />
+	</category>
+
+    <category label="Maintenance">
+    	<setting id="email" type="text" label="E-Mail Address (used for log uploader)"/>
+		<setting type="lsep" label="[CR][CR]"/>
+ 		<setting id="dummy" label="[COLOR=yellow]Click here to upload a log[/COLOR]" type="action" action="XBMC.RunScript(special://home/addons/plugin.program.totalinstaller/uploadLog.py)" option="close"/>
+		<setting type="lsep" label="Once your log is uploaded you will receive an email with the link."/>
+		<setting type="lsep" label="[CR][CR]"/>
+ 		<setting id="dummy" label="[COLOR=yellow]Click here to reset your add-on[/COLOR]" type="action" action="XBMC.RunScript(special://home/addons/plugin.program.totalinstaller/resetAddon.py)" option="close"/>
+		<setting type="lsep" label="Use this option if you're encountering problems with the add-on not"/>
+		<setting type="lsep" label="loading correctly (script errors)."/>
+    </category>
+
+</settings>

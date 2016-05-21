@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+    <string id="1">CLOUDWORD Lite</string>  
+    <string id="2">Yes</string>  
+    <string id="3">No</string>  
+    <string id="4">True</string>  
+    <string id="5">False</string>  
+    <string id="6">and</string>  
+    <string id="7">or</string>  
+    <string id="8">Start</string>  
+    <string id="9">Stop</string>  
+    <string id="10">Clear All Addons</string>
+    <string id="11">Clear Userdata</string>
+    <string id="12">Webserver is currently unavailable.</string>
+    <string id="13">Please try again later.</string>
+    <string id="14">Retrieving file.</string>
+    <string id="15">Please wait.</string>
+    <string id="16">To complete your box will reboot in %d seconds.</string>
+    <string id="17">To complete your box will reboot in %d second.</string>
+    <string id="18">Click Cancel to reboot later.</string>
+    <string id="19">A previously downloaded file has been detected.</string>
+    <string id="20">Would you like to complete the process now?</string>
+    <string id="21">This will take a few minutes</string>
+    <string id="22">There is currently no update available.</string>
+    <string id="23">Update image downloaded.</string>
+    <string id="24">The server appears to be busy.</string>
+    <string id="25">Preparing for reboot,</string>
+    <string id="26">Please be patient.</string>
+    <string id="27">Thank You.</string>
+    <string id="28">Are you sure?</string>
+    <string id="200">Enter M6 Cloudword (Tiny)</string>  
+    <string id="201">Enter M6 Cloudword (Bit.ly)</string> 
+	<string id="202">Enter Extra Word (other systems & BB)</string> 
+    <string id="203">Enter M6 Tiny Modified (testing)</string>
+    <string id="250">Enter Cloudword</string>
+    <string id="300">Run Application Update</string>
+    <string id="301">Clean Package Downloads (will not affect apps)</string>
+</strings>

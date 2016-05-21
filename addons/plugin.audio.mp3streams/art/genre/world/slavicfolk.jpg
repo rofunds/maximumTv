@@ -1,0 +1,571 @@
+le)
+                title = title.encode('utf-8')
+
+                year = client.parseDOM(item, 'span', attrs = {'class': 'year_type'})[0]
+                year = re.compile('(\d{4})').findall(year)[-1]
+                year = year.encode('utf-8')
+
+                if int(year) > int((self.datetime).strftime('%Y')): raise Exception()
+
+                imdb = client.parseDOM(item, 'a', ret='href')[0]
+                imdb = 'tt' + re.sub('[^0-9]', '', imdb.rsplit('tt', 1)[-1])
+                imdb = imdb.encode('utf-8')
+
+                poster = '0'
+                try: poster = client.parseDOM(item, 'img', ret='src')[0]
+                except: pass
+                try: poster = client.parseDOM(item, 'img', ret='loadlate')[0]
+                except: pass
+                if not ('_SX' in poster or '_SY' in poster): poster = '0'
+                poster = re.sub('_SX\d*|_SY\d*|_CR\d+?,\d+?,\d+?,\d*','_SX500', poster)
+                poster = client.replaceHTMLCodes(poster)
+                poster = poster.encode('utf-8')
+
+                try: rating = client.parseDOM(item, 'span', attrs = {'class': 'rating-rating'})[0]
+                except: rating = '0'
+                try: rating = client.parseDOM(item, 'span', attrs = {'class': 'value'})[0]
+                except: rating = '0'
+                if rating == '' or rating == '-': rating = '0'
+                rating = client.replaceHTMLCodes(rating)
+                rating = rating.encode('utf-8')
+
+                try: plot = client.parseDOM(item, 'div', attrs = {'class': 'item_description'})[0]
+                except: plot = '0'
+                plot = plot.rsplit('<span>', 1)[0].strip()
+                if plot == '': plot = '0'
+                plot = client.replaceHTMLCodes(plot)
+                plot = plot.encode('utf-8')
+
+                self.list.append({'title': title, 'originaltitle': title, 'year': year, 'premiered': '0', 'studio': '0', 'genre': '0', 'duration': '0', 'rating': rating, 'votes': '0', 'mpaa': '0', 'cast': '0', 'plot': plot, 'name': title, 'code': imdb, 'imdb': imdb, 'tmdb': '0', 'tvdb': '0', 'tvrage': '0', 'poster': poster, 'banner': '0', 'fanart': '0'})
+            except:
+                pass
+
+        return self.list
+
+
+    def imdb_user_list(self, url):
+        try:
+            result = client.request(url)
+            result = result.decode('iso-8859-1').encode('utf-8')
+            items = client.parseDOM(result, 'div', attrs = {'class': 'list_name'})
+        except:
+            pass
+
+        for item in items:
+            try:
+                name = client.parseDOM(item, 'a')[0]
+                name = client.replaceHTMLCodes(name)
+                name = name.encode('utf-8')
+
+                url = client.parseDOM(item, 'a', ret='href')[0]
+                url = url.split('/list/', 1)[-1].replace('/', '')
+                url = self.imdblist_link % url
+                url = client.replaceHTMLCodes(url)
+                url = url.encode('utf-8')
+
+                self.list.append({'name': name, 'url': url, 'context': url})
+            except:
+                pass
+
+        return self.list
+
+
+    def worker(self):
+        self.meta = []
+        total = len(self.list)
+
+        for i in range(0, total): self.list[i].update({'metacache': False})
+        self.list = metacache.fetch(self.list, self.info_lang)
+
+        for r in range(0, total, 25):
+            threads = []
+            for i in range(r, r+25):
+                if i <= total: threads.append(workers.Thread(self.super_info, i))
+            [i.start() for i in threads]
+            [i.join() for i in threads]
+
+        #self.list = [i for i in self.list if not i['tvdb'] == '0']
+
+        if len(self.meta) > 0: metacache.insert(self.meta)
+
+
+    def super_info(self, i):
+        try:
+            if self.list[i]['metacache'] == True: raise Exception()
+
+            try: imdb = self.list[i]['imdb']
+            except: imdb = '0'
+            try: tmdb = self.list[i]['tmdb']
+            except: tmdb = '0'
+            try: tvdb = self.list[i]['tvdb']
+            except: tvdb = '0'
+            try: tvrage = self.list[i]['tvrage']
+            except: tvrage = '0'
+
+
+            if not tmdb == '0':
+                tmdb = re.sub('[^0-9]', '', str(tmdb))
+                tmdb = tmdb.encode('utf-8')
+
+                url = self.tmdb_info_link % tmdb
+
+                item = client.request(url, timeout='10')
+                if item == None: raise Exception()
+                item = json.loads(item)
+
+                if tvdb == '0':
+                    tvdb = item['external_ids']['tvdb_id']
+                    if tvdb == '' or tvdb == None: tvdb = '0'
+                    tvdb = re.sub('[^0-9]', '', str(tvdb))
+                    tvdb = tvdb.encode('utf-8')
+                    self.list[i].update({'tvdb': tvdb})
+
+                if tvrage == '0':
+                    tvrage = item['external_ids']['tvrage_id']
+                    if tvrage == '' or tvrage == None: tvrage = '0'
+                    tvrage = re.sub('[^0-9]', '', str(tvrage))
+                    tvrage = tvrage.encode('utf-8')
+                    self.list[i].update({'tvrage': tvrage})
+
+                if imdb == '0':
+                    imdb = item['external_ids']['imdb_id']
+                    if imdb == '' or imdb == None: imdb = '0'
+                    if not imdb == '0': imdb = 'tt' + re.sub('[^0-9]', '', str(imdb))
+                    imdb = imdb.encode('utf-8')
+                    self.list[i].update({'imdb': imdb})
+
+
+            elif not imdb == '0':
+                url = self.tmdb_by_imdb % imdb
+                result = client.request(url, timeout='10')
+                result = json.loads(result)
+
+                tmdb = result['tv_results'][0]['id']
+                if tmdb == '' or tmdb == None: tmdb = '0'
+                tmdb = re.sub('[^0-9]', '', str(tmdb))
+                tmdb = tmdb.encode('utf-8')
+                self.list[i].update({'tmdb': tmdb})
+
+                if not tmdb == '0':
+                    url = self.tmdb_info_link % tmdb
+
+                    item = client.request(url, timeout='10')
+                    if item == None: raise Exception()
+                    item = json.loads(item)
+
+                    tvdb = item['external_ids']['tvdb_id']
+                    if tvdb == '' or tvdb == None: tvdb = '0'
+                    tvdb = re.sub('[^0-9]', '', str(tvdb))
+                    tvdb = tvdb.encode('utf-8')
+                    self.list[i].update({'tvdb': tvdb})
+
+                    tvrage = item['external_ids']['tvrage_id']
+                    if tvrage == '' or tvrage == None: tvrage = '0'
+                    tvrage = re.sub('[^0-9]', '', str(tvrage))
+                    tvrage = tvrage.encode('utf-8')
+                    self.list[i].update({'tvrage': tvrage})
+
+
+            if tvdb == '0' and not imdb == '0':
+                url = self.tvdb_by_imdb % imdb
+
+                result = client.request(url, timeout='10')
+
+                try: tvdb = client.parseDOM(result, 'seriesid')[0]
+                except: tvdb = '0'
+
+                try: name = client.parseDOM(result, 'SeriesName')[0]
+                except: name = '0'
+                dupe = re.compile('[***]Duplicate (\d*)[***]').findall(name)
+                if len(dupe) > 0: tvdb = str(dupe[0])
+
+                if tvdb == '': tvdb = '0'
+                self.list[i].update({'tvdb': tvdb})
+
+
+            if not tvdb == '0':
+                url = self.tvdb_info_link % tvdb
+                item2 = client.request(url, timeout='10')
+
+                if imdb == '0':
+                    try: imdb = client.parseDOM(item2, 'IMDB_ID')[0]
+                    except: pass
+                    if imdb == '': imdb = '0'
+                    imdb = imdb.encode('utf-8')
+                    self.list[i].update({'imdb': imdb})
+
+
+            if imdb == '0':
+                url = self.imdb_by_query % (urllib.quote_plus(self.list[i]['title']), self.list[i]['year'])
+                item3 = client.request(url, timeout='10')
+                item3 = json.loads(item3)
+                imdb = item3['imdbID']
+                if imdb == None or imdb == '' or imdb == 'N/A': imdb = '0'
+                else: imdb = 'tt' + re.sub('[^0-9]', '', str(imdb))
+                imdb = imdb.encode('utf-8')
+                self.list[i].update({'imdb': imdb})
+
+
+            try: poster = item['poster_path']
+            except: poster = ''
+            if poster == '' or poster == None: poster = '0'
+            if not poster == '0': poster = '%s%s' % (self.tmdb_poster, poster)
+            if poster == '0':
+                try: poster = client.parseDOM(item2, 'poster')[0]
+                except: poster = '0'
+                if not poster == '0': poster = self.tvdb_image + poster
+            poster = client.replaceHTMLCodes(poster)
+            poster = poster.encode('utf-8')
+            if not poster == '0' and self.list[i]['poster'] == '0': self.list[i].update({'poster': poster})
+
+
+            try: banner = client.parseDOM(item2, 'banner')[0]
+            except: banner = ''
+            if not banner == '': banner = self.tvdb_image + banner
+            else: banner = '0'
+            banner = client.replaceHTMLCodes(banner)
+            banner = banner.encode('utf-8')
+            if not banner == '0': self.list[i].update({'banner': banner})
+
+
+            try: fanart = item['backdrop_path']
+            except: fanart = ''
+            if fanart == '' or fanart == None: fanart = '0'
+            if not fanart == '0': fanart = '%s%s' % (self.tmdb_image, fanart)
+            if fanart == '0':
+                try: fanart = client.parseDOM(item2, 'fanart')[0]
+                except: fanart = '0'
+                if not fanart == '0': fanart = self.tvdb_image + fanart
+            fanart = client.replaceHTMLCodes(fanart)
+            fanart = fanart.encode('utf-8')
+            if not fanart == '0' and self.list[i]['fanart'] == '0': self.list[i].update({'fanart': fanart})
+
+
+            try: premiered = item['first_air_date']
+            except: premiered = ''
+            try: premiered = re.compile('(\d{4}-\d{2}-\d{2})').findall(premiered)[0]
+            except: premiered = ''
+            if premiered == '' or premiered == None:
+                try: premiered = client.parseDOM(item2, 'FirstAired')[0]
+                except: premiered = '0'
+            if premiered == '': premiered = '0'
+            premiered = client.replaceHTMLCodes(premiered)
+            premiered = premiered.encode('utf-8')
+            if not premiered == '0': self.list[i].update({'premiered': premiered})
+
+
+            try: studio = item['networks'][0]['name']
+            except: studio = ''
+            if studio == '' or studio == None:
+                try: studio = client.parseDOM(item2, 'Network')[0]
+                except: studio = ''
+            if studio == '': studio = '0'
+            studio = client.replaceHTMLCodes(studio)
+            studio = studio.encode('utf-8')
+            if not studio == '0': self.list[i].update({'studio': studio})
+
+ 
+            try: genre = item['genres']
+            except: genre = []
+            try: genre = [x['name'] for x in genre]
+            except: genre = []
+            if genre == '' or genre == None or genre == []:
+                try: genre = client.parseDOM(item2, 'Genre')[0]
+                except: genre = ''
+                genre = [x for x in genre.split('|') if not x == '']
+            genre = ' / '.join(genre)
+            if genre == '': genre = '0'
+            genre = client.replaceHTMLCodes(genre)
+            genre = genre.encode('utf-8')
+            if not genre == '0': self.list[i].update({'genre': genre})
+
+
+            try: duration = str(item['episode_run_time'][0])
+            except: duration = ''
+            if duration == '' or duration == None:
+                try: duration = client.parseDOM(item2, 'Runtime')[0]
+                except: duration = ''
+            if duration == '': duration = '0'
+            duration = client.replaceHTMLCodes(duration)
+            duration = duration.encode('utf-8')
+            if not duration == '0': self.list[i].update({'duration': duration})
+
+
+            try: rating = str(item['vote_average'])
+            except: rating = ''
+            if rating == '' or rating == None:
+                try: rating = client.parseDOM(item2, 'Rating')[0]
+                except: rating = ''
+            if rating == '': rating = '0'
+            rating = client.replaceHTMLCodes(rating)
+            rating = rating.encode('utf-8')
+            if not rating == '0': self.list[i].update({'rating': rating})
+
+
+            try: votes = str(item['vote_count'])
+            except: votes = ''
+            try: votes = str(format(int(votes),',d'))
+            except: pass
+            if votes == '' or votes == None:
+                try: votes = client.parseDOM(item2, 'RatingCount')[0]
+                except: votes = '0'
+            if votes == '': votes = '0'
+            votes = client.replaceHTMLCodes(votes)
+            votes = votes.encode('utf-8')
+            if not votes == '0': self.list[i].update({'votes': votes})
+
+
+            try: mpaa = item['content_ratings']['results'][-1]['rating']
+            except: mpaa = ''
+            if mpaa == '' or mpaa == None:
+                try: mpaa = client.parseDOM(item2, 'ContentRating')[0]
+                except: mpaa = ''
+            if mpaa == '': mpaa = '0'
+            mpaa = client.replaceHTMLCodes(mpaa)
+            mpaa = mpaa.encode('utf-8')
+            if not mpaa == '0': self.list[i].update({'mpaa': mpaa})
+
+
+            try: cast = item['credits']['cast']
+            except: cast = []
+            try: cast = [(x['name'].encode('utf-8'), x['character'].encode('utf-8')) for x in cast]
+            except: cast = []
+            if cast == []:
+                try: cast = client.parseDOM(item2, 'Actors')[0]
+                except: cast = ''
+                cast = [x for x in cast.split('|') if not x == '']
+                try: cast = [(x.encode('utf-8'), '') for x in cast]
+                except: cast = []
+            if len(cast) > 0: self.list[i].update({'cast': cast})
+
+
+            try: plot = item['overview']
+            except: plot = ''
+            if plot == '' or plot == None:
+                try: plot = client.parseDOM(item2, 'Overview')[0]
+                except: plot = ''
+            if plot == '': plot = '0'
+            plot = client.replaceHTMLCodes(plot)
+            plot = plot.encode('utf-8')
+            if not plot == '0': self.list[i].update({'plot': plot})
+
+
+            self.meta.append({'imdb': imdb, 'tmdb': tmdb, 'tvdb': tvdb, 'lang': self.info_lang, 'item': {'code': imdb, 'imdb': imdb, 'tmdb': tmdb, 'tvdb': tvdb, 'tvrage': tvrage, 'poster': poster, 'banner': banner, 'fanart': fanart, 'premiered': premiered, 'studio': studio, 'genre': genre, 'duration': duration, 'rating': rating, 'votes': votes, 'mpaa': mpaa, 'cast': cast, 'plot': plot}})
+        except:
+            pass
+
+
+    def tvshowDirectory(self, items):
+        if items == None or len(items) == 0: return
+
+        isFolder = True if control.setting('autoplay') == 'false' and control.setting('host_select') == '1' else False
+        isFolder = False if control.window.getProperty('PseudoTVRunning') == 'True' else isFolder
+
+        traktMode = False if trakt.getTraktCredentials() == False else True
+
+        addonPoster, addonBanner = control.addonPoster(), control.addonBanner()
+        addonFanart, settingFanart = control.addonFanart(), control.setting('fanart')
+        sysaddon = sys.argv[0]
+
+        try:
+            favitems = favourites.getFavourites('tvshows')
+            favitems = [i[0] for i in favitems]
+        except:
+            pass
+
+        try:
+            if traktMode == False: raise Exception()
+            indicators = trakt.syncTVShows(timeout=720)
+            indicators = json.loads(indicators)
+        except:
+            pass
+
+
+        for i in items:
+            try:
+                label = i['name']
+                systitle = sysname = urllib.quote_plus(i['title'])
+                sysimage = urllib.quote_plus(i['poster'])
+                imdb, tmdb, tvdb, tvrage, year = i['imdb'], i['tmdb'], i['tvdb'], i['tvrage'], i['year']
+
+                poster, banner, fanart = i['poster'], i['banner'], i['fanart']
+                if poster == '0': poster = addonPoster
+                if banner == '0' and poster == '0': banner = addonBanner
+                elif banner == '0': banner = poster
+
+
+                meta = dict((k,v) for k, v in i.iteritems() if not v == '0')
+                meta.update({'trailer': '%s?action=trailer&name=%s' % (sysaddon, sysname)})
+                if i['duration'] == '0': meta.update({'duration': '60'})
+                try: meta.update({'duration': str(int(meta['duration']) * 60)})
+                except: pass
+                sysmeta = urllib.quote_plus(json.dumps(meta))
+
+
+                url = '%s?action=seasons&tvshowtitle=%s&year=%s&imdb=%s&tmdb=%s&tvdb=%s&tvrage=%s' % (sysaddon, systitle, year, imdb, tmdb, tvdb, tvrage)
+
+                try:
+                    if traktMode == False: raise Exception()
+                    match = [i for i in indicators if str(i['show']['ids']['tvdb']) == tvdb][0]
+                    num_1 = 0
+                    for i in range(0, len(match['seasons'])): num_1 += len(match['seasons'][i]['episodes'])
+                    num_2 = int(match['show']['aired_episodes'])
+                    if num_1 >= num_2: meta.update({'playcount': 1, 'overlay': 7})
+                except:
+                    pass
+
+
+                cm = []
+
+                if isFolder == False:
+                    cm.append((control.lang(30232).encode('utf-8'), 'RunPlugin(%s?action=queueItem)' % sysaddon))
+
+                cm.append((control.lang(30233).encode('utf-8'), 'Action(Info)'))
+
+                if not action == 'tvSearch':
+                    cm.append((control.lang(30234).encode('utf-8'), 'RunPlugin(%s?action=tvPlaycount&name=%s&year=%s&imdb=%s&tvdb=%s&query=7)' % (sysaddon, systitle, year, imdb, tvdb)))
+                    cm.append((control.lang(30235).encode('utf-8'), 'RunPlugin(%s?action=tvPlaycount&name=%s&year=%s&imdb=%s&tvdb=%s&query=6)' % (sysaddon, systitle, year, imdb, tvdb)))
+
+                if traktMode == True:
+                    cm.append((control.lang(30236).encode('utf-8'), 'RunPlugin(%s?action=traktManager&name=%s&tvdb=%s&content=tvshow)' % (sysaddon, sysname, tvdb)))
+
+                if action == 'tvFavourites':
+                    cm.append((control.lang(30238).encode('utf-8'), 'RunPlugin(%s?action=deleteFavourite&meta=%s&content=tvshows)' % (sysaddon, sysmeta)))
+                elif action.startswith('tvSearch'):
+                    cm.append((control.lang(30237).encode('utf-8'), 'RunPlugin(%s?action=addFavourite&meta=%s&query=0&content=tvshows)' % (sysaddon, sysmeta)))
+                else:
+                    if not imdb in favitems and not tvdb in favitems: cm.append((control.lang(30237).encode('utf-8'), 'RunPlugin(%s?action=addFavourite&meta=%s&content=tvshows)' % (sysaddon, sysmeta)))
+                    else: cm.append((control.lang(30238).encode('utf-8'), 'RunPlugin(%s?action=deleteFavourite&meta=%s&content=tvshows)' % (sysaddon, sysmeta)))
+
+                cm.append((control.lang(30239).encode('utf-8'), 'RunPlugin(%s?action=tvshowToLibrary&tvshowtitle=%s&year=%s&imdb=%s&tmdb=%s&tvdb=%s&tvrage=%s)' % (sysaddon, systitle, year, imdb, tmdb, tvdb, tvrage)))
+
+                cm.append((control.lang(30240).encode('utf-8'), 'RunPlugin(%s?action=addView&content=tvshows)' % sysaddon))
+
+
+                item = control.item(label=label, iconImage=poster, thumbnailImage=poster)
+
+                try: item.setArt({'poster': poster, 'tvshow.poster': poster, 'season.poster': poster, 'banner': banner, 'tvshow.banner': banner, 'season.banner': banner})
+                except: pass
+
+                if settingFanart == 'true' and not fanart == '0':
+                    item.setProperty('Fanart_Image', fanart)
+                elif not addonFanart == None:
+                    item.setProperty('Fanart_Image', addonFanart)
+
+                item.setInfo(type='Video', infoLabels = meta)
+                item.setProperty('Video', 'true')
+                item.addContextMenuItems(cm, replaceItems=True)
+                control.addItem(handle=int(sys.argv[1]), url=url, listitem=item, isFolder=True)
+            except:
+                pass
+
+        try:
+            url = items[0]['next']
+            if url == '': raise Exception()
+            url = '%s?action=tvshows&url=%s' % (sysaddon, urllib.quote_plus(url))
+            addonNext = control.addonNext()
+            item = control.item(label=control.lang(30241).encode('utf-8'), iconImage=addonNext, thumbnailImage=addonNext)
+            item.addContextMenuItems([], replaceItems=False)
+            if not addonFanart == None: item.setProperty('Fanart_Image', addonFanart)
+            control.addItem(handle=int(sys.argv[1]), url=url, listitem=item, isFolder=True)
+        except:
+            pass
+
+
+        control.content(int(sys.argv[1]), 'tvshows')
+        control.directory(int(sys.argv[1]), cacheToDisc=True)
+        views.setView('tvshows', {'skin.confluence': 500})
+
+
+    def addDirectory(self, items):
+        if items == None or len(items) == 0: return
+
+        sysaddon = sys.argv[0]
+        addonFanart = control.addonFanart()
+        addonThumb = control.addonThumb()
+        artPath = control.artPath()
+
+        for i in items:
+            try:
+                try: name = control.lang(i['name']).encode('utf-8')
+                except: name = i['name']
+
+                if i['image'].startswith('http://'): thumb = i['image']
+                elif not artPath == None: thumb = os.path.join(artPath, i['image'])
+                else: thumb = addonThumb
+
+                url = '%s?action=%s' % (sysaddon, i['action'])
+                try: url += '&url=%s' % urllib.quote_plus(i['url'])
+                except: pass
+
+                cm = []
+
+                try: cm.append((control.lang(30239).encode('utf-8'), 'RunPlugin(%s?action=tvshowsToLibrary&url=%s)' % (sysaddon, urllib.quote_plus(i['context']))))
+                except: pass
+
+                item = control.item(label=name, iconImage=thumb, thumbnailImage=thumb)
+                item.addContextMenuItems(cm, replaceItems=False)
+                if not addonFanart == None: item.setProperty('Fanart_Image', addonFanart)
+                control.addItem(handle=int(sys.argv[1]), url=url, listitem=item, isFolder=True)
+            except:
+                pass
+
+        control.directory(int(sys.argv[1]), cacheToDisc=True)
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Û
+π	Vc           @   s=  d  Z  d d l Z d d l Z d d l Z d d l Z d d l Z d d l Z d d l Z d d l Z y0 e	 e j
+ e j d j d d É É É d Z Wn d Z n Xd d l m Z d d l m Z d d	 l m Z d d
+ l m Z d d l m Z d d l m Z d d l m Z d d l m Z d d d Ñ  É  YZ d S(   sø  
+    Genesis Add-on
+    Copyright (C) 2015 lambda
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+iˇˇˇˇNi   t   ?t    t   action(   t   trakt(   t   control(   t   client(   t   cache(   t	   metacache(   t
+   favourites(   t   workers(   t   viewst   tvshowsc           B   s»   e  Z d  Ñ  Z e d Ñ Z d Ñ  Z e d Ñ Z e d Ñ Z d Ñ  Z	 d Ñ  Z
+ d Ñ  Z d Ñ  Z d	 Ñ  Z d
+ Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z e d Ñ Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z d Ñ  Z RS(   c         C   s  g  |  _  d |  _ d |  _ d |  _ t j d É |  _ t j d É |  _ t j j	 É  t j
+ d d É |  _ |  j j d É |  _ |  j t j
+ d	 d
+ É j d É |  _ |  j t j
+ d	 d É j d É |  _ t j d É |  _ t j d É j d d É |  _ t j d É pd |  _ d d |  j |  j f |  _ d |  j d |  j f |  _ d d |  j f |  _ d |  _ d |  _ d |  _ d |  _ d |  _ d |  j d f |  _ d |  j |  j f |  _ d |  _ d |  _  d d |  j |  j f |  _! d  |  _" d! |  _# d" |  _$ d# |  _% d$ d d |  j |  j f |  _& d% d d |  j |  j f |  _' d& d d |  j f |  _( d' |  _) d( |  _* d) |  j |  _+ d* |  j d f |  _, d+ |  j |  _- d, |  j |  _. d- |  _/ d. |  j |  _0 d/ |  j |  _1 d0 |  _2 d1 |  j |  _3 d  S(2   Ns   http://api.themoviedb.orgs   http://api-v2launch.trakt.tvs   http://www.imdb.coms,   NTc5ODNlMzFmYjQzNWRmNGRmNzdhZmI4NTQ3NDBlYTk=s   MUQ2MkYyRjkwMDMwQzQ0NA==t   hoursi   s   %Y-%m-%dt   daysi   im  t
+   trakt_usert	   imdb_usert   urR   t   infoLangt   ensp   http://api.themoviedb.org/3/tv/%s?api_key=%s&language=%s&append_to_response=credits,content_ratings,external_idss   %ss*   http://thetvdb.com/api/%s/series/%s/%s.xmlsF   http://api.themoviedb.org/3/find/%s?api_key=%s&external_source=imdb_ids8   http://thetvdb.com/api/GetSeriesByRemoteID.php?imdbid=%ss!   http://www.omdbapi.com/?t=%s&y=%ss"   http://image.tmdb.org/t/p/originals   http://image.tmdb.org/t/p/w500s   http://thetvdb.com/banners/sX   http://api.themoviedb.org/3/search/person?api_key=%s&query=%s&include_adult=false&page=1s@   http://api.themoviedb.org/3/genre/tv/list?api_key=%s&language=%ss8   http://api.themoviedb.org/3/tv/popular?api_key=%s&page=1s=   http://api.themoviedb.org/3/tv/airing_today?api_key=%s&page=1se   http://api.themoviedb.org/3/discover/tv?api_key=%s&first_air_date.gte=%s&first_air_date.lte=%s&page=1s;   http://api.themoviedb.org/3/tv/on_the_air?api_key=%s&page=1s:   http://api.themoviedb.org/3/tv/top_rated?api_key=%s&page=1se   http://api.themoviedb.org/3/discover/tv?api_key=%s&vote_count.gte=10&sort_by=vote_average.desc&page=1sN   http://api.themoviedb.org/3/person/%s?api_key=%s&append_to_response=tv_creditssh   http://api.themoviedb.org/3/discover/tv?api_key=%s&with_genres=%s&air_date.gte=%s&air_date.lte=%s&page=1sj   http://api.themoviedb.org/3/discover/tv?api_key=%s&with_networks=%s&air_date.gte=%s&air_date.lte=%s&page=1s`   http://api.themoviedb.org/3/discover/tv?api_key=%s&first_air_date_year=%s&air_date.lte=%s&page=1s;   http://api-v2launch.trakt.tv/shows/trending?limit=20&page=1s7   https://api-v2launch.trakt.tv/search?type=show&query=%ss+   http://api-v2launch.trakt.tv/users/%s/listss4   http://api-v2launch.trakt.tv/users/%s/lists/%s/itemss6   http://api-v2launch.trakt.tv/users/%s/collection/showss5   http://api-v2launch.trakt.tv/users/%s/watchlist/showss;   http://api-v2launch.trakt.tv/recommendations/shows?limit=20s4   https://api-v2launch.trakt.tv/users/%s/ratings/showssL   http://www.imdb.com/user/ur%s/lists?tab=all&sort=modified:desc&filter=titless`   http://www.imdb.com/list/%s/?view=detail&sort=title:asc&title_type=tv_series,mini_series&start=1s'   http://www.imdb.com/user/ur%s/watchlist(4   t   listt	   tmdb_linkt
+   trakt_linkt	   imdb_linkt   base64t   urlsafe_b64decodet   tmdb_keyt   tvdb_keyt   datetimet   utcnowt	   timedeltat   strftimet
+   today_datet
+   month_datet	   year_dateR   t   settingR   t   replaceR   t	   info_langt   tmdb_info_linkt   tvdb_info_linkt   tmdb_by_imdbt   tvdb_by_imdbt   imdb_by_queryt
+   tmdb_imaget   tmdb_postert
+   tvdb_imaget   persons_linkt   genres_linkt   popular_linkt   airing_linkt   premiere_linkt   active_linkt   rating_linkt
+   views_linkt   person_linkt
+   genre_linkt   network_linkt	   year_linkt   trending_linkt   search_linkt   traktlists_linkt   traktlist_linkt   traktcollection_linkt   traktwatchlist_linkt   traktfeatured_linkt   traktratings_linkt   imdblists_linkt   imdblist_linkt   imdbwatchlist_link(   t   self(    (    sa   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.genesis\resources\lib\indexers\tvshows.pyt   __init__&   sX    				"%%															c         C   sÚ  y‰y t  |  | d É } Wn n Xy t j | É j j É  } Wn n X| |  j k rÅ t j |  j d | É |  _ |  j	 É  n<| |  j
+ k rÓ d | k rÓ t j |  j d | É |  _ t |  j d d Ñ  É|  _ | t k rΩ|  j	 É  qΩnœ | |  j
+ k r4t j |  j d | É |  _ | t k rΩ|  j	 É  qΩnâ | |  j k rÜd | k s[d | k rÜt j |  j d | | É |  _ |  j	 É  n7 | |  j k rΩt j |  j d | É |  _ |  j	 É  n  | t k r‹|  j |  j É n  |  j SWn n Xd  S(	   Nt   _linki   s   /users/i    t   keyc         S   s   |  d S(   Nt   title(    (   t   k(    (    sa   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.genesis\resources\lib\indexers\tvshows.pyt   <lambda>j   s    s   /user/s   /list/(   t   getattrt   urlparset   netloct   lowerR   R   t   gett	   tmdb_listR   t   workerR   t
+   trakt_listt   sortedt   TrueR   t	   imdb_listt   tvshowDirectory(   RD   t   urlt   idxt   u(    (    sa   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.genesis\resources\lib\indexers\tvshows.pyRO   Z   s@          ' c         C   s”  yƒt  j d É } g  | D] } | d ^ q |  _ xY|  j D]N} d | k r_ | d | d <n  y | d j d É | d <Wn n Xy | d j d É | d <Wn n Xd | k r¬ d | d <n  d | k r€ d | d <n  d	 | k rÙ d | d	 <n  d
+ | k rd | d
+ <n  d | k r&d | d <n  d | k r?d | d <n  d | k rXd | d <n  d | k rqd | d <n  d | k r< d | d <q< q< W|  j É  t |  j d d Ñ  É|  _ |  j |  j É Wn d  SXd  S(   NR   i   t   nameRH   s   utf-8t   yeart   0t   durationt   imdbt   tmdbt   tvdbt   tvraget   postert   bannert   fanartRG   c         S   s   |  d S(   NRH   (    (   RI   (    (    sa   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.genesis\resources\lib\indexers\tvshows.pyRJ   ó   s    (   R   t   getFavouritesR   t   encodeRQ   RS   RV   (   RD   t   itemst   i(    (    sa   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.genesis\resources\lib\indexers\tvshows.pyR   Å   sJ                   
+c         C   s˜   yË | d  k rg t j d É j d É } t j d | É } | j É  | j É  r[ | j É  n d  |  _ n	 | |  _ |  j d  k sé |  j d k rí d  S|  j	 t
+ j |  j É } t j |  j d | É |  _ |  j É  |  j |  j É |  j SWn d  SXd  S(   Niv  s   utf-8R   i    (   t   NoneR   t   langRf   t   keyboardt   doModalt   isConfirmedt   getTextt   queryR:   t   urllibt
+   quote_plusR   RO   RR   R   RQ   RV   (   RD   Ro   t   tRI   RW   (    (    sa   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.genesis\resources\lib\indexers\tvshows.pyt   searchù   s      
+$	 
+c         C   s+  y| d  k rg t j d É j d É } t j d | É } | j É  | j É  r[ | j É  n d  |  _ n	 | |  _ |  j d  k sé |  j d k rí d  S|  j	 t
+ j |  j É } t j |  j d | É |  _ x; t d t |  j É É D]! } |  j | j i d d 6É qﬂ W|  j |  j É |  j SWn d  SXd  S(   Niv  s   utf-8R   i    R   R   (   Ri   R   Rj   Rf   Rk   Rl   Rm   Rn   Ro   R-   Rp   Rq   R   RO   t   tmdb_person_listR   t   ranget   lent   updatet   addDirectory(   RD   Ro   Rr   RI   RW   Rh   (    (    sa   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.genesis\resources\lib\indexers\tvshows.pyt   person≤   s"     
+$	  c         C   s®   yô |  j  } t j d d | É } t j |  j d | É |  _ xB t d t |  j É É D]( } |  j | j	 i d d 6d d 6É qU W|  j
+ |  j É |  j SWn d  SXd  S(	   Ns   language=(fi|hr|no)R   i   i    s   tvGenres.jpgt   imageR   R   (   R.   t   ret   subR   RO   t   tmdb_genre_listR   Ru   Rv   Rw   Rx   (   RD   RW   Rh   (    (    sa   C:\Users\Natko\AppData\Roaming\Kodi\addons\plugin.video.genesis\resources\lib\indexers\tvshows.pyt   genres«   s    	 &c      '   C   s·   dV dW dX dY dZ d[ d\ d] d^ d_ d` da db dc dd de df dg dh di dj dk dl dm dn do dp dq dr ds dt du dv dw dx dy dz d{ g& } xO | D]G } |  j  j i | dM dN 6|  j dO | dP f dQ 6dR dS 6dT dU 6É q W|  j |  j  É |  j  S(|   Nt   ABCt   2t   CBSt   16t   NBCs   6|582t   FOXs   19|303t   CWs   71|194s   A&Es   129|567|891s
+   ABC Familyt   75t   AMCt   174s   Animal Planett   91t   Bravos
+   74|312|485s   Cartoon Networks
+   56|217|262t   Cinemaxt   359s   Comedy Centrals   47|278s   Disney Channels   54|515|539|730s	   Disney XDt   44s   Discovery Channels
+   64|106|755s   E! Entertainments
+   76|407|645t   FXt   88t   Hallmarkt   384t   HBOt   49t   HGTVs   210|482s   History Channels
+   65|238|893s   Discovery IDt   244t   Lifetimes   34|892t   MTVs
+   33|335|488s   National Geographics   43|799t   Nickelodeons   13|35|234|259|416t   Showtimes   67|643t   Spiket   55t   Starzt   318t   Syfys   77|586t   TBSt   68t   TLCt   84t   TNTs
+   41|613|939s   Travel Channelt   209s   TV Landt   397t   USAt   30t   VH1t   158
