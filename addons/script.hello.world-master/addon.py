@@ -10,8 +10,7 @@ addonname   = addon.getAddonInfo('name')
 wd = os.getcwd()
 
 def update():
-    subprocess.call('cd /home/osmc/.kodi/', shell=True)
-    subprocess.Popen("git pull")
+    os.system('sh git.sh')
 
 
 
