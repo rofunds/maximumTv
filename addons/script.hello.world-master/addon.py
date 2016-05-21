@@ -1,6 +1,5 @@
 import xbmcaddon
 import xbmcgui
-import subprocess
 import os
 
 
