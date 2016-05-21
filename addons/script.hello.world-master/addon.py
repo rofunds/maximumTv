@@ -1,15 +1,14 @@
 import xbmcaddon
 import xbmcgui
 import subprocess
-import os
 
 
 addon       = xbmcaddon.Addon()
 addonname   = addon.getAddonInfo('name')
 
+wd = os.getcwd()
 
 def update():
-    wd = os.getcwd()
     subprocess.call('cd /home/osmc/.kodi/', shell=True)
     subprocess.Popen("git pull")
 
