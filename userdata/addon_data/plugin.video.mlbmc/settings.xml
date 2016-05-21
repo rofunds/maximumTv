@@ -1,0 +1,10 @@
+<settings>
+    <setting id="archive_scenario" value="FLASH_1200K_800X448" />
+    <setting id="debug" value="false" />
+    <setting id="debug_remote" value="false" />
+    <setting id="email" value="communication68@hotmail.com" />
+    <setting id="password" value="hellonasty" />
+    <setting id="scenario" value="2400K" />
+    <setting id="show_scores" value="false" />
+    <setting id="use_hls" value="true" />
+</settings>

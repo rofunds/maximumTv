@@ -1,0 +1,116 @@
+#######################################################################################################################################
+<poster>Crusader</poster>
+<fanart></fanart>
+#######################################################################################################################################
+
+##############################################################################################################################
+
+<info>
+<message>[COLOR=FFFF0000]Announcement(s): Fixed Al Masria[/COLOR]</message>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/3/32/The_flag_of_Syrian_Arab_Republic_Damascus%2C_Syria.jpg</thumbnail>
+</info>
+
+
+<item>
+<title>Al Masria</title>
+<link>http://41.178.9.92:8080/</link>
+<thumbnail>http://i82.servimg.com/u/f82/17/28/12/40/egypti10.png</thumbnail>
+</item>
+
+<item>
+<title>Alan</title>
+<link>http://alaan_hls-lh.akamaihd.net/i/alaan_ar@103399/master.m3u8</link>
+<thumbnail>http://www.livetv.tn/images/icons/94.gif</thumbnail>
+</item>	
+
+<item>
+<title>Al Manar HD</title>
+<link>rtmp://38.96.148.199:1935/ app=liveedge1/ playpath=livestream_720p swfUrl=http://www.almanar.com.lb/jwplayer/jwplayer.flash.swf pageUrl=http://www.almanar.com.lb/manarlive.php live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/aa/al_manar_tv.jpg</thumbnail>
+</item>
+
+<item>
+<title>Bahrain TV 3</title>
+<link>rtmp://155.obj.netromedia.net/alayam playpath=alayam swfUrl=http://www.elahmad.com/tv/swf/bahrain.swf/[[DYNAMIC]]/2/[[DYNAMIC]]/3 live=true timeout=15 pageUrl=http://www.elahmad.com/tv/bahrain.php</link>
+<thumbnail>http://www.suhailalgosaibi.com/wp-content/uploads/2011/03/bahrain_tv.png</thumbnail>
+</item>
+
+<item>
+<title>Baghdad Sat</title>
+<link>rtmp://streamer1.hamuraabi.com:1935/ app=baghdad playpath=live swfUrl=http://hamuraabi.com/BAGHDAD/player.swf pageUrl=http://hamuraabi.com/BAGHDAD/baghdad.html live=true timeout=15</link>
+<thumbnail>http://www.tv-logo.com/pt-data/uploads/images/logo/baghdad_tv.jpg</thumbnail>
+</item>
+
+<item>
+<title>Al Rai</title>
+<link>mms://62.215.216.130/wmtencoder/alrai350.wmv</link>
+<thumbnail>http://www.kooora.com/images/channel_/alrai_tv.jpg</thumbnail>
+</item>
+
+<item>
+<title>Sama Syria</title>
+<link>rtmp://sama-tv.net/live playpath=samatv swfUrl=http://www.addounia.tv/live/player.swf live=true timeout=15 pageUrl=http://www.addounia.tv/index.php?page=live</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/7/75/Sama_TV_Logo.png</thumbnail>
+</item>
+
+<item>
+<title>Al Forat</title>
+<link>rtmp://alforatlive.nanocdn.com:1935/live playpath=alforat256</link>
+<thumbnail>http://www.ashura.tv/live-tv/al-forat-tv/logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>Kuwait 1</title>
+<link>http://91.140.238.7/Segments/HLS_TS/rtpencoder/ch1.sdp.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/kk/ktv_1.png</thumbnail>
+</item>
+
+<item>
+<title>Al Hiwar</title>
+<link>rtmp://185.2.136.148/livepkgr/ playpath=livestream swfUrl=http://p.jwpcdn.com/6/7/jwplayer.flash.swf live=true timeout=15 pageUrl=http://www.alhiwar.tv/android.php</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/aa/al_hiwar.png</thumbnail>
+</item>
+
+<item>
+<title>Kuwait 2</title>
+<link>http://91.140.238.7/Segments/HLS_TS/rtpencoder/ch2.sdp.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/kk/ktv_2.png</thumbnail>
+</item>
+
+<item>
+<title>Al Quds</title>
+<link>http://stream.qudstv.com:8134/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8</link>
+<thumbnail>http://1.bp.blogspot.com/-KBETksdbRo4/UQeAGj-i0eI/AAAAAAAAq70/aFpIbT28KTw/s1600/al_quds_tv_palestine_channel_live_online_free_arabic_channel.JPG</thumbnail>
+</item>
+
+<item>
+<title>Alayam TV</title>
+<link>http://btv.alayam.com/alayam/alayam/playlist.m3u8</link>
+<thumbnail>http://www.listenradiostreaming.com/wp-content/uploads/2013/01/Alayam-FM-93.3-Station-Live-Online-Free-Bahrain.jpg</thumbnail>
+</item>
+
+<item>
+<title>Qatar TV HD</title>
+<link>
+$doregex[m3u8]
+<regex>
+<name>m3u8</name>
+<expres>src: escape\("([^"]*)</expres>
+<page>http://www.qtv.qa/qtv/live.php</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/0/01/Qatar_TV_Logo.png</thumbnail>
+</item>
+
+<item>
+<title>Iraqi Media Network</title>
+<link>http://212.7.205.5:1935/Iraqia/live/playlist.m3u8</link>
+<thumbnail>http://images-mediawiki-sites.thefullwiki.org/08/4/2/3/4905202658349467.png</thumbnail>
+</item>
+
+<item>
+<title>El Shorooq TV</title>
+<link>http://live.echoroukonline.com/live/EchoroukTV/playlist.m3u8</link>
+<thumbnail>http://arabicfomny.com/fomnyarabictv/alshorooq_tv_live.jpg</thumbnail>
+</item>

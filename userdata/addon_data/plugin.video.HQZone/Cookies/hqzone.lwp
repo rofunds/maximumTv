@@ -1,0 +1,4 @@
+#LWP-Cookies-2.0
+Set-Cookie3: aa_lastactivity=0; path="/forums/"; domain="www.hqzone.tv"; path_spec; expires="2015-12-04 20:17:56Z"; version=0
+Set-Cookie3: aa_lastvisit=1417724275; path="/forums/"; domain="www.hqzone.tv"; path_spec; expires="2015-12-04 20:17:55Z"; version=0
+Set-Cookie3: aa_sessionhash=44f72457aae7e0c5dccad828ed12b982; path="/forums/"; domain="www.hqzone.tv"; path_spec; discard; HttpOnly=None; version=0

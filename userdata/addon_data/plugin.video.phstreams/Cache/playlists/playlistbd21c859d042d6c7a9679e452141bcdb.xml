@@ -1,0 +1,659 @@
+#######################################################################################################################################
+<poster>Crusader</poster>
+<fanart></fanart>
+#######################################################################################################################################
+
+##############################################################################################################################
+
+
+<info>
+<message>[COLOR=FFFF0000]Announcement(s): Fixed A Majority Of Channels[/COLOR]</message>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/3/32/The_flag_of_Syrian_Arab_Republic_Damascus%2C_Syria.jpg</thumbnail>
+</info>
+
+<info>
+<message>[COLOR=FFFF0000]Important: If You Get A Black Screen, You Must Click Channel 3 Times To Get Video[/COLOR]</message>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/3/32/The_flag_of_Syrian_Arab_Republic_Damascus%2C_Syria.jpg</thumbnail>
+</info>
+
+<item>
+<title>Cairo Cinema</title>
+<link>rtmp://94.102.56.186:1936/live2 playpath=cc swfUrl=http://iptv-planet.com/swfs/player.swf pageUrl=http://iptv-planet.com/ live=true timeout=15</link>
+<thumbnail>http://www.cairocinema.net/wp-content/uploads/2014/02/Comp-1-0-00-01-00-222x300.png</thumbnail>
+</item>
+
+<item>
+<title>Cario Drama</title>
+<link>http://8.21.48.19:7777/CairoDrama_HD.m3u8</link>
+<thumbnail>http://www.livetv.tn/images/icons/64.gif</thumbnail>
+</item>
+
+<item>
+<title>Al Kahera Wal Nas</title>
+<link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>http://www.youtube.com/v/([^?]*)</expres>
+<page>http://freetv247.com/content/al-kahera-wal-nas-tv-live</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.alkaherawalnas.com/images/logo-02.png</thumbnail>
+</item>
+
+<item>
+<title>Al Kahera Wal Nas 2</title>
+<link>
+plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>http://www.youtube.com/v/([^?]*)</expres>
+<page>http://freetv247.com/content/al-kahera-wal-nas-2-tv-live</page>
+<referer>http://freetv247.com/content/%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9-%D8%B3%D9%8A%D9%86%D9%85%D8%A7</referer>
+</regex>
+</link>
+<thumbnail>http://www.alkaherawalnas.com/images/TNTV-02-01.png</thumbnail>
+</item>
+
+<item>
+<title>Talaqie</title>
+<link>rtmp://82.137.248.20:1935/Talaqie playpath=TalaqieLive3 swfUrl=http://live.rtv.gov.sy/flash/lib/StrobeMediaPlayback2.swf pageUrl=http://live.rtv.gov.sy/Talaqie.aspx?HQ=1 live=true timeout=15</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/e/e7/Talaqie_Logo.png</thumbnail>
+</item>
+
+<item>
+<title>Syria Drama</title>
+<link>http://82.137.248.21:1935/Drama/DramaLive3/playlist.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ss/syria_drama_channel.png</thumbnail>
+</item>
+
+<item>
+<title>Dubai TV</title>
+<link>http://cdnedvrdubaitv.endavomedia.com/smil:dmilivedubaitvhls.smil/playlist.m3u8</link>
+<thumbnail>http://tv.onlinemoviesportsandtv.com/wp-content/uploads/2012/11/Dubai-TV.jpg</thumbnail>
+</item>
+
+<item>
+<title>Al Nahar Today</title>
+<link>rtmp://50.7.180.18/nahar_tv playpath=nahar_youm.stream swfUrl=http://demos.streamtrix.com/swf/flowplayer.cluster-3.2.10.swf pageUrl=http://demos.streamtrix.com/alnahar2/ live=true timeout=15</link>
+<thumbnail>http://alnaharlive.net/ramadan/wp-content/uploads/2014/07/alyoum.png</thumbnail>
+</item>
+
+<item>
+<title>Abu Dubai  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>
+$doregex[url]
+<regex>
+<name>url</name>
+<expres>file: "([^"]*)</expres>
+<page>http://www.giniko.com/watch.php?id=80</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.livetv.tn/images/icons/80.gif</thumbnail>
+</item>
+
+<item>
+<title>Abu Dubai Drama</title>
+<link>
+rtmp://iptv2.tele-live.com:8080/live/ playpath=$doregex[id] swfUrl=http://www.tele-live.com/jwplayer.swf pageUrl=http://www.tele-live.com/ live=true timeout=15
+<regex>
+<name>id</name>
+<expres>file>([^<]*)</expres>
+<page>http://www.tele-live.com/iptv/?ch=abu_dhabi_drama</page>
+<referer>http://www.tele-live.com/abu-dhabi-drama-en-direct-live-%d9%82%d9%86%d8%a7%d8%a9-%d8%a3%d8%a8%d9%88%d8%b8%d8%a8%d9%8a-%d8%af%d8%b1%d8%a7%d9%85%d8%a7-%d8%a8%d8%ab-%d9%85%d8%a8%d8%a7%d8%b4%d8%b1-video_0924ddc86.html</referer>
+</regex>
+</link>
+<thumbnail>http://www.livetv.tn/images/icons/54.gif</thumbnail>
+</item>
+
+<item>
+<title>Al Hayat Series</title>
+<link>http://38.99.146.36:7777/AlHayatMousalsalat_HD.m3u8</link>
+<thumbnail>http://3.bp.blogspot.com/_u_DZ8l_MLu4/S_glybpzWpI/AAAAAAAAGPs/Abf_A2RLTNg/s400/54.gif</thumbnail>
+</item>
+
+<item>
+<title>Al Hayat 2</title>
+<link>http://38.99.146.36:7777/Alhayat2_HD.m3u8</link>
+<thumbnail>http://www.arabictvnetwork.com/images/MediaBox/Arabic/Al-Hayat/AlHayat2.png</thumbnail>
+</item>
+
+<item>
+<title>Al Hayat Cinema</title>
+<link>http://38.99.146.36:7777/AlHayatCinema_HD.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/aa/alhayat_cinema.png</thumbnail>
+</item>
+
+<item>
+<title>Aljadeed (Link 2)</title>
+<link>http://38.99.146.36:7777/AlJadeed_HD/AlJadeed_HD.m3u8</link>
+<thumbnail>http://1.bp.blogspot.com/-W1Ry_s_c5-k/UAw9jeMFGoI/AAAAAAAANlY/SJ_JbZV8W5E/s400/aljadeed%2Btv.jpeg</thumbnail>
+</item>
+
+<item>
+<title>LBC SAT</title>
+<link>http://38.99.146.36:7777/LBC_HD/LBC_High.m3u8</link>
+<thumbnail>http://fikrconferences.org/sites/default/files/lbc-logo.jpg?1352659193</thumbnail>
+</item>
+
+<item>
+<title>MTV (Link 2)</title>
+<link>http://38.99.146.36:7777/MTVLebanon_HD/MTVLebanon_HD.m3u8</link>
+<thumbnail>http://4.bp.blogspot.com/-v7Q1icQUJD0/Tm5vrpPY1gI/AAAAAAAAAGs/640s_zySbsQ/s200/MTV+1.png</thumbnail>
+</item>
+	
+<item>
+<title>MBC Drama</title>
+<link>http://8.21.48.19:7777/MBCDrama_HD.m3u8</link> 
+<thumbnail>http://www.tv-arab.net/Logos/logo_tv_mm_mbc_drama_ae.jpg</thumbnail>
+</item>
+
+<item>
+<title>Al Sumaria</title>
+<link>rtmp://livestreaming2.itworkscdn.net/sumarialive playpath=live swfUrl=http://www.alsumaria.tv/LiveMedia4/jwplayer.flash.swf pageUrl=http://www.alsumaria.tv/watch-Alsumaria-Live live=true timeout=15</link>
+<thumbnail>http://www.livetv.tn/images/icons/87.gif</thumbnail>
+</item>	
+
+<item>
+<title>Fatafeat</title>
+<link>http://live-f01.vustream.net/live/livestream3/negmtv.m3u8</link>
+<thumbnail>http://www.livetv.tn/images/icons/26.gif</thumbnail>
+</item>	
+
+<item>
+<title>Fox Movies</title>
+<link>http://8.21.48.19:7777/FoxMovies_HD.m3u8</link>
+<thumbnail>http://www.livetv.tn/images/icons/27.gif</thumbnail>
+</item>
+
+<item>
+<title>Moga Comedy</title>
+<link>rtmp://video.uvlog.com/ app=uvlog_video/4227 playpath=stream swfUrl=http://www.uvlog.com/embed.swf pageUrl=http://www.uvlog.com/embed/4227/0/0/FALSE/true/false/FALSE/freetv247.com live=true timeout=15</link>
+<thumbnail>http://www.livetv.tn/images/icons/67.gif</thumbnail>
+</item>
+
+<item>
+<title>Zee Alwen</title>
+<link>http://8.21.48.19:7777/ZeeAlwan_HD.m3u8</link>
+<thumbnail>http://www.livetv.tn/images/icons/48.gif</thumbnail>
+</item>
+
+<item>
+<title>Zee Aflam</title>
+<link>http://8.21.48.19:7777/ZeeAflam_HD.m3u8</link>
+<thumbnail>http://www.livetv.tn/images/icons/74.gif</thumbnail>
+</item>
+
+<item>
+<title>Panorama Drama 2</title>
+<link>http://38.99.146.36:7777/PanoramaDrama2_HD.m3u8</link>
+<thumbnail>http://www.etfarag.com/ChannelsImages/Panorama%20Drama%202black.gif</thumbnail>
+</item>
+
+<item>
+<title>Palestine HD</title>
+<link>rtmp://vstream2.hadara.ps:1935/pbc playpath=pbc_1 swfUrl=http://www.arabztv.net/player.swf pageUrl=http://www.megalivestream.com/palestine-tv/ live=true timeout=15</link>
+<thumbnail>http://www.megalivestream.com/wp-content/uploads/2013/07/Palestine-TV-570x172_c.png</thumbnail>
+</item>
+
+<item>
+<title>Al Hayat</title>
+<link>http://38.99.146.36:7777/Hayat_HD/Hayat_High.m3u8</link>
+<thumbnail>http://bo7.net/images/2/_%D8%AA%D8%B1%D8%AF%D8%AF_%D9%82%D9%86%D8%A7%D8%A9_%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9_AL_.jpg</thumbnail>
+</item>
+
+<item>
+<title>MBC MAX</title>
+<link>
+rtmp://iptv1.tele-live.com:8080/live/ playpath=$doregex[id] swfUrl=http://www.tele-live.com/jwplayer.swf pageUrl=http://www.tele-live.com/ live=true timeout=15
+<regex>
+<name>id</name>
+<expres>file>([^<]*)</expres>
+<page>http://www.tele-live.com/iptv/?ch=mbc_max</page>
+<referer>http://www.tele-live.com/mbc-max-en-direct-live-%D8%A7%D9%85-%D8%A8%D9%8A-%D8%B3%D9%8A-%D9%85%D8%A7%D9%83%D8%B3-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-video_0a915c1da.html</referer>
+</regex>
+</link>
+<thumbnail>http://alghaslan.net/wp-content/uploads/MBC-MAX-300x115.jpg</thumbnail>
+</item>
+ 	
+<item>
+<title>Sada Al Balad</title>
+<link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=bTr0JZes5MI</link>
+<thumbnail>http://www.designweek.co.uk/Pictures/web/k/m/j/SADA-AL-BALA_482.jpg</thumbnail>
+</item>
+
+<item>
+<title>Sada Al Balad 2</title>
+<link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=1kzwVu_tliU</link>
+<thumbnail>http://www.designweek.co.uk/Pictures/web/k/m/j/SADA-AL-BALA_482.jpg</thumbnail>
+</item>
+
+<item>
+<title>MBC Maser</title>
+<link>http://mbc-live.hds.adaptive.level3.net/hls-live/mbc-channel01/_definst_/live/stream1.m3u8</link>
+<thumbnail>http://jazarah.net/ar/wp-content/uploads/2012/10/MBC-MASR-logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>Al Nahar Drama</title>
+<link>rtmp://50.7.180.18/nahar_tv playpath=nahar_drama.stream swfUrl=http://demos.streamtrix.com/swf/flowplayer.cluster-3.2.10.swf pageUrl=http://demos.streamtrix.com/alnahardrama/ live=true timeout=15</link>
+<thumbnail>http://www.alnaharlive.net/wp-content/themes/nahar/images/channel4.png</thumbnail>
+</item>
+
+<item>
+<title>Al Nahar</title>
+<link>rtmp://50.7.180.18/nahar_tv playpath=nahar_tv.stream swfUrl=http://demos.streamtrix.com/swf/flowplayer.cluster-3.2.10.swf pageUrl=http://demos.streamtrix.com/Alnahar/ live=true timeout=15</link>
+<thumbnail>http://www.alnaharlive.net/wp-content/themes/nahar/images/channel1.png</thumbnail>
+</item>
+
+<item>
+<title>Sama Dubai</title>
+<link>http://cdnedvrsamadubai.endavomedia.com/smil:dmilivesamadubaihls.smil/playlist.m3u8</link>
+<thumbnail>http://img1.moneycontrol.com/images/entitygame/big/Sama_Dubai_300.jpg</thumbnail>
+</item>
+
+<item>
+<title>LBC International (LBC Europe) [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>rtmp://livestreaming.itworkscdn.net/lbclive playpath=lbc_1 swfUrl=http://www.lbcgroup.tv/livemedia4/jwplayer.flash.swf pageUrl=http://www.lbcgroup.tv/watch-lbci-live</link>
+<thumbnail>http://3.bp.blogspot.com/-WuocdC0K9zg/T5hiDrsJySI/AAAAAAAABYg/Vy_-ZiKNIOQ/s1600/582643_356984461016626_119723014742773_951695_695582465_n.jpg</thumbnail>
+</item>
+
+<item>
+<title>CBC</title>
+<link>
+plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>src="//www.youtube.com/embed/([^"]*)</expres>
+<page>http://www.cbc-eg.com/cbc/live-stream</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://3.bp.blogspot.com/-bQhnaV_8KF4/T7ZPNiBq6zI/AAAAAAAADEY/p3VdxQEj1Ws/s1600/cbc.jpg</thumbnail>
+</item>
+
+<item>
+<title>CBC 2</title>
+<link>
+plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>src="//www.youtube.com/embed/([^"]*)</expres>
+<page>http://www.cbc-eg.com/two/live-stream</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>https://yt3.ggpht.com/-NZi8n5mnEgs/AAAAAAAAAAI/AAAAAAAAAAA/rzVXyciExjI/s88-c-k-no/photo.jpg</thumbnail>
+</item>
+
+<item>
+<title>CBC Extra</title>
+<link>
+plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>src="//www.youtube.com/embed/([^"]*)</expres>
+<page>http://www.cbc-eg.com/extra/live-stream</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>https://yt3.ggpht.com/-01YF5Z5-iko/AAAAAAAAAAI/AAAAAAAAAAA/lo6d1n4uaAg/s88-c-k-no/photo.jpg</thumbnail>
+</item>
+
+<item>
+<title>CBC Drama</title>
+<link>
+plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>src="//www.youtube.com/embed/([^"]*)</expres>
+<page>http://www.cbc-eg.com/drama/live-stream</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>https://yt3.ggpht.com/-tDe3PyadQnQ/AAAAAAAAAAI/AAAAAAAAAAA/rBmsY_5xshg/s88-c-k-no/photo.jpg</thumbnail>
+</item>
+
+<item>
+<title>CBC Sofra</title>
+<link>
+plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>src="//www.youtube.com/embed/([^"]*)</expres>
+<page>http://www.cbc-eg.com/sofra/live-stream</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.livetv.tn/images/icons/256.gif</thumbnail>
+</item>
+
+<item>
+<title>Echourouk TV</title>
+<link>http://live.echoroukonline.com/live/EchoroukTV_SD/chunklist.m3u8</link>
+<thumbnail>http://www.livetv.tn/images/icons/118.gif</thumbnail>
+</item>
+
+<item>
+<title>Dream 1</title>
+<link>
+$doregex[m3u8]
+<regex>
+<name>m3u8</name>
+<expres>file:"([^?]*)</expres>
+<page>http://www.freetv247.com/content/dream-1-live-tv</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.livetv.tn/images/icons/24.gif</thumbnail>
+</item>
+
+<item>
+<title>Dream 2</title>
+<link>http://8.21.48.19:7777/Dream2_HD.m3u8</link>
+<thumbnail>http://bell-vs-rogers.com/channellogos/cid599dream2.png</thumbnail>
+</item>
+
+<item>
+<title>Dubai One  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>http://cdnedvrdubaione.endavomedia.com/smil:dmilivedubaionehls.smil/playlist.m3u8</link>
+<thumbnail>http://www.livetv.tn/images/icons/111.gif</thumbnail>
+</item>
+
+<item>
+<title>Mehwer</title>
+<link>rtmp://livestreaming4.onlinehorizons.net/ app=MehwarTV playpath=livestream swfUrl=http://onlinehorizons.net/livestreaming/MehwarTV/player.swf live=true timeout=15 pageUrl=http://onlinehorizons.net/livestreaming/MehwarTV/</link>
+<thumbnail>http://www.elmehwartv.com/wp-content/uploads/2014/01/1.png</thumbnail>
+</item>
+
+<item>
+<title>Baghdadiya</title>
+<link>http://albaghdadiahls-i.akamaihd.net/hls/live/218980/albaghdadia-ios/master.m3u8</link>
+<thumbnail>http://www.livetv.tn/images/icons/112.gif</thumbnail>
+</item>
+
+<item>
+<title>NBN  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>rtmp://lived.nbn.com.lb/nbn playpath=mpegts.stream live=true timeout=15 pageurl=http://www.nbn.com.lb/live/</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/1/14/Nbn_lebanon.png</thumbnail>
+</item>
+
+<item>
+<title>NBN (Link 2)</title>
+<link>http://38.99.146.36:7777/NBNLebanon_HD/NBNLebanon_HD.m3u8</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/1/14/Nbn_lebanon.png</thumbnail>
+</item>
+
+<item>
+<title>Rotana Cinema</title>
+<link>
+rtmp://$doregex[url] app=live/$doregex[key] playpath=2615.low.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf pageUrl=http://www.filmon.com live=true timeout=15
+<regex>
+<name>url</name>
+<expres>"low".*rtmp:....([^\\]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=2615</page>
+<referer> </referer>
+</regex>
+<regex>
+<name>key</name>
+<expres>"low".*rtmp[^?]*(\?id=[^"]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=2615</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.web-medias.net/uploads/thumbs/4d623b58a-1.jpg</thumbnail>
+</item>
+
+<item>
+<title>Rotana Aflam</title>
+<link>
+rtmp://$doregex[url] app=live/$doregex[key] playpath=2618.low.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf pageUrl=http://www.filmon.com live=true timeout=15
+<regex>
+<name>url</name>
+<expres>"low".*rtmp:....([^\\]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=2618</page>
+<referer> </referer>
+</regex>
+<regex>
+<name>key</name>
+<expres>"low".*rtmp[^?]*(\?id=[^"]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=2618</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.web-medias.net/uploads/thumbs/3c06e1980-1.jpg</thumbnail>
+</item>
+
+<item>
+<title>Rotana Masriya</title>
+<link>
+rtmp://$doregex[url] app=live/$doregex[key] playpath=2612.low.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf pageUrl=http://www.filmon.com live=true timeout=15
+<regex>
+<name>url</name>
+<expres>"low".*rtmp:....([^\\]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=2612</page>
+<referer> </referer>
+</regex>
+<regex>
+<name>key</name>
+<expres>"low".*rtmp[^?]*(\?id=[^"]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=2612</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.web-medias.net/uploads/thumbs/df2b3d314-1.jpg</thumbnail>
+</item>
+
+<item>
+<title>Rotana Clip</title>
+<link>
+rtmp://$doregex[url] app=live/$doregex[key] playpath=2603.low.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf pageUrl=http://www.filmon.com live=true timeout=15
+<regex>
+<name>url</name>
+<expres>"low".*rtmp:....([^\\]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=2603</page>
+<referer> </referer>
+</regex>
+<regex>
+<name>key</name>
+<expres>"low".*rtmp[^?]*(\?id=[^"]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=2603</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.web-medias.net/uploads/thumbs/47b902f57-1.jpg</thumbnail>
+</item>
+
+<item>
+<title>Rotana Khalijia</title>
+<link>
+rtmp://$doregex[url] app=live/$doregex[key] playpath=2606.low.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf pageUrl=http://www.filmon.com live=true timeout=15
+<regex>
+<name>url</name>
+<expres>"low".*rtmp:....([^\\]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=2606</page>
+<referer> </referer>
+</regex>
+<regex>
+<name>key</name>
+<expres>"low".*rtmp[^?]*(\?id=[^"]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=2606</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.web-medias.net/uploads/thumbs/221525aa7-1.jpg</thumbnail>
+</item>
+
+<item>
+<title>MBC  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>rtmp://$doregex[url] app=live/$doregex[key] playpath=367.high.stream swfUrl=http://www.filmon.com/tv/modules/FilmOnTV/files/flashapp/filmon/FilmonPlayer.swf pageUrl=http://www.filmon.com live=true timeout=15
+<regex>
+<name>url</name>
+<expres>"low".*rtmp:....([^\\]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=367</page>
+<referer> </referer>
+</regex>
+<regex>
+<name>key</name>
+<expres>"low".*rtmp[^?]*(\?id=[^"]*)</expres>
+<page>http://www.filmon.com/tv/channel/export?channel_id=367</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.ilcode.com/photos/www.ilcode.com-mdubdqlswkxrchiaarxirdk-mbc.jpg</thumbnail>
+</item>
+
+<item>
+<title>MTV Lebanon  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>http://livestreaming1.itworkscdn.net/mtvlive/smil:mtvmob.smil/playlist.m3u8</link>
+<thumbnail>http://4.bp.blogspot.com/-v7Q1icQUJD0/Tm5vrpPY1gI/AAAAAAAAAGs/640s_zySbsQ/s200/MTV+1.png</thumbnail>
+</item>
+
+<item>
+<title>OTV Lebanon</title>
+<link>rtmp://livestreaming.itworkscdn.net/otvlive playpath=otvlive_1 swfUrl=http://itworks-me.net/otvent/jwplayer.flash.swf live=true timeout=15 pageUrl=http://itworks-me.net/otvent/live2.php</link>
+<thumbnail>http://www.fanoos.com/ia/otv_orange_television.jpg</thumbnail>
+</item>
+
+<item>
+<title>Aljadeed  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>rtmp://livestreaming.itworkscdn.net/ app=aljadeedlive playpath=aljadeed_360p swfurl=http://www.itworks-me.net/aljadeed/jwplayer.flash.swf pageurl=http://www.itworks-me.net/ live=true timeout=15</link>
+<thumbnail>http://1.bp.blogspot.com/-W1Ry_s_c5-k/UAw9jeMFGoI/AAAAAAAANlY/SJ_JbZV8W5E/s400/aljadeed%2Btv.jpeg</thumbnail>
+</item>
+
+<item>
+<title>MBC</title>
+<link>rtmp://us1.uvlog.com/ app=uvlog_video/3142 playpath=stream swfUrl=http://www.uvlog.com/embed.swf?rand=8266 pageUrl=http://www.uvlog.com/embed/3142/650/370/FALSE/true/false/FALSE/www.freetv247.com live=true timeout=15</link>
+<thumbnail>http://www.ilcode.com/photos/www.ilcode.com-mdubdqlswkxrchiaarxirdk-mbc.jpg</thumbnail>
+</item>
+
+<item>
+<title>MBC Action</title>
+<link>rtmp://94.102.56.186:1936/live2 playpath=Hi_mbcaction swfUrl=http://iptv-planet.com/swfs/player.swf pageUrl=http://iptv-planet.com/ live=true timeout=15</link> 
+<thumbnail>http://upload.wikimedia.org/wikipedia/ar/3/37/MBC-Action.jpg</thumbnail>
+</item>
+
+<item>
+<title>MBC 2</title> 
+<link>rtmp://live-f01.vustream.net/live/ playpath=livestream swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf pageUrl=http://www.freetv247.com/content/mbc-2-movies-live-tv live=true timeout=15</link> 
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/mbc2_ae.png</thumbnail>
+</item>
+
+<item>
+<title>MBC 3</title>
+<link>http://8.21.48.19:7777/MBC3_HD.m3u8</link> 
+<thumbnail>http://www.watchtv.co/wp-content/themes/broadcast/thumb.php?src=http://www.watchtv.co/wp-content/uploads/2012/07/mbc3-channel-streaming1.jpg&w=581&h=252&zc=1&q=100</thumbnail>
+</item>
+
+<item>
+<title>MBC 4</title>
+<link>http://8.21.48.19:7777/MBC4_HD.m3u8</link>
+<thumbnail>http://aflam4you.tv/uploads/thumbs/71-1.jpg</thumbnail>
+</item>
+
+<item>
+<title>Nile Life</title>
+<link>rtmp://livestreaming4.onlinehorizons.net/NTNNileLife playpath=livestream swfUrl=http://niletc.tv/player/player.swf live=true timeout=15 pageUrl=http://www.ntnegypt.net/stream.php?ch=life</link>
+<thumbnail>http://www.watchlivetvstreaming.com/wp-content/uploads/2012/07/Nile-Life-TV-Egypt.png</thumbnail>
+</item>
+
+<item>
+<title>Nile Comedy</title>
+<link>rtmp://livestreaming4.onlinehorizons.net/NTNNileComedy playpath=livestream swfUrl=http://niletc.tv/player/player.swf pageUrl=http://niletc.tv/stream.php?ch=comedy live=1</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/nn/nile_comedy.png</thumbnail>
+</item>
+
+<item>
+<title>Nile Culture</title>
+<link>rtmp://livestreaming4.onlinehorizons.net/NTNNileCulture playpath=livestream swfUrl=http://niletc.tv/player/player.swf pageUrl=http://niletc.tv/stream.php?ch=culture live=1</link>
+<thumbnail>http://4.bp.blogspot.com/-Hn_FdpWA4IY/Udbg2vTx94I/AAAAAAAAAiY/zsgBsK6oKU8/s1600/Nile+culture.jpg</thumbnail>
+</item>
+
+<item>
+<title>Nile Family</title>
+<link>rtmp://livestreaming4.onlinehorizons.net/NTNNileFamily playpath=livestream swfUrl=http://niletc.tv/player/player.swf pageUrl=http://niletc.tv/stream.php?ch=family live=1</link>
+<thumbnail>http://3.bp.blogspot.com/-TsGliDeGgqQ/UKfPynF7gjI/AAAAAAAABkY/smG1Sh3j8Yo/s1600/family10.jpg</thumbnail>
+</item>
+
+<item>
+<title>Al Baghdadia 2</title>
+<link>http://iphone-streaming.ustream.tv/ustreamVideo/19222559/streams/live/playlist.m3u8</link>
+<thumbnail>http://a1.mzstatic.com/us/r1000/107/Purple/cf/aa/5c/mzl.bjffmkul.jpg</thumbnail>
+</item>
+
+<item>
+<title>Melody Drama</title>
+<link>
+plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>http://www.youtube.com/v/([^?]*)</expres>
+<page>http://freetv247.com/content/melody-drama-channel</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://4.bp.blogspot.com/_ayWC2KUhMqw/TJ04otUC4mI/AAAAAAAACds/mCsD_c_kqfU/s1600/melody%2Bdrama%2Blogo%255B1%255D.JPG</thumbnail>
+</item>
+
+<item>
+<title>Melody Hits</title>
+<link>
+plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>http://www.youtube.com/v/([^?]*)</expres>
+<page>http://freetv247.com/content/melody-hits-channel</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/melody_hits.png</thumbnail>
+</item>
+
+<item>
+<title>Melody Classic</title>
+<link>
+plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>http://www.youtube.com/v/([^?]*)</expres>
+<page>http://freetv247.com/content/melody-classic-channel</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://i.ytimg.com/vi/b-e5GQrqu8I/hqdefault.jpg</thumbnail>
+</item>
+
+<item>
+<title>Melody Arabia</title>
+<link>rtmp://38.96.148.24/ app=MelodyArabia/ playpath=MArabia_576p swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf live=true timeout=15 pageUrl=http://freetv247.com/content/melody-arabia-channel</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/melody_arabia.png</thumbnail>
+</item>
+
+<item>
+<title>Melody Aflam</title>
+<link>
+plugin://plugin.video.youtube/?action=play_video&amp;videoid=$doregex[id]
+<regex>
+<name>id</name>
+<expres>http://www.youtube.com/v/([^?]*)</expres>
+<page>http://freetv247.com/content/melody-aflam-channel</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://i.ytimg.com/vi/QqRmPIDkBrM/hqdefault.jpg</thumbnail>
+</item>
+
+<item>
+<title>MBC Bollywood</title>
+<link>
+rtmp://iptv2.tele-live.com:8080/live/ playpath=$doregex[id] swfUrl=http://www.tele-live.com/jwplayer.swf pageUrl=http://www.tele-live.com/ live=true timeout=15
+<regex>
+<name>id</name>
+<expres>file>([^<]*)</expres>
+<page>http://www.tele-live.com/iptv/?ch=mbc_bollywood</page>
+<referer>http://www.tele-live.com/mbc-bollywood-en-direct-live-%D8%A7%D9%85-%D8%A8%D9%8A-%D8%B3%D9%8A-%D8%A8%D9%88%D9%84%D9%8A%D9%88%D8%AF-%D8%A8%D8%AB-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-video_d84380d20.html</referer>
+</regex>
+</link>
+<thumbnail>http://www.waleg.com/images/mbc-bollywood.jpg</thumbnail>
+</item>

@@ -1,0 +1,4 @@
+#LWP-Cookies-2.0
+Set-Cookie3: bblastactivity=0; path="/"; domain="sportsaccess.se"; path_spec; expires="2017-04-24 01:31:39Z"; version=0
+Set-Cookie3: bblastvisit=1461461482; path="/"; domain="sportsaccess.se"; path_spec; expires="2017-04-24 01:31:22Z"; version=0
+Set-Cookie3: bbsessionhash=911716b9bc4c599f9cda910fb6059f9a; path="/"; domain="sportsaccess.se"; path_spec; discard; HttpOnly=None; version=0

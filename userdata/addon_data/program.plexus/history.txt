@@ -1,0 +1,2 @@
+acestream title|7dcf3c8daaad0efbef55af2d74d52a5f8f65783c|1|/storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/program.plexus/resources/art/acestream-menu-item.png
+100% News|acestream://a0b7f12e75e0690c0896b3aaaf00a6f94b4bf084|1|/storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/addons/program.plexus/resources/art/acestream-menu-item.png

@@ -1,0 +1,5 @@
+<settings>
+    <setting id="add_playlist" value="true" />
+    <setting id="ask_playlist_items" value="false" />
+    <setting id="save_location" value="" />
+</settings>

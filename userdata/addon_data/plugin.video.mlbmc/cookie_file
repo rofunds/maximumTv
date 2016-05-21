@@ -1,0 +1,9 @@
+#LWP-Cookies-2.0
+Set-Cookie3: SESSION_1=""; path="/"; domain=".mlb.com"; path_spec; domain_dot; discard; version=0
+Set-Cookie3: appacc=mlb; path="/"; domain=".mlb.com"; path_spec; domain_dot; expires="2017-03-03 21:10:15Z"; version=0
+Set-Cookie3: fprt="QnZzaHYvQUNFU3VNK0JTZVArV0VseGJDc1pnPXwxNDU3MDM5NDE1MDAwfGlwdD1lbWFpbC1wYXNzd29yZA%3D%3D"; path="/"; domain=".mlb.com"; path_spec; domain_dot; expires="2017-03-03 21:10:15Z"; version=0
+Set-Cookie3: guid=3cf96dc6359756969825749019e4db7d; path="/"; domain=".mlb.com"; path_spec; domain_dot; expires="2017-03-03 21:10:15Z"; version=0
+Set-Cookie3: ipid=25601669; path="/"; domain=".mlb.com"; path_spec; domain_dot; expires="2017-03-03 21:10:15Z"; version=0
+Set-Cookie3: kv="device=WEB_MEDIAPLAYER"; path="/"; domain=".mlb.com"; path_spec; domain_dot; discard; version=0
+Set-Cookie3: mai="lastName%3DBrennan%26firstName%3DRobert%26birthYear%3D1955%26birthDay%3D5%26birthMonth%3D5%26_email%3Dcommunication68%40hotmail.com"; path="/"; domain=".mlb.com"; path_spec; domain_dot; expires="2017-03-03 21:10:15Z"; version=0
+Set-Cookie3: mlbunifieddata="25601669%7Cd68f76ce0f190b8ee6e490b9c711c182%7C1457039415038%7Cttemp"; path="/"; domain=".mlb.com"; path_spec; domain_dot; discard; version=0

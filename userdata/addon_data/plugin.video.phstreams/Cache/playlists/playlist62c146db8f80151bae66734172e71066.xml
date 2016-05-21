@@ -1,0 +1,231 @@
+***************************************************************************
+***************************************************************************
+<poster>Woody</poster>
+<fanart>http://banjaluka.watchkodi.com/images/Woody.jpg</fanart>
+***************************************************************************
+***************************************************************************
+
+
+<item>
+<title>[COLOR yellow]24 Kitchen[/COLOR]</title>
+<link>http://cdn-07.sdn.si/24kitchen/24kitchen.isml/24kitchen-video%3D1500000-audio101%3D128000.m3u8</link>
+<thumbnail>http://blogtelevisual.com/wp-content/uploads/2012/07/0001_identidade_24kitchen_.jpg</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>[COLOR yellow]ABC[/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=rGCi7bg0Qxvs8q7Sl13l swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf live=1 flashver=WIN\202012,0,0,77 timeout=15 token=token=OOG17t.x#K9Vh#| live=1swfVfy=1 pageUrl=http://zerocast.tv</link>
+<thumbnail>http://epmgaa.media.lionheartdms.com/img/photos/2014/10/14/Abc_-_logo.jpeg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]ABC News[/COLOR]</title>
+<link>http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8?sd=10&b=1200&rebase=on</link>
+<thumbnail>http://www.slacker.com/components/i/abc_hero_main.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]AMC[/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=TfRQx7deUAuncJwM047m swfUrl=http://cdn.zerocast.tv/player.swf pageUrl=http://zerocast.tv/embed3.php?a=237&id=&width=711&height=478&autostart=true&strech= token=token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://www.troika.tv/wp-content/uploads/AMC-Logo1.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]Cartoon Network [/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=08pydvp1b7ZwZb3a5TW1 swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf live=1 flashver=WIN\202012,0,0,77 timeout=15 token=token=OOG17t.x#K9Vh#| live=1swfVfy=1 pageUrl=http://zerocast.tv</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]CBS[/COLOR]</title>
+<link>http://83.139.104.123/Content/HLS/Live/Channel(cbs_reality)/Stream(03)/index.m3u8?b?b*t$</link>
+<thumbnail>http://img2.wikia.nocookie.net/__cb20100629084539/memoryalpha/en/images/a/a0/CBS_Television_Studios.jpg</thumbnail>
+</item>
+
+
+
+
+
+
+<item>
+<title>[COLOR yellow]CNBC[/COLOR]</title>
+<link>http://livestation_hls-lh.akamaihd.net/i/cnbc_en@106428/index_838_av-b.m3u8?sd=10&rebase=on</link>
+<thumbnail>http://cdn.alleywatch.com/wp-content/uploads/2013/11/cnbc.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]CW[/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=IWSyIjvWgHRCMM7MEJoZ swfUrl=http://cdn.zerocast.tv/player.swf flashVer=WIN/16,0,0,219 pageUrl=http://zerocast.tv/embed3.php?a=8&id=&width=580&height=400&autostart=true&strech= token=token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://stingytv.com/wp-content/uploads/2013/12/cw-fb-profile.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]Discovery Channel[/COLOR]</title>
+<link>http://202.75.23.34:1400/live/ch29/02.m3u8</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/jv/0/09/Discovery_Channel.jpg</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>[COLOR yellow]Discovery World[/COLOR]</title>
+<link>http://202.75.23.34:1400/live/ch30/03.m3u8</link>
+<thumbnail>http://img4.wikia.nocookie.net/__cb20091111164548/logopedia/images/8/8b/Discovery_World.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]Discovery Science[/COLOR]</title>
+<link>http://202.75.23.34:1400/live/ch33/03.m3u8</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/pt/a/a8/LOGO_DISCOVERY_SCIENCE.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]ESPN  [/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=YEZib0gVfqaDdaFn9MQ9 swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf live=1 flashver=WIN\202012,0,0,77 timeout=15 token=token=OOG17t.x#K9Vh#| live=1swfVfy=1 pageUrl=http://zerocast.tv</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]FOX 5[/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=9pxGCtP3aEnJYgoBFFH8 swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf live=1 flashver=WIN\202012,0,0,77 timeout=15 token=token=OOG17t.x#K9Vh#| live=1swfVfy=1 pageUrl=http://zerocast.tv</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]FOX Crime[/COLOR]</title>
+<link>http://cdn-07.sdn.si/foxcrime/foxcrime.isml/foxcrime-video%3D2500000-audio101%3D128000.m3u8</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]FOX Movies[/COLOR]</title>
+<link>http://cdn-07.sdn.si/foxmovies/foxmovies.isml/foxmovies-video%3D1500000-audio101%3D128000.m3u8</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]FX[/COLOR]</title>
+<link>http://ilg.club/streamlink.m3u8?channel_id=2e0e4b05aa6e428593f3b45b710045b7&bitrate=800</link>
+<thumbnail>http://i2.cdnds.net/12/13/300x225/uktv_fx_logo_1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]FYI[/COLOR]</title>
+<link>http://202.75.23.36/live/ch46/03.m3u8?b?b*t$</link>
+<thumbnail>http://2.bp.blogspot.com/-k2oPO6xmP48/VCAyYr1ePBI/AAAAAAAAAtg/q_VjgtE1efM/s1600/FYI-Logo-2.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]HBO [/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=qKmzUdRhBM73njBBDFyL swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf live=1 flashver=WIN\202012,0,0,77 timeout=15 token=token=OOG17t.x#K9Vh#| live=1swfVfy=1 pageUrl=http://zerocast.tv</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]KTLA[/COLOR]</title>
+<link>rtmpe://46.246.124.88/live playpath=ktlausa_usa swfUrl=http://ukcast.co/player//player.swf live=1 pageUrl=http://www.ukcast.co/ token=%ZZri(nKa@#Z</link>
+<thumbnail>http://stuartokeeffe.com/wp-content/uploads/2011/03/ktla.jpg</thumbnail>
+</item>
+
+http://livestream-f.akamaihd.net/9262780_3189705_54350b49_1_678@64414?v=3.0.3&fp=WIN%2016,0,0,257&r=UWQXS&g=ZJXIYQKGSNRZ
+
+
+<item>
+<title>[COLOR yellow]MTV[/COLOR]</title>
+<link>http://83.139.104.123/Content/HLS/Live/Channel(mtv_music)/Stream(03)/index.m3u8?b?b*t$</link>
+<thumbnail>http://3-ps.googleusercontent.com/x/www.broadwayworld.com/images.bwwstatic.com/tvnetworklogos/0FF063E5-0B72-C03D-3A2A5F01A4FBF6C3.jpg.pagespeed.ce.37QcfsGav-.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]Nat Geo[/COLOR]</title>
+<link>rtmp://89.248.168.57/iguide/mvu912lm6c5dzz6 playpath=rtmp://93.174.95.125:1935/edge/_definst_/b8bav5ayzso8m8q swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/ token=#ed%h0#w18623jsda6523lDGDHur timeout=10</link>
+<thumbnail>http://fc06.deviantart.net/fs70/f/2012/048/8/4/nat_geo_wallpaper_by_johnnyslowhand-d4q0zf1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]National Geographic HD[/COLOR]</title>
+<link>rtmp://89.248.168.57/iguide/mvu912lm6c5dzz6 playpath=rtmp://93.174.95.125:1935/edge/_definst_/qzsfigd1y3bgbhs swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/ token=#ed%h0#w18623jsda6523lDGDHur timeout=10</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]NBCSN [/COLOR]</title>
+<link>rtmp://46.165.220.225/iguide playpath=rtmp://93.174.95.125:1935/edge/_definst_/0fm1lstybe4a0j4 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/ token=#ed%h0#w18623jsda6523lDGDHur</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+ 
+ 
+<item>
+<title>[COLOR yellow]Nickelodion[/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=fCqfhb14WwwFbAsDbV3Z swfUrl=http://cdn.zerocast.tv/player.swf flashVer=WIN/16,0,0,219 pageUrl=http://zerocast.tv/embed3.php?a=14&id=&width=580&height=400&autostart=true&strech= token=token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://www.blackyouthproject.com/files/2011/04/nickelodeon.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]Outdoor[/COLOR]</title>
+<link>rtmp://lm02.everyon.tv:1935/ptv2/pld613</link>
+<thumbnail>http://img2.wikia.nocookie.net/__cb20100506084227/logopedia/images/b/bf/The_Outdoor_Channel_old.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]Showtime [/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=kbMD64czDshAmjDd4kxQ swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf live=1 flashver=WIN\202012,0,0,77 timeout=15 token=token=OOG17t.x#K9Vh#| live=1swfVfy=1 pageUrl=http://zerocast.tv</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]Spike[/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=5MHkm6cQaL5rJZpCSL1C swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf live=1 flashver=WIN\202012,0,0,77 timeout=15 token=token=OOG17t.x#K9Vh#| live=1swfVfy=1 pageUrl=http://zerocast.tv</link>
+<thumbnail>http://desistreams.net/img/spike-tv-live.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]TLC[/COLOR]</title>
+<link>http://83.139.104.123/Content/HLS/Live/Channel(TLC)/Stream(03)/index.m3u8?b?b*t$</link>
+<thumbnail>http://www.entertainmentdoor.com.pk/images/channel_image/117152149_640.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]TNT[/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=Waz0WqvbqNHmt0gdzrsm swfUrl=http://cdn.zerocast.tv/player.swf flashVer=WIN/16,0,0,219 pageUrl=http://zerocast.tv/embed3.php?a=18&id=&width=580&height=400&autostart=true&strech= token=token=OOG17t.x#K9Vh#|</link>
+<thumbnail>http://blogs.ubc.ca/gigifeng/files/2013/10/tnt-logo.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]USA Network[/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=jvZXQUYQmlsPirfiVK1G swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf live=1 flashver=WIN\202012,0,0,77 timeout=15 token=token=OOG17t.x#K9Vh#| live=1swfVfy=1 pageUrl=http://zerocast.tv</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]Wealth[/COLOR]</title>
+<link>rtmp://204.107.26.252:8086/live/403.high.stream</link>
+<thumbnail>http://mascola.com/insights/wp-content/uploads/2011/08/WealthTV_Full_Logo2.jpg</thumbnail>
+</item>
+

@@ -1,0 +1,22 @@
+<settings>
+    <setting id="BackgroundVisualisation" type="bool">false</setting>
+    <setting id="BackgroundVideo" type="bool">false</setting>
+    <setting id="HomeFanart" type="bool">false</setting>
+    <setting id="DebugGrid" type="bool">false</setting>
+    <setting id="DebugInfo" type="bool">false</setting>
+    <setting id="PictureFanart" type="bool">false</setting>
+    <setting id="MovieFanart" type="bool">false</setting>
+    <setting id="TVFanart" type="bool">false</setting>
+    <setting id="MusicFanart" type="bool">false</setting>
+    <setting id="WeatherFanart" type="bool">false</setting>
+    <setting id="AddonFanart" type="bool">false</setting>
+    <setting id="SkinShortcuts-FullMenu" type="bool">true</setting>
+    <setting id="skinshortcuts-widget-RecentMovies" type="bool">true</setting>
+    <setting id="skinshortcuts-widget-RecentEpisodes" type="bool">true</setting>
+    <setting id="skinshortcuts-widget-RecentAlbums" type="bool">true</setting>
+    <setting id="skinshortcuts-widget-MyOSMC" type="bool">true</setting>
+    <setting id="skinshortcuts-widget-1" type="string">RecentMovies</setting>
+    <setting id="skinshortcuts-widget-2" type="string">RecentEpisodes</setting>
+    <setting id="skinshortcuts-widget-3" type="string">RecentAlbums</setting>
+    <setting id="skinshortcuts-widget-4" type="string">MyOSMC</setting>
+</settings>

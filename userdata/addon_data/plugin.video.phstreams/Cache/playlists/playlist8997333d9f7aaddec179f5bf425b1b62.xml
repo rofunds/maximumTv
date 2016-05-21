@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channel>
+<name>Mexican TV Channels</name>
+<thumbnail></thumbnail>
+
+<item>
+<title>Astro TV</title>
+<link>rtsp://difusor.uson.mx/Astrow</link>
+<thumbnail>http://www.tv14.net/wp-content/uploads/2010/10/Astro-TV.jpg</thumbnail>
+</item>
+
+<item>
+<title>Canal 5</title>
+<link>rtmp://212.7.212.25/live playpath=sincoa3?id=73078 conn=S:OK swfUrl=http://www.ucaster.eu/static/scripts/fplayer.swf pageUrl=http://www.ucaster.eu/embedded/sincoa3/1/590/400 live=true timeout=15</link>
+<thumbnail>http://www.xejtv.com/InicioV/images/V.png</thumbnail>
+</item>
+
+<item>
+<title>MTV</title>
+<link>rtmp://77.92.76.182/live playpath=mtv2016?id=14102 conn=S:OK swfUrl=http://www.janjua.tv/resources/scripts/eplayer.swf pageUrl=http://www.janjua.tv/embedplayer/mtv2016/1/620/385 live=true timeout=15</link>
+<thumbnail>http://www.freelogovector.com/gallery/m/MTV%20logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>Televisa</title>
+<link>rtmp://212.7.209.6/live playpath=starasdl23?id=76618 conn=S:OK swfUrl=http://www.ucaster.eu/static/scripts/fplayer.swf pageUrl=http://www.ucaster.eu/embedded/stajasjo/1/590/400 live=true timeout=15</link>
+<thumbnail>http://nowwatchtvlive.com/wp-content/uploads/2013/02/Watch-Live-Online-Televisa-en-Vivo-Logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>Travel Channel</title>
+<link>http://xmexicotravelernetworkx.api.channel.livestream.com/3.0/playlist.m3u8</link>
+<thumbnail>http://www.mexicotravelchannel.com.mx/_assets/_css/_img/logosmtch.jpg</thumbnail>
+</item>
+
+<item>
+<title>Canal 6</title>
+<link>rtmp://200.52.193.57:1935/ app=live/unique playpath=live_2650 swfUrl=http://200.52.193.59/canal6/videoplayermegared.swf?live=true&amp;src=rtmp://200.52.193.57/live/live_2650.flv&amp;autoplay=true live=true timeout=15 pageUrl=http://www.tv14.net/canal-6-mexico/</link>
+<thumbnail>http://www.tv14.net/wp-content/uploads/2010/10/Canal-6-Mexico.jpg</thumbnail>
+</item>
+
+<item>
+<title>Monte Maria TV</title>
+<link>rtmp://50.7.98.234:1935/ app=montem/_definst_ playpath=mp4:videomontem2 swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf pageUrl=http://montemaria.org/amor/ live=true timeout=15</link>
+<thumbnail>http://www.tv14.net/wp-content/uploads/2010/10/Monte-Maria.jpg</thumbnail>
+</item>
+
+<item>
+<title>OCHO</title>
+<link>http://201.130.193.150:1935/codecsys/smil:ocho.smil/master.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/oo/ocho_tv.png</thumbnail>
+</item>
+
+<item>
+<title>TV MAS</title>
+<link>rtmp://50.7.98.234/rtv playpath=videortv swfUrl=http://conceptoweb-studio.com/radio/video/player59/player.swf live=true timeout=15 pageUrl=http://conceptoweb-studio.com/radio/video/rtv/minisitio/tvstream.html</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/tt/tv_mas_mx.png</thumbnail>
+</item>
+
+<item>
+<title>Nuestravision</title>
+<link>rtmp://159.16.243.10/ app=live/canal5/ playpath=canal5 swfUrl=http://video7.stream.mx/system/misc/jwplayer6/jwplayer.flash.swf pageUrl=http://www.nuestravision.com.mx/ live=true timeout=15</link>
+<thumbnail>http://tvtvtv.ru/icons/logo_5751.png</thumbnail>
+</item>
+
+<item> 
+<title>Univision</title> 
+<link>
+$doregex[streamer] playpath=$doregex[file] swfUrl=http://static.castalba.tv/player5.9.swf live=true timeout=15 swfVfy=true pageUrl=http://castalba.tv/
+<regex>
+<name>streamer</name>
+<expres>'streamer': '([^']*)</expres>
+<page>http://castalba.tv/embed.php?cid=15648&amp;wh=620&amp;ht=390&amp;r=www.mirandotv.net</page>
+<referer>http://www.mirandotv.net/2014/03/univision-en-vivo-por-internet.html</referer>
+</regex>
+<regex>
+<name>file</name>
+<expres>'file': '([^']*)</expres>
+<page>http://castalba.tv/embed.php?cid=15648&amp;wh=620&amp;ht=390&amp;r=www.mirandotv.net</page>
+<referer>http://www.mirandotv.net/2014/03/univision-en-vivo-por-internet.html</referer>
+</regex>
+</link>
+<thumbnail>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW70cx-uJo3CBjJQ-K6d0vESjwL1R10Ql-0QTUNFveGoKJyhfr</thumbnail>
+</item>
+
+<item>
+<title>Telemundo</title>
+<link>
+$doregex[streamer] playpath=$doregex[file] swfUrl=http://static.castalba.tv/player5.9.swf live=true timeout=15 swfVfy=true pageUrl=http://castalba.tv/
+<regex>
+<name>streamer</name>
+<expres>'streamer': '([^']*)</expres>
+<page>http://castalba.tv/embed.php?cid=20639&amp;wh=600&amp;ht=400</page>
+<referer>http://www.onlinetv.planetfools.com/tvenvivo/telemundo-tv-en-vivo.php</referer>
+</regex>
+<regex>
+<name>file</name>
+<expres>'file': '([^']*)</expres>
+<page>http://castalba.tv/embed.php?cid=20639&amp;wh=600&amp;ht=400</page>
+<referer>http://www.onlinetv.planetfools.com/tvenvivo/telemundo-tv-en-vivo.php</referer>
+</regex>
+</link>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/telemar6_320.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>AZTECA 13</title>
+<link>http://urtmpkal-f.akamaihd.net/i/022fq4x8p_1@130156/index_1_av-b.m3u8</link>
+<thumbnail>http://3.bp.blogspot.com/-55_VRxl_ugM/TkwmLmX_yAI/AAAAAAAAAFg/7rZH8LvQGZk/s1600/azteca13hd.png</thumbnail>
+</item>
+
+<item>
+<title>AZTECA 7 HD</title>
+<link>http://urtmpkal-f.akamaihd.net/i/077zoqxzy_1@130091/index_3_av-p.m3u8</link>
+<thumbnail>http://4.bp.blogspot.com/-upmimGFngTc/Usnpk4oLd6I/AAAAAAAABZU/uPxJw1VVShg/s1600/VER+AZTECA+7+EN+VIVO+-++MAURY+TV.png</thumbnail>
+</item>
+
+<item>
+<title>AZTECA NOTICIAS</title>
+<link>http://urtmpkal-f.akamaihd.net/i/077zoqxzy_1@130091/index_3_av-p.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/aa/azteca_noticias_mx.png</thumbnail>
+</item>
+
+<item>
+<title>Canal 22 Mexico</title>
+<link>rtmp://origen.cloudapp.net/live/ playpath=envivopc swfUrl=http://www.longtailvideo.com/jwplayer/jwplayer.flash.swf live=1 pageUrl=http://www.streamsportlive.me/15.html</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/cc/canal_22_mx.png</thumbnail>
+</item>
+
+<item>
+<title>Canal 24 Horas</title>
+<link>http://168.255.107.6/canal24/</link>
+<thumbnail>http://www.tvn.cl/comercial/incoming/article609677.ece/BINARY/logo+canal+24h.jpg</thumbnail>
+</item>
+
+<item>
+<title>Canal 44</title>
+<link>http://odna.octoshape.net/p9b7g9i7/cds/smil:canal44/playlist.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/cc/canal44_mx.png</thumbnail>
+</item>
+
+<item>
+<title>Canal 66</title>
+<link>http://odna.octoshape.net/p9b7g9i7/cds/smil:mexicali/playlist.m3u8</link>
+<thumbnail>https://lh3.googleusercontent.com/-TwWQf6I4Q9c/TYqeIc1b-KI/AAAAAAAAANE/tN8kRJksSYw/s1600/xhila-canal-66.jpg</thumbnail>
+</item>
+
+<item>
+<title>CB Television</title>
+<link>rtmp://189.199.90.164:1935/live playpath=mexico.sdp swfUrl=http://www.cbtelevision.com.mx/envivo/hdmx2.swf pageUrl=http://www.cbtelevision.com.mx/envivo/mexico.php live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/cc/cb_tv_mexico.png</thumbnail>
+</item>
+
+<item>
+<title>ERH</title>
+<link>rtmp://72.233.78.178/live/ playpath=A swfUrl=http://www.longtailvideo.com/jwplayer/jwplayer.flash.swf live=1 pageUrl=http://www.streamsportlive.me/20.html</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>Milenio</title>
+<link>http://brightcove03-f.akamaihd.net/milenio_centro_512k@101956?videoId=1389353763001&amp;lineUpId=&amp;pubId=57828478001&amp;playerId=86401898001&amp;affiliateId=&amp;bandwidthEstimationTest=true&v=3.3.0&amp;fp=WIN%2014,0,0,177&amp;r=UWMJT&amp;g=JDRGDNVSFIML</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/6/62/Milenio_Television_Logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>MULTIMEDIOS TV</title>
+<link>http://brightcove03-f.akamaihd.net/multimedios_tv_612k@55732?file=multimedios_tv_612k@55732&start=0&amp;id=undefined&amp;client=FLASH%20WIN%2014,0,0,177&amp;version=4.1.60</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/multimedios_tv.png</thumbnail>
+</item>
+
+<item>
+<title>Once TV</title>
+<link>rtmp://www.oncetvmexicolive.tv:1935/livepkgr2 playpath=int3 swfUrl=http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf/[[DYNAMIC]]/1 live=1 pageUrl=http://www.stream2video.tv/getStream/137/1</link>
+<thumbnail>http://alternatv.us/ipublish/data/images/348Logo_Once_Mexico_alta_copy.jpg</thumbnail>
+</item>
+
+<item>
+<title>Canal 10</title>
+<link>rtmp://www.oncetvmexicolive.tv:1935/livepkgr2 playpath=int3 swfUrl=http://www.oncetvmexicolive.tv/StrobeMediaPlayback.swf</link>
+<thumbnail>https://pbs.twimg.com/profile_images/378800000572089647/30ddd7ad971de79b157068e2dcc510cd.png</thumbnail>
+</item>
+
+<item>
+<title>Mexiquense</title>
+<link>rtmp://fss28.streamhoster.com:1935/lv_tvmexiquense/_definst_ playpath=broadcast1 swfUrl=http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf/[[DYNAMIC]]/1 live=1 pageUrl=http://www.stream2video.tv/getStream/134/1</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/xx/xhptp_tv_mexiquense.png</thumbnail>
+</item>
+
+</channel>

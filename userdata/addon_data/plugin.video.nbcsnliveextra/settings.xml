@@ -1,0 +1,10 @@
+<settings>
+    <setting id="cdn" value="0" />
+    <setting id="clear_data" value="false" />
+    <setting id="free_only" value="false" />
+    <setting id="password" value="freetv99" />
+    <setting id="play_main" value="true" />
+    <setting id="provider" value="Comcast (xfinity)" />
+    <setting id="quality" value="6" />
+    <setting id="username" value="gbox222" />
+</settings>

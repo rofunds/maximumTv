@@ -1,0 +1,49 @@
+***************************************************************************
+***************************************************************************
+<poster>Demon88</poster>
+<fanart>http://images.alphacoders.com/258/258211.jpg</fanart>
+***************************************************************************
+***************************************************************************
+
+
+<dir>
+<name>1080p Movies</name>
+<link>http://cairo.watchkodi.com/1080p.xml</link>
+<thumbnail>http://i.imgur.com/3RGcHxi.png</thumbnail>
+</dir>
+
+<dir>
+<name>720p Movies</name>
+<link>http://cairo.watchkodi.com/720p.xml</link>
+<thumbnail>http://i.imgur.com/9gMNfbb.png</thumbnail>
+</dir>
+
+<dir>
+<name>3D Movies</name>
+<link>http://cairo.watchkodi.com/3d.xml</link>
+<thumbnail>http://i.imgur.com/Oi2jiaT.png</thumbnail>
+</dir>
+
+<dir>
+<name>New Movies</name>
+<link>http://cairo.watchkodi.com/new.xml</link>
+<thumbnail>http://i.imgur.com/h2m7vJN.png</thumbnail>
+</dir>
+
+<dir>
+<name>Asian Movies</name>
+<link>http://cairo.watchkodi.com/asian.xml</link>
+<thumbnail>http://i.imgur.com/RY5i9HK.png</thumbnail>
+</dir>
+
+<dir>
+<name>TV Series</name>
+<link>http://cairo.watchkodi.com/tv/tv.xml</link>
+<thumbnail>http://i.imgur.com/RuuOmqH.png</thumbnail>
+</dir>
+
+<dir>
+<name>Please visit https://demon88.cf/ to request or report dead link. Thanks!!</name>
+<link>http://cairo.watchkodi.com/tv/tv.xml</link>
+<thumbnail>http://i.imgur.com/gg0oh7O.png</thumbnail>
+</dir>

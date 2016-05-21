@@ -1,0 +1,7 @@
+<settings>
+    <setting id="kodion.cache.size" value="5" />
+    <setting id="kodion.fanart.show" value="true" />
+    <setting id="kodion.setup_wizard" value="false" />
+    <setting id="kodion.view.default" value="50" />
+    <setting id="kodion.view.override" value="false" />
+</settings>

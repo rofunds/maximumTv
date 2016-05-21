@@ -1,0 +1,4 @@
+<settings>
+    <setting id="hqpassword" value="password1234" />
+    <setting id="hqusername" value="streamsmart" />
+</settings>

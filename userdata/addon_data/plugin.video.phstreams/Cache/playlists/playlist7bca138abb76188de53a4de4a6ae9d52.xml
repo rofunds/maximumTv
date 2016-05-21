@@ -1,0 +1,167 @@
+***************************************************************************
+***************************************************************************
+<poster>Woody</poster>
+<fanart>http://banjaluka.watchkodi.com/images/Woody.jpg </fanart>
+***************************************************************************
+***************************************************************************
+
+
+
+<popup>
+<name>[COLOR blue]Messages[/COLOR]</name>
+<popImage>http://banjaluka.watchkodi.com/images/hockey%20on%20raspbmc.PNG</popImage>
+<thumbnail>http://banjaluka.watchkodi.com/images/Phoenix%20Hockey%202.jpg</thumbnail>
+<sound>http://banjaluka.watchkodi.com/sounds/Led%20Zeppelin%20-%20Kashmir.mp3</sound>
+</popup>
+
+<name>[COLOR aqua]How to Phoenix Hockey[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com/Hockey_How_to.xml</link>
+<thumbnail>http://banjaluka.watchkodi.com/images/Phoenix%20Hockey%202.jpg</thumbnail>
+<date>12/19/14</date>
+
+<name>[COLOR yellow]Wicked [COLOR blue] TV[/COLOR] </name>
+<link>http://banjaluka.watchkodi.com/Wicked_TV.xml</link>
+<thumbnail>http://www.dreamworksstudios.com/files/imagecache/news_image/wicked.jpg</thumbnail>
+<date>02/15/15</date>
+
+<name>[COLOR blue]Woodys [COLOR yellow] Channels[/COLOR] </name>
+<link>http://banjaluka.watchkodi.com//Woody_Channels.xml</link>
+<thumbnail>http://2.bp.blogspot.com/-P_jw2mCtzm4/U-fdUXRpB-I/AAAAAAAAGbU/07wBkU1jow0/s1600/woody_woodpecker_beer_by_loulouvz-d4g2jyx.png</thumbnail>
+<date>02/15/15</date>
+
+
+
+
+<name>[COLOR orange]BZZY Radio...Your all day [COLOR green]BUZZ[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com//Radio.xml</link>
+<thumbnail>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/t5/174803_72129570999_811404065_n.jpg</thumbnail>
+<date>02/03/15</date>
+
+<name>[COLOR orange]Woody's 1-20 Streams[/COLOR] </name>
+<link>http://banjaluka.watchkodi.com//Woody_Streams.xml</link>
+<thumbnail>https://researchresults.files.wordpress.com/2012/06/shutterstock_70581142.jpg</thumbnail>
+<date>02/17/15</date>
+
+
+
+
+<name>[COLOR orange]USA TV SERIES[/COLOR] </name>
+<link>http://banjaluka.watchkodi.com/USA_TV_SERIES.xml</link>
+<thumbnail>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROjc2iipnZbStg6kHLO6dRJVRYVSoAULuINmK4ly-J_9f9crgh</thumbnail>
+<date>02/16/15</date>
+
+<name>[COLOR orange]Acestreams[/COLOR] </name>
+<link>http://banjaluka.watchkodi.com/Acestreams.xml</link>
+<thumbnail>http://www.droidsticks.co.uk/wp-content/uploads/2014/05/torrent_stream_logo-300x262.png</thumbnail>
+<date>02/15/15</date>
+
+<name>[COLOR orange]Fight[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com/UFC.xml</link>
+<thumbnail>http://www.rockcinema.eu/resources/NEW-FIGHT-LOGO.gif</thumbnail>
+<date>02/09/15/</date>
+
+[COLOR orange] USA TV[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com//USA_TV.xml</link>
+<thumbnail>http://www.whistlerwag.com/wp-content/uploads/2014/04/tv.png </thumbnail>
+<date>01/13/15</date>
+
+<name>[COLOR orange]Motormania[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com/Motormania.xml</link>
+<thumbnail>http://www.motousa.eu/images/partnerzy/motormania.png</thumbnail>
+<date>02/10/15</date>
+
+
+<name>[COLOR orange]Sopcast[/COLOR] </name>
+<link>http://banjaluka.watchkodi.com/Sopcast.xml</link>
+<thumbnail>http://1.bp.blogspot.com/-HTeCs1XWcxM/T9cOI2WBncI/AAAAAAAAAEk/p1VHkG_0kiI/s1600/SopCast.png</thumbnail>
+<date>12/26/14</date>
+
+<name>[COLOR orange]Dakar 2015[/COLOR] </name>
+<link>http://banjaluka.watchkodi.com/Dakar_2015.xml</link>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/6/dakar-1416434087161.jpg</thumbnail>
+<date>01/19/15</date>
+
+
+
+<name>[COLOR orange]Snowboarding[/COLOR] </name>
+<link>http://banjaluka.watchkodi.com/Snowboard.xml</link>
+<thumbnail>http://img.gawkerassets.com/img/17f4js2blomzrjpg/original.jpg</thumbnail>
+<date>01/27/15</date>
+
+<name>[COLOR orange]NFL Full HD Game Replay[/COLOR] </name>
+<link>http://banjaluka.watchkodi.com//NFL_HD_Replay.xml</link>
+<thumbnail>http://img3.wikia.nocookie.net/__cb20140814182817/logopedia/images/1/11/Nfl_network_hd.png</thumbnail>
+<date>01/04/15</date>
+
+[COLOR orange]NFL SD Game Replay[/COLOR] </name>
+<link>http://banjaluka.watchkodi.com//NFL_SD_REPLAY.xml</link>
+<thumbnail>http://www.loadthegame.com/wp-content/uploads/2014/09/nfl-app-for-xbox-windows8.jpg</thumbnail>
+<date>01/04/15</date>
+
+
+
+
+
+
+
+<name>[COLOR orange]Races/Events/Challenges[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com/Races_Events.xml</link>
+<thumbnail>http://www.imasocialentrepreneur.com/wp-content/uploads/2011/05/warning-challenges.jpg</thumbnail>
+<date>01/27/15</date>
+
+<name>[COLOR orange]Red Bull Air Races[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com//Redbull.xml</link>
+<thumbnail>http://image.redbull.com/rbx00486/0010/1/2000/1050/441/custom/RBAR-logo.jpg</thumbnail>
+<date>11/22/14</date>
+
+
+
+<name>[COLOR orange]NCAA PAC-12[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com//PAC_12.xml</link>
+<thumbnail>http://www.collegetennisonline.com/Uploads/Common/Images/Pac12%20Logo(1)_ctofeatured.jpg</thumbnail>
+<date>11/09/14</date>
+
+
+
+<name>[COLOR orange]Kids[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com/Kids.xml</link>
+<thumbnail>http://logopond.com/logos/b683ab7538c677bf1bc93848a9545644.png</thumbnail>
+<date>02/17/15</date>
+
+
+<name>[COLOR orange]Mixed Bag O Videos[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com/Mix_Videos.xml</link>
+<thumbnail>http://www.reggaeroast.co.uk/wordpress/wp-content/uploads/2012/12/Mixed-Bag-logo.jpg</thumbnail>
+<date>02/02/15</date>
+
+<name>[COLOR orange]VLC 2[/COLOR]</name>
+http://banjaluka.watchkodi.com/vlc2.xml</link>
+<thumbnail> </thumbnail>
+<date>02/09/15</date>
+
+[COLOR yellow]VLC[/COLOR]</name>
+<link>http://banjaluka.watchkodi.com/vlc.xml</link>
+<thumbnail>http://topsofthome.com/wp-content/uploads/2014/08/vlc_logo_text.gif</thumbnail>
+<date>02/10/15/</date>
+
+
+#############################################################################################################################
+
+#############################################################################################################################
+
+
+
+
+#########################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+<settings>
+    <setting id="autoplay" value="false" />
+    <setting id="axel" value="false" />
+    <setting id="download_folder" value="" />
+    <setting id="enable_calendar" value="true" />
+    <setting id="enable_sorting" value="false" />
+    <setting id="limit_shows" value="true" />
+    <setting id="results_number" value="20" />
+    <setting id="sort" value="" />
+    <setting id="source_blacklist" value="vodlocker.club" />
+    <setting id="specials" value="false" />
+    <setting id="tv_metadata" value="true" />
+</settings>

@@ -1,0 +1,941 @@
+***************************************************************************
+***************************************************************************
+<poster>Woody</poster>
+<fanart>http://png-1.findicons.com/files/icons/1780/black_and_orange/300/vlc_media_player_orange.png</fanart>
+***************************************************************************
+***************************************************************************
+
+
+
+
+<info>
+<message>[COLOR red]Jan 28 Status[COLOR yellow]Down!![/COLOR]</message>
+<thumbnail> </thumbnail>
+</info>
+
+
+
+<info>
+<message>[COLOR orange]THESE WORK WITH VLC AS EXTERNAL PLAYER (PLAY USING)[/COLOR]</message>
+<thumbnail> </thumbnail>
+</info>
+
+<info>
+<message>[COLOR orange]GET CORRECT playercorefactory.xml and place in userdata[/COLOR]</message>
+<thumbnail> </thumbnail>
+</info>
+
+
+
+
+<item>
+<title>[COLOR purple]A&E [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/tuc280rbycwnsvs</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR purple]ABC HQ [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/nz7l9vc5nv1og7b</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]AMC HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/z4cxm7zlfyqs65m</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]Angry Birds [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/h9qz6g56286zswc</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR purple]BBC 1 [/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/sxgb5xufw8urz6u</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]BBC 2 [/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/q8lmv15ex0gvsw6</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]BBC 3 [/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/h2kn8id2iw7tkm5</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]BBC 4 [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/ra8yzv9a2b5jy6s</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]BBC News [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/51iokvb92baa7v6</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Bein USA[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/v7jrebky4m73fzh</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Bein Sport HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/dhpj1xgov72x4br</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR purple]Bet HQ [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/kexkxje3nqi6dtl</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Bloomberg[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/whfb1q4iatfav4e</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]BT Sport 1 [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/0g5kj4rx27kg13z</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]BT Sport 1 HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/thj91224cuxnfr1</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]BT Sport 2 [/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/rj45pnhtehe6gxc</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]BT Sport 2 HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/z3ua1ed00znttfp</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Bravo [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/uw433ikqnrj501l</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Cartoon Network HQ [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/p78zj79dhlxx3ws</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]CBS  [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/dt0qvk6nmdhk8u6</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]CBS HQ [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/vp4q2gonwzh2dku</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]CBS Sports [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/obzq3ltrjoaxglf</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Channel 4 UK [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/i0zx6340xn817pa</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Channel 5 UK HQ [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/glnncw8upjsu6tm</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]CITV [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/2ffz3i6mxz5ck6i</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]CNN [/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/1z3ps9vxnknuskb</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]CNN HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/rjxo8hz17q9waiq</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]CNN International[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/oj20abbw6epowt7</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]CW [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/fvksu1sp51ijtyd</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Discovery [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/ro7c9eha0z96hpp</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]Discovery UK[/COLOR]</title>
+<link>http://83.139.104.111/content/hls/live/channel(discovery_channel)/stream(03)/index.m3u8</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Discovery HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/ishyd3sopok3p27</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Discovery Science HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/ajcjdksbd8wk32z</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Disney JR[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/2tag4dzgwof5ma2</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Disney XD[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/mp4ffvlqs2rpfz7</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]E4 HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/sy7jm7daa80boeb</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]ESPN  [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/dp2g1w4ip6v0zoc</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]ESPN  HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/xoaaohmeuajfeyf</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]ESPN 2 [/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/5HQ19kwxef5b59o</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]ESPN 2 HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/rgyus7ao2ullmbt</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]ESPN 3[/COLOR]</title>
+<link>rtmp://skystreams.info:1935/live/espn3</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]ESPN UK[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/b6wl17w7we4kqvn</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Eurosport 1[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/futkxfuqj6tp9j9</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Eurosport 2[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/k3e344bj4qtke57</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Family Guy[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/4mg0320yrc805sj</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Film 4[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/v5148fbqjma2uca</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Food Network [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/qc6xkzf4h48bz2e</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Food Network HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/ibnnu7537h3ax6e</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]FOX[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/q49uyvij145wcky</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]FOX HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/yuu6p5oaa1x4a1p</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]FOX Sports 1 HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/26feydqp06wogib</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]FOX Sports News HQ[/COLOR]</title>
+<link>http://foxsportsHQhls-lh.akamaiHQ.net/i/fsnewshls_0@136427/index_2128_av-p.m3u8?sd=10</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]FOX Movies[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/hc992q7x7cz86t9</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Fox News[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/w0mr10getvsikam</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Fox News HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/ohn58e97er36vjr</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Fox Soccer Plus[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/31j6bqlq8e3wwc5</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Friends[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/wg2fmaake2sfjbr</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Futurama[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/l4kpykqwwrvxcwa</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]FX[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/hrjtbc6cg6tbtgz</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Gol Tv[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/zvwjh9ctt0vdlbe</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Golf Channel[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/lw1kufim1kmit1h</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Golf Channel HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/ts6w24dx29tcwi4</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Hallmark HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/v4ynnryunsoxzbq</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]HBO [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/z28ie9oqoku4qoy</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]HBO Comedy[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/a1wn1j3ra1w0cv0</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]HBO HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/qzbbu26gcvjxksz</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]HGTV[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/gj65q2rg18tpmut</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]History[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/dhp0rpd116qyyj6</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]History Channel Europe[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/77npxab8m9qwvwm</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Investigation Discovery HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/yjma618cibkqxeo</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]ITV 1[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/1dlivlny2j2ytrv</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]ITV 2[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/nhcm0l1zhe3vt38</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]ITV 3[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/q7cebb8hzk4psux</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]ITV 4[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/b4hioreq4mko71l</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Kiss Tv[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/xarkmhaboifdaqh</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]KTLA[/COLOR]</title>
+<link>http://livestream-f.akamaihd.net/9262780_3189705_ee278a68_1_2320@64414?v=3.0.3&fp=WIN%2016,0,0,296&r=HHHVY&g=GBQXXBHRDKER</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Lifetime HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/7b2gr554gyyth8e</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Looney Tunes[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/iyrn6ppujz9k405</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Marijuana TV[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/bncy42xy2eip89d</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]More 4[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/shnxfyu5mn79p69</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR purple]Movie Night [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/fj2ggpre56kghcc</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Movie Night [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/qqzhbmw8qpevqml</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Movie Night [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/begc8v6kjasc35a</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Movie Night [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/5cs5pcqlrkchhv2</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]MSNBC[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/1ioc7taql4472xs</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]MTV HQ[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/d2z1vc4ahrl6x26</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]MTV [/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/d2z1vc4ahrl6x26</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]National Geographic[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/b8bav5ayzso8m8q</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]National Geographic HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/qzsfigd1y3bgbhs</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Nat Geo Wild[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/200buzqbltv6mfc</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]NBA TV[/COLOR]</title>
+<link>rtmp://192.254.65.82:1935/live/nbatv</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]NBC[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/s5whw37nl7weedp</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]NBC HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/kjgkefh6la1di6g</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]NBCSN [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/0fm1lstybe4a0j4</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR purple]NBC Sport Network[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/2qmiwfydbj6yu89</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]NFL Network[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/n1dv2of13iqam3u</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]NFL Network HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/fzasab6vz02yuf7</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]NCIS[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/866l7jy73xntgpa</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]NFL Lve TV[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/va73s86t8cl5e73</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Nickelodeon[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/q2hs5fqm8b039y0</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Nick Jr[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/qan96nasemu9xfn</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]OWN[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/uehgy5htiasffj3</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Oxygen[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/zmt2swezlswh9nz</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]Planes[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/go09llg0z9ih5qg</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]Premier Sports[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/6kyreuuugcp4jno</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Rogue TV[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/vt7yf96a342zbnw</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Science HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/00t250wv1d4ltib</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Setanta Sport HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/6kyreuuugcp4jno</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Showtime HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/bwbop58ixz281wv</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Showtime Movie[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/s53jbkmyldngbks</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sky Sports 1 HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/9ddlpiijjci12o9</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sky Sports 2 HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/on39ol6in4f2ewp</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sky Sports 2[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/i72f6czhwstco8x</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sky Sports 3[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/pdqdnbyfwtzknat</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sky Sports 3[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/dnrrzm4d8u36qxq</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sky Sports 4[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/21ajqprn56aebp3</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sky Sports 4 HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/21ajqprn56aebp3</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sky Sports 5[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/u8wfz71kltdyso3</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sky Sports 5 HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/2qjxgeic3x5rkdu</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR purple]Sky Sports F1[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/udhfbfg0vfzjcds</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sky Sports News[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/529dtyb3fihu2ui</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Spike[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/sax2mq2alpirnww</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sport Tv1[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/4uqj0hiiyup1xf9</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sport Tv2[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/2beqcvzymcbgdrr</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sport Tv3[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/1mnqje6lw57grow</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Starz[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/8g7x80ozu6hz2ds</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Street Fight[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/yp4w7oqyq6wwp9h</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Sun News[/COLOR]</title>
+<link>rtmp://cp39414.live.edgefcs.net/live/argent@9751</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Syfy[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/oepz9q5oivflbcw</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Syfy HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/x7uii7mll2b7lh4</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]TBS[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/jh8nj062bqbsxdh</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]TLC[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/iugceoy4o6ljhck</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Tom And Jerry[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/fiiaq21taj5xitg</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]TNA Impact[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/gf1xseqwuk0bkqe</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]TNT HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/7uz4als3nigi0j3</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]TNT [/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/6q4jlbqwvxuingo</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Travel Channel HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/4aiufk0o430qt0d</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]Travel Channel[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/1fvuok2ny4jtmgq</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]TruTV HQ[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/uhnr4161ybioa5w</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]Turbo[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/jwjom880uszj4po</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]TV Land[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/7yxirr4046nk5ca</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]USA Network[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/h5eovaj1jeegluq</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]VH1[/COLOR]</title>
+<link>rtmp://93.174.95.125:1935/edge/_definst_/oeiigxxv1gbeqq9</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR purple]WWE Network[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/0i6e1w2q4non031</link>
+<thumbnail>none</thumbnail>
+</item>
+
+<item>
+<title>[COLOR purple]WWE Monday Night Raw[/COLOR]</title>
+<link>http://93.174.95.125:1935/edge/_definst_/gf1xseqwuk0bkqe</link>
+<thumbnail>none</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+

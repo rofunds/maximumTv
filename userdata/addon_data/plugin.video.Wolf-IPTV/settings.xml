@@ -1,0 +1,7 @@
+<settings>
+    <setting id="Updatecommonresolvers" value="true" />
+    <setting id="add_playlist" value="true" />
+    <setting id="ask_playlist_items" value="true" />
+    <setting id="genesisorpulsar" value="0" />
+    <setting id="save_location" value="" />
+</settings>

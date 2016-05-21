@@ -1,0 +1,34 @@
+#######################################################################################################################################
+<poster>Team Phoenix</poster>
+<fanart>http://s20.postimg.org/w4r6o7t3x/Phoenix_Fanart.png</fanart>
+#######################################################################################################################################
+
+<dir>
+<name>24/7 TV</name>
+<link>http://shanghai.watchkodi.com/Sections/Entertainment/.247%20TV%20Shows.xml</link>
+<thumbnail>http://s20.postimg.org/59lqn21i5/247_TV_Icon.png</thumbnail>
+</dir>
+
+<dir>
+<name>UK TV</name>
+<link>http://shanghai.watchkodi.com/Sections/Entertainment/UK.xml</link>
+<thumbnail>http://s20.postimg.org/rzga2avbx/UKTV_Icon.png</thumbnail>
+</dir>
+
+<dir>
+<name>USA TV</name>
+<link>http://shanghai.watchkodi.com/Sections/Entertainment/USA.xml</link>
+<thumbnail>http://s20.postimg.org/qykmqx3q5/USTV_Icon.png</thumbnail>
+</dir>
+
+<dir>
+<name>Canada TV</name>
+<link>http://shanghai.watchkodi.com/Sections/Entertainment/Canadian.xml</link>
+<thumbnail>http://s20.postimg.org/9b2tsptst/Canada_Icon.png</thumbnail>
+</dir>
+
+<dir>
+<name>International TV</name>
+<link>http://shanghai.watchkodi.com/Sections/Entertainment/International.xml</link>
+<thumbnail>http://s20.postimg.org/el7sk0e1p/International_Icon.png</thumbnail>
+</dir>

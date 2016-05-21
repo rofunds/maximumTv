@@ -1,0 +1,752 @@
+#EXTM3U
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/",ABCHD
+http://mist.worse-than.tv:8003/ABCHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/thaisatellite.tv/ftv/logos/ABC",ABC
+http://mist.worse-than.tv:8003/ABC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/",ABCLQ
+http://mist.worse-than.tv:8003/ABCLQ?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/thaisatellite.tv/ftv/logos/CBS",CBSHD
+http://mist.worse-than.tv:8003/CBSHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/CBS.png",CBS
+http://mist.worse-than.tv:8003/CBS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/thaisatellite.tv/ftv/logos/CBS.png",CBSLQ
+http://mist.worse-than.tv:8003/CBSLQ?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/FOX.png",NBCHD
+http://mist.worse-than.tv:8003/NBCHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/FOX.png",NBC
+http://mist.worse-than.tv:8003/NBC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/FOX.png",NBCLQ
+http://mist.worse-than.tv:8003/NBCLQ?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/FOX.png",FOXHD
+http://mist.worse-than.tv:8003/FOXHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/FOX.png",FOX
+http://mist.worse-than.tv:8003/FOX?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/FOX.png",FOXLQ
+http://mist.worse-than.tv:8003/FOXLQ?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/PBS.png",PBS
+http://mist.worse-than.tv:8003/PBS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/PBS.png",PBSLQ
+http://mist.worse-than.tv:8003/PBSLQ?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,CWHD
+http://mist.worse-than.tv:8003/CWHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,CW
+http://mist.worse-than.tv:8003/CW?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,CWLQ
+http://mist.worse-than.tv:8003/CWLQ?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/My9.png",My9
+http://mist.worse-than.tv:8003/My9?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/pictures/My9.png",My9LQ
+http://mist.worse-than.tv:8003/My9LQ?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,ABCNYCHD
+http://mist.worse-than.tv:8003/ABCNYCHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/thaisatellite.tv/ftv/logos/ABC.png",ABCNYC
+http://mist.worse-than.tv:8003/ABCNYC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,ABCNYCLQ
+http://mist.worse-than.tv:8003/ABCNYCLQ?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,CBSNYCHD
+http://mist.worse-than.tv:8003/CBSNYCHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/thaisatellite.tv/ftv/logos/CBS.png",CBSNYC
+http://mist.worse-than.tv:8003/CBSNYC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,NBCNYCHD
+http://mist.worse-than.tv:8003/NBCNYCHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" tvg-logo="http://mist.worse-than.tv:17000/thaisatellite.tv/ftv/logos/NBC.png",NBCNYC
+http://mist.worse-than.tv:8003/NBCNYC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,NBCNYCLQ
+http://mist.worse-than.tv:8003/NBCNYCLQ?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,FOXNYCHD
+http://mist.worse-than.tv:8003/FOXNYCHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,FOXNYC
+http://mist.worse-than.tv:8003/FOXNYC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,ABCWEST
+http://mist.worse-than.tv:8003/ABCWEST?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,CBCMONTREAL
+http://mist.worse-than.tv:8003/CBCMONTREAL?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,CTVMONTREAL
+http://mist.worse-than.tv:8003/CTVMONTREAL?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,GLOBALMONTREAL
+http://mist.worse-than.tv:8003/GLOBALMONTREAL?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,CP24
+http://mist.worse-than.tv:8003/CP24?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="News" ,CNBCHD
+http://mist.worse-than.tv:8003/CNBCHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="News" ,CNBC
+http://mist.worse-than.tv:8003/CNBC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,BRAVOHD
+http://mist.worse-than.tv:8003/BRAVOHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,BRAVO
+http://mist.worse-than.tv:8003/BRAVO?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,LIFETIMEHD
+http://mist.worse-than.tv:8003/LIFETIMEHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,LIFETIME
+http://mist.worse-than.tv:8003/LIFETIME?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,SYFYHD
+http://mist.worse-than.tv:8003/SYFYHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,SYFY
+http://mist.worse-than.tv:8003/SYFY?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,AMCHD
+http://mist.worse-than.tv:8003/AMCHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,AMC
+http://mist.worse-than.tv:8003/AMC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,NICKELODEONHD
+http://mist.worse-than.tv:8003/NICKELODEONHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,NICKELODEON
+http://mist.worse-than.tv:8003/NICKELODEON?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,SPIKEHD
+http://mist.worse-than.tv:8003/SPIKEHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,SPIKE
+http://mist.worse-than.tv:8003/SPIKE?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,CARTOONHD
+http://mist.worse-than.tv:8003/CARTOONHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,CARTOON
+http://mist.worse-than.tv:8003/CARTOON?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,FXHD
+http://mist.worse-than.tv:8003/FXHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,FX
+http://mist.worse-than.tv:8003/FX?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,TNTHD
+http://mist.worse-than.tv:8003/TNTHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,TNT
+http://mist.worse-than.tv:8003/TNT?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,ANIMALPLANETHD
+http://mist.worse-than.tv:8003/ANIMALPLANETHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,ANIMALPLANET
+http://mist.worse-than.tv:8003/ANIMALPLANET?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,COMEDYHD
+http://mist.worse-than.tv:8003/COMEDYHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,COMEDY
+http://mist.worse-than.tv:8003/COMEDY?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,ESPNHD
+http://mist.worse-than.tv:8003/ESPNHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,ESPN
+http://mist.worse-than.tv:8003/ESPN?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="News" ,CNNHD
+http://mist.worse-than.tv:8003/CNNHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="News" ,CNN
+http://mist.worse-than.tv:8003/CNN?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="News" ,FOXNEWSHD
+http://mist.worse-than.tv:8003/FOXNEWSHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="News" ,FOXNEWS
+http://mist.worse-than.tv:8003/FOXNEWS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Documentary" ,HISTORYHD
+http://mist.worse-than.tv:8003/HISTORYHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Documentary" ,HISTORY
+http://mist.worse-than.tv:8003/HISTORY?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Documentary" ,NATIONALGEOGRAPHICHD
+http://mist.worse-than.tv:8003/NATIONALGEOGRAPHICHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Documentary" ,NATIONALGEOGRAPHIC
+http://mist.worse-than.tv:8003/NATIONALGEOGRAPHIC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Documentary" ,DISCOVERYHD
+http://mist.worse-than.tv:8003/DISCOVERYHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Documentary" ,DISCOVERY
+http://mist.worse-than.tv:8003/DISCOVERY?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,USAHD
+http://mist.worse-than.tv:8003/USAHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,USA
+http://mist.worse-than.tv:8003/USA?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,TBSHD
+http://mist.worse-than.tv:8003/TBSHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,TBS
+http://mist.worse-than.tv:8003/TBS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,AETVHD
+http://mist.worse-than.tv:8003/AETVHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,AETV
+http://mist.worse-than.tv:8003/AETV?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,OWN
+http://mist.worse-than.tv:8003/OWN?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Music" ,MTV
+http://mist.worse-than.tv:8003/MTV?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,VH1
+http://mist.worse-than.tv:8003/VH1?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,BET
+http://mist.worse-than.tv:8003/BET?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,WILLOWHD
+http://mist.worse-than.tv:8003/WILLOWHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,WILLOW
+http://mist.worse-than.tv:8003/WILLOW?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,NICKTOONS
+http://mist.worse-than.tv:8003/NICKTOONS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,DISNEYJR
+http://mist.worse-than.tv:8003/DISNEYJR?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,TELETOON
+http://mist.worse-than.tv:8003/TELETOON?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,TREEHOUSE
+http://mist.worse-than.tv:8003/TREEHOUSE?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,E
+http://mist.worse-than.tv:8003/E?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,SLICE
+http://mist.worse-than.tv:8003/SLICE?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,TSN1
+http://mist.worse-than.tv:8003/TSN1?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,FOXSPORTS2
+http://mist.worse-than.tv:8003/FOXSPORTS2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,YES
+http://mist.worse-than.tv:8003/YES?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,NBCSN
+http://mist.worse-than.tv:8003/NBCSN?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,NBATVC
+http://mist.worse-than.tv:8003/NBATVC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,TENNIS
+http://mist.worse-than.tv:8003/TENNIS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,SPORTSNETPACIFIC
+http://mist.worse-than.tv:8003/SPORTSNETPACIFIC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BOXNATION
+http://mist.worse-than.tv:8003/BOXNATION?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BENFICA
+http://mist.worse-than.tv:8003/BENFICA?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,SKYSPORTS1
+http://mist.worse-than.tv:8003/SKYSPORTS1?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,SKYSPORTS2
+http://mist.worse-than.tv:8003/SKYSPORTS2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,SKYSPORTS3
+http://mist.worse-than.tv:8003/SKYSPORTS3?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,SKYSPORTS4
+http://mist.worse-than.tv:8003/SKYSPORTS4?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,SKYSPORTS5
+http://mist.worse-than.tv:8003/SKYSPORTS5?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,SKYSPORTSF1
+http://mist.worse-than.tv:8003/SKYSPORTSF1?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,ESPNUK
+http://mist.worse-than.tv:8003/ESPNUK?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,SKYSPORTSNEWS
+http://mist.worse-than.tv:8003/SKYSPORTSNEWS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,EUROSPORT2
+http://mist.worse-than.tv:8003/EUROSPORT2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,MUTV
+http://mist.worse-than.tv:8003/MUTV?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BTSPORT2
+http://mist.worse-than.tv:8003/BTSPORT2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BTSPORT2HD
+http://mist.worse-than.tv:8003/BTSPORT2HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,EUROSPORTHD
+http://mist.worse-than.tv:8003/EUROSPORTHD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEINSPORTES
+http://mist.worse-than.tv:8003/BEINSPORTES?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN1HD
+http://mist.worse-than.tv:8003/BEIN1HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN1
+http://mist.worse-than.tv:8003/BEIN1?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN2HD
+http://mist.worse-than.tv:8003/BEIN2HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN2
+http://mist.worse-than.tv:8003/BEIN2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN3HD
+http://mist.worse-than.tv:8003/BEIN3HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN3
+http://mist.worse-than.tv:8003/BEIN3?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN4HD
+http://mist.worse-than.tv:8003/BEIN4HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN4
+http://mist.worse-than.tv:8003/BEIN4?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN5HD
+http://mist.worse-than.tv:8003/BEIN5HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN5
+http://mist.worse-than.tv:8003/BEIN5?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN6HD
+http://mist.worse-than.tv:8003/BEIN6HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN6
+http://mist.worse-than.tv:8003/BEIN6?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN7HD
+http://mist.worse-than.tv:8003/BEIN7HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN7
+http://mist.worse-than.tv:8003/BEIN7?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN8HD
+http://mist.worse-than.tv:8003/BEIN8HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN8
+http://mist.worse-than.tv:8003/BEIN8?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN9HD
+http://mist.worse-than.tv:8003/BEIN9HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN9
+http://mist.worse-than.tv:8003/BEIN9?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN10HD
+http://mist.worse-than.tv:8003/BEIN10HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN10
+http://mist.worse-than.tv:8003/BEIN10?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN11HD
+http://mist.worse-than.tv:8003/BEIN11HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN11
+http://mist.worse-than.tv:8003/BEIN11?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN12HD
+http://mist.worse-than.tv:8003/BEIN12HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN12
+http://mist.worse-than.tv:8003/BEIN12?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN13HD
+http://mist.worse-than.tv:8003/BEIN13HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN13
+http://mist.worse-than.tv:8003/BEIN13?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN14HD
+http://mist.worse-than.tv:8003/BEIN14HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN14
+http://mist.worse-than.tv:8003/BEIN14?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN15HD
+http://mist.worse-than.tv:8003/BEIN15HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN15
+http://mist.worse-than.tv:8003/BEIN15?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN16HD
+http://mist.worse-than.tv:8003/BEIN16HD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN16
+http://mist.worse-than.tv:8003/BEIN16?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN1HDFR
+http://mist.worse-than.tv:8003/BEIN1HDFR?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN2HDFR
+http://mist.worse-than.tv:8003/BEIN2HDFR?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Sports" ,BEIN3HDFR
+http://mist.worse-than.tv:8003/BEIN3HDFR?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="News" ,BLOOMBERG
+http://mist.worse-than.tv:8003/BLOOMBERG?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,5STARMAX
+http://mist.worse-than.tv:8003/5STARMAX?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,CINEMAXWEST
+http://mist.worse-than.tv:8003/CINEMAXWEST?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,ACTIONMAX
+http://mist.worse-than.tv:8003/ACTIONMAX?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,STARZCINEMA
+http://mist.worse-than.tv:8003/STARZCINEMA?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,STARZEDGE
+http://mist.worse-than.tv:8003/STARZEDGE?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,TMCX
+http://mist.worse-than.tv:8003/TMCX?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,ENCOREACTION
+http://mist.worse-than.tv:8003/ENCOREACTION?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,FOXMOVIES
+http://mist.worse-than.tv:8003/FOXMOVIES?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,TCM
+http://mist.worse-than.tv:8003/TCM?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,TVLAND
+http://mist.worse-than.tv:8003/TVLAND?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,SKYMOVIESSCI-FI
+http://mist.worse-than.tv:8003/SKYMOVIESSCI-FI?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,SKYMOVIESCOMEDY
+http://mist.worse-than.tv:8003/SKYMOVIESCOMEDY?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,SKYTHRILLER
+http://mist.worse-than.tv:8003/SKYTHRILLER?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,SKYMOVIESSHOWCASE
+http://mist.worse-than.tv:8003/SKYMOVIESSHOWCASE?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,SKYMOVIESFAMILY
+http://mist.worse-than.tv:8003/SKYMOVIESFAMILY?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,SKYMOVIESDRAMA
+http://mist.worse-than.tv:8003/SKYMOVIESDRAMA?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,SKYMOVIESMODERN
+http://mist.worse-than.tv:8003/SKYMOVIESMODERN?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,SKYMOVIESPREMIERE
+http://mist.worse-than.tv:8003/SKYMOVIESPREMIERE?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,SKYACTION
+http://mist.worse-than.tv:8003/SKYACTION?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Premium" ,SKYMOVIESSELECT
+http://mist.worse-than.tv:8003/SKYMOVIESSELECT?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,ABCFAMILY
+http://mist.worse-than.tv:8003/ABCFAMILY?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,DISNEY
+http://mist.worse-than.tv:8003/DISNEY?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,DISNEYWEST
+http://mist.worse-than.tv:8003/DISNEYWEST?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,DISNEYXDUK
+http://mist.worse-than.tv:8003/DISNEYXDUK?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,BOOMERANG
+http://mist.worse-than.tv:8003/BOOMERANG?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,DISNEYCHANNELUK
+http://mist.worse-than.tv:8003/DISNEYCHANNELUK?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Kids" ,NICKTOONSUK
+http://mist.worse-than.tv:8003/NICKTOONSUK?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,OXYGEN
+http://mist.worse-than.tv:8003/OXYGEN?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,FOODNETWORK
+http://mist.worse-than.tv:8003/FOODNETWORK?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="News" ,MSNBC
+http://mist.worse-than.tv:8003/MSNBC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="News" ,CNNINTERNATIONAL
+http://mist.worse-than.tv:8003/CNNINTERNATIONAL?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="News" ,FOXNEWSUK
+http://mist.worse-than.tv:8003/FOXNEWSUK?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Networks" ,WGN
+http://mist.worse-than.tv:8003/WGN?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,FXX
+http://mist.worse-than.tv:8003/FXX?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Entertainment" ,COMEDYUK
+http://mist.worse-than.tv:8003/COMEDYUK?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,TVA
+http://mist.worse-than.tv:8003/TVA?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,SRC
+http://mist.worse-than.tv:8003/SRC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,arte
+http://mist.worse-than.tv:8003/arte?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,RDS
+http://mist.worse-than.tv:8003/RDS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,HISTORIA
+http://mist.worse-than.tv:8003/HISTORIA?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CINEPOP
+http://mist.worse-than.tv:8003/CINEPOP?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,SERIES
+http://mist.worse-than.tv:8003/SERIES?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,SRCMONTREAL
+http://mist.worse-than.tv:8003/SRCMONTREAL?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,LCN
+http://mist.worse-than.tv:8003/LCN?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,SUPERECRAN
+http://mist.worse-than.tv:8003/SUPERECRAN?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,SUPERECRAN2
+http://mist.worse-than.tv:8003/SUPERECRAN2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,SUPERECRAN3
+http://mist.worse-than.tv:8003/SUPERECRAN3?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,SUPERECRAN4
+http://mist.worse-than.tv:8003/SUPERECRAN4?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,TELEQUEBEC
+http://mist.worse-than.tv:8003/TELEQUEBEC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,TELETOONF
+http://mist.worse-than.tv:8003/TELETOONF?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,TV5
+http://mist.worse-than.tv:8003/TV5?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,tvamontreal
+http://mist.worse-than.tv:8003/tvamontreal?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,TVASPORTS
+http://mist.worse-than.tv:8003/TVASPORTS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,VRAKTV
+http://mist.worse-than.tv:8003/VRAKTV?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,RDI
+http://mist.worse-than.tv:8003/RDI?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CINEPOP
+http://mist.worse-than.tv:8003/CINEPOP?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,trek
+http://mist.worse-than.tv:8003/trek?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,scienceetvie
+http://mist.worse-than.tv:8003/scienceetvie?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CANALD
+http://mist.worse-than.tv:8003/CANALD?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CANALVIE
+http://mist.worse-than.tv:8003/CANALVIE?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,ARTV
+http://mist.worse-than.tv:8003/ARTV?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,srcmontreal
+http://mist.worse-than.tv:8003/srcmontreal?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,BFM
+http://mist.worse-than.tv:8003/BFM?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,FRANCE2
+http://mist.worse-than.tv:8003/FRANCE2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,FRANCE3
+http://mist.worse-than.tv:8003/FRANCE3?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,FRANCE4
+http://mist.worse-than.tv:8003/FRANCE4?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,FRANCE5
+http://mist.worse-than.tv:8003/FRANCE5?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,FRANCEO
+http://mist.worse-than.tv:8003/FRANCEO?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,TMC
+http://mist.worse-than.tv:8003/TMC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,NRJ12
+http://mist.worse-than.tv:8003/NRJ12?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,NT1
+http://mist.worse-than.tv:8003/NT1?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,D17
+http://mist.worse-than.tv:8003/D17?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,D8
+http://mist.worse-than.tv:8003/D8?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,TF1
+http://mist.worse-than.tv:8003/TF1?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,RTL9
+http://mist.worse-than.tv:8003/RTL9?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,RTSUN
+http://mist.worse-than.tv:8003/RTSUN?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,RTSDEUX
+http://mist.worse-than.tv:8003/RTSDEUX?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,BEINSPORT1
+http://mist.worse-than.tv:8003/BEINSPORT1?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,BEINSPORT2
+http://mist.worse-than.tv:8003/BEINSPORT2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,BEINSPORT3
+http://mist.worse-than.tv:8003/BEINSPORT3?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CANALPLUSSPORT
+http://mist.worse-than.tv:8003/CANALPLUSSPORT?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CANALPLUS
+http://mist.worse-than.tv:8003/CANALPLUS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,GULLI
+http://mist.worse-than.tv:8003/GULLI?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,MANGAS
+http://mist.worse-than.tv:8003/MANGAS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,DISNEYCINEMAGIC
+http://mist.worse-than.tv:8003/DISNEYCINEMAGIC?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,ANIMAUX
+http://mist.worse-than.tv:8003/ANIMAUX?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CHASSEETPECHE
+http://mist.worse-than.tv:8003/CHASSEETPECHE?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,TOUTELHISTOIRE
+http://mist.worse-than.tv:8003/TOUTELHISTOIRE?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,ABMOTEURS
+http://mist.worse-than.tv:8003/ABMOTEURS?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,ENCYCLOPEDIA
+http://mist.worse-than.tv:8003/ENCYCLOPEDIA?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CANALPLUSCINEMA
+http://mist.worse-than.tv:8003/CANALPLUSCINEMA?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CINEPREMIER
+http://mist.worse-than.tv:8003/CINEPREMIER?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CINEFX
+http://mist.worse-than.tv:8003/CINEFX?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,CINEPOLAR
+http://mist.worse-than.tv:8003/CINEPOLAR?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Francais" ,ACTION
+http://mist.worse-than.tv:8003/ACTION?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,maasranga
+http://mist.worse-than.tv:8003/maasranga?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,adithya
+http://mist.worse-than.tv:8003/adithya?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,aajtak
+http://mist.worse-than.tv:8003/aajtak?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,zinguk
+http://mist.worse-than.tv:8003/zinguk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,tv9guj
+http://mist.worse-than.tv:8003/tv9guj?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,ptcpunjabi
+http://mist.worse-than.tv:8003/ptcpunjabi?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,jayatv
+http://mist.worse-than.tv:8003/jayatv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,jmax
+http://mist.worse-than.tv:8003/jmax?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,zeepunjabiuk
+http://mist.worse-than.tv:8003/zeepunjabiuk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,zeetvuk
+http://mist.worse-than.tv:8003/zeetvuk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,filmy
+http://mist.worse-than.tv:8003/filmy?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,aapkaus
+http://mist.worse-than.tv:8003/aapkaus?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,aashtatv
+http://mist.worse-than.tv:8003/aashtatv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,vijay
+http://mist.worse-than.tv:8003/vijay?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,starplus
+http://mist.worse-than.tv:8003/starplus?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,histarplus
+http://mist.worse-than.tv:8003/histarplus?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,klaig
+http://mist.worse-than.tv:8003/klaig?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,suntv
+http://mist.worse-than.tv:8003/suntv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,sirip
+http://mist.worse-than.tv:8003/sirip?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,tamilv
+http://mist.worse-than.tv:8003/tamilv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,ntv
+http://mist.worse-than.tv:8003/ntv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,chnli
+http://mist.worse-than.tv:8003/chnli?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,sgold
+http://mist.worse-than.tv:8003/sgold?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,histargold
+http://mist.worse-than.tv:8003/histargold?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,setmx
+http://mist.worse-than.tv:8003/setmx?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,lifeok
+http://mist.worse-than.tv:8003/lifeok?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,zeetvus
+http://mist.worse-than.tv:8003/zeetvus?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,hizoom
+http://mist.worse-than.tv:8003/hizoom?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,himusicindia
+http://mist.worse-than.tv:8003/himusicindia?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,zabtvuk
+http://mist.worse-than.tv:8003/zabtvuk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,hizeeaction
+http://mist.worse-than.tv:8003/hizeeaction?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,zcine
+http://mist.worse-than.tv:8003/zcine?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,jmovie
+http://mist.worse-than.tv:8003/jmovie?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,zeecinema
+http://mist.worse-than.tv:8003/zeecinema?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,b4umov
+http://mist.worse-than.tv:8003/b4umov?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,b4umusic
+http://mist.worse-than.tv:8003/b4umusic?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,sunmusic
+http://mist.worse-than.tv:8003/sunmusic?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,taram
+http://mist.worse-than.tv:8003/taram?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,ktv
+http://mist.worse-than.tv:8003/ktv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,times
+http://mist.worse-than.tv:8003/times?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,news18india
+http://mist.worse-than.tv:8003/news18india?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,cbn
+http://mist.worse-than.tv:8003/cbn?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,hitencricket
+http://mist.worse-than.tv:8003/hitencricket?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,geouk
+http://mist.worse-than.tv:8003/geouk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,geonewsint
+http://mist.worse-than.tv:8003/geonewsint?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,sonyus
+http://mist.worse-than.tv:8003/sonyus?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,samaatv
+http://mist.worse-than.tv:8003/samaatv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,aryuk
+http://mist.worse-than.tv:8003/aryuk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,etvb
+http://mist.worse-than.tv:8003/etvb?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,cineb
+http://mist.worse-than.tv:8003/cineb?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,banglavision
+http://mist.worse-than.tv:8003/banglavision?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,channels
+http://mist.worse-than.tv:8003/channels?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,banglatv
+http://mist.worse-than.tv:8003/banglatv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,atnbang
+http://mist.worse-than.tv:8003/atnbang?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,sjalsha
+http://mist.worse-than.tv:8003/sjalsha?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,aath
+http://mist.worse-than.tv:8003/aath?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,amazingfactsin
+http://mist.worse-than.tv:8003/amazingfactsin?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,b4uaflamhindi
+http://mist.worse-than.tv:8003/b4uaflamhindi?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,b4umoviesindi
+http://mist.worse-than.tv:8003/b4umoviesindi?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,b4umusichindi
+http://mist.worse-than.tv:8003/b4umusichindi?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,b4uplus
+http://mist.worse-than.tv:8003/b4uplus?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,b4uplusindi
+http://mist.worse-than.tv:8003/b4uplusindi?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,ddnewsin
+http://mist.worse-than.tv:8003/ddnewsin?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,etttvpk
+http://mist.worse-than.tv:8003/etttvpk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,haditvpk
+http://mist.worse-than.tv:8003/haditvpk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,ibnin
+http://mist.worse-than.tv:8003/ibnin?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,indian
+http://mist.worse-than.tv:8003/indian?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,islamtvpk
+http://mist.worse-than.tv:8003/islamtvpk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,ndtv247
+http://mist.worse-than.tv:8003/ndtv247?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,omhtvpk
+http://mist.worse-than.tv:8003/omhtvpk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,peacetvpk
+http://mist.worse-than.tv:8003/peacetvpk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,ptvnewspk
+http://mist.worse-than.tv:8003/ptvnewspk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,ptvworldpk
+http://mist.worse-than.tv:8003/ptvworldpk?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,zeetvin
+http://mist.worse-than.tv:8003/zeetvin?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,zeetv
+http://mist.worse-than.tv:8003/zeetv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,starplusindia
+http://mist.worse-than.tv:8003/starplusindia?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Spanish" ,espana1
+http://mist.worse-than.tv:8003/espana1?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Spanish" ,espana2
+http://mist.worse-than.tv:8003/espana2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Spanish" ,espana3
+http://mist.worse-than.tv:8003/espana3?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Spanish" ,espana4
+http://mist.worse-than.tv:8003/espana4?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Spanish" ,univisiontdn
+http://mist.worse-than.tv:8003/univisiontdn?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Spanish" ,espana5
+http://mist.worse-than.tv:8003/espana5?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,2stv
+http://mist.worse-than.tv:8003/2stv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,adometv
+http://mist.worse-than.tv:8003/adometv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,adtv
+http://mist.worse-than.tv:8003/adtv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,africacabletv
+http://mist.worse-than.tv:8003/africacabletv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,african24
+http://mist.worse-than.tv:8003/african24?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,africantv
+http://mist.worse-than.tv:8003/africantv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,afriquemediatv
+http://mist.worse-than.tv:8003/afriquemediatv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,bentv
+http://mist.worse-than.tv:8003/bentv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,campustv
+http://mist.worse-than.tv:8003/campustv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,canal
+http://mist.worse-than.tv:8003/canal?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,cna
+http://mist.worse-than.tv:8003/cna?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,cnbcafrica
+http://mist.worse-than.tv:8003/cnbcafrica?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,corcas
+http://mist.worse-than.tv:8003/corcas?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,ctv
+http://mist.worse-than.tv:8003/ctv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,diasporaghana
+http://mist.worse-than.tv:8003/diasporaghana?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,digitalcongo
+http://mist.worse-than.tv:8003/digitalcongo?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,enormetv
+http://mist.worse-than.tv:8003/enormetv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,estv
+http://mist.worse-than.tv:8003/estv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,euronews
+http://mist.worse-than.tv:8003/euronews?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,france24
+http://mist.worse-than.tv:8003/france24?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,fusiontv
+http://mist.worse-than.tv:8003/fusiontv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,gabontv
+http://mist.worse-than.tv:8003/gabontv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,grandlille
+http://mist.worse-than.tv:8003/grandlille?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,gtvghana
+http://mist.worse-than.tv:8003/gtvghana?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,hchtv
+http://mist.worse-than.tv:8003/hchtv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,hctvsomalia
+http://mist.worse-than.tv:8003/hctvsomalia?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,i24news
+http://mist.worse-than.tv:8003/i24news?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,kalsantvsomali
+http://mist.worse-than.tv:8003/kalsantvsomali?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,maya
+http://mist.worse-than.tv:8003/maya?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,mfmtvmusic
+http://mist.worse-than.tv:8003/mfmtvmusic?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,ortm
+http://mist.worse-than.tv:8003/ortm?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,royalsomalia
+http://mist.worse-than.tv:8003/royalsomalia?u=rofl01:p=rofl01123
+#EXTINF:-1,rti2
+http://mist.worse-than.tv:8003/rti2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,nollywood
+http://mist.worse-than.tv:8003/nollywood?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,nollywoodfrancais
+http://mist.worse-than.tv:8003/nollywoodfrancais?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,rtnc
+http://mist.worse-than.tv:8003/rtnc?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,rts1senegal
+http://mist.worse-than.tv:8003/rts1senegal?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,sbcsomali
+http://mist.worse-than.tv:8003/sbcsomali?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,sentv
+http://mist.worse-than.tv:8003/sentv?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,somaliheso
+http://mist.worse-than.tv:8003/somaliheso?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,somaliland
+http://mist.worse-than.tv:8003/somaliland?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,somalilandnation
+http://mist.worse-than.tv:8003/somalilandnation?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,starmazain
+http://mist.worse-than.tv:8003/starmazain?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,sulavison
+http://mist.worse-than.tv:8003/sulavison?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="Indian" ,ta3in
+http://mist.worse-than.tv:8003/ta3in?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,telebasica
+http://mist.worse-than.tv:8003/telebasica?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,telecongo
+http://mist.worse-than.tv:8003/telecongo?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,tfm
+http://mist.worse-than.tv:8003/tfm?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="BlackCableNetwork" ,tvchd
+http://mist.worse-than.tv:8003/tvchd?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="roku" ,cnnroku2
+http://mist.worse-than.tv:8003/cnnroku2?u=rofl01:p=rofl01123
+#EXTINF:-1 group-title="backup" ,PPVEVENTDELAY
+http://mist.worse-than.tv:8003/PPVEVENTDELAY?u=rofl01:p=rofl01123
+#EXT-X-ENDLIST

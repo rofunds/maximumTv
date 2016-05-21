@@ -1,0 +1,3 @@
+<settings>
+    <setting id="protected-plugins" value="set([&apos;plugin.video.empflix&apos;])" />
+</settings>

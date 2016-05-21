@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channel>
+<name>Philippines TV Channels</name>
+<thumbnail></thumbnail>
+
+<item>
+<title>GMA 7</title>
+<link>http://iphone-streaming.ustream.tv/ustreamVideo/19392835/streams/live/playlist.m3u8</link>
+<thumbnail>http://whynotcoconut.com/wp-content/uploads/2012/04/Gma_network_logo.png</thumbnail>
+</item>
+
+<item>
+<title>TV 5</title>
+<link>http://edge.pldt.swiftserve.com/live/mediascape/amlst:tv5/playlist.m3u8</link>
+<thumbnail>http://i1297.photobucket.com/albums/ag26/nieldc/Mashup/tv5_zpsa48341ab.png</thumbnail>
+</item>
+
+<item>
+<title>Radyo 5</title>
+<link>http://radyosingko.news5.ph:8000/stream</link>
+<thumbnail>http://i1297.photobucket.com/albums/ag26/nieldc/Mashup/radyo5_zps1e4a8acb.png</thumbnail>
+</item>
+
+<item>
+<title>UNTV 37</title>
+<link>rtmp://livestream01.untvweb.com/public/ playpath=untvwebstream  swfUrl=http://www.untvweb.com/players/player.swf live=true timeout=15 pageUrl=http://www.untvweb.com/live-stream/</link>
+<thumbnail>http://i1297.photobucket.com/albums/ag26/nieldc/Mashup/untv37_zpsdd7392be.png</thumbnail>
+</item>
+
+<item>
+<title>CLTV 36</title>
+<link>http://cltv36-lh.akamaihd.net/i/cltv36_1@155842/master.m3u8</link>
+<thumbnail>http://i1297.photobucket.com/albums/ag26/nieldc/Mashup/cltv36_zps2007ac78.png</thumbnail>
+</item>
+
+<item>
+<title>TV Maria</title>
+<link>http://iphone-streaming.ustream.tv/ustreamVideo/10646391/streams/live/playlist.m3u8</link>
+<thumbnail>http://i1297.photobucket.com/albums/ag26/nieldc/Mashup/tvmaria_zps2c137688.png</thumbnail>
+</item>
+
+<item>
+<title>Radyo Veritas</title>
+<link>http://eradioportal.com/asxfile/radyoveritas.asx</link>
+<thumbnail>http://i1297.photobucket.com/albums/ag26/nieldc/Mashup/radyoveritas_zpsecaf2a3c.png</thumbnail>
+</item>
+
+<item>
+<title>Ang Dating Daan</title>
+<link>rtmp://ocatv.mcgi.me/vodtv playpath=247_tag swfUrl=http://angdatingdaan.org/wp-content/uploads/jw-player-plugin-for-wordpress/player/player.swf live=true timeout=15 pageUrl=http://angdatingdaan.org/100player_tag.html</link>
+<thumbnail>http://i1297.photobucket.com/albums/ag26/nieldc/Mashup/add2_zpsbfbf7231.png</thumbnail>
+</item>
+
+<item>
+<title>The Old Path</title>
+<link>rtmp://ocatv.mcgi.me/public playpath=247_en  swfUrl=http://www.theoldpath.tv/wp-content/uploads/jw-player-plugin-for-wordpress/player/player.swf live=true pageUrl=http://www.theoldpath.tv/</link>
+<thumbnail>http://i1297.photobucket.com/albums/ag26/nieldc/Mashup/theoldpath_zpsecf11346.png</thumbnail>
+</item>
+
+<item>
+<title>INCTV</title>
+<link>http://churchrus2-lh.akamaihd.net/i/COCTesting_1@57550/master.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ii/inc_tv_ph.jpg</thumbnail>
+</item>
+
+<item>
+<title>ABS-CBN</title>
+<link>http://iwantvls-i.akamaihd.net/hls/live/206751/ABSCBN_Low/master.m3u8</link>
+<thumbnail>http://i1297.photobucket.com/albums/ag26/nieldc/Mashup/abs-cbn2_zps6305f072.png</thumbnail>
+</item>
+
+</channel>

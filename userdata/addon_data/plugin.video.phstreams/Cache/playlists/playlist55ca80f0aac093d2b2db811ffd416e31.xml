@@ -1,0 +1,165 @@
+ #######################################################################################################################################
+<poster>Staael2014</poster>
+<fanart>http://www.frwallpaper.com/wp-content/uploads/2014/02/free-sport-wallpapers-7.jpg</fanart>
+#######################################################################################################################################
+<item>
+<title>[COLOR orange]UFC ?[/COLOR]</title>
+<link>http://d1yjsz5fddyesn.cloudfront.net/livecf/foxar/manifest.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange]TSN 5 HD[/COLOR]</title>
+<link>http://ams-lp3.9c9media.com/hls-live/livepkgr/_definst_/liveeventNoDRM/TSN5Open8.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]NFL Network[/COLOR]</title>
+<link>rtmpe://46.246.124.87:1935/l playpath=nfluuo4 swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://www.hdcast.org/embedlive4.php?u=nfluuo4&vw=620&vh=470&domain=usachannels.tv token=Fo5_n0w?U.rA6l3-70w47ch live=1</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR red]Random sport 1[/COLOR]</title>
+<link>http://stream.ssh101.com/hls/321111.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR red]Random sport 2[/COLOR]</title>
+<link>http://stream.ssh101.com/hls/333656.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>ROMA - JUVENTUS</title>
+<link>
+<sublink>http://maxtv.ml.twilightparadox.com/sporttv1/sporttv1.isml/sporttv1-video%3D4500000-audio101%3D128000.m3u8</sublink>
+<sublink>http://cdn-01.sdn.si/sporttv1/sporttv1.isml/sporttv1-video%3D4500000-audio101%3D128000.m3u8</sublink>
+<sublink>http://213.172.65.36:4022/play/117</sublink>
+</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>CELTA VIGO - ELCHE</title>
+<link>
+<sublink>http://213.172.65.36:4022/play/70</sublink>
+<sublink>http://iptv.sat-x.tv/iptv/a34321a744a74c408c5186b476d0013459c54634/530/index.m3u8</sublink>
+</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>Sky sport 2 HD</title>
+<link>http://85.25.246.141:8081/Sports/HDSkySport2/playlist.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>Sky sport 3 HD</title>
+<link>http://85.25.246.141:8081/Sports/SkySport3/playlist.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>Sky sport 4 HD</title>
+<link>http://85.25.246.141:8081/Sports/SkySports4/playlist.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>Fox sport 1</title>
+<link>http://198.27.94.105/hls/fox1_1.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>Fox sport 2</title>
+<link>http://198.27.94.105/hls/fox2_1.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>TSN</title>
+<link>http://198.27.94.105/hls/tsnn1_1.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>At the races</title>
+<link>http://198.27.94.105/hls/atr_1.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>Racing UK</title>
+<link>http://198.27.94.105/hls/racinguk_1.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>ESPN</title>
+<link>http://live.oneplay.tv/reproducir/389.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>ESPN</title>
+<link>http://live.oneplay.tv/reproducir/389.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>FOX SPORT</title>
+<link>http://live.oneplay.tv/reproducir/397.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>Pac 12 washington</title>
+<link>http://xrxs.net/video/live-p12wash-2328.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 oregon</title>
+<link>http://xrxs.net/video/live-p12oreg-2328.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 National</title>
+<link>http://xrxs.net/video/live-p12netw-2328.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 Los angeles</title>
+<link>http://xrxs.net/video/live-p12losa-2328.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 Arizona</title>
+<link>http://xrxs.net/video/live-p12ariz-2328.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 Bay area</title>
+<link>http://xrxs.net/video/live-p12baya-4728.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 Mountain</title>
+<link>http://xrxs.net/video/live-p12moun-4728.m3u8</link>
+<thumbnail>http://www.flccathletics.com/sports/msoc/2011-12/photos/0001/iStock_000001727315Medium.jpg</thumbnail>
+</item>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channel>
+<name>Turkish TV Channels</name>
+<thumbnail></thumbnail>
+
+<item>
+<title>NTV</title>
+<link>
+http://mn-i.mncdn.com/ntv_ios/ntv1/playlist.m3u8?token=$doregex[url]Referer=http://dogus.kaltura.com.edgesuite.net/p/990652/sp/99065200/flash/kdp3/v3.9.3/kdp3.swf
+<regex>
+<name>url</name>
+<expres>token=([^']*)</expres>
+<page>http://www.ntv.com.tr/canli-yayin/ntv</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/9/90/NTV_%28Turkey%29_logo.png</thumbnail>
+</item>
+
+<item>
+<title>CNBC-E</title>
+<link>
+http://mn-i.mncdn.com/cnbce_ios/cnbce1/playlist.m3u8?token=$doregex[url]Referer=http://dogus.kaltura.com.edgesuite.net/p/990652/sp/99065200/flash/kdp3/v3.9.3/kdp3.swf
+<regex>
+<name>url</name>
+<expres>token=([^']*)</expres>
+<page>http://www.ntv.com.tr/canli-yayin/cnbce</page>
+<referer> </referer>
+</regex>
+</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/tr/c/ca/CNBC-e_logosu.png</thumbnail>
+</item>
+
+
+
+</channel>

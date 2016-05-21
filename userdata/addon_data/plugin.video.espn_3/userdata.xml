@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<user>
+		<affiliate>
+			<name>comcast</name>
+			<imageUrl><![CDATA[http://a.espncdn.com/espn360/images/affiliates/Comcast_SSO.png]]></imageUrl>
+			<websiteUrl><![CDATA[http://xfinitytv.comcast.net/]]></websiteUrl>
+			<localAdAccountId>d8b58f7bfce28eefcc1cdd5b95c3b663</localAdAccountId>
+			<filterESPN3>true</filterESPN3>
+		</affiliate>
+
+		<location>
+			<ip>73.49.135.129</ip>
+			<country>united states</country>
+			<city>miami</city>
+			<state>florida</state>
+			<continent>na</continent>
+			<dma>528</dma>
+			<zipCode></zipCode>
+			<domain>comcast.net</domain>
+			<timeZone>America/New_York</timeZone>
+			<locationAuthorized>true</locationAuthorized>
+		</location>
+
+		<personalization loginStatus="ANONYMOUS" swid="">
+			<username></username>
+			<affinity></affinity>
+		</personalization>
+		<domainAllowed>false</domainAllowed>
+	</user>
+	

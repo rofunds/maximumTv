@@ -1,0 +1,53 @@
+#######################################################################################################################################
+<poster>Crusader</poster>
+<fanart></fanart>
+#######################################################################################################################################
+
+##############################################################################################################################
+
+<info>
+<message>[COLOR=FFFF0000]Announcement(s): Updated Alalam Again[/COLOR]</message>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/3/32/The_flag_of_Syrian_Arab_Republic_Damascus%2C_Syria.jpg</thumbnail>
+</info>
+
+<item>
+<title>RT Arabic HD</title>
+<link>http://odna.octoshape.net/f3f5m2v4/cds/ch3_720p/chunklist.m3u8</link>
+<thumbnail>http://www.20sat.com/new/logo/rosia.gif</thumbnail>
+</item>
+
+<item>
+<title>Syria TV</title>
+<link>rtmp://82.137.248.16:1935/Sat playpath=SatLive3 swfUrl=http://live.rtv.gov.sy/flash/lib/StrobeMediaPlayback2.swf pageUrl=http://live.rtv.gov.sy/Sat.aspx?HQ=1 live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ss/syria_satellite_channel.jpg</thumbnail>
+</item>
+
+<item>
+<title>Alekhbaria Syria</title>
+<link>http://82.137.248.16:1935/Snews/SnewsLive3/playlist.m3u8</link>
+<thumbnail>http://www.tuniscope.com/uploads/images/content/syrie-270812-v.jpg</thumbnail>
+</item>
+
+<item>
+<title>Press TV English</title>
+<link>rtmp://mtv.fms-01.visionip.tv/live playpath=mtv-ptv-live-25f-16x9-SDh?ref=www.presstv.ir&amp;USER=MTV+-+PTV+Stream swfUrl=http://embeddedplayer.visionip.tv/data/swf/1f92659aabbee91b48fdc3022f92d553964/player.swf live=true timeout=15 pageUrl=http://www.presstv.ir/live.html</link>
+<thumbnail>http://www.thebureauinvestigates.com/wp-content/uploads/2012/01/press_tv.png</thumbnail>
+</item>
+
+<item>
+<title>Al Sharqiya News</title>
+<link>http://ns8.indexforce.com:1935/alsharqiyalive/mystream/playlist.m3u8</link>
+<thumbnail>http://fs01.androidpit.info/ali/x92/6996092-1374584789569-144x144.png</thumbnail>
+</item>
+
+<item>
+<title>Al Mayadeen</title>
+<link>rtmp://livestreaming3.itworkscdn.net/mayadeenlive playpath=mayadsat swfUrl=http://www.almayadeen.net/content/jwplayer/jwplayer.flash.swf live=true timeout=15 pageUrl=http://www.almayadeen.net/live</link>
+<thumbnail>http://3.bp.blogspot.com/-IOB9KcaUF4Q/UJb9e9T9jYI/AAAAAAAADtk/qaZeDGNGNuw/s1600/al_mayadeen_tv.png</thumbnail>
+</item>
+
+<item>
+<title>Alalam</title>
+<link>http://wpc.C1A9.edgecastcdn.net/hls-live/20C1A9/al_alam/ls_satlink/b_,264,528,828,.m3u8</link>
+<thumbnail>http://www.724.tv/Eserler/Resim/Alalam.jpg</thumbnail>
+</item>

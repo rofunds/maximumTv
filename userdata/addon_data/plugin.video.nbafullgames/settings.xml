@@ -1,0 +1,11 @@
+<settings>
+    <setting id="bitrate" value="1280x720_3072" />
+    <setting id="current_ua" value="Mozilla/5.0 (Windows NT 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36" />
+    <setting id="download_folder" value="" />
+    <setting id="enable_favourite" value="true" />
+    <setting id="enable_hd" value="true" />
+    <setting id="favourite_team" value="0" />
+    <setting id="last_ua_create" value="1454867405" />
+    <setting id="live_source" value="1" />
+    <setting id="timezone_new" value="439" />
+</settings>

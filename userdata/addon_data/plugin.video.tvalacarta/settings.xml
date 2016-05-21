@@ -1,0 +1,23 @@
+<settings>
+    <setting id="account_anonymous_id" value="516193fa60f3757c0449a9476ae714da" />
+    <setting id="account_email" value="" />
+    <setting id="account_password" value="" />
+    <setting id="account_session" value="4a58a6e3de755d68b2525758db835dcc" />
+    <setting id="account_type_registered" value="0" />
+    <setting id="bookmarkpath" value="/storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/userdata/addon_data/plugin.video.tvalacarta/bookmarks" />
+    <setting id="cache.dir" value="" />
+    <setting id="debug" value="false" />
+    <setting id="default_action" value="0" />
+    <setting id="downloadlistpath" value="/storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/userdata/addon_data/plugin.video.tvalacarta/downloads/list" />
+    <setting id="downloadpath" value="/storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/userdata/addon_data/plugin.video.tvalacarta/downloads" />
+    <setting id="forceview" value="false" />
+    <setting id="jdownloader" value="http://127.0.0.1:10025" />
+    <setting id="languagefilter" value="0" />
+    <setting id="modo_cache" value="0" />
+    <setting id="player_mode" value="0" />
+    <setting id="player_type" value="2" />
+    <setting id="suscription_check" value="true" />
+    <setting id="thumbnail_type" value="2" />
+    <setting id="updatechannels" value="true" />
+    <setting id="updatecheck2" value="true" />
+</settings>

@@ -1,0 +1,988 @@
+***************************************************************************
+***************************************************************************
+<poster>Woody</poster>
+<fanart>http://banjaluka.watchkodi.com/images/Woody.jpg</fanart>
+***************************************************************************
+***************************************************************************
+
+<info>
+<message>[COLOR red] Organizing and moving Channels[/COLOR]</message>
+<thumbnail> </thumbnail>
+</info>
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR aqua] Costa Fav's 1[/COLOR]</title>
+<link>http://stream.ssh101.com/hls/samuraix.m3u8</link> 
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR aqua] Costa Fav's 2[/COLOR]</title>
+<link>http://stream.ssh101.com/hls/lornaldo.m3u8</link> 
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Animal Planet[/COLOR]</title>
+<link>http://sjc-uhls-vip01.ustream.tv/watch/playlist.m3u8?cid=12762028</link>
+<thumbnail>http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/imagecache/v2_article_image/articles/article/2013/09/animalplanet.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]Arena TV[/COLOR]</title>
+<link>http://118.97.167.19/jhos/arena//Playlist.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Argent Tv[/COLOR]</title>
+<link>rtmp://cp39414.live.edgefcs.net/live/ playpath=argent@9751 swfUrl=http://freetvall.com/player/jw_player_5/player3.SWF?streamer=rtmp://cp39414.live.edgefcs.net/live/&file=argent@9751&type=video&autostart=true&stretching=uniform&bufferlength=1&backcolor=000000&frontcolor=FFFFFF&lightcolor=66FF66 pageUrl=http://freetvall.com/video/8D2A9X17XHY7/Argent-TV-Canada live=1</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]arte[/COLOR]</title>
+<link>http://frlive.artestras.cshls.lldns.net/artestras/contrib/frlive/frlive_925.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]At The Races[/COLOR] </title>
+<link>rtmp://31.220.0.195:80/live playpath=atracessa swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf pageUrl=http://reytv.co/embedu.php?live=atracessa&vw=620&vh=490 live=1 timeout=10 token=%ZZri(nKa@#Z</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/b/b6/New_at_the_races_logo_2008.png</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]BBC 1[/COLOR]</title>
+<link>rtmp://178.18.31.64:443/liverepeater playpath=185635 swfUrl=http://bernardotv.club/atdedead.swf pageUrl=http://biggestplayer.me/streamcr.php?id=185635&width=620&height=490 token=#atd%#$ZH</link>
+<thumbnail>http://www.transdiffusion.org/images/348-cow.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]BBC 2[/COLOR]</title>
+<link>rtmp://178.18.31.57:443/liverepeater playpath=186372 swfUrl=http://bernardotv.club/atdedead.swf pageUrl=http://biggestplayer.me/streamcr.php?id=186372&width=620&height=490 token=#atd%#$ZH</link>
+<thumbnail>http://www.leaandsandeman.co.uk/blog/wp-content/uploads/2013/12/BBC2_Gusbourne-Estate-Giles-Coren-Alexander-Armstrong-Lea-and-Sandeman.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]BBC Entertainment[/COLOR]</title>
+<link>http://200.38.126.38:8081/TPHLSWeb/M3U8LiveFile?format=2&profile=130&lan=2&rows=40&f=.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]BBC World News[/COLOR]</title>
+<link>http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/bbc_world/ls_satlink/b_828.m3u8</link>
+<thumbnail>http://daveburrows.files.wordpress.com/2010/07/c85f8904-133e-496e-8d9d-997d078c7d46iphone_photo.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]Bein Premier[/COLOR]</title>
+<link>http://180.250.29.21/jhos/bein3/1420248720/playlist.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Big Ten Network[/COLOR]</title>
+<link>http://bigten247.cdnak.bigtenhd.neulion.com/nlds/btn2go/btnnetwork/as/live/btnnetwork_hd_3000.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/bb/big_ten_network.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Bloomberg[/COLOR]</title>
+<link>http://cdn3.videos.bloomberg.com/btv/us/master.m3u8</link>
+<thumbnail>http://embassies.gov.il/new-york/General/bloomberg%20logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque] BT Sports 1 [/COLOR]</title>
+<link>
+<sublink>rtmp://178.132.79.22:80/live playpath=btsport1 swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf pageUrl=http://reytv.co/embedu.php?live=btsport1&vw=620&vh=490 token=%ZZri(nKa@#Z </sublink>
+<sublink>http://109.200.1.82:1935/edge1/bt1.stream/playlist.m3u8</sublink>
+</link>
+<thumbnail>http://www.thefightlounge.co.uk/wp-content/uploads/2013/08/BT.jpg </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque] BT Sports 2  [/COLOR]</title>
+<link>
+<sublink>rtmp://80.82.78.39:443/liverepeater/btsp2 pageUrl=http://xxxxxxxxxxxxxxxx.xx/rtmpe://strm.dcast.tv:1935/live/asdfadfaa/pageUrl=http://xxxxx.xx/rtmp://80.82.64.90:443/liverepeater/79/pageUrl=http://filotv.pw/rtmpe://strm.ukcast.tv:1935/redirect/FUNKTSN/pageUrl=http://ukcast.tv/rtmp://173.192.81.176:443/liverepeater/stream1/token%ZZri(nKa@#Z/pageUrl=http://hdcast.org/cdn.kingofplayers.com/rtmpe://46.246.29.152:1935/redirect/HDMNBC playpath=15?34 pageUrl=http://popeoftheplayers.pw/hdcast.org/rtmp://31.220.0.134:1935/live/tsn2/pageUrl=http://www.eucast.tv/rtmp://195.154.236.152:80/liverepeater/141449/pageUrl=http://goodcast.pw/rtmp://77.81.98.134/tv/bt1h28qn?v=pageUrl=http://castok.com/rtmp://89.46.102.70:443/liveedge/bt1pageUrl=http://hqstreams.tv/rtmpe://play.finecast.tv/live/hqbt1page/playpath=42?finecast.tv/rtmpe://cdn.hdcast.org:1935/redirect/swfUrl=http://www.hdcast.org/aplayer/jwplayer.flash.swfpageUrl=http://www.hdcast.org/token=Fo5_n0w?U.rA6l3-70w47ch@#8x12pX@ token=#atd%#$ZH</sublink>
+<sublink>rtmp://178.18.31.63:443/liverepeater playpath=188003 swfUrl=http://biggestplayer.cachefly.net/atdedead.swf pageUrl=http://biggestplayer.me/streamcr.php?id=188003&width=620&height=490  token=#atd%#$ZH</sublink>
+</link>
+<thumbnail>http://www.thefightlounge.co.uk/wp-content/uploads/2013/08/BT.jpg </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Camera Cafe[/COLOR]</title>
+<link>rtmp://195.154.188.161/live playpath=cameracafr swfUrl=http://releases.flowplayer.org/5.5.1/flowplayer.swf pageUrl=http://www.stream4free.eu/camera-cafe live=1 timeout=10 </link>
+<thumbnail>http://www.formulatv.com/images/fgaleria/10500/10546_camera-cafe.jpg </thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]Capital TV [/COLOR]</title>
+<link>rtmp://cdn-the-2.musicradio.com:80/LiveVideo/ playpath=Capital swfUrl=http://smartvbla.zz.mu/tv/player.swf pageUrl=http://smartvbla.zz.mu/tv/musica/capital-tv/ live=1 timeout=10 </link>
+<thumbnail>http://www.thisisglobal.com/wp-content/uploads/2012/10/Capital-TV-430x160.png </thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]CBC News [/COLOR]</title>
+<link>rtmp://a.cdn.newschat.tv/edge playpath=cbc_live swfUrl=http://msnbclive.eu/player.swf pageUrl=http://www.livenewschat.eu/canada/ live=1</link>
+<thumbnail>https://pbs.twimg.com/profile_images/466664981673410560/886Az0vu.jpeg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]CCTV News [/COLOR]</title>
+<link>http://77.36.61.45:8010/CCTVNews.m3u8?b?b*t$</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/5/52/CCTV-NEWS.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Channel4 [/COLOR]</title>
+<link>http://94.198.255.211:5555/pl.m3u8?channel=9</link>
+<thumbnail>http://static.bips.channel4.com/bse/orig/the-trip/9434d9e9-1f52-4494-8f3e-f528cba9e7e4_625x352.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]CHCH Ontario[/COLOR]</title>
+<link>rtmp://54.85.197.21:1935/live playpath=news swfUrl=http://www.chch.com/wp-content/plugins/projekktorvm/src/StrobeMediaPlayback.swf?enableStageVideo=true&disableHardwareAcceleration=false&javascriptCallbackFunction=window.projekktorOSMFReady22bd91736c42e8eaf2e364c5492717cb& live=1 timeout=10 pageUrl=http://www.chch.com/live/ </link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/6/61/CHCH2010.svg/210px-CHCH2010.svg.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]C.I[/COLOR]</title>
+<link>http://cdn-07.sdn.si/crimeinvestigation/crimeinvestigation.isml/crimeinvestigation-video%3D350000-audio102%3D64000.m3u8</link>
+<thumbnail>http://www.thisismonarchy.tv/blog/wp-content/uploads/2014/03/CI-HERO-LOGO-BLACK.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Cinemax[/COLOR]</title>
+<link>http://200.38.126.38:8081/TPHLSWeb/M3U8LiveFile?format=2&profile=353&lan=2&rows=40&f=.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Cinestar Premier[/COLOR]</title>
+<link>http://83.139.104.111/Content/HLS/Live/Channel(cinestar_premiere_1)/Stream(03)/index.m3u8</link>
+<thumbnail>http://www.moj-film.hr/data/novosti/4a7a04da36fe9.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Cinestar TV[/COLOR]</title>
+<link>http://83.139.104.111/Content/HLS/Live/Channel(cinestar_tv)/Stream(03)/index.m3u8</link>
+<thumbnail>http://www.moj-film.hr/data/novosti/4a7a04da36fe9.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]City News [/COLOR]</title>
+<link>http://citynews6-lh.akamaihd.net/i/citynews6_live@178318/master.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]CMC California Music Channel[/COLOR]</title>
+<link>rtmp://cmctv.flash.internapcdn.net:1935/cmctv_vitalstream_com/live_adaptive_1/CMC-TV_adaptive3 swfUrl=http://http.vitalstreamcdn.com/flashskins/V2Player.swf live=1 timeout=10 pageUrl=http://www.cmc-tv.com/</link>
+<thumbnail>http://likeasupernova.com/wp-content/uploads/2012/11/CMC-Sponsor3.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]CMC Country[/COLOR]</title>
+<link>rtmp://cmctv.flash.internapcdn.net:80/cmctv_vitalstream_com/live_1/CMCUSA swfUrl=http://http.vitalstreamcdn.com/flashskins/V2Player.swf live=1 timeout=10 pageUrl=http://www.cmctvusa.com/</link>
+<thumbnail>http://facm.free.fr/picture10/cmc.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]CNN [/COLOR]</title>
+<link>http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/cnn/ls_satlink/b_828.m3u8</link>
+<thumbnail>http://3.bp.blogspot.com/-uU6FfIfrUbc/UcoKoTLHFUI/AAAAAAAAvZ8/sJv_D5I0lyI/s1600/CNN+International+June+2013.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]DJ Hot Tracks[/COLOR]</title>
+<link>http://www.djing.com/tv/h-04.m3u8</link>
+<thumbnail>http://wcet-tv.com/images/hot.ht1.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]DJ Ibiza[/COLOR]</title>
+<link>http://www.djing.com/tv/d-04.m3u8</link>
+<thumbnail>http://a2.mzstatic.com/eu/r30/Music2/v4/47/e4/6c/47e46c98-0943-d362-48fd-0cc1d0ee6365/cover170x170.jpeg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]DJ Underground[/COLOR]</title>
+<link>http://www.djing.com/tv/u-04.m3u8</link>
+<thumbnail>http://simfonik.com/wp-content/uploads/2011/05/dj-curious-underground-flavor-450.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Drift 4 Ever[/COLOR]</title>
+<link>http://46.249.213.93/iPhone/broadcast/drift4ever-tablet.3gp/drift4ever-tablet.3gp-mr647k.m3u8?trackingid=4551740000&os=desktop</link>
+<thumbnail>http://pictures.4ever.eu/data/674xX/sport/rally,-drifting-159223.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Dubai Racing[/COLOR]</title>
+<link>http://cdnehlsdubairacing2.endavomedia.com/smil:dmilivedubairacing2.smil/playlist.m3u8</link>
+<thumbnail>http://i.vimeocdn.com/video/211838347_640.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]E4[/COLOR]</title>
+<link>http://94.198.255.211:5555/pl.m3u8?channel=93</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]ESPN 2[/COLOR]</title>
+<link>rtmp://31.220.0.195:80/live playpath=espn2r swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=espn2r&vw=620&vh=490 token=%ZZri(nKa@#Z</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ee/espn_us.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]ESPN USA[/COLOR]</title>
+<link>rtmp://31.220.0.195:80/live playpath=espnusar swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=espnusar&vw=620&vh=490 token=%ZZri(nKa@#Z</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ee/espn_us.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]ESPN UK[/COLOR]</title>
+<link>rtmp://31.220.0.195:80/live playpath=espnr swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=espnr&vw=620&vh=490 live=1 timeout=10 token=%ZZri(nKa@#Z </link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ee/espn_us.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque] Eurosport 1  [/COLOR]</title>
+<link>
+<sublink>rtmp://89.248.168.57/iguide/mvu912lm6c5dzz6 playpath=rtmp://93.174.95.125:1935/edge/_definst_/futkxfuqj6tp9j9 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 timeout=10 pageUrl=http://www.iguide.to/ token=#ed%h0#w18623jsda6523lDGDHur</sublink>
+<sublink>rtmp://178.132.79.20:80/live playpath=eur1x swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=eur1x&vw=620&vh=490 live=1 timeout=10 token=%ZZri(nKa@#</sublink>
+</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ee/eurosport.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque] Eurosport 2  [/COLOR]</title>
+<link>
+<sublink>rtmp://89.248.168.57/iguide/mvu912lm6c5dzz6 playpath=rtmp://93.174.95.125:1935/edge/_definst_/k3e344bj4qtke57 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 timeout=10 pageUrl=http://www.iguide.to/ token=#ed%h0#w18623jsda6523lDGDHur</sublink>
+<sublink>rtmp://178.132.79.18:80/live playpath=euro2 swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=euro2&vw=620&vh=490 live=1 timeout=10 token=%ZZri(nKa@#</sublink>
+</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ee/eurosport.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Extreme Sports [/COLOR]</title>
+<link>http://83.139.104.123/Content/HLS/Live/Channel(extreme_sports)/index.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ee/extreme_sports_nl.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Extreme Sports Filmon[/COLOR]</title>
+<link>rtmp://mi2.gv.filmon.com:8086/live/326.high.stream</link>
+<thumbnail>http://static.filmon.com/theme/images/logo/filmon_facebook.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Film4[/COLOR]</title>
+<link>http://94.198.255.211:5555/pl.m3u8?channel=95</link>
+<thumbnail>http://theident.gallery/film4/FILM4-2008-ID-EXPLOSION-1-4.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Film Box[/COLOR]</title>
+<link>http://stream.zoovision.com:1935/livespi/arthouse/chunklist_w1601426913.m3u8</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/2/2c/Filmbox_arthouse_pl.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Fox 5[/COLOR]</title>
+<link>rtmp://rtmp.zerocast.tv:1935/live playpath=9pxGCtP3aEnJYgoBFFH8 swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf live=1 flashver=WIN\202012,0,0,77 timeout=15 token=8964316ec8772dfa live=1swfVfy=1 pageUrl=http://zerocast.tv</link>
+<thumbnail>http://static.squarespace.com/static/537de6aae4b0737ca0609e55/541c6e05e4b0d7392513564f/541c7050e4b0004bfbcdb3f1/1411149904565/foxfivelogo.jpeg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Fox Network[/COLOR]</title>
+<link>rtmp://aaa.gameso.tv/fasts/ playpath=channel2hd swfUrl=http://www.gameso.tv/jwplayer-6.8/player.swf pageUrl=http://www.gameso.tv/embedplayer_firstsportstream.php?width=640&height=480&id=channel2hd&autoplay=true live=1 timeout=10 token=#ed%h0#w18723jdsahjkDHF</link>
+<thumbnail>http://t0.gstatic.com/images?q=tbn:ANd9GcR7Nc354gxQgw1dNlSeIQ7PcvYDOyHAMD7zWF_8a-ctJx6LLYY_</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Fox Sports 1[/COLOR]</title>
+<link>rtmp://178.132.79.18:80/live playpath=foxy1 swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=foxy1&vw=620&vh=490 live=1 timeout=10 token=%ZZri(nKa@#Z</link>
+<thumbnail>http://www.eurweb.com/wp-content/uploads/2013/04/fox-sports.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Fox Sports 2[/COLOR]</title>
+<link>rtmp://178.132.79.18:80/live playpath=fx2 swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf pageUrl=http://reytv.co/embedu.php?live=fx2&vw=620&vh=490 live=1 timeout=10 token=%ZZri(nKa@#Z</link>
+<thumbnail>http://www.eurweb.com/wp-content/uploads/2013/04/fox-sports.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]France0[/COLOR]</title>
+<link>https://hls.francovox.com/hls/franceoc_mid.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]France 2[/COLOR]</title>
+<link>http://pebbles101-lh.akamaihd.net/i/france2_1@97347/index_900_av-b.m3u8|X-Forwarded-For=146.159.95.38</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]France 3[/COLOR]</title>
+<link>http://pebbles100-lh.akamaihd.net/i/france3_1@97329/index_900_av-p.m3u8|X-Forwarded-For=146.159.95.38</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]France 4[/COLOR]</title>
+<link>https://hls.francovox.com/hls/france4b.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]France 5[/COLOR]</title>
+<link>http://pebbles102-lh.akamaihd.net/i/france5_1@97351/index_900_av-p.m3u8|X-Forwarded-For=146.159.95.38</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Gamer TV[/COLOR]</title>
+<link>http://204.107.26.92:1935/vodlast/1568.low.m4v/chunklist_w633848921.m3u8</link>
+<thumbnail>http://i.ytimg.com/vi/6kplT32S5vw/maxresdefault.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Golf channel live[/COLOR]</title>
+<link>rtmp://178.132.79.18:80/live playpath=golf swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf pageUrl=http://reytv.co/embedu.php?live=golf&vw=620&vh=490 token=%ZZri(nKa@#Z</link>
+<thumbnail>http://www.pga.com/nationalchampionship/2007/news/images/golf_channel_448x266.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Hawaii[/COLOR]</title>
+<link>rtmp://24.165.45.209/oc16live/ playpath=oc16 swfUrl=http://www.oc16.tv/videoplayer/jw/player.swf pageURL=http://www.oc16.tv/?b?b*t$ app=oc16live/ buffer=5000 live=true swfVfy=true</link>
+<thumbnail>http://www.astonhotels.com/assets/slides/690x380-Hawaii-Sunset.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Hope Channel[/COLOR]</title>
+<link>http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/i24/ls_satlink/b_828.m3u8|User-Agent="Lavf53.32.100":network-caching=1000</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Hope  Church Channel[/COLOR]</title>
+<link>http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/i24/ls_satlink/b_828.m3u8|User-Agent="Lavf53.32.100":network-caching=1000</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]i24 News[/COLOR]</title>
+<link>http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/i24/ls_satlink/b_828.m3u8|User-Agent="Lavf53.32.100":network-caching=1000</link>
+<thumbnail>http://cdn.i24news.tv/bundles/i24newsfront/img/logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ITV 1[/COLOR]</title>
+<link>http://93.184.221.133/00573D/283/283-0.m3u8</link>
+<thumbnail>http://theident.gallery/itv1/2006/ITV1-2007-BB-XMAS-1-3.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ITV +1[/COLOR]</title>
+<link>http://198.179.30.110/live/1817.high.stream/playlist.m3u8?id=0ad5aac39bb13fbefe581e16665a91ea4495b8b56f21de6cee7f802a4370dd4fec17b118575259e0591c7b7e035ce19339cb5aa04f5fac113108290658a3a15a4042918a62f6575f6cb71b7ccfe7794a93dd15371943e9f9472576af80a75338ef2836b07101674c6c54831b0deb191f7434604113b919a8e8ec3afaf652b01f3f36b00840e3253536208b23db666db409d401c5a7484ada</link>
+<thumbnail>http://theident.gallery/itv1/2006/ITV1-2007-BB-XMAS-1-3.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ITV 2[/COLOR] </title>
+<link>http://94.198.255.211:5555/pl.m3u8?channel=90</link>
+<thumbnail>http://img2.wikia.nocookie.net/__cb20101223194131/logopedia/images/a/a0/ITV2_logo_2002.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ITV 3[/COLOR] </title>
+<link>http://94.198.255.211:5555/pl.m3u8?channel=91</link>
+<thumbnail>http://i215.photobucket.com/albums/cc260/Mister-Link/ITV3Breakbumper.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]ITV 4[/COLOR] </title>
+<link>http://94.198.255.211:5555/pl.m3u8?channel=92</link>
+<thumbnail>http://img.photobucket.com/albums/v669/22061985/itv4.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]KTLA 2[/COLOR] </title>
+<link>http://livestream-f.akamaihd.net/9262780_3189705_3ac07c22_1_678@64414?v=3.6.0&fp=WIN%2016,0,0,296&r=MRXHJ&g=SMXBDDYNTBRY</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>news</title>
+<link>
+$doregex[url]
+<regex>
+<name>url</name>
+<expres>rtsp_url":"([^"]*)</expres>
+<page>http://new.livestream.com/accounts/9262780/events/3189705</page>
+<referer> </referer>
+</regex>
+</link>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]London Live[/COLOR] </title>
+<link>http://bcoveliveios-i.akamaihd.net/hls/live/217434/3083279840001/master_900.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]MediaTravel[/COLOR] </title>
+<link>http://83.139.104.111/content/hls/live/channel(mediatravel)/stream(03)/index.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Miracle Channel[/COLOR] </title>
+<link>rtmp://miraclechannel.flash.internapcdn.net/miraclechannel/live_1/ playpath=miraclechannel swfUrl=http://www.miraclechannel.ca/jwplayer/player.swf pageUrl=http://www.miraclechannel.ca/live.php live=1 timeout=10</link>
+<thumbnail>http://www.springschurch.com/images/uploads/miracleChannel.jpg </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Misc.[/COLOR]</title>
+<link>rtmp://stream.connectcast.tv/live playpath=mp4:CC-170A4105-1599-C110-D76D-872AF1CD0B07-16516 swfUrl=https://www.connectcast.tv/new-theme/assets/vendor/jwplayer/jwplayer.flash.swf pageUrl=https://www.connectcast.tv/ma412002 live=1 timeout=10 </link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]More4[/COLOR]</title>
+<link>http://94.198.255.211:5555/pl.m3u8?channel=94</link>
+<thumbnail>http://payload53.cargocollective.com/1/1/52488/3364156/more4_logorebrand.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Motorsport [/COLOR]</title>
+<link>http://motorsport.hopto.org:8080/?b?b*t$</link>
+<thumbnail>http://fc01.deviantart.net/fs41/f/2009/050/f/b/Miss_Motorsport___Wallpaper_by_StudioJ.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Motors TV[/COLOR]</title>
+<link> </link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/mm/motors_tv_fr.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Motorz TV[/COLOR]</title>
+<link>rtmp://mi2.gv.filmon.com:8086/live/262.high.stream</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/3/3c/Motorz_TV_logo.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]MTV Dance[/COLOR]</title>
+<link>http://hlsstr02.svc.iptv.rt.ru/hls/CH_MTVDANCE/variant.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/378800000532768470/723cbcba68653aac1f0e81304a24be39.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]MTV Hits[/COLOR]</title>
+<link>http://hlsstr02.svc.iptv.rt.ru/hls/CH_MTVHITS/variant.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/1813177034/mtv-hits.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]MTV Rocks[/COLOR]</title>
+<link>http://hlsstr02.svc.iptv.rt.ru/hls/CH_MTVROCKS/variant.m3u8</link>
+<thumbnail>http://teve.ba/img/content/mtv-rocks.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]MTV Live HD[/COLOR]</title>
+<link>http://103.13.228.157/streamlink.m3u8?channel_id=8d45473ff4ca44d79e1abc4516c2fee0</link>
+<thumbnail>http://img2.wikia.nocookie.net/__cb20110617184257/tvcable/es/images/8/87/Mtv-live-hd.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Music Legends[/COLOR]</title>
+<link>rtmp://mi2.gv.filmon.com:8086/live/257.high.stream</link>
+<thumbnail>http://images6.fanpop.com/image/photos/32400000/Long-Live-Rock-n-Roll-music-32437447-500-333.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]MUTV[/COLOR]</title>
+<link>rtmp://178.18.31.55:443/liverepeater playpath=184126 swfUrl=http://bernardotv.club/atdedead.swf pageUrl=http://biggestplayer.me/streamcr.php?id=184126&width=620&height=490 live=1 timeout=10 token=#atd%#$ZH</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]NASA HD[/COLOR]</title>
+<link>http://public.infozen.cshls.lldns.net/infozen/public/public.m3u8</link>
+<thumbnail>https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpMR5keU05Bdmze3RPO-r9lmL-6hQnrzIaz1Sp06uOJPZtMeOh</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]NBA TV[/COLOR]</title>
+<link>rtmp://192.254.65.82:1935/live playpath=nbatv  live=1 timeout=10 pageUrl=http://hostaccess.org/7-SFE-SZE-HOSTACCESS/media/nbatv.php</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/nn/nba_tv.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]NFL Network[/COLOR]</title>
+<link>rtmpe://46.246.124.26:1935/l playpath=nfluuo4 swfUrl=http://hdcast.org/eplayer.swf pageUrl=http://www.hdcast.org/embedlive4.php?u=nfluuo4&vw=640&vh=450&domain=usachannels.tv%20 token=Fo5_n0w?U.rA6l3-70w47ch</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/nn/nfl_network.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]NFL Redzone[/COLOR]</title>
+<link>rtmp://stream.connectcast.tv/live playpath=mp4:CC-353ECD64-DB3A-223D-9A05-95BD5BC026AF-16616_SD swfUrl=https://www.connectcast.tv/new-theme/assets/vendor/jwplayer/jwplayer.flash.swf live=1 timeout=10 pageUrl=https://www.connectcast.tv/zxcvbnmasdfg1234</link>
+<thumbnail>http://www.redzonesweeps.com/images/RZ_Wallpaper_1024.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Offroad TV[/COLOR]</title>
+<link>rtmp://grey.ether.tv/live/fulltime/broadcast4</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Party TV eska[/COLOR]</title>
+<link>rtmp://stream.smcloud.net/live2/eska_party/ playpath=/eska_party_480p swfUrl=http://smartvbla.zz.mu/tv/player.swf pageUrl=http://smartvbla.zz.mu/tv/musica/eska-party/ live=1 timeout=10</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Premier Sports[/COLOR]</title>
+<link>rtmp://31.220.0.195:80/live playpath=premiersport swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=premiersport&vw=620&vh=490 live=1 timeout=10 token=%ZZri(nKa@#Z</link>
+<thumbnail>http://media15.tv/img/client-premier-sports.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Press TV[/COLOR]</title>
+<link>rtmp://204.107.26.252:8086/live/905.high.stream?Vd?u#bt!25</link>
+<thumbnail>http://previous.presstv.ir/photo/20121018/rabbani20121018084422000.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]PTV Sports[/COLOR]</title>
+<link>rtmp://178.132.79.22:80/live playpath=ptvnew swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=ptvnew&vw=620&vh=490 live=1 timeout=10 token=%ZZri(nKa@#Z</link>
+<thumbnail>http://www.livetvantenna.com/wp-content/uploads/2012/07/ptv-sports-tv-live.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Racing UK[/COLOR]</title>
+<link>rtmp://178.132.79.22:80/live playpath=racingukx swfUrl=pageUrl=http://reytv.co/embedu.php?live=racingukx&vw=620&vh=490 live=1 timeout=10 token=%ZZri(nKa@#Z</link>
+<thumbnail>http://www.becreative.co.uk/wp-content/uploads/2013/07/RacingUK_logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Salt And Light Live[/COLOR]</title>
+<link>rtmp://saltandlighttv.streamguys.net:80/live/ playpath=sltviphone-low swfUrl=http://saltandlighttv.org/video/jwplayer/player.swf pageUrl=http://wwitv.com/tv_channels/b4316.htm live=1 timeout=10</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]Setanta Sports[/COLOR]</title>
+<link>http://37.220.29.186:8000/setanta/setanta/index.m3u8</link>
+<thumbnail>http://storesatellite.com/shop/72-large/setanta-Sports-ireland.jpg</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR bisque]SKY SPORTS 1  [/COLOR]</title>
+<link>
+<sublink>rtmpe://46.246.124.26:1935/l playpath=sskys1 swfUrl=http://hdcast.org/eplayer.swf live=1 pageUrl=http://www.hdcast.org/embedlive4.php?u=sskys1&vw=650&vh=470&domain=cricbox.tv token=Fo5_n0w?U.rA6l3-70w47ch</sublink>
+<sublink>rtmp://46.246.29.130:1935/stream playpath=WWv4pD0kYn.stream swfUrl=http://thecdn.04stream.com/p/ooolo1.swf pageUrl=http://www.04stream.com/ebb.php  timeout=10</sublink>
+</link>
+<thumbnail>http://www.igoal.tv/ch/sky_sports1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY SPORTS 2  [/COLOR]</title>
+<link>
+<sublink>rtmpe://46.246.124.93:1935/l playpath=sskys2 swfUrl=http://hdcast.org/eplayer.swf live=1 pageUrl=http://www.hdcast.org/embedlive4.php?u=sskys2&vw=650&vh=470&domain=cricbox.tv token=Fo5_n0w?U.rA6l3-70w47ch </sublink>
+<sublink>http://37.157.245.82:1935/tv/skysp2.stream/playlist.m3u8</sublink>
+</link>
+<thumbnail>http://www.igoal.tv/ch/sky_sports2.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY SPORTS 3  [/COLOR]</title>
+<link>
+<sublink>rtmpe://46.246.124.29:1935/l playpath=sskys3 swfUrl=http://hdcast.org/eplayer.swf live=1 pageUrl=http://www.hdcast.org/embedlive4.php?u=sskys3&vw=650&vh=470&domain=cricbox.tv token=Fo5_n0w?U.rA6l3-70w47ch </sublink>
+<sublink>http://37.157.245.82:1935/tv/skysp3.stream/playlist.m3u8</sublink>
+</link>
+<thumbnail>http://www.igoal.tv/ch/sky_sports3.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY SPORTS 4  [/COLOR]</title>
+<link>
+<sublink>rtmp://178.18.31.62:443/liverepeater playpath=187569 swfUrl=http://biggestplayer.cachefly.net/atdedead.swf pageUrl=http://biggestplayer.me/streamcr.php?id=187569&width=620&height=490  token=#atd%#$ZH</sublink>
+<sublink>http://37.157.245.82:1935/tv/skysp4.stream/playlist.m3u8</sublink>
+</link>
+<thumbnail>http://i2.cdnds.net/09/53/160x120_broadcasting_ss4logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY SPORTS 5  [/COLOR]</title>
+<link>
+<sublink>rtmp://46.246.29.130:1935/stream playpath=00npFnXMLx.stream swfUrl=http://thecdn.04stream.com/p/ooolo1.swf pageUrl=http://www.04stream.com/ebb.php  timeout=10</sublink>
+<sublink>http://37.157.245.82:1935/tv/skysp5.stream/playlist.m3u8</sublink>
+</link>
+<thumbnail>http://www1.skysports.com/core/img/channels/Sky-Sports-5-Logo.svg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY SPORTS F1  [/COLOR]</title>
+<link>
+<sublink>rtmp://178.132.79.22:80/live playpath=skyf1 swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf pageUrl=http://reytv.co/embedu.php?live=skyf1&vw=620&vh=490 token=%ZZri(nKa@#Z</sublink>
+<sublink>rtmp://207.244.89.23/iguide/mvu912lm6c5dzz6 playpath=rtmp://93.174.95.125:1935/edge/_definst_/udhfbfg0vfzjcds swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/ token=#ed%h0#w18623jsda6523lDGDHur</sublink>
+</link>
+<thumbnail>http://www.igoal.tv/ch/skyf1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]SKY SPORTS News  [/COLOR]</title>
+<link>
+<sublink>rtmp://178.18.31.62:443/liverepeater playpath=187881 swfUrl=http://biggestplayer.cachefly.net/atdedead.swf pageUrl=http://biggestplayer.me/streamcr.php?id=187881&width=620&height=490 token=#atd%#$ZH</sublink>
+<sublink>rtmp://31.220.0.195:80/live playpath=skysportsnews swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf pageUrl=http://reytv.co/embedu.php?live=skysportsnews&vw=620&vh=490 token=%ZZri(nKa@#Z</sublink>
+</link>
+<thumbnail>https://si0.twimg.com/profile_images/2609290856/pdxh1cly8vvggvzwjkoh.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sony Six[/COLOR]</title>
+<link>http://80.243.182.106:8080/sonysix123/sonysix123/index.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR bisque]Sports 1[/COLOR]</title>
+<link>http://193.232.151.135/hls-live/livepkgr/_1073_/1073/1073-70.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sports 2[/COLOR]</title>
+<link>http://193.232.151.135/hls-live/livepkgr/_1031_/1031/1031-70.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sports 3[/COLOR]</title>
+<link>http://193.232.151.135/hls-live/livepkgr/_1032_/1032/1032-70.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sports 4[/COLOR]</title>
+<link>http://193.232.151.135/hls-live/livepkgr/_1040_/1040/1040-70.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sports 5[/COLOR]</title>
+<link>http://193.232.151.135/hls-live/livepkgr/_1025_/1025/1025-70.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[COLOR bisque]Sportsnet One[/COLOR]</title>
+<link>rtmp://178.18.31.52:443/liverepeater playpath=187001 swfUrl=http://bernardotv.club/atdedead.swf pageUrl=http://biggestplayer.me/streamcr.php?id=187001&width=620&height=490 token=#atd%#$ZH</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sportsnet_ca_short.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sportsnet Ontario[/COLOR]</title>
+<link>rtmp://178.132.79.20:80/live playpath=snooor swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=snooor&vw=620&vh=490 token=%ZZri(nKa@#Z</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sportsnet_ca_short.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sportsnet World[/COLOR]</title>
+<link>rtmp://178.132.79.18:80/live playpath=world swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf pageUrl=http://reytv.co/embedu.php?live=world&vw=620&vh=490 token=%ZZri(nKa@#Z</link>
+<thumbnail>https://www.swimming.ca/images/news/sportsnet-web-schedule.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sports Tonight[/COLOR]</title>
+<link>rtmp://freeview.fms.visionip.tv/live/sports_tonight-sports_tonight-live-25f-16x9-SD</link>
+<thumbnail>http://static.ibnlive.com/pix/minicms/Sport_tonight.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Sport time tv channel 11[/COLOR]</title>
+<link>rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel1_1200 </link>
+<thumbnail> </thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>[COLOR bisque]Ten Action[/COLOR]</title>
+<link>rtmp://178.132.79.22:80/live playpath=tenaction swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=tenaction&vw=620&vh=490 token=%ZZri(nKa@#Z</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Ten Sports[/COLOR]</title>
+<link>rtmp://178.132.79.18:80/live playpath=tensports swfUrl=http://flashtv.co/ePlayerr.swf pageUrl=http://flashtv.co/embedu.php?live=tensports&vw=620&vh=490 token=%ZZri(nKa@#Z</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]TSN 1[/COLOR]</title>
+<link>rtmp://178.132.79.20:80/live playpath=Tsnx1 swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf pageUrl=http://reytv.co/embedu.php?live=Tsnx1&vw=620&vh=490  token=%ZZri(nKa@#Z</link>
+<thumbnail>http://www.artsigns.com/urls/TSN_Canada/TSN_Canada%27s_Sports_Leader_pict/TSN_boardroom.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]TSN 2[/COLOR]</title>
+<link>rtmp://178.18.31.62:443/liverepeater playpath=187350 swfUrl=http://biggestplayer.cachefly.net/atdedead.swf pageUrl=http://biggestplayer.me/streamcr.php?id=187350&width=620&height=490 token=#atd%#$ZH</link>
+<thumbnail>http://assets.bellmedia.ca.s3.amazonaws.com/uploads/2014/03/TSN2-624x307.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]TV5 Monde[/COLOR]</title>
+<link>http://uneapple-i.akamaihd.net/hls/live/206412/grupoune_st11@206412/st11_index.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR bisque]UTV[/COLOR]</title>
+<link>http://d1mx0adloyta92.cloudfront.net/livetv/UTVAction.stream/chunklist_w993856370.m3u8</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/thumb/3/3e/UTV_logo_2012.svg/200px-UTV_logo_2012.svg.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 1[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/appleman.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 2[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/05/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 3[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/06/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 4[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/02/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 5[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/02/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 6[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/02/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 7[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/03/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 8[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/03/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 9[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/03/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 10[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/04/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 11[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/04/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 12[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/04/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 13[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/05/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 14[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/05/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 15[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/05/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 16[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/06/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 17[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/06/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Vevo TV 18[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/06/prog_index.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/3704559978/06c5bff254519fe2094d78f3504f3b1e_400x400.png</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR bisque]Victoria Secrets[/COLOR]</title>
+<link>http://46.249.213.93/iPhone/broadcast/victoriassecretangels-tablet.3gp/victoriassecretangels-tablet.3gp-mr648k.m3u8</link>
+<thumbnail>http://media1.popsugar-assets.com/files/users/5/57395/29_2007/victoriassecret/i/Victorias-Secret.jpg </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]War Channel[/COLOR]</title>
+<link>rtmp://mi2.gv.filmon.com:8086/live/805.high.stream</link>
+<thumbnail>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLxkErV61Z8eSmRv-QzzMoZzL6CAGVyZi8utVC5gOCNGhsYERWPA</thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Weather Channel HD[/COLOR]</title>
+<link>http://kalsegsec-a.akamaihd.net:80/dc-0/m/pa-live-publish3/kLive/smil:1_oorxcge2_all.smil/playlist.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]Weather Network HD[/COLOR]</title>
+<link>http://bcoveliveios-i.akamaihd.net/hls/live/207737/1942203455001/nat/master.m3u8</link>
+<thumbnail> </thumbnail>
+</item>
+
+<item>
+<title>[COLOR bisque]WGN Chicago[/COLOR]</title>
+<link>http://wgntribune-lh.akamaihd.net/i/WGNTribune_1@109089/master.m3u8?b?b*t$</link>
+<thumbnail>http://www.logotypes101.com/files/807/7bcc587955b42b46394b2e4a2a5e7cb6/lrg_WGN_Chicago.gif</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR bisque]Xtreme Impacts[/COLOR]</title>
+<link>http://46.249.213.93/iPhone/broadcast/xtremeimpacts-tablet.3gp/xtremeimpacts-tablet.3gp-mr647k.m3u8</link>
+<thumbnail>http://564ccca6a641eac6e5b0-38e3bbf162f44470d3635a7244f7971b.r55.cf3.rackcdn.com/xtreme-impacts-channel-images-logo-large.png?1367922579</thumbnail>
+</item>
+
+
+
+<item>
+<title>zerocast</title>
+<link>
+$doregex[file] token=$doregex[token] swfUrl=http://cdn.zerocast.tv/player/jwplayer.flash.swf pageUrl=http://zerocast.in/
+<regex>
+<name>file</name>
+<expres>file: "([^"]*)</expres>
+<page>http://zerocast.in/embed.php?a=237&amp;id=&amp;width=620&amp;height=470&amp;autostart=true&amp;strech=</page>
+<referer>http://usachannels.tv/amc_live.php</referer>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"([^"]*)</expres>
+<page>http://zerocast.in/file.php?id=1422669604</page>
+<referer>http://zerocast.in/embed.php?a=237&amp;id=&amp;width=620&amp;height=470&amp;autostart=true&amp;strech=</referer>
+</regex>
+</link>
+</item>
