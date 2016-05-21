@@ -8,7 +8,8 @@ addonname   = addon.getAddonInfo('name')
 
 
 def update():
-    subprocess.Popen("git pull", cwd = "/home/osmc/.kodi/")
+    subprocess.call('cd /home/osmc/.kodi/', shell=True)
+    subprocess.Popen("git pull")
 
 
 
