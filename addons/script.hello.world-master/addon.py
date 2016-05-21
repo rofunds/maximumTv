@@ -8,9 +8,8 @@ addonname   = addon.getAddonInfo('name')
 
 
 def update():
-    #subprocess.Popen("git pull", cwd = "//home//osmc//.kodi//")
-    os.chdir("//home//osmc//.kodi//")
-    os.sysytem("git pull")
+    subprocess.Popen("git pull", cwd = "//home//osmc//.kodi//")
+
 
 
 
