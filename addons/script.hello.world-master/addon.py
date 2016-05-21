@@ -7,7 +7,6 @@ import os
 addon       = xbmcaddon.Addon()
 addonname   = addon.getAddonInfo('name')
 
-wd = os.getcwd()
 
 def update():
     os.system('sh git.sh')
@@ -16,7 +15,7 @@ def update():
 
 
 dialog = xbmcgui.Dialog()
-i = dialog.yesno("Max TV Wizard", wd)
+i = dialog.yesno("Max TV Wizard", "Would you like to update your box?")
 
 if i == 0:
     pass
