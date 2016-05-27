@@ -1,0 +1,10 @@
+Version 1.0.4
+    new resolvers, bug fixes, fixed x-forward
+Version 1.0.3
+    server changed, new resolvers, bug fixes
+Version 1.0.2
+    some bug fixes, new resolvers
+Version 1.0.1
+    unicode urls in image
+Version 1.0.0
+    first relase

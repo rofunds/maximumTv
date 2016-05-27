@@ -1,0 +1,15 @@
+<settings>
+	<category label="30000">
+		<setting id="remote_repository" type="text" label="30001" value="http://harddevelop.x10.bz/channels/channels_spain" default="http://harddevelop.x10.bz/channels/channels_spain" enable="true"/>
+		<setting id="remote_updater" type="text" label="30002" value="https://github.com/harddevelop/tvbox/raw/master/version.xml" default="https://github.com/harddevelop/tvbox/raw/master/version.xml" enable="true"/>
+	</category>
+	<category label="30010">
+		<setting id="debug" type="bool" label="30011" default="false"/>
+		<setting id="extended_channels" type="bool" label="30003" default="false"/>
+	</category>
+	<category label="30020">
+		<setting id="enable_splive" type="bool" label="30022" default="false"/>
+		<setting id="splive_channel" type="text" label="30021" value="" default="" enable="true"/>
+		<setting id="online_pbewithmd5anddes_decoder" type="text" label="30031" value="http://decoder.x10host.com/decoder.php" default="http://decoder.x10host.com/decoder.php" enable="true"/>
+	</category>
+</settings>

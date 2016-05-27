@@ -1,0 +1,6 @@
+<settings>
+    <setting id="auto-view" value="true" />
+    <setting id="default-view" value="500" />
+    <setting id="enable_meta" value="true" />
+    <setting id="movie-view" value="Thumbnail" />
+</settings>

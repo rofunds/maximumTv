@@ -15,6 +15,8 @@
     <setting id="gpu_mem_256" value="112" />
     <setting id="gpu_mem_512" value="144" />
     <setting id="hdmi_boost" value="0" />
+    <setting id="hdmi_edid_file" value="false" />
+    <setting id="hdmi_force_hotplug" value="false" />
     <setting id="hdmi_group" value="0" />
     <setting id="hdmi_ignore_cec" value="false" />
     <setting id="hdmi_ignore_cec_init" value="true" />
@@ -27,7 +29,7 @@
     <setting id="max_usb_current" value="false" />
     <setting id="sdtv_aspect" value="1" />
     <setting id="sdtv_mode" value="0" />
-    <setting id="serial" value="0000000059cf063a" />
+    <setting id="serial" value="0000000074d0f916" />
     <setting id="soundcard_dac" value="0" />
     <setting id="spi-bcm2835-overlay" value="false" />
     <setting id="start_x" value="1" />

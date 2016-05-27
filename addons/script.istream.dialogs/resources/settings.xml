@@ -1,0 +1,5 @@
+<settings>
+<category label="Settings">
+    <setting id="ip" type="text" label="ip" default="" visible="false" />
+</category>
+</settings>
