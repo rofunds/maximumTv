@@ -17,51 +17,8 @@
 </category>
 <category label="Indexers">
 <setting type="sep"/>
-<setting id="tv_shows_animeultima_indexer_enabled" type="bool" label="[COLOR blue]Anime[/COLOR][COLOR red]Ultima[/COLOR] " default="false"/>
-<setting id="tv_shows_g2g_indexer_enabled" type="bool" label="g2g.so" default="false"/>
-<setting id="tv_shows_IceFilms_indexer_enabled" type="bool" label="Ice Films" default="false"/>
-<setting id="tv_shows_IMDb_indexer_enabled" type="bool" label="IMDb" default="true"/>
-<setting id="tv_shows_PrimeWire_indexer_enabled" type="bool" label="Prime Wire" default="false"/>
-<setting id="tv_shows_projectfreetv_indexer_enabled" type="bool" label="Project Free TV" default="false"/>
-<setting id="tv_shows_superchillin_indexer_enabled" type="bool" label="[COLOR royalblue]S[/COLOR]uperchillin" default="false"/>
-<setting id="tv_shows_trakt_indexer_enabled" type="bool" label="[COLOR royalblue]T[/COLOR][COLOR white]rakt[/COLOR]" default="false"/>
-<setting id="tv_shows_tvrage_indexer_enabled" type="bool" label="[COLOR white]TV[/COLOR][COLOR red]Rage[/COLOR]" default="false"/>
 </category>
 <category label="Sources">
 <setting type="sep"/>
-<setting id="tv_shows_123Movies_source_enabled" type="bool" label="123Movies" default="true"/>
-<setting id="tv_shows_9Movies_source_enabled" type="bool" label="9movies.to" default="true"/>
-<setting id="tv_shows_animeultima_source_enabled" type="bool" label="[COLOR blue]Anime[/COLOR][COLOR red]Ultima[/COLOR] " default="false"/>
-<setting id="tv_shows_Cartoon HD_source_enabled" type="bool" label="Cartoon HD" default="true"/>
-<setting id="tv_shows_CARTOONEXTRA_source_enabled" type="bool" label="CARTOONEXTRA" default="true"/>
-<setting id="tv_shows_clickplay_source_enabled" type="bool" label="clickplay" default="false"/>
-<setting id="tv_shows_directdownload_source_enabled" type="bool" label="Direct Download" default="false"/>
-<setting id="tv_shows_EasyNews_source_enabled" type="bool" label="Easy News [COLOR gold][I](autoplay not supported)[/I][/COLOR]" default="false"/>
-<setting id="tv_shows_seriestv_source_enabled" type="bool" label="FreeTvSeriesHD" default="true"/>
-<setting id="tv_shows_Furk.Net_source_enabled" type="bool" label="Furk.Net [COLOR gold][I](autoplay not supported)[/I][/COLOR]" default="false"/>
-<setting id="tv_shows_g2g_source_enabled" type="bool" label="g2g.so" default="false"/>
-<setting id="tv_shows_HDTVSHOWS_source_enabled" type="bool" label="HDTVSHOWS" default="true"/>
-<setting id="tv_shows_IceFilms_source_enabled" type="bool" label="Ice Films" default="true"/>
-<setting id="tv_shows_iStream_source_enabled" type="bool" label="iStream" default="false"/>
-<setting id="tv_shows_Kissdrama_source_enabled" type="bool" label="Kissdrama" default="false"/>
-<setting id="tv_shows_MovieStorm_source_enabled" type="bool" label="Movie Storm" default="false"/>
-<setting id="tv_shows_movie4u_source_enabled" type="bool" label="Movie4u" default="false"/>
-<setting id="tv_shows_movie.to_source_enabled" type="bool" label="MovieTo" default="true"/>
-<setting id="tv_shows_myvideolinks_source_enabled" type="bool" label="Myvideolinks" default="false"/>
-<setting id="tv_shows_o2tvseries_source_enabled" type="bool" label="o2 Tv Series" default="false"/>
-<setting id="tv_shows_oneclickwatch_source_enabled" type="bool" label="Oneclickwatch" default="false"/>
-<setting id="tv_shows_ororo_source_enabled" type="bool" label="Ororo.tv" default="true"/>
-<setting id="tv_shows_PlayBoxHD_source_enabled" type="bool" label="PlayBoxHD" default="true"/>
-<setting id="tv_shows_Plex_source_enabled" type="bool" label="Plex" default="false"/>
-<setting id="tv_shows_PrimeWire_source_enabled" type="bool" label="Prime Wire" default="true"/>
-<setting id="tv_shows_projectfreetv_source_enabled" type="bool" label="Project Free TV" default="false"/>
-<setting id="tv_shows_sezonlukdizi_source_enabled" type="bool" label="Sezonlukdizi" default="false"/>
-<setting id="tv_shows_Showbox_source_enabled" type="bool" label="Showbox" default="false"/>
-<setting id="tv_shows_Streamlord_source_enabled" type="bool" label="Streamlord" default="true"/>
-<setting id="tv_shows_superchillin_source_enabled" type="bool" label="[COLOR royalblue]S[/COLOR]uperchillin" default="false"/>
-<setting id="tv_shows_Tvrelease_source_enabled" type="bool" label="TV-Release" default="false"/>
-<setting id="tv_shows_vidic.ch_source_enabled" type="bool" label="Vidics.ch" default="true"/>
-<setting id="tv_shows_Watch Tv Series_source_enabled" type="bool" label="Watch Tv Series" default="false"/>
-<setting id="tv_shows_XMovies8_source_enabled" type="bool" label="XMovies8" default="true"/>
 </category>
 </settings>

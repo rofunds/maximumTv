@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Access Denied</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./dependencies/style.css" type="text/css" media="screen, print" />
+    <style></style>
+    <!--[if lt IE 9]><script type="text/javascript" src="./dependencies/respond.min.js"></script><style>.distlogo{left:85px;}</style><![endif]-->
+</head>
+<body>
+    <div id="pagewrapper">
+        <div class="container">
+            <div class="header"><a title="The School District of Palm Beach County" href="http://www.palmbeachschools.org/index.asp" class="distlogo">
+                <img src="./dependencies/Logo_PBSD.png" alt="The School District of Palm Beach County" /></a><div class="districttitle text-center">
+                    <h2 class="disttitle"><a title="The School District of Palm Beach County" href="http://www.palmbeachschools.org/index.asp">The School District of Palm Beach County</a></h2>
+                </div>
+            </div>
+        </div>
+        <h1 class="deniedmessage text-center">ACCESS BLOCKED</h1>
+        <div class="optionalLogo" style="text-align: center;">
+            <img src="./dependencies/Logo_PBSD.png" alt="The School District of Palm Beach County" /></div>
+        <div class="container">
+            <div class="blockmsg">
+                <p><strong>Access has been DENIED to the following URL:</strong></p>
+                <textarea onclick="this.focus();this.select()" readonly class="uneditable-input" style="">http://worldtvpro.zapto.org/cms/cms/jklmnop.php</textarea><p><strong>You are receiving this warning because the requested content has violated SDPBC Internet Access Policy. For more information on why this page was blocked [click here].</strong></p>
+            </div>
+            <table class="detailstbl">
+                <tr>
+                    <td class="itemname"><strong>Client Address: </strong></td>
+                    <td class="itemvalue">10.206.5.60</td>
+                </tr>
+                <tr>
+                    <td class="itemname"><strong>Client Name: </strong></td>
+                    <td class="itemvalue">unknown</td>
+                </tr>
+                <tr>
+                    <td class="itemname"><strong>Client User: </strong></td>
+                    <td class="itemvalue">unknown</td>
+                </tr>
+                <tr>
+                    <td class="itemname"><strong>Client Group: </strong></td>
+                    <td class="itemvalue">GeneralAccess</td>
+                </tr>
+                <tr>
+                    <td class="itemname"><strong>ACL: </strong></td>
+                    <td class="itemvalue">ACLPornography</td>
+                </tr>
+            </table>
+        </div>
+        <div id="push"></div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <p style="margin-top: 5px;">Fulton-Holland Educational Services Center<br />
+                3300 Forest Hill Boulevard West Palm Beach, FL 33406<br />
+                Phone: +1 (561) 434 8000 +1 (866) 930 8402 </p>
+            <p style="font-size: 12px;">NOTICE: Under Florida law, email addresses are public record. If you do not want your email addresses released in response to a public records request, do not send electronic mail to this entity. Instead, contact this office by phone or in writing.</p>
+        </div>
+    </div>
+</body>
+</html>

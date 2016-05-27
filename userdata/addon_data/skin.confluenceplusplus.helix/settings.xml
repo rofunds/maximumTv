@@ -54,9 +54,9 @@
     <setting id="VideoAddonSet.4.Label" type="string">Velocity</setting>
     <setting id="VideoAddonSet.4.icon" type="string">/home/osmc/.kodi/addons/plugin.video.velocity/icon.png</setting>
     <setting id="VideoAddonSet.4.Path" type="string">RunAddon(plugin.video.velocity)</setting>
-    <setting id="VideoAddonSet.5.Label" type="string">Scene Peeper</setting>
-    <setting id="VideoAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.mdscenepeeper/icon.png</setting>
-    <setting id="VideoAddonSet.5.Path" type="string">RunAddon(plugin.video.mdscenepeeper)</setting>
+    <setting id="VideoAddonSet.5.Label" type="string">iSTREAM</setting>
+    <setting id="VideoAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/script.icechannel/icon.png</setting>
+    <setting id="VideoAddonSet.5.Path" type="string">RunAddon(script.icechannel)</setting>
     <setting id="VideoAddonSet.6.Label" type="string">SportsAccess</setting>
     <setting id="VideoAddonSet.6.icon" type="string">/home/osmc/.kodi/addons/plugin.video.sportsaccess/icon.png</setting>
     <setting id="VideoAddonSet.6.Path" type="string">RunAddon(plugin.video.sportsaccess)</setting>
@@ -72,9 +72,9 @@
     <setting id="ProgramAddonSet.4.Label" type="string">MaximumTv</setting>
     <setting id="ProgramAddonSet.4.icon" type="string">/usr/share/kodi/addons/service.cloudword.settings/icon.png</setting>
     <setting id="ProgramAddonSet.4.Path" type="string">RunAddon(service.cloudword.settings)</setting>
-    <setting id="ProgramAddonSet.5.Label" type="string">[COLOR red]AK[/COLOR] [COLOR yellow]-[/COLOR] [COLOR turquoise]47[/COLOR]</setting>
-    <setting id="ProgramAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.AK-47/icon.png</setting>
-    <setting id="ProgramAddonSet.5.Path" type="string">RunAddon(plugin.video.AK-47)</setting>
+    <setting id="ProgramAddonSet.5.Label" type="string">Veetle</setting>
+    <setting id="ProgramAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.veetle/icon.png</setting>
+    <setting id="ProgramAddonSet.5.Path" type="string">RunAddon(plugin.video.veetle)</setting>
     <setting id="ProgramAddonSet.6.Label" type="string">Navi-X</setting>
     <setting id="ProgramAddonSet.6.icon" type="string">/home/osmc/.kodi/addons/script.navi-x/icon.png</setting>
     <setting id="ProgramAddonSet.6.Path" type="string">RunAddon(script.navi-x)</setting>
@@ -102,7 +102,7 @@
     <setting id="AppAddonSet.7.Label" type="string"></setting>
     <setting id="AppAddonSet.7.icon" type="string"></setting>
     <setting id="AppAddonSet.7.Path" type="string"></setting>
-    <setting id="UsrSelectAddon" type="string">plugin.video.AK-47</setting>
+    <setting id="UsrSelectAddon" type="string">service.cloudword.settings</setting>
     <setting id="Startup_Playlist_Path" type="string"></setting>
     <setting id="LyricScript_Path" type="string"></setting>
     <setting id="Home_Custom_Back_TV_Folder" type="string"></setting>
