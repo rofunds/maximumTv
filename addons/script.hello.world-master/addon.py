@@ -20,5 +20,5 @@ if i == 0:
     pass
 
 else:
-    dialog.ok("Max TV Wizard", "Your box will now restart.")
+    dialog.ok("Max TV Wizard", "Please press OK and wait for your box to restart.")
     update()
