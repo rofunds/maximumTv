@@ -72,9 +72,9 @@
     <setting id="ProgramAddonSet.4.Label" type="string">MaximumTv</setting>
     <setting id="ProgramAddonSet.4.icon" type="string">/usr/share/kodi/addons/service.cloudword.settings/icon.png</setting>
     <setting id="ProgramAddonSet.4.Path" type="string">RunAddon(service.cloudword.settings)</setting>
-    <setting id="ProgramAddonSet.5.Label" type="string">Movie Hut</setting>
-    <setting id="ProgramAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.moviehut/icon.png</setting>
-    <setting id="ProgramAddonSet.5.Path" type="string">RunAddon(plugin.video.moviehut)</setting>
+    <setting id="ProgramAddonSet.5.Label" type="string">1Channel</setting>
+    <setting id="ProgramAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.1channel/icon.png</setting>
+    <setting id="ProgramAddonSet.5.Path" type="string">RunAddon(plugin.video.1channel)</setting>
     <setting id="ProgramAddonSet.6.Label" type="string">Navi-X</setting>
     <setting id="ProgramAddonSet.6.icon" type="string">/home/osmc/.kodi/addons/script.navi-x/icon.png</setting>
     <setting id="ProgramAddonSet.6.Path" type="string">RunAddon(script.navi-x)</setting>
@@ -114,14 +114,15 @@
     <setting id="MusicAddonSet.1.Label" type="string">[COLOR blue]T[/COLOR]itan</setting>
     <setting id="MusicAddonSet.1.icon" type="string">/home/osmc/.kodi/addons/plugin.video.titan/icon.png</setting>
     <setting id="MusicAddonSet.1.Path" type="string">RunAddon(plugin.video.titan)</setting>
-    <setting id="MusicAddonSet.2.Label" type="string">XMovies8</setting>
-    <setting id="MusicAddonSet.2.icon" type="string">/home/osmc/.kodi/addons/plugin.video.xmovies8/icon.png</setting>
-    <setting id="MusicAddonSet.2.Path" type="string">RunAddon(plugin.video.xmovies8)</setting>
+    <setting id="MusicAddonSet.2.Label" type="string">Movie Hut</setting>
+    <setting id="MusicAddonSet.2.icon" type="string">/home/osmc/.kodi/addons/plugin.video.moviehut/icon.png</setting>
+    <setting id="MusicAddonSet.2.Path" type="string">RunAddon(plugin.video.moviehut)</setting>
     <setting id="MusicAddonSet.3.Label" type="string">MP3 Streams</setting>
     <setting id="MusicAddonSet.3.icon" type="string">/home/osmc/.kodi/addons/plugin.audio.mp3streams/icon.png</setting>
     <setting id="MusicAddonSet.3.Path" type="string">RunAddon(plugin.audio.mp3streams)</setting>
     <setting id="MusicAddonSet.4.Label" type="string">Pro Sport</setting>
     <setting id="PictureAddonSet.5.Label" type="string">Stallion-IPTV</setting>
+    <setting id="PictureAddonSet.4.Path" type="string">RunAddon(plugin.video.tvalacarta)</setting>
     <setting id="MusicAddonSet.4.icon" type="string">/home/osmc/.kodi/addons/plugin.video.prosport/icon.png</setting>
     <setting id="PictureAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.Stallion.IPTV.2.5/icon.png</setting>
     <setting id="PictureAddonSet.5.Path" type="string">RunAddon(plugin.video.Stallion-IPTV)</setting>
@@ -150,5 +151,4 @@
     <setting id="PictureAddonSet.3.Path" type="string">RunAddon(plugin.video.pelisalacarta)</setting>
     <setting id="PictureAddonSet.4.Label" type="string">tvalacarta</setting>
     <setting id="PictureAddonSet.4.icon" type="string">/home/osmc/.kodi/addons/plugin.video.tvalacarta/icon.png</setting>
-    <setting id="PictureAddonSet.4.Path" type="string">RunAddon(plugin.video.tvalacarta)</setting>
 </settings>
