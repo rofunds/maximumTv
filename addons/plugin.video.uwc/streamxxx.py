@@ -28,7 +28,7 @@ def Main():
     utils.addDir('[COLOR hotpink]Categories[/COLOR]','http://streamxxx.tv/', 177, '', '')
     #utils.addDir('[COLOR hotpink]Tags[/COLOR]','http://streamxxx.tv/', 173, '', '')
     utils.addDir('[COLOR hotpink]Search Overall[/COLOR]','http://streamxxx.tv/?s=', 174, '', '')
-    utils.addDir('[COLOR hotpink]Search Scenes[/COLOR]','http://streamxxx.tv/?cat=2210&s=', 174, '', '')
+    utils.addDir('[COLOR hotpink]Search Scenes[/COLOR]','http://streamxxx.tv/?cat=3673&s=', 174, '', '')
     utils.addDir('[COLOR hotpink]Movies[/COLOR]','http://streamxxx.tv/category/movies-xxx/', 175, '', '')
     utils.addDir('[COLOR hotpink]International Movies[/COLOR]','http://streamxxx.tv/category/movies-xxx/international-movies/', 176, '', '')
     List('http://streamxxx.tv/category/clips/')
@@ -38,7 +38,7 @@ def Main():
 def MainMovies():
     #utils.addDir('[COLOR hotpink]Tags[/COLOR]','http://streamxxx.tv/', 173, '', '')
     utils.addDir('[COLOR hotpink]Search Overall[/COLOR]','http://streamxxx.tv/&s=', 174, '', '')
-    utils.addDir('[COLOR hotpink]Search Movies[/COLOR]','http://streamxxx.tv/?cat=2207&s=', 174, '', '')
+    utils.addDir('[COLOR hotpink]Search Movies[/COLOR]','http://streamxxx.tv/?cat=2212&s=', 174, '', '')
     utils.addDir('[COLOR hotpink]International Movies[/COLOR]','http://streamxxx.tv/category/movies-xxx/international-movies/', 176, '', '')
     utils.addDir('[COLOR hotpink]Scenes[/COLOR]','http://streamxxx.tv/category/clips/', 170, '', '')
     List('http://streamxxx.tv/category/movies-xxx/')
@@ -48,7 +48,7 @@ def MainMovies():
 def MainInternationalMovies():
     utils.addDir('[COLOR hotpink]Tags[/COLOR]','http://streamxxx.tv/', 173, '', '')
     utils.addDir('[COLOR hotpink]Search Overall[/COLOR]','http://streamxxx.tv/?s=', 174, '', '')
-    utils.addDir('[COLOR hotpink]Search International Movies[/COLOR]','http://streamxxx.tv/?cat=9&s=', 174, '', '')
+    utils.addDir('[COLOR hotpink]Search International Movies[/COLOR]','http://streamxxx.tv/?cat=21&s=', 174, '', '')
     utils.addDir('[COLOR hotpink]Movies[/COLOR]','http://streamxxx.tv/category/movies/', 175, '', '')
     utils.addDir('[COLOR hotpink]Scenes[/COLOR]','http://streamxxx.tv/category/clips/', 170, '', '')
     List('http://streamxxx.tv/category/movies/international-movies/')
@@ -60,6 +60,8 @@ def List(url):
     match = re.compile(r'<div class="quadrato">\s*?<a href="([^"]+)"\s*?title="([^"]+)".*?src="([^"]+)"', re.DOTALL | re.IGNORECASE).findall(listhtml)
     for videopage, name, img in match:
         name = utils.cleantext(name)
+        if videopage.startswith('/'):
+            videopage = 'http://streamxxx.tv/' + videopage
         utils.addDownLink(name, videopage, 172, img, '')
     try:
         nextp=re.compile(r"""current(?:"|')>\d+</span><a.*?href=(?:"|')([^'"]+)""", re.DOTALL | re.IGNORECASE).findall(listhtml)[0]

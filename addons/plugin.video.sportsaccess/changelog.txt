@@ -1,3 +1,18 @@
-[B]Version 1.2.1[/B]
+[B]Version 1.1.2[/B]
 
-Added VOD
+-updated host
+
+
+
+TEST
+
+[B]Version 1.0.1[/B]
+-Added Twitter
+-Added Help Videos
+-Code Cosmetics
+
+[B]Version 1.0.0[/B]
+
+-Intial release
+
+

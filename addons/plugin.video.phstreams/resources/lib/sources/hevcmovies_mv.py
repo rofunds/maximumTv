@@ -58,7 +58,7 @@ class source:
             query = self.search_link % urllib.quote_plus(query)
             query = urlparse.urljoin(self.base_link, query)
 
-            result = client.source(query)
+            result = client.request(query)
 
             result = client.parseDOM(result, 'div', attrs = {'class': 'item'})
 
@@ -76,7 +76,7 @@ class source:
             url = r[0][0]
             url = client.replaceHTMLCodes(url)
 
-            result = client.source(url)
+            result = client.request(url)
 
             try:
                 links = client.parseDOM(result, 'div', attrs = {'class': 'enlaces_box'})[0]

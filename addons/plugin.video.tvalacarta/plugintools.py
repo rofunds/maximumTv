@@ -319,9 +319,17 @@ def read_body_and_headers(url, post=None, headers=[], follow_redirects=False, ti
         txheaders[header[0]]=header[1]
     _log("read_body_and_headers ---------------------------")
 
+    #cafile = os.path.join(get_runtime_path(),"resources","ca.crt")
+    cafile = os.path.join(get_runtime_path(),"resources","ca.crt-noex")
+
     req = Request(url, post, txheaders)
     if timeout is None:
-        handle=urlopen(req)
+        #handle=urlopen(req)
+        if os.path.exists(cafile):
+            handle=urlopen(req,cafile=cafile)
+        else:
+            handle=urlopen(req)
+
     else:        
         #Disponible en python 2.6 en adelante --> handle = urlopen(req, timeout=timeout)
         #Para todas las versiones:
@@ -329,7 +337,10 @@ def read_body_and_headers(url, post=None, headers=[], follow_redirects=False, ti
             import socket
             deftimeout = socket.getdefaulttimeout()
             socket.setdefaulttimeout(timeout)
-            handle=urlopen(req)            
+            if os.path.exists(cafile):
+                handle=urlopen(req,cafile=cafile)
+            else:
+                handle=urlopen(req)
             socket.setdefaulttimeout(deftimeout)
         except:
             import sys

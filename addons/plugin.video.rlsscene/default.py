@@ -65,6 +65,31 @@ def GetLinks(section, url):
         listitem = GetMediaInfo(html)
         content = html
         match = re.compile('href="(.+?)"').findall(content)
+        match1 = re.compile('<a href="https://justpaste.it/(.+?)">(.+?)</a>').findall(content)
+        match2 = re.compile('<a rel="nofollow" href="(.+?)">.+?</a>').findall(content)
+        match3 = re.compile('<a href="http://www.multiup.org/download/(.+?)"').findall(content)
+        listitem = GetMediaInfo(content)
+        for url in match + match2:
+                host = GetDomain(url)
+                if urlresolver.HostedMediaFile(url= url):
+                        title = url.rpartition('/')
+                        title = title[2].replace('.html', '')
+                        title = title.replace('.htm', '')
+                        host = host.replace('embed.','')
+                        addon.add_directory({'mode': 'PlayVideo', 'url': url, 'listitem': listitem}, {'title': host + ' : ' + title }, img=IconPath + 'play.png', fanart=FanartPath + 'fanart.jpg')
+        for movieUrl, name in match1:
+                addon.add_directory({'mode': 'GetLinks', 'section': section, 'url': 'https://justpaste.it/' + movieUrl}, {'title':  name.strip()}, img= 'https://raw.githubusercontent.com/MrEntertainment/backupREPO/master/plugin.video.theyidrh/icons/test1.png', fanart=FanartPath + 'fanart.jpg')
+        for url in match3:
+                addon.add_directory({'mode': 'GetLinks2', 'url': 'http://www.multiup.org/en/mirror/' + url, 'listitem': listitem}, {'title':  'Multiup.org  : More Links'}, img=IconPath + 'play.png', fanart= 'http://imgprix.com/web/wallpapers/private-cinema-room/2560x1600.jpg')  
+    except:
+        xbmc.executebuiltin("XBMC.Notification([COLOR red][B]Sorry no links [/B][/COLOR],[COLOR blue][B]Please try a different movie/tv show[/B][/COLOR],7000,"")")
+       	xbmcplugin.endOfDirectory(int(sys.argv[1]))
+
+def GetLinks2(section, url):
+        html = net.http_GET(url).content
+        listitem = GetMediaInfo(html)
+        content = html
+        match = re.compile('style="width:97%;text-align:left"\s*?href="(.+?)"').findall(content)
         listitem = GetMediaInfo(content)
         for url in match:
                 host = GetDomain(url)
@@ -73,10 +98,8 @@ def GetLinks(section, url):
                         title = title[2].replace('.html', '')
                         title = title.replace('.htm', '')
                         host = host.replace('embed.','')
-                        addon.add_directory({'mode': 'PlayVideo', 'url': url, 'listitem': listitem}, {'title': host + ' : ' + title }, img=IconPath + 'play.png', fanart=FanartPath + 'fanart.jpg')
-    except:
-        xbmc.executebuiltin("XBMC.Notification([COLOR red][B]Sorry no links [/B][/COLOR],[COLOR blue][B]Please try a different movie/tv show[/B][/COLOR],7000,"")")
-       	xbmcplugin.endOfDirectory(int(sys.argv[1]))
+                        addon.add_directory({'mode': 'PlayVideo', 'url': url, 'listitem': listitem}, {'title': host + ' : ' + title }, img=IconPath + 'play.png', fanart= 'http://imgprix.com/web/wallpapers/private-cinema-room/2560x1600.jpg')
+        xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
 ############################################################################# Play Video #####################################################################################
 
@@ -108,10 +131,12 @@ def GetMediaInfo(html):
 ###################################################################### menus ####################################################################################################
 
 def MainMenu():    #homescreen
-        addon.add_directory({'mode': 'GetTitles', 'section': 'ALL', 'url': BASE_URL + '/category/anim/',
-                             'startPage': '1', 'numOfPages': '1'}, {'title':  '[COLOR blue][B]Latest Anim[/B] [/COLOR]>>'}, img=IconPath + 'amin.png', fanart=FanartPath + 'fanart.jpg')
         addon.add_directory({'mode': 'GetTitles', 'section': 'ALL', 'url': BASE_URL + '/category/tv-shows/',
                              'startPage': '1', 'numOfPages': '1'}, {'title':  '[COLOR blue][B]Latest Tv episodes[/B] [/COLOR]>>'}, img=IconPath + 'tv.png', fanart=FanartPath + 'fanart.jpg')
+        addon.add_directory({'mode': 'GetTitles', 'section': 'ALL', 'url': BASE_URL + '/category/tv-packs/',
+                             'startPage': '1', 'numOfPages': '1'}, {'title':  '[COLOR blue][B]Latest Tv packs[/B] [/COLOR]>>'}, img=IconPath + 'tv.png', fanart=FanartPath + 'fanart.jpg')
+        addon.add_directory({'mode': 'GetTitles', 'section': 'ALL', 'url': BASE_URL + '/category/anim/',
+                             'startPage': '1', 'numOfPages': '1'}, {'title':  '[COLOR blue][B]Latest Anim[/B] [/COLOR]>>'}, img=IconPath + 'amin.png', fanart=FanartPath + 'fanart.jpg')
         addon.add_directory({'mode': 'GetTitles', 'section': 'ALL', 'url': BASE_URL + '/category/movies/',
                              'startPage': '1', 'numOfPages': '1'}, {'title':  '[COLOR blue][B]Latest Movies[/B] [/COLOR]>>'}, img=IconPath + 'movies.png', fanart=FanartPath + 'fanart.jpg')
         addon.add_directory({'mode': 'GetSearchQuery'},  {'title':  '[COLOR green]Search[/COLOR]'}, img=IconPath + 'search.png', fanart=FanartPath + 'fanart.jpg')
@@ -156,6 +181,8 @@ elif mode == 'GetTitles1':
 	GetTitles1(section, url, startPage, numOfPages)
 elif mode == 'GetLinks':
 	GetLinks(section, url)
+elif mode == 'GetLinks2':
+	GetLinks2(section, url)
 elif mode == 'GetSearchQuery':
 	GetSearchQuery()
 elif mode == 'Search':

@@ -1,3 +1,23 @@
+V1.2.9 Fixed resolver 
+
+V1.2.8 Fixed resolver
+
+V1.2.7 Fixed sections
+       Host edit only for Hockey.
+	   Changed where warning msg shows.
+
+V1.2.6 Warn Msg Change Choice yes/no
+
+V1.2.5 Code change
+	   Warn of HOST EDIT
+	   REMOVE VIDTIME / SELF KILL
+	   TRY TELLING ME I CAN'T REMOVE MYSELF!
+
+V1.2.4 Code Change
+
+V1.2.3 Movies and Tv Fix
+	   Remove BUG
+
 V1.2.2 Code Change
 
 V1.2.1 Code Changes

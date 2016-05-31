@@ -17,7 +17,7 @@
     <setting id="local_db_location" value="special://profile/addon_data/script.icechannel/databases" />
     <setting id="movie-view" value="52" />
     <setting id="mystream_default" value="false" />
-    <setting id="plugin_load_timestamp" value="2016-05-05 19:59:39" />
+    <setting id="plugin_load_timestamp" value="2016-05-27 17:15:31" />
     <setting id="plugins_chr" value="solvemediacom_chr,unicaptcha_chr,googlerecaptcha_chr" />
     <setting id="plugins_cst" value="tmdb_mvi_lsi_cst,Directdownload_tvs_cst,primewire_mvi_mvs_tvi_tvs_cst,icefilms_mvi_mvs_tvi_tvs_cst,furkdotnet_mvs_tvs_cst,ororo_mvi_tvi_mvs_tvs_cst,easynews_mvs_tvs_cst,superchillin_mvi_tvi_mvs_tvs_cst,projectfreetv_tvi_tvs_cst,imdb_lsi_mvi_tvi_cst" />
     <setting id="plugins_dirs" value="/home/osmc/.kodi/addons/script.icechannel/lib/entertainment/plugins,/home/osmc/.kodi/addons/script.icechannel.extn.xunitytalk/plugins,/home/osmc/.kodi/addons/script.icechannel.extn.xunity.tv.common/plugins,/home/osmc/.kodi/addons/script.icechannel.extn.common/plugins" />

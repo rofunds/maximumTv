@@ -425,18 +425,27 @@ def downloadpage(url,post=None,headers=[['User-Agent', 'Mozilla/5.0 (Macintosh; 
         txheaders[header[0]]=header[1]
     logger.info("pelisalacarta.core.scrapertools ---------------------------")
 
+    #cafile = os.path.join(config.get_runtime_path(),"resources","ca.crt")
+    cafile = os.path.join(config.get_runtime_path(),"resources","ca.crt-noex")
+
     req = Request(url, post, txheaders)
 
     try:
         if timeout is None:
             logger.info("pelisalacarta.core.scrapertools Peticion sin timeout")
-            handle=urlopen(req)
+            if os.path.exists(cafile):
+                handle=urlopen(req,cafile=cafile)
+            else:
+                handle=urlopen(req)
         else:        
             logger.info("pelisalacarta.core.scrapertools Peticion con timeout")
             #Para todas las versiones:
             deftimeout = socket.getdefaulttimeout()
             socket.setdefaulttimeout(timeout)
-            handle=urlopen(req)            
+            if os.path.exists(cafile):
+                handle=urlopen(req,cafile=cafile)
+            else:
+                handle=urlopen(req)
             socket.setdefaulttimeout(deftimeout)
         logger.info("pelisalacarta.core.scrapertools ...hecha")
         
@@ -1472,3 +1481,15 @@ def fixurl(url):
     # put it back together
     netloc = ''.join((user,colon1,pass_,at,host,colon2,port))
     return urlparse.urlunsplit((scheme,netloc,path,query,fragment))
+
+# Some helper methods
+def safe_unicode(value):
+    """ Generic unicode handling method to parse the titles """
+    from types import UnicodeType
+    if type(value) is UnicodeType:
+        return value
+    else:
+        try:
+            return unicode(value, 'utf-8')
+        except:
+            return unicode(value, 'iso-8859-1')

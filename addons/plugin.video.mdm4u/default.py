@@ -23,7 +23,6 @@ def CAT():
         addDir('[B][COLOR white]LATEST ADDED[/COLOR][/B]',baseurl+'/newupdate',1,icon,fanart,'')
         addDir('[B][COLOR white]MOST VIEWED[/COLOR][/B]',baseurl+'/top-view',1,icon,fanart,'')
         addDir('[B][COLOR white]HOT MOVIES[/COLOR][/B]',baseurl,1,icon,fanart,'')
-        addDir('[B][COLOR white]BEST 100[/COLOR][/B]',baseurl+'/best-100-movies',1,icon,fanart,'')
         addDir('[B][COLOR white]SEARCH[/COLOR][/B]','url',4,icon,fanart,'')
         addDir('[B][COLOR white]GENRE[/COLOR][/B]',baseurl,5,icon,fanart,'')
         addDir('[B][COLOR white]YEAR[/COLOR][/B]',baseurl,6,icon,fanart,'')
@@ -68,6 +67,11 @@ def INDEX(url):
                 np = re.compile("<a id='right' href='(.*?)'> <img src='next\.png' alt='.*?' width='50'></a>").findall(link)[0]
                 addDir('[I][B][COLOR dodgerblue]Go To Next Page>>>[/COLOR][/B][/I]',np,1,art+'next.png',fanart,'')
         except:pass
+        try:
+                np = re.compile('<a class="btnpg btnpg-alt btnpg-flat waves-button waves-effect" href="(.*?)">(.*?)</a>.*?').findall(link)
+                for url, name in np:
+                        addDir('[I][B][COLOR dodgerblue]Page %s >>>[/COLOR][/B][/I]' %name,url,1,icon,fanart,'')
+        except:pass
         setView('movies', 'movie-view')
 
 
@@ -99,6 +103,11 @@ def INDEX2(url):
                 np = re.compile("<a id='right' href='(.*?)'> <img src='next\.png' alt='.*?' width='50'></a>").findall(link)[0]
                 addDir('[I][B][COLOR dodgerblue]Go To Next Page>>>[/COLOR][/B][/I]',np,1,art+'next.png',fanart,'')
         except:pass
+        try:
+                np = re.compile('<a class="btnpg btnpg-alt btnpg-flat waves-button waves-effect" href="(.*?)">(.*?)</a>.*?').findall(link)
+                for url, name in np:
+                        addDir('[I][B][COLOR dodgerblue]Page %s >>>[/COLOR][/B][/I]' %name,url,1,icon,fanart,'')
+        except:pass
         setView('tvshows', 'show-view')
 
 
@@ -122,8 +131,10 @@ def EPIS(name,url,iconimage):
 
 def LINK(name,url,iconimage):
         if '-tvshow-' not in url:
-                url = re.split(r'fo/', url, re.I)[1]
-                url = baseurl + '/watch-free-movie/' + url
+                link = OPEN_URL(url)
+                url=re.compile('<h3 class="h3-detail"> <a  href="(.*?)"').findall(link)[0] 
+                #url = re.split(r'fo/', url, re.I)[1]
+                #url = baseurl + '/watch-free-movie/' + url
         link = OPEN_URL(url)
         try:
                 url = re.findall(r'type="application/x-shockwave-flash" src="(.*?)"', str(link), re.I|re.DOTALL)[0]
@@ -134,8 +145,21 @@ def LINK(name,url,iconimage):
                 link = urllib.unquote(link)
                 link = link.encode('ascii', 'ignore').decode('ascii')
                 url = re.findall(r'\|(.*?)\|', str(link), re.I|re.DOTALL)[0]
+                if '720' not in url:
+                        try:
+                                url = re.findall(r'\|(.*?)\|', str(link), re.I|re.DOTALL)[-1]
+                        except:
+                                url = re.findall(r'\|(.*?)\|', str(link), re.I|re.DOTALL)[0]
         except:
-                url = re.findall(r'<source type="video/mp4"  src="(.*?)"', str(link), re.I|re.DOTALL)[0]
+                link = link.replace('../view.php?','./view.php?')
+                try:
+                        url = re.findall(r'<source type="video/mp4"  src="\./view\.php\?(.*?)"', str(link), re.I|re.DOTALL)[0]
+                except:
+                        url = re.findall(r'<source type="video/mp4"  src="(.*?)"', str(link), re.I|re.DOTALL)[0]
+                if 'google' in url:
+                        url = url
+                else:
+                        url = baseurl + '/view.php?' + url
         liz = xbmcgui.ListItem(name, iconImage='DefaultVideo.png', thumbnailImage=iconimage)
         liz.setInfo(type='Video', infoLabels={'Title':description})
         liz.setProperty("IsPlayable","true")
@@ -295,9 +319,9 @@ def addDir2(name,url,mode,iconimage,itemcount):
         liz=xbmcgui.ListItem(name, iconImage=meta['cover_url'], thumbnailImage=meta['cover_url'])
         liz.setInfo( type="Video", infoLabels= meta )
         contextMenuItems = []
+        contextMenuItems.append(('Movie Information', 'XBMC.Action(Info)'))
         if meta['trailer']:
                 contextMenuItems.append(('Play Trailer', 'XBMC.RunPlugin(%s)' % addon.build_plugin_url({'mode': 7, 'url':meta['trailer']})))
-        contextMenuItems.append(('Movie Information', 'XBMC.Action(Info)'))
         liz.addContextMenuItems(contextMenuItems, replaceItems=False)
         if not meta['backdrop_url'] == '':
                 liz.setProperty('fanart_image', meta['backdrop_url'])
@@ -394,8 +418,10 @@ def setView(content, viewType):
             VT = '501'
         elif addon.get_setting(viewType) == 'Big List':
             VT = '51'
-        elif viewType == 'default-view':
-            VT = addon.get_setting(viewType)
+        elif addon.get_setting(viewType) == 'Low List':
+            VT = '724'
+        elif addon.get_setting(viewType) == 'Default View':
+            VT = addon.get_setting('default-view')
 
         print viewType
         print VT

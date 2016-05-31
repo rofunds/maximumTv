@@ -185,11 +185,6 @@ ext_target=<videoLink>(.+?)</videoLink>
 ext_url=%s
 quality=standard
 ########################################################
-#title=grabit.to
-#target=<h1>Der Downloadlink wurde erfolgreich gefunden\!</h1>[^<]+<p>Video: </p>[^<]+<p><strong><a href="([^"]+)">
-#url=http://www.grabit.to/index.php?txt_url=%s
-#quality=standard
-########################################################
 #title=keepvid.com
 #target=<a href="([^"]+)" class="link" target="\_blank">[^<]+</a>[^<]+<em>\(video\.flv - Low Quality\)
 #url=http://keepvid.com/?url=%s
@@ -270,23 +265,21 @@ ext_build=http:%s
 quality=high
 ########################################################
 title=tnaflix.com
-target=flashvars\.config\s*=\s*escape\("([^"]*)"\);
+target="(//cdn[^"]+?144p.mp4[^"]*)"
 url=%s
-ext_target=<videoLink>([^<]+144p.mp4)
-ext_url=http:%s
+build=http:%s
 quality=low
-target=flashvars\.config\s*=\s*escape\("([^"]*)"\);
+target="(//cdn[^"]+?480p.mp4[^"]*)"
 url=%s
-ext_target=<videoLink>([^<]+480p.mp4)
-ext_url=http:%s
+build=http:%s
 quality=standard
-target=flashvars\.config\s*=\s*escape\("([^"]*)"\);
-ext_target=<videoLink>([^<]+720p.mp4)
-ext_url=http:%s
+target="(//cdn[^"]+?720p.mp4[^"]*)"
+url=%s
+build=http:%s
 quality=high
-target=flashvars\.config\s*=\s*escape\("([^"]*)"\);
-ext_target=<videoLink>([^<]+1080p.mp4)
-ext_url=http:%s
+target="(//cdn[^"]+?1080p.mp4[^"]*)"
+url=%s
+build=http:%s
 quality=high
 ########################################################
 title=slutload.com
@@ -312,25 +305,6 @@ target=(http://videos.tukif.com/download[^"]+13)"
 url=%s
 header=Referer|http://www.tukif.com
 quality=high
-########################################################
-title=jacquieetmicheltv.net
-target=(http[^"]+)
-url=%s
-ext_target="(http[^"]+-3500/[^"]+)
-ext_url=%s
-quality=high
-target=(http[^"]+)
-ext_target="(http[^"]+-2000/[^"]+)
-ext_url=%s
-quality=high
-target=(http[^"]+)
-ext_target="(http[^"]+-1000/[^"]+)
-ext_url=%s
-quality=medium
-target=(http[^"]+)
-ext_target="(http[^"]+-250/[^"]+)
-ext_url=%s
-quality=low
 ########################################################
 title=yuvutu.com
 target=<td width="600" class="videoPlayer">[\s]+<!-- all -->[\s]+<iframe src="([^"]+)"
@@ -366,9 +340,12 @@ url=%s
 quality=standard
 ########################################################
 title=sexu.com
-target="url":"([^"]+)
+target="file":"([^"]+)
 url=%s
 quality=standard
+target="file":"([^"]+720p-x.mp4)
+url=%s
+quality=high
 ########################################################
 title=vporn.com
 target=flashvars.videoUrlMedium2 = "([^"]+)";

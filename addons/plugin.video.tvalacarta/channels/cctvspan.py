@@ -24,7 +24,7 @@ __creationdate__ = "20121130"
 __vfanart__ = "http://espanol.cntv.cn/library/column/2010/11/24/C28600/style/img/map2.jpg"
 
 DEBUG = config.get_setting("debug")
-MAIN_URL = "http://espanol.cntv.cn/"
+MAIN_URL = "http://espanol.cctv.com/"
 
 def isGeneric():
     return True
@@ -52,13 +52,16 @@ def programas(item):
     '''
     # Descarga la pȧina
     data = scrapertools.cachePage(item.url)
+    logger.info("data="+data)
     data = scrapertools.find_single_match(data,'<li><a href="http://cctvespanol.cntv.cn/[^>]+>CCTV-Espa[^<]+</a[^<]+<div class="xiala"[^<]+<dl id="up_box">(.*?)</dl>')
+    logger.info("data="+data)
     patron = '<a href="([^"]+)"[^>]+>([^<]+)</a>'
     matches = re.compile(patron,re.DOTALL).findall(data)
     if DEBUG: scrapertools.printMatches(matches)
 
     item_series = None
-    
+    item_infantil = None
+
     for scrapedurl,scrapedtitle in matches:
         title = scrapertools.htmlclean(scrapedtitle)
         url   = urlparse.urljoin(item.url,scrapedurl)
@@ -309,32 +312,22 @@ def play(item):
 
     return itemlist
 
-# Verificación automática de canales: Esta función debe devolver "True" si todo está ok en el canal.
+# Test de canal
+# Devuelve: Funciona (True/False) y Motivo en caso de que no funcione (String)
 def test():
-    bien = True
     
-    # El canal tiene estructura programas -> episodios -> play
-    menu_itemlist = mainlist(Item())
+    items_programas = programas(Item())
 
-    items_programas = programas(menu_itemlist[ len(menu_itemlist)-1 ])
+    # El canal tiene estructura programas -> episodios -> play
     if len(items_programas)==0:
-        print "No hay programas"
-        return False
+        return False,"No hay programas"
 
     items_episodios = episodios(items_programas[0])
     if len(items_episodios)==0:
-        print "No hay episodios en "+items_programas[0].tostring();
-        return False
+        return False,"No hay episodios en "+items_programas[0].title
 
-    from servers import cntv
-    videos = cntv.get_video_url(items_episodios[0].url)
-    if len(videos)==0:
-        print "No hay videos en "+items_episodios[0].tostring();
-        return False
+    item_episodio = detalle_episodio(items_episodios[0])
+    if item_episodio.media_url=="":
+        return False,"El conector no devuelve enlace para el vídeo "+item_episodio.title
 
-    items_videos = videos_seccion(menu_itemlist[0])
-    if len(items_videos)==0:
-        print "No hay videos en "+menu_itemlist[0].tostring();
-        return False
-
-    return bien
+    return True,""
