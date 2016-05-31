@@ -72,9 +72,9 @@
     <setting id="ProgramAddonSet.4.Label" type="string">MaximumTv</setting>
     <setting id="ProgramAddonSet.4.icon" type="string">/usr/share/kodi/addons/service.cloudword.settings/icon.png</setting>
     <setting id="ProgramAddonSet.4.Path" type="string">RunAddon(service.cloudword.settings)</setting>
-    <setting id="ProgramAddonSet.5.Label" type="string">Veetle</setting>
-    <setting id="ProgramAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.veetle/icon.png</setting>
-    <setting id="ProgramAddonSet.5.Path" type="string">RunAddon(plugin.video.veetle)</setting>
+    <setting id="ProgramAddonSet.5.Label" type="string">[COLOR blue]T[/COLOR]itan</setting>
+    <setting id="ProgramAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.titan/icon.png</setting>
+    <setting id="ProgramAddonSet.5.Path" type="string">RunAddon(plugin.video.titan)</setting>
     <setting id="ProgramAddonSet.6.Label" type="string">Navi-X</setting>
     <setting id="ProgramAddonSet.6.icon" type="string">/home/osmc/.kodi/addons/script.navi-x/icon.png</setting>
     <setting id="ProgramAddonSet.6.Path" type="string">RunAddon(script.navi-x)</setting>
@@ -102,7 +102,7 @@
     <setting id="AppAddonSet.7.Label" type="string"></setting>
     <setting id="AppAddonSet.7.icon" type="string"></setting>
     <setting id="AppAddonSet.7.Path" type="string"></setting>
-    <setting id="UsrSelectAddon" type="string">plugin.video.mdmovievault</setting>
+    <setting id="UsrSelectAddon" type="string">plugin.video.titan</setting>
     <setting id="Startup_Playlist_Path" type="string"></setting>
     <setting id="LyricScript_Path" type="string"></setting>
     <setting id="Home_Custom_Back_TV_Folder" type="string"></setting>
@@ -121,6 +121,7 @@
     <setting id="MusicAddonSet.3.icon" type="string">/home/osmc/.kodi/addons/plugin.audio.mp3streams/icon.png</setting>
     <setting id="MusicAddonSet.3.Path" type="string">RunAddon(plugin.audio.mp3streams)</setting>
     <setting id="MusicAddonSet.4.Label" type="string">Pro Sport</setting>
+    <setting id="PictureAddonSet.5.Label" type="string">Stallion-IPTV</setting>
     <setting id="MusicAddonSet.4.icon" type="string">/home/osmc/.kodi/addons/plugin.video.prosport/icon.png</setting>
     <setting id="PictureAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.Stallion.IPTV.2.5/icon.png</setting>
     <setting id="PictureAddonSet.5.Path" type="string">RunAddon(plugin.video.Stallion-IPTV)</setting>
@@ -150,5 +151,4 @@
     <setting id="PictureAddonSet.4.Label" type="string">tvalacarta</setting>
     <setting id="PictureAddonSet.4.icon" type="string">/home/osmc/.kodi/addons/plugin.video.tvalacarta/icon.png</setting>
     <setting id="PictureAddonSet.4.Path" type="string">RunAddon(plugin.video.tvalacarta)</setting>
-    <setting id="PictureAddonSet.5.Label" type="string">Stallion-IPTV</setting>
 </settings>

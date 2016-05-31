@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<settings>
-	<category label="">
- 			 <setting label="250" type="action" option="close" action="RunScript($CWD/cloudword.py)" />
-	</category>
-</settings>
