@@ -29,7 +29,7 @@
     <setting id="max_usb_current" value="false" />
     <setting id="sdtv_aspect" value="1" />
     <setting id="sdtv_mode" value="0" />
-    <setting id="serial" value="00000000f2ae2b94" />
+    <setting id="serial" value="0000000074d0f916" />
     <setting id="soundcard_dac" value="0" />
     <setting id="spi-bcm2835-overlay" value="false" />
     <setting id="start_x" value="1" />

@@ -60,12 +60,12 @@
     <setting id="VideoAddonSet.6.Label" type="string">SportsAccess</setting>
     <setting id="VideoAddonSet.6.icon" type="string">/home/osmc/.kodi/addons/plugin.video.sportsaccess/icon.png</setting>
     <setting id="VideoAddonSet.6.Path" type="string">RunAddon(plugin.video.sportsaccess)</setting>
-    <setting id="ProgramAddonSet.1.Label" type="string">[B][I][COLOR red]DNA TV[/COLOR] [COLOR lime]PRO[/COLOR][/I][/B]</setting>
-    <setting id="ProgramAddonSet.1.icon" type="string">/home/osmc/.kodi/addons/plugin.video.dnatv/icon.png</setting>
-    <setting id="ProgramAddonSet.1.Path" type="string">RunAddon(plugin.video.dnatv)</setting>
-    <setting id="ProgramAddonSet.2.Label" type="string">1Channel</setting>
-    <setting id="ProgramAddonSet.2.icon" type="string">/home/osmc/.kodi/addons/plugin.video.1channel/icon.png</setting>
-    <setting id="ProgramAddonSet.2.Path" type="string">RunAddon(plugin.video.1channel)</setting>
+    <setting id="ProgramAddonSet.1.Label" type="string">[COLOR red]AK[/COLOR] [COLOR yellow]-[/COLOR] [COLOR turquoise]47[/COLOR]</setting>
+    <setting id="ProgramAddonSet.1.icon" type="string">/home/osmc/.kodi/addons/plugin.video.AK-47/icon.png</setting>
+    <setting id="ProgramAddonSet.1.Path" type="string">RunAddon(plugin.video.AK-47)</setting>
+    <setting id="ProgramAddonSet.2.Label" type="string">Icefilms</setting>
+    <setting id="ProgramAddonSet.2.icon" type="string">/home/osmc/.kodi/addons/plugin.video.icefilms/icon.png</setting>
+    <setting id="ProgramAddonSet.2.Path" type="string">RunAddon(plugin.video.icefilms)</setting>
     <setting id="ProgramAddonSet.3.Label" type="string">[B][I][COLOR red]DNA TV[/COLOR] [COLOR lime]PRO[/COLOR][/I][/B]</setting>
     <setting id="ProgramAddonSet.3.icon" type="string">/home/osmc/.kodi/addons/plugin.video.dnatv/icon.png</setting>
     <setting id="ProgramAddonSet.3.Path" type="string">RunAddon(plugin.video.dnatv)</setting>
@@ -102,7 +102,7 @@
     <setting id="AppAddonSet.7.Label" type="string"></setting>
     <setting id="AppAddonSet.7.icon" type="string"></setting>
     <setting id="AppAddonSet.7.Path" type="string"></setting>
-    <setting id="UsrSelectAddon" type="string">plugin.video.1channel</setting>
+    <setting id="UsrSelectAddon" type="string">plugin.video.titan</setting>
     <setting id="Startup_Playlist_Path" type="string"></setting>
     <setting id="LyricScript_Path" type="string"></setting>
     <setting id="Home_Custom_Back_TV_Folder" type="string"></setting>
@@ -111,12 +111,12 @@
     <setting id="VideoAddonSet.7.Label" type="string">M4U</setting>
     <setting id="VideoAddonSet.7.icon" type="string">/home/osmc/.kodi/addons/plugin.video.mdm4u/icon.png</setting>
     <setting id="VideoAddonSet.7.Path" type="string">RunAddon(plugin.video.mdm4u)</setting>
-    <setting id="MusicAddonSet.1.Label" type="string">PubFilm</setting>
-    <setting id="MusicAddonSet.1.icon" type="string">/home/osmc/.kodi/addons/plugin.video.mdpubfilm/icon.png</setting>
-    <setting id="MusicAddonSet.1.Path" type="string">RunAddon(plugin.video.mdpubfilm)</setting>
-    <setting id="MusicAddonSet.2.Label" type="string">Pro Sport</setting>
-    <setting id="MusicAddonSet.2.icon" type="string">/home/osmc/.kodi/addons/plugin.video.prosport/icon.png</setting>
-    <setting id="MusicAddonSet.2.Path" type="string">RunAddon(plugin.video.prosport)</setting>
+    <setting id="MusicAddonSet.1.Label" type="string">Movie Hut</setting>
+    <setting id="MusicAddonSet.1.icon" type="string">/home/osmc/.kodi/addons/plugin.video.moviehut/icon.png</setting>
+    <setting id="MusicAddonSet.1.Path" type="string">RunAddon(plugin.video.moviehut)</setting>
+    <setting id="MusicAddonSet.2.Label" type="string">[COLOR blue]T[/COLOR]itan</setting>
+    <setting id="MusicAddonSet.2.icon" type="string">/home/osmc/.kodi/addons/plugin.video.titan/icon.png</setting>
+    <setting id="MusicAddonSet.2.Path" type="string">RunAddon(plugin.video.titan)</setting>
     <setting id="MusicAddonSet.3.Label" type="string">MP3 Streams</setting>
     <setting id="MusicAddonSet.3.icon" type="string">/home/osmc/.kodi/addons/plugin.audio.mp3streams/icon.png</setting>
     <setting id="MusicAddonSet.3.Path" type="string">RunAddon(plugin.audio.mp3streams)</setting>
