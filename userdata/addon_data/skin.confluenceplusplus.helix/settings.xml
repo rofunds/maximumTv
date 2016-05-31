@@ -60,9 +60,9 @@
     <setting id="VideoAddonSet.6.Label" type="string">SportsAccess</setting>
     <setting id="VideoAddonSet.6.icon" type="string">/home/osmc/.kodi/addons/plugin.video.sportsaccess/icon.png</setting>
     <setting id="VideoAddonSet.6.Path" type="string">RunAddon(plugin.video.sportsaccess)</setting>
-    <setting id="ProgramAddonSet.1.Label" type="string">1Channel</setting>
-    <setting id="ProgramAddonSet.1.icon" type="string">/home/osmc/.kodi/addons/1Channel-master/icon.png</setting>
-    <setting id="ProgramAddonSet.1.Path" type="string">RunAddon(plugin.video.1channel)</setting>
+    <setting id="ProgramAddonSet.1.Label" type="string">Movie Hut</setting>
+    <setting id="ProgramAddonSet.1.icon" type="string">/home/osmc/.kodi/addons/plugin.video.moviehut/icon.png</setting>
+    <setting id="ProgramAddonSet.1.Path" type="string">RunAddon(plugin.video.moviehut)</setting>
     <setting id="ProgramAddonSet.2.Label" type="string">Icefilms</setting>
     <setting id="ProgramAddonSet.2.icon" type="string">/home/osmc/.kodi/addons/plugin.video.icefilms/icon.png</setting>
     <setting id="ProgramAddonSet.2.Path" type="string">RunAddon(plugin.video.icefilms)</setting>
@@ -72,9 +72,9 @@
     <setting id="ProgramAddonSet.4.Label" type="string">MaximumTv</setting>
     <setting id="ProgramAddonSet.4.icon" type="string">/usr/share/kodi/addons/service.cloudword.settings/icon.png</setting>
     <setting id="ProgramAddonSet.4.Path" type="string">RunAddon(service.cloudword.settings)</setting>
-    <setting id="ProgramAddonSet.5.Label" type="string">[COLOR blue]T[/COLOR]itan</setting>
-    <setting id="ProgramAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.titan/icon.png</setting>
-    <setting id="ProgramAddonSet.5.Path" type="string">RunAddon(plugin.video.titan)</setting>
+    <setting id="ProgramAddonSet.5.Label" type="string">Movie Hut</setting>
+    <setting id="ProgramAddonSet.5.icon" type="string">/home/osmc/.kodi/addons/plugin.video.moviehut/icon.png</setting>
+    <setting id="ProgramAddonSet.5.Path" type="string">RunAddon(plugin.video.moviehut)</setting>
     <setting id="ProgramAddonSet.6.Label" type="string">Navi-X</setting>
     <setting id="ProgramAddonSet.6.icon" type="string">/home/osmc/.kodi/addons/script.navi-x/icon.png</setting>
     <setting id="ProgramAddonSet.6.Path" type="string">RunAddon(script.navi-x)</setting>
@@ -102,7 +102,7 @@
     <setting id="AppAddonSet.7.Label" type="string"></setting>
     <setting id="AppAddonSet.7.icon" type="string"></setting>
     <setting id="AppAddonSet.7.Path" type="string"></setting>
-    <setting id="UsrSelectAddon" type="string">plugin.video.titan</setting>
+    <setting id="UsrSelectAddon" type="string">plugin.video.moviehut</setting>
     <setting id="Startup_Playlist_Path" type="string"></setting>
     <setting id="LyricScript_Path" type="string"></setting>
     <setting id="Home_Custom_Back_TV_Folder" type="string"></setting>
@@ -111,9 +111,9 @@
     <setting id="VideoAddonSet.7.Label" type="string">M4U</setting>
     <setting id="VideoAddonSet.7.icon" type="string">/home/osmc/.kodi/addons/plugin.video.mdm4u/icon.png</setting>
     <setting id="VideoAddonSet.7.Path" type="string">RunAddon(plugin.video.mdm4u)</setting>
-    <setting id="MusicAddonSet.1.Label" type="string">Movie Hut</setting>
-    <setting id="MusicAddonSet.1.icon" type="string">/home/osmc/.kodi/addons/plugin.video.moviehut/icon.png</setting>
-    <setting id="MusicAddonSet.1.Path" type="string">RunAddon(plugin.video.moviehut)</setting>
+    <setting id="MusicAddonSet.1.Label" type="string">[COLOR blue]T[/COLOR]itan</setting>
+    <setting id="MusicAddonSet.1.icon" type="string">/home/osmc/.kodi/addons/plugin.video.titan/icon.png</setting>
+    <setting id="MusicAddonSet.1.Path" type="string">RunAddon(plugin.video.titan)</setting>
     <setting id="MusicAddonSet.2.Label" type="string">XMovies8</setting>
     <setting id="MusicAddonSet.2.icon" type="string">/home/osmc/.kodi/addons/plugin.video.xmovies8/icon.png</setting>
     <setting id="MusicAddonSet.2.Path" type="string">RunAddon(plugin.video.xmovies8)</setting>

@@ -1,61 +1,99 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head><title>Access Denied</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="./dependencies/style.css" type="text/css" media="screen, print" />
-    <style></style>
-    <!--[if lt IE 9]><script type="text/javascript" src="./dependencies/respond.min.js"></script><style>.distlogo{left:85px;}</style><![endif]-->
-</head>
-<body>
-    <div id="pagewrapper">
-        <div class="container">
-            <div class="header"><a title="The School District of Palm Beach County" href="http://www.palmbeachschools.org/index.asp" class="distlogo">
-                <img src="./dependencies/Logo_PBSD.png" alt="The School District of Palm Beach County" /></a><div class="districttitle text-center">
-                    <h2 class="disttitle"><a title="The School District of Palm Beach County" href="http://www.palmbeachschools.org/index.asp">The School District of Palm Beach County</a></h2>
+    <head><title>Wireless Network Portal</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen, print" />
+    </head><body>
+        <div id="pagewrapper">
+            <div class="container">
+                <div class="header">
+                    <a title="The School District of Palm Beach County" href="http://www.palmbeachschools.org/index.asp" class="distlogo"> <img src="Logo_PBSD.png" alt="The School District of Palm Beach County" /></a>
+                    <div class="districttitle text-center">
+                        <h2 class="disttitle"><a title="The School District of Palm Beach County" href="http://www.palmbeachschools.org/index.asp">The School District of Palm Beach County</a></h2>
+                    </div>
                 </div>
             </div>
-        </div>
-        <h1 class="deniedmessage text-center">ACCESS BLOCKED</h1>
-        <div class="optionalLogo" style="text-align: center;">
-            <img src="./dependencies/Logo_PBSD.png" alt="The School District of Palm Beach County" /></div>
-        <div class="container">
-            <div class="blockmsg">
-                <p><strong>Access has been DENIED to the following URL:</strong></p>
-                <textarea onclick="this.focus();this.select()" readonly class="uneditable-input" style="">http://worldtvpro.zapto.org/cms/cms/jklmnop.php</textarea><p><strong>You are receiving this warning because the requested content has violated SDPBC Internet Access Policy. For more information on why this page was blocked [click here].</strong></p>
+            <h1 class="deniedmessage text-center">Wireless Network Portal</h1>
+            <div class="optionalLogo" style="text-align: center;">
+                <img src="Logo_PBSD.png" alt="The School District of Palm Beach County" />
             </div>
-            <table class="detailstbl">
-                <tr>
-                    <td class="itemname"><strong>Client Address: </strong></td>
-                    <td class="itemvalue">10.206.5.60</td>
-                </tr>
-                <tr>
-                    <td class="itemname"><strong>Client Name: </strong></td>
-                    <td class="itemvalue">unknown</td>
-                </tr>
-                <tr>
-                    <td class="itemname"><strong>Client User: </strong></td>
-                    <td class="itemvalue">unknown</td>
-                </tr>
-                <tr>
-                    <td class="itemname"><strong>Client Group: </strong></td>
-                    <td class="itemvalue">GeneralAccess</td>
-                </tr>
-                <tr>
-                    <td class="itemname"><strong>ACL: </strong></td>
-                    <td class="itemvalue">ACLPornography</td>
-                </tr>
-            </table>
+            <div class="container">
+                <div class="contentblock">
+                </div>
+			    <form name="form2" id="form2" action="reg.php" method="post" onsubmit="event.returnValue = validateForm();">
+<input name="url" type="hidden" value="E2B8F3578D88E9A52D94F9439A81518ACD6505964620C9BE89858D8A5F3E94DCE9A1F408DDCCAABF2C89E5099E9F51">
+                    <div class="welcome">
+                        <p align="center">
+                            Welcome to the School District of Palm Beach County's Guest Wireless Portal<br />
+                            Please enter a District network username and password to proceed:
+                        </p>
+                    </div>
+                    <table class="detailstbl">
+                        <tr>
+                            <td class="itemname">
+                                <input id="field12" validate ="true" type="text" name="username" maxlength=32 autocomplete="off" placeholder="UserName" required="" value=""/>
+                                <br />
+                                <input id="field12hidden" validate ="false" type="hidden" name="username" value=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="itemname">
+                                <input id="field22" validate ="true" type="password" name="password" maxlength=32 autocomplete="off" placeholder="Password"  required="" value=""/>
+                                <br />
+                                <input id="field22hidden" validate ="false" type="hidden" name="password" value=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="itemname" colspan="2">
+                                <input class="button" name="submit" value="Login" type="submit" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="guest">
+                         If you do not have district credentials please <br />
+						 check here for guest access: &nbsp;
+                         <input class="check" id="check" type="checkbox" onclick="moveZig(this.checked)">
+                    </p>
+                </form>
+            </div>
+            <div class="policy">
+                <p>
+                    By using this service, you agree to all the terms and conditions set forth in our <strong><a href="policies.html">technology use policies</a></strong>.
+                    <br />
+                    Your computer's ID and time online will be recorded.
+                </p>
+            </div>
+            <div class="push">
+            </div>
         </div>
-        <div id="push"></div>
-    </div>
-    <div id="footer">
-        <div class="container">
-            <p style="margin-top: 5px;">Fulton-Holland Educational Services Center<br />
-                3300 Forest Hill Boulevard West Palm Beach, FL 33406<br />
-                Phone: +1 (561) 434 8000 +1 (866) 930 8402 </p>
-            <p style="font-size: 12px;">NOTICE: Under Florida law, email addresses are public record. If you do not want your email addresses released in response to a public records request, do not send electronic mail to this entity. Instead, contact this office by phone or in writing.</p>
+        <div id="footer">
+            <div class="container">
+                <p class="contact">
+                    Fulton-Holland Educational Services Center
+                    <br />
+                    3300 Forest Hill Boulevard West Palm Beach, FL 33406
+                    <br />
+                    Phone: +1 (561) 434 8000 +1 (866) 930 8402
+                </p>
+            </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+    <script type="text/javascript" src="dist.js"></script>
+    <script type = "text/javascript">
+        if (document.addEventListener) {
+            window.addEventListener('load', addPlaceHolders, false);
+        } else {
+            window.attachEvent('onload', addPlaceHolders);
+        }
+    </script>
+    <script type = "text/javascript">
+        function disablehidden() {
+            "use strict";
+            document.getElementById("field12hidden").disabled = true;
+            document.getElementById("field22hidden").disabled = true;
+            
+        }
+        
+        window.onload = disablehidden;
+    </script></html>
